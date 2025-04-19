@@ -6,10 +6,10 @@
 
 ### Why this exists
 
-> Engineers don’t need performance reviews.  
+> Engineers don't need performance reviews.  
 > They need a mirror, a map, and a little less bullshit.
 
-Let’s be real:
+Let's be real:
 - Promotions are political.
 - Performance reviews are vague, biased, and retroactive.
 - Good managers are rare. Bad ones are calendar-sitters who can't remember what you worked on.
@@ -22,7 +22,7 @@ This is not:
 - A journal  
 - A fancy OKR dashboard  
 
-It’s your career’s **version control system**—without the gatekeepers.
+It's your career's **version control system**—without the gatekeepers.
 
 ---
 
@@ -30,7 +30,7 @@ It’s your career’s **version control system**—without the gatekeepers.
 
 🔥 **Built for:**
 - Engineers who are good at their jobs but bad at self-promotion
-- ICs tired of “being more visible”
+- ICs tired of "being more visible"
 - People who want to grow through impact, not politics
 
 💡 **Beliefs:**
@@ -40,11 +40,11 @@ It’s your career’s **version control system**—without the gatekeepers.
 
 🚫 **No babysitters. No gatekeepers. No emotional roulette.**
 
-You’ve leveled up enough. Now it’s time to **skip one**.
+You've leveled up enough. Now it's time to **skip one**.
 
 ---
 
 ### Contact
 
-Built solo by [@you]  
-Fueled by caffeine, clarity, and the deep desire to never hear “let’s sync on this” again.
+Built solo by [@atolat](https://github.com/atolat)  
+Fueled by caffeine, clarity, and the deep desire to never hear "let's sync on this" again.
