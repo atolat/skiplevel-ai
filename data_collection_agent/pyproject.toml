@@ -1,0 +1,38 @@
+[project]
+name = "data-collection-agent"
+version = "0.1.0"
+description = "Agentic data collection pipeline for SkipLevel AI"
+authors = [
+    {name = "atolat", email = "your-email@example.com"}
+]
+dependencies = [
+    "langchain>=0.3.23",
+    "langgraph>=0.3.31",
+    "openai>=1.75.0",
+    "python-dotenv>=1.1.0",
+    "qdrant-client>=1.13.3",
+    "langchain-openai>=0.3.14",
+    "beautifulsoup4>=4.12.0",
+    "requests>=2.31.0",
+    "pydantic>=2.10.0",
+    "rich>=13.0.0",
+    "typer>=0.9.0",
+    "protobuf>=4.25.3",
+    "grpcio>=1.62.1"
+]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/data_collection_agent"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.black]
+line-length = 100
+target-version = ["py39"] 
