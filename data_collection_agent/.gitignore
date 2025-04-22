@@ -20,14 +20,15 @@ lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
 
 # Virtual Environment
+.venv/
 venv/
 ENV/
-env/
 
 # IDE specific files
 .idea/
