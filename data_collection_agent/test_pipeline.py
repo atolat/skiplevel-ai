@@ -1,26 +1,17 @@
-"""Test script for running the data collection pipeline."""
+"""Test script for running the data collection pipeline.
+
+Note: The previous graph-based implementation has been moved to the reference directory
+(data_collection_agent/reference/graph.py) and can be used as a reference if needed.
+"""
 
 from dotenv import load_dotenv
-from data_collection_agent.graph import DataCollectionAgent
+from data_collection_agent.pipeline import DataCollectionAgent
 import json
+import asyncio
 
-def main():
-    """Run the data collection pipeline with a sample goal."""
-    # Load environment variables
-    load_dotenv()
-    
-    # Create the agent
-    agent = DataCollectionAgent()
-    
-    # Define the goal
-    goal = "Collect IC4–IC6 rubric fragments for the Execution dimension."
-    
-    # Run the agent
-    print(f"Running data collection with goal: {goal}")
-    results = agent.run(goal)
-    
-    # Print results
-    print("\nResults:")
+def print_results(results: dict, implementation: str):
+    """Print the results in a formatted way."""
+    print(f"\nResults from {implementation}:")
     for level, result in results.items():
         print(f"\nLevel {level}:")
         print("Sources:")
@@ -38,5 +29,20 @@ def main():
         print(f"Storage Result: {result['result']}")
         print("-" * 80)
 
+async def main():
+    """Run the data collection pipeline with a sample goal."""
+    # Load environment variables
+    load_dotenv()
+    
+    # Define the goal
+    goal = "Collect IC4–IC6 rubric fragments for the Execution dimension."
+    print(f"Running data collection with goal: {goal}")
+    
+    # Run the LCEL-based implementation
+    print("\nRunning LCEL-based implementation...")
+    agent = DataCollectionAgent()
+    results = await agent.arun(goal)
+    print_results(results, "LCEL Implementation")
+
 if __name__ == "__main__":
-    main() 
+    asyncio.run(main()) 
