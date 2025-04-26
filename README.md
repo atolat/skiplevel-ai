@@ -44,6 +44,86 @@ You've leveled up enough. Now it's time to **skip one**.
 
 ---
 
+### Getting Started
+
+1. Install dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+2. Run the system:
+   ```bash
+   python -m skiplevel
+   ```
+
+For detailed technical documentation, see the [docs](docs/README.md) directory.
+
+---
+
+### Technical Architecture
+
+The system is built using a multi-agent supervisor pattern with the following components:
+
+#### Core Components
+- `core/base.py`: Base tool interface and protocols
+- `core/teams.py`: Team and agent definitions
+- `core/supervisor.py`: Supervisor implementations
+- `core/state.py`: State management
+
+#### Teams
+1. **Document Processing Team**
+   - Document Ingestor
+   - Document Parser
+   - Document Storage Manager
+
+2. **Analysis Team**
+   - Content Analyzer
+   - Pattern Detector
+   - Insight Generator
+
+3. **Advice Team**
+   - Career Path Analyzer
+   - Risk Assessor
+   - Advice Formulator
+
+4. **Vector DB Team**
+   - Vector DB Manager
+   - Embedding Generator
+   - Query Optimizer
+
+#### Directory Structure
+```
+.
+├── core/               # Core system components
+├── tools/             # Tool implementations
+│   ├── document/      # Document processing tools
+│   ├── analysis/      # Analysis tools
+│   ├── advice/        # Advice generation tools
+│   └── vectordb/      # Vector DB tools
+├── agents/            # Agent implementations
+│   ├── document/      # Document processing agents
+│   ├── analysis/      # Analysis agents
+│   ├── advice/        # Advice generation agents
+│   └── vectordb/      # Vector DB agents
+└── tests/             # Test suite
+```
+
+---
+
+### Development
+
+1. Install dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+2. Run tests:
+   ```bash
+   pytest
+   ```
+
+---
+
 ### Contact
 
 Built solo by [@atolat](https://github.com/atolat)  
