@@ -1,9 +1,11 @@
+# File: skiplevel/core/agent_helpers.py
 from typing import List, Dict, Any
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.agents import create_openai_functions_agent, AgentExecutor
 from langchain_core.messages import HumanMessage
 from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.output_parsers.openai_functions import JsonOutputFunctionsParser
 from langchain_core.runnables import Runnable
 import functools
 
@@ -65,46 +67,50 @@ def agent_node(state: Dict[str, Any], agent: AgentExecutor, name: str) -> Dict[s
 
 def create_team_supervisor(llm: ChatOpenAI, system_prompt: str, members: List[str]) -> Runnable:
     """
-    Creates a router agent for team supervision.
-    
+    Creates a router agent (Supervisor) that routes to team members or finishes.
+
     Args:
         llm: The language model to use
-        system_prompt: System prompt for the supervisor
+        system_prompt: The system message for supervisor
         members: List of team member names
-        
+
     Returns:
-        Runnable: Configured router agent
+        Runnable chain for routing
     """
-    # Create enum for routing options
     options = ["FINISH"] + members
-    options_str = " | ".join(f'"{opt}"' for opt in options)
-    
-    # Create function schema for routing
-    function_schema = {
+
+    # Define the function schema
+    function_def = {
         "name": "route",
-        "description": "Select next team member to handle the task or finish",
+        "description": "Select the next team member to act OR finish.",
         "parameters": {
+            "title": "routeSchema",
             "type": "object",
             "properties": {
                 "next": {
-                    "type": "string",
-                    "enum": options,
-                    "description": "Next team member to handle the task, or FINISH if complete"
-                }
+                    "title": "Next",
+                    "anyOf": [{"enum": options}],
+                },
             },
-            "required": ["next"]
-        }
+            "required": ["next"],
+        },
     }
-    
-    # Create prompt template
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        MessagesPlaceholder(variable_name="messages"),
-    ])
-    
-    # Create and return the chain
+
+    # Build the supervisor prompt
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", system_prompt),
+            MessagesPlaceholder(variable_name="messages"),
+            (
+                "system",
+                "Who should act next based on the last result?"
+                " Choose from: {options}. If evaluation looks complete, choose FINISH.",
+            ),
+        ]
+    ).partial(options=str(options), team_members=", ".join(members))
+
     return (
         prompt
-        | llm.bind(functions=[function_schema])
-        | JsonOutputParser()
+        | llm.bind_functions(functions=[function_def], function_call="route")
+        | JsonOutputFunctionsParser()
     ) 
