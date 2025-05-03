@@ -23,8 +23,12 @@ from langchain_core.messages import BaseMessage
 from newspaper import Article
 
 # SECURITY NOTE: Never hardcode API keys in your code. Always use environment variables.
-os.environ["OPENAI_API_KEY"] = "KEY"
-os.environ["TAVILY_API_KEY"] = "KEY"
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
+# Environment variables will be loaded from .env file
+# Make sure to create a .env file with OPENAI_API_KEY and TAVILY_API_KEY
 
 # Tavily Search Tool
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
