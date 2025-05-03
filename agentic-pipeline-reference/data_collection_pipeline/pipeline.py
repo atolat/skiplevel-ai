@@ -28,10 +28,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Environment variables will be loaded from .env file
-# Make sure to create a .env file with OPENAI_API_KEY and TAVILY_API_KEY
+# Make sure to create a .env file with:
+# OPENAI_API_KEY=your_api_key_here
+# TAVILY_API_KEY=your_api_key_here
 
 # Tavily Search Tool
-tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
+tavily_client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY", ""))
 @tool
 def search_links(query: str) -> List[Dict]:
     """Use Tavily to search for high-signal articles or blog posts related to engineering growth, performance, and promotions."""
