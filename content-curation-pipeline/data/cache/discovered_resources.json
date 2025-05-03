@@ -1,0 +1,393 @@
+{
+  "arxiv_bf0eca10ffdda4aeaccf2c8eb5ba98ca": {
+    "timestamp": 1746310379.0058172,
+    "results": [
+      {
+        "title": "Challenges Women in Software Engineering Leadership Roles Face: A Qualitative Study",
+        "url": "http://arxiv.org/pdf/2104.13982v1",
+        "source": "arxiv",
+        "authors": [
+          "Karina Kohl",
+          "Rafael Prikladnicki"
+        ],
+        "published_date": "2021-04-28T19:22:09+00:00",
+        "summary": "Software engineering is not only about technical solutions. To a large\nextent, it is also concerned with organizational issues, project management,\nand human behavior. There are serious gender issues that can severely limit the\nparticipation of women in science and engineering careers. It is claimed that\nwomen lead differently than men and are more collaboration-oriented,\ncommunicative, and less aggressive than their male counterparts. However, when\ntalking with women in technology companies' leadership roles, a list of\nproblems women face grows fast. We invite women in software engineering\nmanagement roles to answer the questions from an empathy map canvas. We used\nthematic analysis for coding the answers and group the codes into themes. From\nthe analysis, we identified seven themes that support us to list the main\nchallenges they face in their careers.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2104.13982v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Studies on the Software Testing Profession",
+        "url": "http://arxiv.org/pdf/1906.06144v1",
+        "source": "arxiv",
+        "authors": [
+          "Luiz Fernando Capretz",
+          "Pradeep Waychal",
+          "Jingdong Jia",
+          "Daniel Varona",
+          "Yadira Lizama"
+        ],
+        "published_date": "2019-06-12T19:28:16+00:00",
+        "summary": "This paper attempts to understand motivators and de-motivators that influence\nthe decisions of software professionals to take up and sustain software testing\ncareers across four different countries, i.e. Canada, China, Cuba, and India.\nThe research question can be framed as \"How many software professionals across\ndifferent geographies are keen to take up testing careers, and what are the\nreasons for their choices?\" Towards that, we developed a cross-sectional but\nsimple survey-based instrument. In this study we investigated how software\ntesters perceived and valued what they do and their environmental settings. The\nstudy pointed out the importance of visualizing software testing activities as\na set of human-dependent tasks and emphasized the need for research that\nexamines critically individual assessments of software testers about software\ntesting activities. This investigation can help global industry leaders to\nunderstand the impact of work-related factors on the motivation of testing\nprofessionals, as well as inform and support management and leadership in this\ncontext.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/1906.06144v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Identifying Emergent Leadership in OSS Projects Based on Communication Styles",
+        "url": "http://arxiv.org/pdf/2201.11897v1",
+        "source": "arxiv",
+        "authors": [
+          "Yuekai Huang",
+          "Ye Yang",
+          "Junjie Wang",
+          "Wei Zheng",
+          "Qing Wang"
+        ],
+        "published_date": "2022-01-28T02:20:44+00:00",
+        "summary": "In open source software (OSS) communities, existing leadership indicators are\ndominantly measured by code contribution or community influence. Recent studies\non emergent leadership shed light on additional dimensions such as intellectual\nstimulation in collaborative communications. To that end, this paper proposes\nan automated approach, named iLead, to mine communication styles and identify\nemergent leadership behaviors in OSS communities, using issue comments data. We\nstart with the construction of 6 categories of leadership behaviors based on\nexisting leadership studies. Then, we manually label leadership behaviors in\n10,000 issue comments from 10 OSS projects, and extract 304 heuristic\nlinguistic patterns which represent different types of emergent leadership\nbehaviors in flexible and concise manners. Next, an automated algorithm is\ndeveloped to merge and consolidate different pattern sets extracted from\nmultiple projects into a final pattern ranking list, which can be applied for\nthe automatic leadership identification. The evaluation results show that iLead\ncan achieve a median precision of 0.82 and recall of 0.78, outperforming ten\nmachine/deep learning baselines. To demonstrate practical usefulness, we also\nconduct empirical analysis and human evaluation of the identified leadership\nbehaviors from iLead. We argue that emergent leadership behaviors in issue\ndiscussion should be taken into consideration to broaden existing OSS\nleadership viewpoints. Practical insights on community building and leadership\nskill development are offered for OSS community and individual developers,\nrespectively.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2201.11897v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "What Makes Effective Leadership in Agile Software Development Teams?",
+        "url": "http://arxiv.org/pdf/2201.08058v1",
+        "source": "arxiv",
+        "authors": [
+          "Lucas Gren",
+          "Paul Ralph"
+        ],
+        "published_date": "2022-01-20T08:47:57+00:00",
+        "summary": "Effective leadership is one of the key drivers of business and project\nsuccess, and one of the most active areas of management research. But how does\nleadership work in agile software development, which emphasizes self-management\nand self-organization and marginalizes traditional leadership roles? To find\nout, this study examines agile leadership from the perspective of thirteen\nprofessionals who identify as agile leaders, in different roles, at ten\ndifferent software development companies of varying sizes. Data from\nsemi-structured interviews reveals that leadership: (1) is dynamically shared\namong team members; (2) engenders a sense of belonging to the team; and (3)\ninvolves balancing competing organizational cultures (e.g. balancing the new\nagile culture with the old milestone-driven culture). In other words, agile\nleadership is a property of a team, not a role, and effectiveness depends on\nagile team members' identifying with the team, accepting responsibility, and\nbeing sensitive to cultural conflict.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2201.08058v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Effective Delegation and Leadership in Software Management",
+        "url": "http://arxiv.org/pdf/2405.01612v1",
+        "source": "arxiv",
+        "authors": [
+          "Star Dawood Mirkhan",
+          "Skala Kamaran Omer",
+          "Hussein Mohammed Ali",
+          "Mahmood Yashar Hamza",
+          "Tarik Ahmed Rashid",
+          "Poornima Nedunchezhian"
+        ],
+        "published_date": "2024-05-02T14:16:05+00:00",
+        "summary": "Delegation and leadership are critical components of software management, as\nthey play a crucial role in determining the success of the software development\nprocess. This study examined the relationship between delegation and leadership\nin software management and the impact of these factors on project outcomes.\nResults showed that effective delegation and transformational leadership styles\ncan improve workflow, enhance team motivation and productivity, and ultimately\nlead to successful software development projects. The findings of this study\nhave important implications for software management practices, as they suggest\nthat organizations and software managers should prioritize the development of\neffective delegation and leadership practices to ensure the success of their\nsoftware development initiatives. Further research is needed to explore the\ncomplex interplay between delegation and leadership in software management and\nto identify best practices for improving these processes.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2405.01612v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Software Development Industry In East Africa: Knowledge Management Perspective And Value Proposition",
+        "url": "http://arxiv.org/pdf/1504.02017v1",
+        "source": "arxiv",
+        "authors": [
+          "Karanja Evanson Mwangi",
+          "Lawrence Xavier Thuku",
+          "John Patrick Kangethe"
+        ],
+        "published_date": "2015-04-08T16:06:27+00:00",
+        "summary": "Increased usage of the internet has contributed immensely to the growth of\nsoftware development practice in East Africa. This paper investigates the\nexistence of formal KM (Knowledge Management) initiatives in the Software\nindustry such as creation of virtual communities (Communities of practice and\ncommunities of interest); expert localization and establishment of knowledge\ntaxonomies in these communities; the knowledge transfer and sharing processes;\nincubation and Mentorship; collaborative software development and their role in\ncreating entrepreneurship initiatives and providing a building block towards\nthe knowledge economies. We propose a hybrid framework for use in KM initiative\nfocusing on Software Development in East Africa.",
+        "categories": [
+          "cs.SE",
+          "cs.CY"
+        ],
+        "entry_id": "http://arxiv.org/abs/1504.02017v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Female Leadership in Software Projects: A Preliminary Result on Leadership Style and Project Context Factors",
+        "url": "http://arxiv.org/pdf/1709.07676v1",
+        "source": "arxiv",
+        "authors": [
+          "Anh Nguyen-Duc",
+          "Soudabeh Khodambashi",
+          "Jon Atle Gulla",
+          "John Krogstie",
+          "Pekka Abrahamsson"
+        ],
+        "published_date": "2017-09-22T10:17:51+00:00",
+        "summary": "Women have been shown to be effective leaders in many team-based situations.\nHowever, it is also well-recognized that women are underrepresented in\nengineering and technology areas, which leads to wasted efforts and a lack of\ndiversity in professional organizations. Although studies about gender and\nleadership are rich, research focusing on engineering-specific activities, are\nscarce. To react on this gap, we explored the experience of female leaders of\nsoftware development projects and possible context factors that influence\nleadership effectiveness. The study was conducted as a longitudinal multiple\ncase study. Data was collected from survey, interviews, observation and project\nreports. In this work, we reported some preliminary findings related to\nleadership style, team perception on leadership and team-task context factors.\nWe found a strong correlation between perceived team leadership and task\nmanagement. We also observed a potential association between human-oriented\nleading approach in low customer involvement scenarios and task-oriented\nleading approach in high customer involvement situations.",
+        "categories": [
+          "cs.SE",
+          "cs.CY"
+        ],
+        "entry_id": "http://arxiv.org/abs/1709.07676v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "A perspective to navigate the National Laboratory environment for RSE career growth",
+        "url": "http://arxiv.org/pdf/2209.02610v1",
+        "source": "arxiv",
+        "authors": [
+          "William F Godoy"
+        ],
+        "published_date": "2022-09-06T16:04:53+00:00",
+        "summary": "This paper shares a perspective for the research software engineering (RSE)\ncommunity to navigate the National Laboratory landscape. The RSE role is a\nrecent concept that led to organizational challenges to place and evaluate\ntheir impact, costs and benefits. The premise is that RSEs are a natural fit\ninto the current landscape and can use traditional career growth strategies in\nscience: publications, community engagements and proposals. Projects funding\nRSEs can benefit from this synergy and be inclusive on traditional activities.\nStill, a great deal of introspection is needed to close gaps between the\nrapidly evolving RSE landscape and the well-established communication patterns\nin science. This perspective is built upon interactions in industry, academia\nand government in high-performance computing (HPC) environments. The goal is to\ncontribute to the conversation around RSE career growth and understand their\nreturn on investment for scientific projects and sponsors.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2209.02610v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "A Perspective-Based Understanding of Project Success",
+        "url": "http://arxiv.org/pdf/2101.05425v1",
+        "source": "arxiv",
+        "authors": [
+          "Laurie McLeod",
+          "Bill Doolin",
+          "Stephen G. MacDonell"
+        ],
+        "published_date": "2021-01-14T02:25:51+00:00",
+        "summary": "Answering the call for alternative approaches to researching project\nmanagement, we explore the evaluation of project success from a subjectivist\nperspective. An in-depth, longitudinal case study of information systems\ndevelopment in a large manufacturing company was used to investigate how\nvarious project stakeholders subjectively perceived the project outcome and\nwhat evaluation criteria they drew on in doing so. A conceptual framework is\ndeveloped for understanding and analyzing evaluations of project success, both\nformal and informal. The framework highlights how different stakeholder\nperspectives influence the perceived outcome(s) of a project, and how project\nevaluations may differ between stakeholders and across time.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2101.05425v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Early Career Developers' Perceptions of Code Understandability. A Study of Complexity Metrics",
+        "url": "http://arxiv.org/pdf/2303.07722v2",
+        "source": "arxiv",
+        "authors": [
+          "Matteo Esposito",
+          "Andrea Janes",
+          "Terhi Kilamo",
+          "Valentina Lenarduzzi"
+        ],
+        "published_date": "2023-03-14T09:11:10+00:00",
+        "summary": "Context. Code understandability is fundamental. Developers need to understand\nthe code they are modifying clearly. A low understandability can increase the\namount of coding effort, and misinterpreting code impacts the entire\ndevelopment process. Ideally, developers should write clear and understandable\ncode with the least effort. Aim. Our work investigates whether the McCabe\nCyclomatic Complexity or the Cognitive Complexity can be a good predictor for\nthe developers' perceived code understandability to understand which of the two\ncomplexities can be used as criteria to evaluate if a piece of code is\nunderstandable. Method. We designed and conducted an empirical study among 216\nearly career developers with professional experience ranging from one to four\nyears. We asked them to manually inspect and rate the understandability of 12\nJava classes that exhibit different levels of Cyclomatic and Cognitive\nComplexity. Results. Our findings showed that while the old-fashioned McCabe\nCyclomatic Complexity and the most recent Cognitive Complexity are modest\npredictors for code understandability when considering the complexity perceived\nby early-career developers, they are not for problem severity. Conclusions.\nBased on our results, early-career developers should not be left alone when\nperforming code-reviewing tasks due to their scarce experience. Moreover, low\ncomplexity measures indicate good understandability, but having either CoC or\nCyC high makes understandability unpredictable. Nevertheless, there is no\nevidence that CyC or CoC are indicators of early-career perceived\nseverity.Future research efforts will focus on expanding the population to\nexperienced developers to confront whether seniority influences the predictive\npower of the chosen metrics.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2303.07722v2",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "The Quantum Frontier of Software Engineering: A Systematic Mapping Study",
+        "url": "http://arxiv.org/pdf/2305.19683v2",
+        "source": "arxiv",
+        "authors": [
+          "Manuel De Stefano",
+          "Fabiano Pecorelli",
+          "Dario Di Nucci",
+          "Fabio Palomba",
+          "Andrea De Lucia"
+        ],
+        "published_date": "2023-05-31T09:26:10+00:00",
+        "summary": "Context. Quantum computing is becoming a reality, and quantum software\nengineering (QSE) is emerging as a new discipline to enable developers to\ndesign and develop quantum programs.\n  Objective. This paper presents a systematic mapping study of the current\nstate of QSE research, aiming to identify the most investigated topics, the\ntypes and number of studies, the main reported results, and the most studied\nquantum computing tools/frameworks. Additionally, the study aims to explore the\nresearch community's interest in QSE, how it has evolved, and any prior\ncontributions to the discipline before its formal introduction through the\nTalavera Manifesto.\n  Method. We searched for relevant articles in several databases and applied\ninclusion and exclusion criteria to select the most relevant studies. After\nevaluating the quality of the selected resources, we extracted relevant data\nfrom the primary studies and analyzed them.\n  Results. We found that QSE research has primarily focused on software\ntesting, with little attention given to other topics, such as software\nengineering management. The most commonly studied technology for techniques and\ntools is Qiskit, although, in most studies, either multiple or none specific\ntechnologies were employed. The researchers most interested in QSE are\ninterconnected through direct collaborations, and several strong collaboration\nclusters have been identified. Most articles in QSE have been published in\nnon-thematic venues, with a preference for conferences.\n  Conclusions. The study's implications are providing a centralized source of\ninformation for researchers and practitioners in the field, facilitating\nknowledge transfer, and contributing to the advancement and growth of QSE.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2305.19683v2",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Evaluation of team dynamic in Norwegian projects for IT students",
+        "url": "http://arxiv.org/pdf/1808.05473v1",
+        "source": "arxiv",
+        "authors": [
+          "Salah Uddin Ahmed",
+          "Ingrid Sundb\u00f8",
+          "Jon Kvisli",
+          "Jon Atle Gulla",
+          "Letizia Jaccheri",
+          "Anh Nguyen-Duc"
+        ],
+        "published_date": "2018-08-14T21:34:05+00:00",
+        "summary": "The need for teaching realistic software development in project courses has\nincreased in a global scale. It has always been challenges in cooperating\nfast-changing software technologies, development methodologies and teamwork.\nMoreover, such project courses need to be designed in the connection to\nexisting theoretical courses. We performed a large-scale research on student\nperformance in Software Engineering projects in Norwegian universities. This\npaper investigates four aspects of team dynamics, which are team reflection,\nleadership, decision making and task assignment in order to improve student\nlearning. Data was collected from student projects in 4 years at two\nuniversities. We found that some leader's characteristics are perceived\ndifferently for female and male leaders, including the perception of leaders as\nskilful workers or visionaries. Leadership is still a challenging aspect to\nteach, and assigned leadership is probably not the best way to learn. Students\nis are performing well in task review, however, needs support while performing\ntask assignment. The result also suggests that task management to be done in\nmore fine-grained levels. It is also important to maintain an open and active\ndiscussion to facilitate effective group decision makings.",
+        "categories": [
+          "cs.CY",
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/1808.05473v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Criteria Based Evaluation Framework for Service Oriented Methodologies",
+        "url": "http://arxiv.org/pdf/2004.09379v1",
+        "source": "arxiv",
+        "authors": [
+          "Mahdi Fahmideh",
+          "Jafar Habibi",
+          "Fereidoon Shams",
+          "Sedigheh Khoshnevis"
+        ],
+        "published_date": "2020-04-17T05:05:26+00:00",
+        "summary": "Service Oriented Software Engineering is based on concepts and principles for\nconstructing complex enterprise systems in which services as building block of\nthe system, are distributed in large networks. The main goal of the service\noriented methodologies is to define a process for development and maintenance\nof service based systems. Most of the Service Oriented methodologies are not\nmature enough compared with traditional software development methodologies such\nas Object Oriented or Component-Based. Hence, defining an evaluation framework\nwill be useful for comparing methodologies for identifying their strengths and\nweaknesses, defining new methodologies or extending existing Service Oriented\nmethodologies. At the time being, there is no complete evaluation framework for\nevaluating Service Oriented methodologies. The principal objective of this\npaper is to introduce a comprehensive evaluation framework for evaluating\nService-Oriented methodologies. This evaluation tool is appropriate for\nmethodology engineers to develop new methodologies, as well as project managers\nto select an appropriate methodology at a specific project.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2004.09379v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "An Empirical Investigation on the Challenges Faced by Women in the Software Industry: A Case Study",
+        "url": "http://arxiv.org/pdf/2203.10555v1",
+        "source": "arxiv",
+        "authors": [
+          "Bianca Trinkenreich",
+          "Ricardo Britto",
+          "Marco Aurelio Gerosa",
+          "Igor Steinmacher"
+        ],
+        "published_date": "2022-03-20T13:56:46+00:00",
+        "summary": "Addressing women's under-representation in the software industry, a widely\nrecognized concern, requires attracting as well as retaining more women.\nHearing from women practitioners, particularly those positioned in\nmulti-cultural settings, about their challenges and and adopting their lived\nexperienced solutions can support the design of programs to resolve the\nunder-representation issue.\n  Goal: We investigated the challenges women face in global software\ndevelopment teams, particularly what motivates women to leave their company;\nhow those challenges might break down according to demographics; and strategies\nto mitigate the identified challenges.\n  Method: To achieve this goal, we conducted an exploratory case study in\nEricsson, a global technology company. We surveyed 94 women and employed\nmixed-methods to analyze the data.\n  Results: Our findings reveal that women face socio-cultural challenges,\nincluding work-life balance issues, benevolent and hostile sexism, lack of\nrecognition and peer parity, impostor syndrome, glass ceiling bias effects, the\nprove-it-again phenomenon, and the maternal wall. The participants of our\nresearch provided different suggestions to address/mitigate the reported\nchallenges, including sabbatical policies, flexibility of location and time,\nparenthood support, soft skills training for managers, equality of payment and\nopportunities between genders, mentoring and role models to support career\ngrowth, directives to hire more women, inclusive groups and events, women's\nempowerment, and recognition for women's success. The framework of challenges\nand suggestions can inspire further initiatives both in academia and industry\nto onboard and retain women.",
+        "categories": [
+          "cs.SE",
+          "cs.HC"
+        ],
+        "entry_id": "http://arxiv.org/abs/2203.10555v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "A framework to evaluate the viability of robotic process automation for business process activities",
+        "url": "http://arxiv.org/pdf/2007.10900v2",
+        "source": "arxiv",
+        "authors": [
+          "Christian Wellmann",
+          "Matthias Stierle",
+          "Sebastian Dunzer",
+          "Martin Matzner"
+        ],
+        "published_date": "2020-07-21T15:47:25+00:00",
+        "summary": "Robotic process automation (RPA) is a technology for centralized automation\nof business processes. RPA automates user interaction with graphical user\ninterfaces, whereby it promises efficiency gains and a reduction of human\nnegligence during process execution. To harness these benefits, organizations\nface the challenge of classifying process activities as viable automation\ncandidates for RPA. Therefore, this work aims to support practitioners in\nevaluating RPA automation candidates. We design a framework that consists of\nthirteen criteria grouped into five perspectives which offer different\nevaluation aspects. These criteria leverage a profound understanding of the\nprocess step. We demonstrate and evaluate the framework by applying it to a\nreal-life data set.",
+        "categories": [
+          "cs.SE"
+        ],
+        "entry_id": "http://arxiv.org/abs/2007.10900v2",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "A New Framework of Software Obfuscation Evaluation Criteria",
+        "url": "http://arxiv.org/pdf/2502.14093v1",
+        "source": "arxiv",
+        "authors": [
+          "Bjorn De Sutter"
+        ],
+        "published_date": "2025-02-19T20:45:47+00:00",
+        "summary": "In the domain of practical software protection against man-at-the-end attacks\nsuch as software reverse engineering and tampering, much of the scientific\nliterature is plagued by the use of subpar methods to evaluate the protections'\nstrength and even by the absence of such evaluations. Several criteria have\nbeen proposed in the past to assess the strength of protections, such as\npotency, resilience, stealth, and cost. We analyze their evolving definitions\nand uses. We formulate a number of critiques, from which we conclude that the\nexisting definitions are unsatisfactory and need to be revised. We present a\nnew framework of software protection evaluation criteria: relevance,\neffectiveness (or efficacy), robustness, concealment, stubbornness,\nsensitivity, predictability, and cost.",
+        "categories": [
+          "cs.SE",
+          "cs.CR"
+        ],
+        "entry_id": "http://arxiv.org/abs/2502.14093v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      },
+      {
+        "title": "Towards Understanding Barriers and Mitigation Strategies of Software Engineers with Non-traditional Educational and Occupational Backgrounds",
+        "url": "http://arxiv.org/pdf/2204.04318v1",
+        "source": "arxiv",
+        "authors": [
+          "Tavian Barnes",
+          "Ken Jen Lee",
+          "Cristina Tavares",
+          "Gema Rodr\u00edguez-P\u00e9rez",
+          "Meiyappan Nagappan"
+        ],
+        "published_date": "2022-04-08T22:51:19+00:00",
+        "summary": "The traditional path to a software engineering career involves a\npost-secondary diploma in Software Engineering, Computer Science, or a related\nfield. However, many software engineers take a non-traditional path to their\ncareer, starting from other industries or fields of study. This paper proposes\na study on barriers faced by software engineers with non-traditional\neducational and occupational backgrounds, and possible mitigation strategies\nfor those barriers. We propose a two-stage methodology, consisting of an\nexploratory study, followed by a validation study. The exploratory study will\ninvolve a grounded-theory-based qualitative analysis of relevant Reddit data to\nyield a framework around the barriers and possible mitigation strategies. These\nfindings will then be validated using a survey in the validation study. Making\nsoftware engineering more accessible to those with non-traditional backgrounds\nwill not only bring about the benefits of functional diversity, but also serves\nas a method of filling in the labour shortages of the software engineering\nindustry.",
+        "categories": [
+          "cs.SE",
+          "cs.CY",
+          "D.2; K.4.2"
+        ],
+        "entry_id": "http://arxiv.org/abs/2204.04318v1",
+        "meta": {
+          "content_type": "academic_paper",
+          "is_curated": true,
+          "source_quality": 8
+        }
+      }
+    ]
+  },
+  "github_aeee5c75f17e86b2523801d7a2dc1967": {
+    "timestamp": 1746310379.458702,
+    "results": []
+  },
+  "engineering_blogs": {
+    "timestamp": 1746310384.707819,
+    "results": []
+  }
+}

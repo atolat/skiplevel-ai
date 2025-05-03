@@ -27,6 +27,7 @@ from .pipeline import run_content_pipeline
 from .modules.content_extraction import scrape_url_content
 from .modules.web_evaluation import evaluate_url_with_browsing as evaluate_url, batch_evaluate_urls
 from .modules.content_analysis import analyze_high_quality_content as analyze_content
+from .modules.content_cache import ContentCache, content_cache
 
 # Make key functions available at package level
 __all__ = [
@@ -34,7 +35,9 @@ __all__ = [
     "scrape_url_content",
     "evaluate_url",
     "batch_evaluate_urls",
-    "analyze_content"
+    "analyze_content",
+    "ContentCache",
+    "content_cache"
 ]
 
 # Version info
