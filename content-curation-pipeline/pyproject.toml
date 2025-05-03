@@ -1,0 +1,33 @@
+[project]
+name = "content-curation-pipeline"
+version = "0.2.0"
+description = "Pipeline for discovering, curating, and evaluating content about engineering career development"
+authors = [
+    { name = "Arpan Tolat", email = "arpan@skiplevel.ai" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "openai>=1.0.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "python-dotenv>=1.0.0",
+    "tavily-python>=0.2.0",
+    "praw>=7.7.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src.pipeline"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3 

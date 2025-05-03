@@ -102,6 +102,10 @@ Remember: The goal is to get a complete evaluation in as few steps as possible."
     workflow.set_entry_point("supervisor")
     
     # Add conditional edges
+    # Add conditional edges based on the supervisor's decision
+    # - If supervisor decides "ReflectionEvaluator", route to reflection_evaluator node
+    # - If supervisor decides "FINISH", end the workflow
+    # The decision is extracted from the state's "next" field which is set by the supervisor
     workflow.add_conditional_edges(
         "supervisor",
         lambda state: state.get("next"),
@@ -117,27 +121,5 @@ Remember: The goal is to get a complete evaluation in as few steps as possible."
     # Compile the graph
     return workflow.compile()
 
-def visualize_graph():
-    """
-    Prints an ASCII representation of the reflection team graph structure.
-    """
-    print("\nReflection Team Graph Structure:")
-    print("===============================")
-    print("Entry Point: supervisor")
-    print("\nNodes:")
-    print("- supervisor (Entry Point)")
-    print("- reflection_evaluator")
-    print("- END")
-    print("\nEdges:")
-    print("supervisor -> reflection_evaluator (via ReflectionEvaluator)")
-    print("supervisor -> END (via FINISH)")
-    print("reflection_evaluator -> supervisor")
-    print("===============================\n")
-
-# TODO: Adding additional team members later
-
 # Create the team graph
 reflection_team_graph = create_reflection_team(ChatOpenAI(model="gpt-4-turbo-preview"))
-
-# Generate visualization when imported
-# visualize_graph() 
