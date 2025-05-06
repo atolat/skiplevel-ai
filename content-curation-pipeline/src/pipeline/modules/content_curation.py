@@ -4,8 +4,32 @@ import logging
 from typing import List, Dict
 from tavily import TavilyClient
 import praw
+import re
+from . import medium_api
 
 logger = logging.getLogger(__name__)
+
+
+def is_valid_url(url: str) -> bool:
+    """
+    Check if a URL is valid for processing.
+    
+    Args:
+        url: URL to check
+        
+    Returns:
+        True if the URL is valid, False otherwise
+    """
+    # Skip URLs that are empty or None
+    if not url:
+        return False
+    
+    # If it's a Medium URL, check if it's a valid article URL
+    if "medium.com" in url:
+        return medium_api.is_valid_article_url(url)
+    
+    # For non-Medium URLs, return True by default
+    return True
 
 
 def curate_urls(query: str) -> List[Dict]:
@@ -28,13 +52,15 @@ def curate_urls(query: str) -> List[Dict]:
         
         urls = []
         for result in search_results.get("results", []):
-            if result.get("url"):
+            if result.get("url") and is_valid_url(result.get("url")):
                 urls.append({
                     "url": result["url"],
                     "title": result.get("title", ""),
                     "source": "tavily_search",
                     "score": result.get("score", 0),
                 })
+            elif result.get("url") and "medium.com" in result.get("url"):
+                logger.info(f"Filtered out invalid Medium URL from Tavily results: {result.get('url')}")
         
         return urls
     except Exception as e:
@@ -150,12 +176,14 @@ def curate_urls_from_reddit(query: str, limit: int = 10) -> List[Dict]:
                             # Use proper permalink URL
                             full_url = f"https://www.reddit.com{submission.permalink}"
                             
-                            results.append({
-                                "url": full_url,
-                                "title": submission.title,
-                                "source": f"reddit_{subreddit_name}",
-                                "meta": meta_data
-                            })
+                            # Check that the URL is valid before adding it to results
+                            if is_valid_url(full_url):
+                                results.append({
+                                    "url": full_url,
+                                    "title": submission.title,
+                                    "source": f"reddit_{subreddit_name}",
+                                    "meta": meta_data
+                                })
                 
                 # Break if we have enough results
                 if len(results) >= limit * 2:  # Get double the requested limit to allow for filtering

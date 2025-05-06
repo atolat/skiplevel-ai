@@ -7,6 +7,7 @@ A data pipeline for discovering, curating, and evaluating high-quality content a
 - **Multi-source content discovery** from both search engines and social platforms
 - **Parallel URL processing** for significantly improved performance
 - **Specialized Reddit content evaluation** with structured analysis of posts and comments
+- **Medium API integration** for high-quality engineering articles
 - **Enhanced web evaluation** using modern LLM capabilities
 - **Robust error handling** for reliable operation
 - **Structured output format** for downstream applications
@@ -29,6 +30,12 @@ A data pipeline for discovering, curating, and evaluating high-quality content a
      - Uses Tavily's advanced search
      - Returns up to 10 results per query
      - Includes metadata like titles and relevance scores
+   
+   - **Medium API Integration**
+     - Uses the Unofficial Medium API to fetch high-quality articles
+     - Extracts full article content directly from the API
+     - Searches based on relevant engineering topics
+     - Includes metadata like claps, reading time, and authors
    
    - **Reddit Integration**
      - Searches relevant engineering and career subreddits
@@ -359,6 +366,7 @@ A data pipeline for discovering, curating, and evaluating high-quality content a
    - `OPENAI_API_KEY` (required)
    - `TAVILY_API_KEY` (required for standard evaluation)
    - `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USER_AGENT` (optional, for Reddit content)
+   - `MEDIUM_API_KEY` (optional, for Medium content)
 
 2. **Set up environment variables**:
    
@@ -372,19 +380,14 @@ A data pipeline for discovering, curating, and evaluating high-quality content a
    REDDIT_CLIENT_ID=your_reddit_client_id
    REDDIT_CLIENT_SECRET=your_reddit_client_secret
    REDDIT_USER_AGENT=python:content-curation-pipeline:v0.2.0 (by /u/your_username)
+   MEDIUM_API_KEY=your_medium_api_key
    ```
 
-   To obtain Reddit API credentials:
-   - Visit https://www.reddit.com/prefs/apps
-   - Click "Create App" or "Create Another App"
-   - Fill in the required information:
-     - Name: content-curation-pipeline
-     - Type: script
-     - Description: Data pipeline for engineering content
-     - About URL: (can be left blank)
-     - Redirect URI: http://localhost:8080
-   - Click "Create App"
-   - Use the generated values for CLIENT_ID and CLIENT_SECRET
+   To obtain Medium API credentials:
+   - Visit https://mediumapi.com/
+   - Sign up for a RapidAPI account
+   - Subscribe to the Medium API
+   - Get your API key from the RapidAPI dashboard
 
 3. **Install dependencies**:
    ```bash
@@ -438,6 +441,8 @@ For cloud deployment options, see the AWS deployment plan for serverless deploym
 
 ```
 usage: run.py [-h] [--query QUERY] [--evaluation-method {standard,openai_browsing,tavily_content,claude_browsing}]
+              [--no-cache] [--output-file OUTPUT_FILE] [--no-books] [--github-token GITHUB_TOKEN] 
+              [--medium-api-key MEDIUM_API_KEY] [--clean] [--clean-pdfs] [--clean-texts] [--clean-cache]
 
 Run the content curation pipeline
 
@@ -446,6 +451,18 @@ options:
   --query QUERY         Content query to search for
   --evaluation-method {standard,openai_browsing,tavily_content,claude_browsing}
                         Method for evaluating content
+  --no-cache            Disable URL and content caching (forces reprocessing of all URLs)
+  --output-file OUTPUT_FILE
+                        Optional file to save results JSON
+  --no-books            Disable discovery of books, papers and other curated resources
+  --github-token GITHUB_TOKEN
+                        GitHub API token for accessing repositories (optional)
+  --medium-api-key MEDIUM_API_KEY
+                        Medium API key from RapidAPI for accessing Medium content (optional)
+  --clean               Clean data directories (pdfs, texts, cache) before running the pipeline
+  --clean-pdfs          Clean only the PDFs directory before running
+  --clean-texts         Clean only the texts directory before running
+  --clean-cache         Clean only the cache directory before running
 ```
 
 ## Dependencies
@@ -455,4 +472,7 @@ options:
 - beautifulsoup4>=4.12.0
 - python-dotenv>=1.0.0
 - tavily-python>=0.2.0
-- praw>=7.7.0 (for Reddit integration) 
+- praw>=7.7.0 (for Reddit integration)
+- arxiv>=1.4.7 (for academic papers)
+- PyPDF2>=3.0.0 (for PDF processing)
+- newspaper3k>=0.2.8 (for web content extraction) 

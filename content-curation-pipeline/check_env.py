@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Check environment variables for the non-agentic pipeline."""
+"""Check environment variables for the content curation pipeline."""
 import os
 import sys
 from pathlib import Path
@@ -9,7 +9,7 @@ def main():
     """Check for required API keys in environment variables."""
     # Try to load from different possible .env locations
     root_env = Path(".env")
-    subdir_env = Path("non-agentic-pipeline/.env")
+    subdir_env = Path("content-curation-pipeline/.env")
     
     if subdir_env.exists():
         print(f"Loading environment from {subdir_env}")
@@ -20,7 +20,7 @@ def main():
     else:
         print("No .env file found. Checking environment variables directly.")
     
-    print("\n🔍 Checking environment variables for non-agentic pipeline...\n")
+    print("\n🔍 Checking environment variables for content curation pipeline...\n")
     
     # Required API keys
     required_keys = {
@@ -32,7 +32,9 @@ def main():
     optional_keys = {
         "REDDIT_CLIENT_ID": "For Reddit content curation",
         "REDDIT_CLIENT_SECRET": "For Reddit content curation",
-        "REDDIT_USER_AGENT": "For Reddit content curation"
+        "REDDIT_USER_AGENT": "For Reddit content curation",
+        "MEDIUM_API_KEY": "For Medium article extraction via Medium API",
+        "GITHUB_TOKEN": "For GitHub repository access"
     }
     
     # Check required keys
@@ -48,6 +50,9 @@ def main():
     # Check optional keys
     print("\nOptional environment variables:")
     missing_reddit = []
+    medium_missing = False
+    github_missing = False
+    
     for key, description in optional_keys.items():
         value = os.getenv(key)
         if value:
@@ -56,6 +61,10 @@ def main():
             print(f"⚠️ {key}: Missing - {description}")
             if key.startswith("REDDIT"):
                 missing_reddit.append(key)
+            elif key == "MEDIUM_API_KEY":
+                medium_missing = True
+            elif key == "GITHUB_TOKEN":
+                github_missing = True
     
     # Summary
     print("\nSummary:")
@@ -72,10 +81,20 @@ def main():
         print("   Reddit content curation may not work properly.")
     else:
         print("✅ Reddit API credentials are set - Reddit content curation is enabled.")
+        
+    if medium_missing:
+        print("⚠️ Medium API key is missing. Medium article extraction will be limited.")
+    else:
+        print("✅ Medium API key is set - Enhanced Medium content extraction is enabled.")
+        
+    if github_missing:
+        print("⚠️ GitHub token is missing. GitHub repository access may be rate-limited.")
+    else:
+        print("✅ GitHub token is set - Full GitHub repository access is enabled.")
     
     # Show instructions based on where the env file should be
     if subdir_env.exists():
-        env_path = "non-agentic-pipeline/.env"
+        env_path = "content-curation-pipeline/.env"
     else:
         env_path = ".env"
         
@@ -85,7 +104,9 @@ def main():
     TAVILY_API_KEY=your_tavily_api_key
     REDDIT_CLIENT_ID=your_reddit_client_id
     REDDIT_CLIENT_SECRET=your_reddit_client_secret
-    REDDIT_USER_AGENT=python:non-agentic-pipeline:v0.1.0 (by /u/your_username)
+    REDDIT_USER_AGENT=python:content-curation-pipeline:v0.2.0 (by /u/your_username)
+    MEDIUM_API_KEY=your_medium_api_key_from_rapidapi
+    GITHUB_TOKEN=your_github_personal_access_token
     """)
     
     # Exit with error code if required keys are missing

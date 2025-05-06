@@ -58,12 +58,33 @@ This document tracks completed work and upcoming tasks for the engineering conte
   - Implemented caching for discovered resources
   - Added CLI flags for controlling resource discovery
 
+- ✅ **Medium API Integration**
+  - Created specialized module for Medium content discovery
+  - Implemented multiple discovery strategies:
+    - Topfeeds for trending topics
+    - Recommended feed for personalized content
+    - Search API for targeted queries
+    - Author-based discovery for curated content creators
+  - Added content extraction and text file storage during discovery
+  - Created standalone script with detailed statistics
+  - Integrated with main pipeline and cleanup processes
+
 ### In Progress
 
 - 🔄 **AWS Deployment Planning**
   - Created workflow.md with deployment architecture
   - Need to create Terraform templates
   - Need to test AWS Lambda integration
+
+- 🔄 **Modular Content Source Architecture**
+  - Created specialized Medium discovery module as first implementation
+  - Need to refactor other content sources (Github, ArXiv, engineering blogs) to follow same pattern
+  - Goal: Create specialized modules for each content source with:
+    - Source-specific discovery logic
+    - Dedicated processing capabilities
+    - Content extraction tailored to source format
+    - Specialized caching strategy
+    - Standalone execution option
 
 ### Upcoming (2025-05-04)
 

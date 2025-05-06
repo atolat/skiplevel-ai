@@ -13,7 +13,8 @@ logger = logging.getLogger("pipeline")
 from .modules import content_curation, content_extraction, content_evaluation, web_evaluation
 from .modules.content_cache import content_cache
 from .modules.resource_discovery import discover_resources
-from .modules.resource_processor import process_resources
+from .modules.resource_processor import process_resources, get_resource_text
+from .modules import medium_api
 
 def run_content_pipeline(query: str, evaluation_method: str = "standard", use_cache: bool = True, 
                          include_books: bool = True) -> Dict:
@@ -107,8 +108,13 @@ def run_content_pipeline(query: str, evaluation_method: str = "standard", use_ca
                 if url_data.get("meta", {}).get("is_discovered_resource", False):
                     # Use the content from the resource discovery process
                     logger.info(f"Using pre-extracted content for discovered resource: {url}")
-                    content_text = url_data.get("meta", {}).get("resource_content", "")
-                    if content_text:
+                    resource_content = url_data.get("meta", {}).get("resource_content", "")
+                    if not resource_content and "resource" in url_data.get("meta", {}):
+                        # Get the text content using the helper function
+                        resource = url_data.get("meta", {}).get("resource", {})
+                        resource_content = get_resource_text(resource)
+                        
+                    if resource_content:
                         # Discovered resources are pre-vetted, so give them a high baseline score
                         source_quality = url_data.get("meta", {}).get("source_quality", 7)
                         evaluation = {
@@ -170,9 +176,21 @@ def run_content_pipeline(query: str, evaluation_method: str = "standard", use_ca
         for resource in direct_resources:
             try:
                 url = resource["url"]
+                
+                # Skip invalid Medium URLs (profiles or publications)
+                if "medium.com" in url and not medium_api.is_valid_article_url(url):
+                    logger.warning(f"Skipping invalid Medium URL during direct evaluation: {url}")
+                    continue
+                
                 logger.info(f"Direct evaluation of discovered resource: {url}")
                 
+                # Get content from the resource or its related text file
                 content_text = resource.get("meta", {}).get("resource_content", "")
+                if not content_text and "resource" in resource.get("meta", {}):
+                    # Get the text content using the helper function
+                    resource_obj = resource.get("meta", {}).get("resource", {})
+                    content_text = get_resource_text(resource_obj)
+                    
                 if content_text:
                     # Discovered resources are pre-vetted, so give them a high baseline score
                     source_quality = resource.get("meta", {}).get("source_quality", 7)

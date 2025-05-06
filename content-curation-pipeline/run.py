@@ -9,6 +9,7 @@ import os
 import sys
 from dotenv import load_dotenv
 from src.pipeline import run_content_pipeline, DEFAULT_QUERY, DEFAULT_EVALUATION_METHOD
+from src.pipeline.modules.utils import clean_data
 
 # Load environment variables from .env file
 load_dotenv()
@@ -42,12 +43,64 @@ def main():
         type=str,
         help="GitHub API token for accessing repositories (optional)"
     )
+    parser.add_argument(
+        "--medium-api-key",
+        type=str,
+        help="Medium API key from RapidAPI for accessing Medium content (optional)"
+    )
+    parser.add_argument(
+        "--clean",
+        action="store_true",
+        help="Clean data directories (pdfs, texts, cache) before running the pipeline"
+    )
+    parser.add_argument(
+        "--clean-pdfs",
+        action="store_true",
+        help="Clean only the PDFs directory before running"
+    )
+    parser.add_argument(
+        "--clean-texts",
+        action="store_true",
+        help="Clean only the texts directory before running"
+    )
+    parser.add_argument(
+        "--clean-cache",
+        action="store_true",
+        help="Clean only the cache directory before running"
+    )
+    parser.add_argument(
+        "--clean-medium",
+        action="store_true",
+        help="Clean only the Medium texts directory before running"
+    )
     
     args = parser.parse_args()
     
     # Set GitHub token if provided
     if args.github_token:
         os.environ["GITHUB_TOKEN"] = args.github_token
+    
+    # Set Medium API key if provided
+    if args.medium_api_key:
+        os.environ["MEDIUM_API_KEY"] = args.medium_api_key
+    
+    # Clean data directories if requested
+    if args.clean or args.clean_pdfs or args.clean_texts or args.clean_cache or args.clean_medium:
+        # If specific clean flags are set, use those
+        if args.clean_pdfs or args.clean_texts or args.clean_cache or args.clean_medium:
+            results = clean_data(
+                clean_pdfs=args.clean_pdfs,
+                clean_texts=args.clean_texts,
+                clean_cache=args.clean_cache,
+                clean_medium=args.clean_medium
+            )
+        # Otherwise clean everything
+        else:
+            results = clean_data()
+            
+        print(f"Cleaned data directories: PDFs: {results['pdfs']} files, " 
+              f"Texts: {results['texts']} files, Cache: {results['cache']} files, "
+              f"Medium: {results['medium']} files")
     
     # Run the pipeline with cache enabled by default (disabled if --no-cache flag is used)
     # and book discovery enabled by default (disabled if --no-books flag is used)

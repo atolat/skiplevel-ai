@@ -17,6 +17,8 @@ import arxiv
 from datetime import datetime, timedelta
 import re
 import hashlib
+from . import medium_api
+from . import medium_discovery
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +29,11 @@ RESOURCE_DIR.mkdir(parents=True, exist_ok=True)
 # Cache for discovered resources
 RESOURCE_CACHE_FILE = Path("./data/cache/discovered_resources.json")
 RESOURCE_CACHE = {}
+
+# Medium API configuration
+MEDIUM_API_KEY = os.environ.get("MEDIUM_API_KEY", "")
+MEDIUM_API_HOST = "medium2.p.rapidapi.com"
+MEDIUM_API_BASE_URL = "https://medium2.p.rapidapi.com"
 
 # Load resource cache if exists
 if RESOURCE_CACHE_FILE.exists():
@@ -218,23 +225,112 @@ def discover_engineering_blog_articles() -> List[Dict]:
     blogs = [
         {
             "name": "Spotify Engineering",
-            "url": "https://engineering.atspotify.com/category/engineering-culture/",
-            "selector": "article.post"
+            "url": "https://engineering.spotify.com/",
+            "selector": "article.post",
+            "title_selector": "h2.entry-title",
+            "link_selector": "h2.entry-title a",
+            "is_abs_url": True
         },
         {
             "name": "Netflix Tech Blog",
-            "url": "https://netflixtechblog.com/tagged/engineering-management",
-            "selector": "div.postArticle"
+            "url": "https://netflixtechblog.com/",
+            "selector": "div.postArticle",
+            "title_selector": "h3.graf--title",
+            "link_selector": "a.postArticle-content",
+            "is_abs_url": True
         },
         {
             "name": "Slack Engineering",
             "url": "https://slack.engineering/",
-            "selector": "article.post"
+            "selector": "article.post",
+            "title_selector": "h2.post-title",
+            "link_selector": "a.read-entire-post",
+            "is_abs_url": True
         },
         {
             "name": "Dropbox Tech Blog",
             "url": "https://dropbox.tech/",
-            "selector": "a.post-block"
+            "selector": "a.post-block",
+            "title_selector": "h3",
+            "link_selector": "a.post-block",
+            "is_abs_url": True
+        },
+        {
+            "name": "Stripe Engineering Blog",
+            "url": "https://stripe.com/blog/engineering",
+            "selector": "article.BlogIndex-item",
+            "title_selector": "h2",
+            "link_selector": "a.BlogIndex-link",
+            "is_abs_url": False,
+            "base_url": "https://stripe.com"
+        },
+        {
+            "name": "Airbnb Engineering",
+            "url": "https://medium.com/airbnb-engineering",
+            "selector": "article",
+            "title_selector": "h1",
+            "link_selector": "a[href*='/airbnb-engineering/']",
+            "is_abs_url": True
+        },
+        {
+            "name": "Engineering Blog - Medium",
+            "url": "https://medium.com/tag/engineering-management",
+            "selector": "article",
+            "title_selector": "h2",
+            "link_selector": "a[href*='/']",
+            "is_abs_url": False,
+            "base_url": "https://medium.com"
+        },
+        {
+            "name": "LeadDev",
+            "url": "https://leaddev.com/leadership-skills",
+            "selector": "div.views-row",
+            "title_selector": "h3.article-title",
+            "link_selector": "h3.article-title a",
+            "is_abs_url": False,
+            "base_url": "https://leaddev.com"
+        },
+        {
+            "name": "Engineering Manager Resources",
+            "url": "https://github.com/charlax/engineering-management",
+            "selector": "#readme li",
+            "title_selector": "a",
+            "link_selector": "a",
+            "is_abs_url": True
+        },
+        {
+            "name": "Career Ladder Resources",
+            "url": "https://career-ladders.dev/engineering/",
+            "selector": "main a",
+            "title_selector": None,  # Use link text as title
+            "link_selector": "a",
+            "is_abs_url": False,
+            "base_url": "https://career-ladders.dev"
+        },
+        {
+            "name": "Staff Engineer Resources",
+            "url": "https://staffeng.com/guides/",
+            "selector": "li",
+            "title_selector": "a",
+            "link_selector": "a",
+            "is_abs_url": False,
+            "base_url": "https://staffeng.com"
+        },
+        {
+            "name": "Rands Leadership",
+            "url": "https://randsinrepose.com/archives/category/management/",
+            "selector": "article.post",
+            "title_selector": "h2.entry-title",
+            "link_selector": "h2.entry-title a",
+            "is_abs_url": True
+        },
+        {
+            "name": "Irrational Exuberance",
+            "url": "https://lethain.com/",
+            "selector": "div.post",
+            "title_selector": "h1 a",
+            "link_selector": "h1 a",
+            "is_abs_url": True
         }
     ]
     
@@ -262,26 +358,66 @@ def discover_engineering_blog_articles() -> List[Dict]:
             articles = soup.select(blog["selector"])
             
             for article in articles[:5]:  # Limit to 5 most recent articles per blog
-                # Extract article details based on blog structure
-                if blog["name"] == "Spotify Engineering":
-                    title_elem = article.select_one("h2.entry-title")
-                    link_elem = title_elem.select_one("a") if title_elem else None
+                try:
+                    # Extract title
+                    if blog["title_selector"]:
+                        title_elem = article.select_one(blog["title_selector"])
+                        title = title_elem.text.strip() if title_elem else "Untitled"
+                    else:
+                        # Use link text as title
+                        link_elem = article.select_one(blog["link_selector"])
+                        title = link_elem.text.strip() if link_elem else "Untitled"
                     
-                    if link_elem and title_elem:
-                        article_dict = {
-                            "title": title_elem.text.strip(),
-                            "url": link_elem["href"],
-                            "source": f"blog_{blog['name'].lower().replace(' ', '_')}",
-                            "meta": {
-                                "content_type": "blog_article",
-                                "is_curated": True,
-                                "source_quality": 8  # Engineering blogs from top companies
-                            }
+                    # Extract URL
+                    link_elem = article.select_one(blog["link_selector"])
+                    if not link_elem:
+                        continue
+                        
+                    url = link_elem.get("href", "")
+                    if not url:
+                        continue
+                        
+                    # Handle relative URLs
+                    if not blog.get("is_abs_url", True) and not url.startswith(("http://", "https://")):
+                        base_url = blog.get("base_url", blog["url"])
+                        
+                        # Special case for Medium to fix relative URLs
+                        if "medium.com" in base_url and url.startswith("/@"):
+                            url = f"{base_url}{url}"
+                        # Regular handling for other relative URLs
+                        else:
+                            # Remove trailing slash from base_url if present
+                            if base_url.endswith("/") and url.startswith("/"):
+                                base_url = base_url[:-1]
+                            # Add slash to base_url if needed
+                            elif not base_url.endswith("/") and not url.startswith("/"):
+                                base_url = base_url + "/"
+                            url = base_url + url
+                    
+                    # Extract description if available
+                    description = ""
+                    if blog.get("description_selector"):
+                        desc_elem = article.select_one(blog["description_selector"])
+                        if desc_elem:
+                            description = desc_elem.text.strip()
+                    
+                    article_dict = {
+                        "title": title,
+                        "url": url,
+                        "source": f"blog_{blog['name'].lower().replace(' ', '_')}",
+                        "description": description,
+                        "meta": {
+                            "content_type": "blog_article",
+                            "is_curated": True,
+                            "source_quality": 8,  # Engineering blogs from top companies
+                            "blog_name": blog['name']
                         }
-                        results.append(article_dict)
-                
-                # Add similar extraction for other blogs
-                # (This would be expanded for each blog's unique structure)
+                    }
+                    results.append(article_dict)
+                    
+                except Exception as e:
+                    logger.warning(f"Error extracting article from {blog['name']}: {str(e)}")
+                    continue
         
         except Exception as e:
             logger.error(f"Error fetching articles from {blog['name']}: {str(e)}")
@@ -296,35 +432,252 @@ def discover_engineering_blog_articles() -> List[Dict]:
     logger.info(f"Found {len(results)} engineering blog articles")
     return results
 
-def discover_resources(query: str) -> List[Dict]:
+def discover_medium_articles(topics: List[str], limit: int = 5) -> List[Dict]:
     """
-    Main function to discover high-quality engineering management resources.
+    Discover articles from Medium using ONLY the Unofficial Medium API.
+    This function will handle both discovery and content extraction.
+    
+    Args:
+        topics: List of topics to search for
+        limit: Maximum number of articles per topic
+        
+    Returns:
+        List of article dictionaries
+    """
+    logger.info(f"Discovering Medium articles for topics: {topics}")
+    
+    # Check if API key is available
+    if not medium_api.MEDIUM_API_KEY:
+        logger.warning("MEDIUM_API_KEY not found in environment variables. Skipping Medium API discovery.")
+        return []
+    
+    # Use dedicated Medium API module for discovery
+    articles = medium_api.discover_medium_articles(topics, limit)
+    
+    # Process the articles here directly to avoid going through web scraping later
+    processed_articles = []
+    for article in articles:
+        try:
+            # Only include articles with API content
+            if "api_content" in article and article["api_content"]:
+                # Extract text from HTML
+                text = medium_api.extract_text_from_html(article["api_content"])
+                
+                # Only keep articles with substantial content
+                if len(text) > 200:  # Minimum content length threshold
+                    # Save text to separate file
+                    text_path = TEXT_DIR / f"medium_{article['medium_article_id']}.txt"
+                    with open(text_path, 'w', encoding='utf-8') as f:
+                        f.write(text)
+                    
+                    # Create fully processed article
+                    processed_article = article.copy()
+                    processed_article["text_path"] = str(text_path)
+                    processed_article["is_processed"] = True
+                    processed_article["extract_method"] = "medium_api_direct"
+                    
+                    # Remove api_content to save space but keep other metadata
+                    if "api_content" in processed_article:
+                        del processed_article["api_content"]
+                    
+                    processed_articles.append(processed_article)
+                    logger.info(f"Processed Medium article: {article.get('title', 'Untitled')}")
+                else:
+                    logger.warning(f"Skipping Medium article with insufficient content: {article.get('title', 'Untitled')}")
+            else:
+                logger.warning(f"Skipping Medium article without API content: {article.get('title', 'Untitled')}")
+                
+        except Exception as e:
+            logger.error(f"Error processing Medium article {article.get('title', 'Untitled')}: {str(e)}")
+    
+    logger.info(f"Discovered and processed {len(processed_articles)} Medium articles")
+    return processed_articles
+
+def discover_books(query: str) -> List[Dict]:
+    """
+    Discover relevant engineering and leadership books based on the query.
     
     Args:
         query: The search query
         
     Returns:
-        List of resource dictionaries
+        List of book resource dictionaries
     """
-    logger.info(f"Starting resource discovery for query: {query}")
+    logger.info(f"Discovering books for: {query}")
     
-    # Prepare search queries targeted to engineering management
-    academic_query = f"{query} management leadership engineering"
-    github_query = f"{query} engineering management handbook guide"
+    # Create a cache key for this query
+    cache_key = f"books_{hashlib.md5(query.encode()).hexdigest()}"
     
-    # Discover resources from different sources
-    arxiv_papers = discover_arxiv_papers(academic_query, max_results=20)
-    github_resources = discover_github_resources(github_query, min_stars=50)
-    blog_articles = discover_engineering_blog_articles()
+    # Check cache for recent results (< 30 days old - books change less frequently)
+    if cache_key in RESOURCE_CACHE:
+        cache_time = RESOURCE_CACHE[cache_key].get("timestamp", 0)
+        if time.time() - cache_time < 30 * 24 * 60 * 60:  # 30 days in seconds
+            logger.info(f"Using cached book results for {query}")
+            return RESOURCE_CACHE[cache_key].get("results", [])
     
-    # Combine all resources
-    all_resources = arxiv_papers + github_resources + blog_articles
+    # For now, return a curated list of engineering leadership books
+    # In the future, this could be expanded to use an API like Google Books or Open Library
+    curated_books = [
+        {
+            "title": "The Manager's Path",
+            "authors": ["Camille Fournier"],
+            "url": "https://www.oreilly.com/library/view/the-managers-path/9781491973882/",
+            "source": "curated_book",
+            "description": "A guide for tech managers from individual contributor to CTO",
+            "meta": {
+                "content_type": "book",
+                "is_curated": True,
+                "source_quality": 9,
+                "publication_year": 2017,
+                "publisher": "O'Reilly Media"
+            }
+        },
+        {
+            "title": "Staff Engineer: Leadership Beyond the Management Track",
+            "authors": ["Will Larson"],
+            "url": "https://staffeng.com/book",
+            "source": "curated_book",
+            "description": "A guide to the Staff Engineer role in technology organizations",
+            "meta": {
+                "content_type": "book",
+                "is_curated": True,
+                "source_quality": 9,
+                "publication_year": 2021,
+                "publisher": "Self-published"
+            }
+        },
+        {
+            "title": "An Elegant Puzzle: Systems of Engineering Management",
+            "authors": ["Will Larson"],
+            "url": "https://lethain.com/elegant-puzzle/",
+            "source": "curated_book",
+            "description": "Systems thinking applied to engineering management",
+            "meta": {
+                "content_type": "book",
+                "is_curated": True,
+                "source_quality": 9,
+                "publication_year": 2019,
+                "publisher": "Stripe Press"
+            }
+        },
+        {
+            "title": "Accelerate: The Science of Lean Software and DevOps",
+            "authors": ["Nicole Forsgren", "Jez Humble", "Gene Kim"],
+            "url": "https://itrevolution.com/book/accelerate/",
+            "source": "curated_book",
+            "description": "Building and Scaling High Performing Technology Organizations",
+            "meta": {
+                "content_type": "book",
+                "is_curated": True,
+                "source_quality": 9,
+                "publication_year": 2018,
+                "publisher": "IT Revolution Press"
+            }
+        },
+        {
+            "title": "The Phoenix Project",
+            "authors": ["Gene Kim", "Kevin Behr", "George Spafford"],
+            "url": "https://itrevolution.com/book/the-phoenix-project/",
+            "source": "curated_book",
+            "description": "A Novel about IT, DevOps, and Helping Your Business Win",
+            "meta": {
+                "content_type": "book",
+                "is_curated": True,
+                "source_quality": 8,
+                "publication_year": 2013,
+                "publisher": "IT Revolution Press"
+            }
+        }
+    ]
     
-    # Format resources for pipeline consumption
-    formatted_resources = []
-    for resource in all_resources:
-        # Already formatted properly by the discovery functions
-        formatted_resources.append(resource)
+    # Select books relevant to the query
+    # This is a simple keyword filtering approach - could be enhanced with NLP
+    relevant_books = []
+    query_terms = query.lower().split()
     
-    logger.info(f"Discovered {len(formatted_resources)} total resources")
-    return formatted_resources 
+    for book in curated_books:
+        # Check if any query term appears in the title or description
+        if any(term in book["title"].lower() or 
+               term in book.get("description", "").lower() 
+               for term in query_terms):
+            relevant_books.append(book)
+        # If no direct match, include books that match broader engineering leadership terms
+        elif ("engineering" in query.lower() or "leadership" in query.lower() or 
+              "management" in query.lower() or "career" in query.lower()):
+            relevant_books.append(book)
+    
+    # Cache the results
+    RESOURCE_CACHE[cache_key] = {
+        "timestamp": time.time(),
+        "results": relevant_books
+    }
+    save_resource_cache()
+    
+    logger.info(f"Found {len(relevant_books)} relevant books")
+    return relevant_books
+
+def discover_resources(query: str) -> List[Dict]:
+    """
+    Discover relevant high-quality resources for a given query.
+    
+    This function orchestrates resource discovery from multiple sources
+    including academic papers, books, repositories, and blogs.
+    
+    Args:
+        query: The search query
+        
+    Returns:
+        A list of discovered resources
+    """
+    logger.info(f"Discovering resources for: {query}")
+    
+    cache_key = f"discover_resources_{hashlib.md5(query.encode()).hexdigest()}"
+    
+    # Check cache for recent results
+    if cache_key in RESOURCE_CACHE:
+        cache_time = RESOURCE_CACHE[cache_key].get("timestamp", 0)
+        if time.time() - cache_time < 24 * 60 * 60:  # 1 day in seconds
+            logger.info(f"Using cached discover_resources results for {query}")
+            return RESOURCE_CACHE[cache_key].get("data", [])
+    
+    # Resources will be a list of dictionaries with information about each resource
+    discovered_resources = []
+    
+    # 1. Discover academic papers
+    papers = discover_arxiv_papers(query, max_results=20)
+    discovered_resources.extend(papers)
+    logger.info(f"Added {len(papers)} academic papers")
+    
+    # 2. Discover GitHub repositories
+    repos = discover_github_resources(query, min_stars=50)
+    discovered_resources.extend(repos)
+    logger.info(f"Added {len(repos)} GitHub repositories")
+    
+    # 3. Discover engineering blogs
+    blogs = discover_engineering_blog_articles()
+    discovered_resources.extend(blogs)
+    logger.info(f"Added {len(blogs)} blog articles")
+    
+    # 4. Discover Medium articles using our specialized module
+    try:
+        medium_articles = medium_discovery.run_medium_discovery(query, max_articles=10)
+        # These articles are already processed with content extracted, so we can add them directly
+        discovered_resources.extend(medium_articles)
+        logger.info(f"Added {len(medium_articles)} Medium articles")
+    except Exception as e:
+        logger.error(f"Error discovering Medium articles: {str(e)}")
+    
+    # 5. Discover books
+    books = discover_books(query)
+    discovered_resources.extend(books)
+    logger.info(f"Added {len(books)} books")
+    
+    # Cache the results
+    RESOURCE_CACHE[cache_key] = {
+        "timestamp": time.time(),
+        "data": discovered_resources
+    }
+    save_resource_cache()
+    
+    logger.info(f"Discovered {len(discovered_resources)} total resources")
+    return discovered_resources 

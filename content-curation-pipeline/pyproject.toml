@@ -17,6 +17,10 @@ dependencies = [
     "arxiv>=1.4.7",
     "PyPDF2>=3.0.0",
     "newspaper3k>=0.2.8",
+    "lxml_html_clean>=0.1.0",
+    "httpx>=0.24.0",
+    "html2text>=2020.1.16",
+    "lxml>=4.9.0",
 ]
 
 [build-system]
