@@ -239,64 +239,73 @@ class ContentPipeline:
         """
         Discover content from all sources in parallel.
         
-        Args:
-            query: Search query (overrides config queries)
-            limit_per_source: Maximum items per source (overrides config limits)
+        This method executes content discovery across all sources simultaneously using ThreadPoolExecutor,
+        which significantly improves performance for I/O-bound operations like API calls.
         
+        Args:
+            query: Optional query string to use for all sources. If None, uses the source's seed queries.
+            limit_per_source: Optional limit on the number of items to retrieve from each source.
+            
         Returns:
-            List of discovered content items
+            A list of ContentItem objects discovered from all sources.
         """
         all_items = []
-        source_configs = {source_id: self.config.sources[source_id] for source_id in self.sources}
         
-        # Function to process a single source
-        def process_source(source_data):
-            source_id, source = source_data
-            source_items = []
+        def process_source(source_name, source):
             try:
-                source_config = source_configs[source_id]
+                items = []
+                source_config = self.config.sources[source_name]
                 
                 # Use provided query or get from config
-                queries = [query] if query else source_config.seed_queries
+                if query:
+                    queries = [query]
+                else:
+                    queries = source_config.seed_queries
+                
+                # Use provided limit or get from config
                 source_limit = limit_per_source or source_config.limit
                 
                 # Process each query
                 for q in queries:
-                    logger.info(f"Discovering content from {source_id} with query: {q}")
-                    items = source.discover(q, source_limit)
-                    source_items.extend(items)
-                    logger.info(f"Found {len(items)} items from {source_id} for query: {q}")
+                    logger.info(f"Discovering content from {source_name} with query: {q}")
+                    found_items = source.discover(q, source_limit)
+                    logger.info(f"Found {len(found_items)} items from {source_name} for query: {q}")
+                    items.extend(found_items)
                 
-                # Process custom URLs
-                if source_config.custom_urls:
-                    logger.info(f"Processing {len(source_config.custom_urls)} custom URLs for {source_id}")
-                    for url in source_config.custom_urls:
+                # Process custom URLs if available
+                custom_urls = source_config.custom_urls
+                if custom_urls:
+                    logger.info(f"Processing {len(custom_urls)} custom URLs for {source_name}")
+                    for url in custom_urls:
                         try:
                             if source.is_source_url(url):
                                 item = source.process_url(url)
                                 if item:
-                                    source_items.append(item)
+                                    items.append(item)
                         except Exception as e:
-                            logger.error(f"Error processing custom URL {url}: {str(e)}")
+                            logger.error(f"Error processing URL {url}: {str(e)}")
                 
-                logger.info(f"Total items from {source_id}: {len(source_items)}")
-                return source_items
+                logger.info(f"Total items from {source_name}: {len(items)}")
+                return items
                 
             except Exception as e:
-                logger.error(f"Error discovering content from {source_id}: {str(e)}")
+                logger.error(f"Error discovering content from {source_name}: {str(e)}")
                 return []
         
-        # Use ThreadPoolExecutor to process sources in parallel
+        # Execute all sources in parallel
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = [executor.submit(process_source, (source_id, source)) 
-                      for source_id, source in self.sources.items()]
+            future_to_source = {
+                executor.submit(process_source, source_name, source): source_name 
+                for source_name, source in self.sources.items()
+            }
             
-            for future in concurrent.futures.as_completed(futures):
+            for future in concurrent.futures.as_completed(future_to_source):
+                source_name = future_to_source[future]
                 try:
                     items = future.result()
                     all_items.extend(items)
                 except Exception as e:
-                    logger.error(f"Error in parallel processing: {str(e)}")
+                    logger.error(f"Error processing source {source_name}: {str(e)}")
         
         return all_items
     

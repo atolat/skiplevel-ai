@@ -232,15 +232,22 @@ Plus source-specific parameters:
 The pipeline supports parallel processing of content sources for improved performance:
 
 - **Parallel Mode**: Use the `--parallel` flag to enable parallel content discovery
-- **Performance Gains**: Significantly reduces runtime when using multiple content sources (up to 70% faster)
+- **Performance Gains**: Significantly reduces runtime when using multiple content sources (up to 75% faster)
 - **Implementation**: Uses Python's `concurrent.futures.ThreadPoolExecutor` for I/O-bound API calls
 - **Best For**: Configurations with multiple sources and multiple queries per source
 
-Example of performance improvement:
+Examples of performance improvement:
 
 ```
-Sequential: 30.90 seconds
-Parallel:    8.96 seconds
+Small run (limit=2):
+  Sequential: 30.90 seconds
+  Parallel:    8.96 seconds
+  Improvement: 71%
+
+Larger run (limit=5):
+  Sequential: 61.06 seconds
+  Parallel:   16.15 seconds
+  Improvement: 74%
 ```
 
 This is most effective with API-based sources that spend time waiting for external responses.

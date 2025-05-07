@@ -4,7 +4,7 @@ I’m a software developer with 3 years of experience, and I’m considering shi
 
 ## Comments
 
-### Comment 1 by u/spicypixel (215 points)
+### Comment 1 by u/spicypixel (213 points)
 
 If you’re more worried about the salary bands than getting good enough at anything that a company wants to pay you, I suspect you might struggle to keep up.
 
@@ -12,13 +12,13 @@ Never met anyone in the devops game who was able to cope with the stress and con
 
 If you’re not a tinkerer that likes to see behind the complexity curtain you probably won’t enjoy devops at all, would you prefer a role that pays more that you dislike?
 
-#### Reply 1 by u/pr1ntscreen (65 points)
+#### Reply 1 by u/pr1ntscreen (66 points)
 
 > Never met anyone in the devops game who was able to cope with the stress and constant pain unpicking the shit thrown at us if there wasn’t an intrinsic love of getting to know how something works and fixing it.
 
 Hi, I've worked 7-8 years in devops, and I'm perfectly fine with my job. Good work life balance, and nothing happens when I'm oncall. Just to bring some perspective :) "Happy customer never yells" and all
 
-#### Reply 2 by u/FISHMANPET1 (28 points)
+#### Reply 2 by u/FISHMANPET1 (29 points)
 
 Nothing here is incompatible with good work-life balance. I love my job, I love that everyday is a new challenge and a new puzzle I get to piece together. I love to dig into something and figure out how it works. And then at the end of the day I go home and do something else. (He says, posting on Reddit before getting dressed for the day).
 
@@ -26,7 +26,7 @@ DevOps has a lot of ambiguity, and a wide array of tasks. Are you able to quickl
 
 Nothing else matters. You can't compare career progression and salary bands between two jobs if you're only good at one of them. Pick the career you're better at, that's where you'll have more success.
 
-#### Reply 3 by u/iminalotoftrouble (7 points)
+#### Reply 3 by u/iminalotoftrouble (6 points)
 
 This is spot on. Expanding on OPs point since other commenters are making an incorrect assumption, having an 'intrinsic love of getting to know how something works' != Working extra hours, being obsessive about your role, sacrificing yourself for the bottom line, unhealthy work-life balance, etc. 
 
@@ -40,7 +40,7 @@ A more curious person might ask "why aren't people responding? Is PagerDuty not 
 
 The former is 100% right, this is an ownership problem and it's part of the job. The latter wants to find the root cause(s) of the problem, not exclusively address the symptom.
 
-#### Reply 4 by u/thekingofcrash7 (35 points)
+#### Reply 4 by u/thekingofcrash7 (33 points)
 
 This is such an unhealthy outlook. It’s a job people. Stop making it your life.
 
@@ -52,12 +52,12 @@ Very well said, basically only thing that kept me interested in my anti devops-d
 
 There is a non zero percent of devops where you get to build internal heroku. If you get to do that type of stuff it can be as chill as development. It’s stressful when you are working on tickets / on call but I imagine it has its own reward.
 
-### Comment 2 by u/pkayboi (96 points)
+### Comment 2 by u/pkayboi (93 points)
 
 I had chose devops because i love to discover stuff.... research, love to talk a lot and i am big fan of detective stuff....  
 Here checking issues with logs and automating stuff... Feeling proud when hundreds of people use CICD i wrote and they feel happy when in minutes their changes get reflected on PROD! ahaaaa best feeling ever!
 
-#### Reply 1 by u/imadade (8 points)
+#### Reply 1 by u/imadade (6 points)
 
 definately!!
 
@@ -65,7 +65,7 @@ i always wonder how devops is like at bigtech tho (amzn,meta,google,mfst, etc) c
 
 Are they more systems? hybrid?
 
-### Comment 3 by u/ArieHein (34 points)
+### Comment 3 by u/ArieHein (33 points)
 
 None.
 Be a farmer. Grow food.
@@ -84,23 +84,23 @@ how many years of exp you have?
 
 Food production is highly automated already. I saw Chinese bots gathering apples and peaches from trees (you can imagine how complex this task is), and Russians created a fully-autmonus grain harvester that doesn't require any human interaction at all. I think food production will be conducted completely automated this generation, 20-30 years max
 
-### Comment 4 by u/Beginning_Teach_1554 (31 points)
+### Comment 4 by u/Beginning_Teach_1554 (32 points)
 
 Probably software developer will always have a higher earning potential - because after all software developer is the person who actually produces product whereas DevOps is a supporting (infrastructure) role
 
 That being said, software devs are also much more often outsourced as opposed to devops and have to live with annoying scrum meetings that devops guys are often exempt from
 
-#### Reply 1 by u/PangolinZestyclose30 (6 points)
+#### Reply 1 by u/PangolinZestyclose30 (5 points)
 
 > Probably software developer will always have a higher earning potential - because after all software developer is the person who actually produces product whereas DevOps is a supporting (infrastructure) role
 
 Sad, but true. DevOps = cost center, SWE = value creation. (true only in software / product companies. If you're building internal software projects, you're a cost center as SWE as well). Companies are generally trying to lower the costs and invest into the value creating parts of the company.
 
-#### Reply 2 by u/beeeffgee (5 points)
+#### Reply 2 by u/beeeffgee (4 points)
 
 What would software devs deploy to without infrastructure? I routinely see DevOps salaries far exceeding that of developers at the same points in their careers.
 
-#### Reply 3 by u/AlterTableUsernames (0 points)
+#### Reply 3 by u/AlterTableUsernames (-1 points)
 
 What we call "DevOps" is just a niche IT Developer. SWEs will always have the edge, because they can do anything what IT does or pick it up swiftly, if neccessary.
 
@@ -108,11 +108,11 @@ What we call "DevOps" is just a niche IT Developer. SWEs will always have the ed
 
 At my company they outsourced both roles, but they lost a lot of money with the Indian development team, but kept the one Indian DevOps guy.
 
-### Comment 5 by u/cocoaLemonade22 (12 points)
+### Comment 5 by u/cocoaLemonade22 (13 points)
 
 Neither. Whichever one is impacted will begin pivoting to the other.
 
-### Comment 6 by u/dariusbiggs (23 points)
+### Comment 6 by u/dariusbiggs (19 points)
 
 Software Engineering is the easier of the two jobs, less stress, less panic.
 
@@ -124,11 +124,11 @@ They're both going to be around for many many more decades.
 
 DevSecOps is considered a step up from Software Engineer and is the better path towards Software Architect or Solution Architect.
 
-### Comment 7 by u/Zestyclose-Ad7944 (6 points)
+### Comment 7 by u/Zestyclose-Ad7944 (5 points)
 
 I personally think it's more future-proof to know both, knowing DevOps stuff will make you a better software engineer and vice-versa. From my last few years of work experience, there is a trend to let software developers owning both the code + infrastructure as well as incident support. It makes sense, as it gives developers incentive to implement better error handing or even self-healing features so they can avoid too much support work. In return, it often comes with better compensation.
 
-### Comment 8 by u/testo100 (6 points)
+### Comment 8 by u/testo100 (7 points)
 
 Either if you’re good enough. If not then both are at risk. Devops tools can technically be automated that devops engineer will be just a button clicker on AWS that reads the doc. However same can go for a SWE. Skilled people will be still in demand but for different reasons.
 
@@ -280,7 +280,7 @@ That said, I always considered Devops a philosophy more than a dedicated career 
 
 People work in devops because they fear leetcode. Gitgud!
 
-### Comment 37 by u/gowithflow192 (-6 points)
+### Comment 37 by u/gowithflow192 (-7 points)
 
 Neither but remember that even now in these tough times, the DevOps Engineer tasks (automation of app deployment, site reliability) are just being pushed onto existing devs who already have their primary duties of developing software. 
 
@@ -292,7 +292,7 @@ Both jobs are screwed long term by AI. We might even see a hold out of some DevO
 
 Another AI doomer
 
-### Comment 38 by u/Fearless_Weather_206 (-5 points)
+### Comment 38 by u/Fearless_Weather_206 (-4 points)
 
 Ai may put both out of a job
 
@@ -315,7 +315,7 @@ Which One Has Better Growth?
 
 If you’re considering making the switch, I’d highly recommend reading [this blog](https://apiconnects.co.nz/devops-engineers-vs-software-engineers/).
 
-#### Reply 1 by u/Sir_Lucilfer (5 points)
+#### Reply 1 by u/Sir_Lucilfer (4 points)
 
 Lol, tell me this aint AI answering this Man’s question?
 

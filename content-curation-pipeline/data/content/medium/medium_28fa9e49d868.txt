@@ -1,0 +1,100 @@
+Engineering Leadership: Software, Silver Bullets, and Common Sense
+
+There is no single development, in either technology or management technique, which by itself promises even one order of magnitude improvement within a decade in productivity, in reliability, in simplicity. ~ Frederick P. Brooks, Jr.
+
+In 1986, Fred Brooks wrote an essay entitled "No Silver Bullet", which was published in the classic tech book The Mythical Man-Month.
+
+While the world has changed a great deal since the book was written, much of it remains incredibly relevant today - and it's still a worthwhile read for any engineering leader. We still battle with the same issues that plagued our industry decades ago.
+
+The premise of the No Silver Bullet essay is simple - there is no single "perfect" solution to all software engineering challenges, in either technology or management techniques. The nature of software development is that it is inherently complex and will always be somewhat difficult.
+
+However, as engineers and engineer leaders, shiny new solutions are attractive. Who wouldn't want to run perfect projects and build perfect software? And why are there no silver bullets?
+
+What is complexity?
+
+Before we delve into the problems of silver bullets, let's unpack what I mean by "complex".
+
+Brooks referred to two types of complexity in software engineering: essential complexity and accidental complexity¹.
+
+Essential complexity refers to the inherent complexity of whatever problem we are trying to solve. There's nothing we can do to reduce that. If you are building a banking system that has five requirements to cater for five different types of transactions, those five requirements are essential. They introduce complexity, and there's no way to get away from that.
+
+Accidental complexity refers to what I like to think of as the problems we introduce for ourselves. Your choice of programming language, architecture style, tools, branching strategy, development methodology all add some "self-inflicted" complexity and cognitive load.
+
+Over the years, the tooling at our disposal has evolved greatly, and some of the accidental complexity has been reduced - i.e. if you use Java or C# instead of C++, you don't have to deal with memory management. That's less accidental complexity right there.
+
+Which brings us to silver bullets.
+
+The Promise of Silver Bullets
+
+In No Silver Bullet, Brooks highlighted a couple of different technological advances that could be seen as potential silver bullets: high - level programming languages, object-oriented programming, AI, graphical programming, and others². Today, all of those are commonplace, and yet, software development is still not easy - so he was right.
+
+Outside of the items in the list above, over the last 40 years, we've had a massive influx of people and organizations telling us what to do and how to do it.
+
+We've seen the rise of Agile methodologies (e.g. Scrum), formal architecture frameworks (e.g. TOGAF), processes inspired by succesful companies (e.g. the Spotify model), new architectural styles (e.g. microservices), cloud computing (e.g. AWS and Azure), and development practices (like TDD). Strong proponents of these will try to convince you that they have the solution to all your problems.
+
+I'm not going to call any of these snake oil, since I believe that there is a lot of value in them. I see everything as a tool, and I believe it's great to keep as many tools as you can in your "toolbox" so you can take them out and use them when you need to. The problem arises when we assume that they'll always solve all problems within our context.
+
+Software engineering is not physics; there are no hard, immutable laws that will always hold true.*
+
+*Of course, if you work in a heavily regulated industry such as financial services, there are actual laws to abide by, but those relate to the industry; they are not exclusive to software.
+
+Signs of trouble
+
+There are a few tell-tale signs that you or your team are at risk of latching on to a silver bullet (or that you've done so already).
+
+Tools
+
+A statement like "I cannot do X, because Jira forces me to do Y" is an instant red flag - this sounds like a process that is being dictated by a tool. Remember, the tools are there to serve you, not the other way around. Jira (nor any other tool) should stand in the way of you getting work done.
+
+If the name of another company repeatedly comes up in conversation as a model of how you should be doing things, ask yourself if their methods are applicable in your context? Someone might say things like "when I was at 
+
+, we used 
+
+ and we knew exactly what was happening with 5000 transactions every second".
+
+If you find yourself in a startup with 20 users, you have to ask yourself if it's worth spending vast amounts of money on this particular tool, or if you can find a more appropriate solution for your context.
+
+Process
+
+Similar to the previous example, if someone is pushing to implement something like the "Spotify model" - ask yourself whether that applies to you. Are you Spotify, are you similar to Spotify, or are you fundamentally different? As with all of these examples, I'm not saying there isn't value in it - there is, but is it appropriate to your context?
+
+In my experience, poorly implemented Agile methodologies are some of the most likely silver bullet candidates. If you pick up some general grumpiness from your team - things like "I hate these 30 minute standups every morning" - try to uncover the detail and figure out where the frustration is coming from.
+
+Perhaps, instead of working towards collaboration in your teams, your standups have inadvertently ended up consuming 30 minutes of everyone's time for a unilateral review of a status spreadsheet, which is not a value adding activity at all.
+
+If someone says "but the methodology says I must do X", but all X does is ultimately make everyone's lives difficult, common sense dictates that you should question your approach. In this case, to borrow from Lean terminology, poorly implemented Agile processes actually introduce muda (waste) into your organization and make things worse.
+
+Architecture
+
+If your delivery time spikes because of the complexity involved in implementing a single new feature, go and look for silver bullets in your architecture - are your architectural decisions justified or is it over-complicated?
+
+Do you really need complex distributed microservices architecture that is hard to test, deploy, and maintain for a simple application? Or did you get overly excited by a "great" new architectural style that's actually completely inappropriate?
+
+(For future reference, Neal Ford and Mark Richards have an excellent star rating system to evaluate and compare architecture styles: https://www.developertoarchitect.com/resources.html)
+
+Also, watch out for a form of recency bias - if you are faced with a ton of bugs and your first thought is "Hey, I learned about Test-Driven Development just last week, that will be the perfect solution for this problem!", you should pause to reflect.
+
+TDD might be an appropriate solution, but before you blindly mandate a new approach for your team, make sure you understand the context within which it will be used and the problem you're solving. If the bugs originate from unclear requirements, TDD in isolation is not a solution.
+
+Ultimately, to come back to complexity - essential complexity always exists, but if you chase after silver bullets and become too rigid in your thinking, you may well end up introducing more accidental complexity. Be pragmatic, and use common sense to do what actually works for your team.
+
+In Summary
+
+The advice I'd like you to take away from this article is as follows:
+
+Build out your toolbox and keep as many useful things as you can in there. Don't be a one-trick pony. Whether you are an engineer or an engineering leader, be versatile and pragmatic.
+
+No single tool/process/approach will fix all of your problems, and you don't have to be a purist and do everything "by the book" - you can draw from your toolbox and adapt processes and tools to work for you.
+
+If you follow a particular process or use a particular tool, remember to pause and reflect on why you are using it and how it adds value in your world. "We've always done it this way" is not a good reason. Use your common sense.
+
+If you use any particular tools, make sure you use the tool in way that works for you. Don't shoot yourself in the foot by having a tool dictate how you work.
+
+Everything is a trade-off. Choose the trade-offs that you are willing to accept and be cognisant about the cost (in terms of time, effort, complexity, etc.).
+
+In conclusion, remember that there are no silver bullets. Where there is always room for improvement and opportunities to reduce accidental complexity, there is essential complexity in software development and no tool or process will ever get rid of that.
+
+Disclaimer: As always, the views expressed in this post are my own.
+
+[1]: Frederick P. Brooks, Jr., The Mythical Man-Month: Essays on Software Engineering (Anniversary Edition; Addison-Wesley, 1995), 182.
+[2]: Frederick P. Brooks, Jr., The Mythical Man-Month: Essays on Software Engineering (Anniversary Edition; Addison-Wesley, 1995), 188–196.

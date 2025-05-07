@@ -1,217 +1,217 @@
-I have a confession to make after 15 
+I have a confession to make after 15
 years as a developer including a few as
-a principal engineer I have decided 
+a principal engineer I have decided
 to become an engineering manager.
-But before you hit the unsubscribe 
+But before you hit the unsubscribe
 button, please let me explain:
-there were some questions in my head that made 
+there were some questions in my head that made
 me consider this path and after 6 months in the
-role I have gathered some learnings that I think 
+role I have gathered some learnings that I think
 might be helpful for you if you're considering
-this path or if you want to stay far away from 
+this path or if you want to stay far away from
 it and today I want to share them with you.
 Welcome to A Manager' Story...
 I mean, A Dev' Story
-The role name and responsibilities 
+The role name and responsibilities
 may differ a bit between different
-companies and the execution and 
+companies and the execution and
 style, as many leadership roles
-is heavily influenced by the person doing 
+is heavily influenced by the person doing
 it but I will use Julie Zhou's definition:
-"The job of a manager is to get better outcomes 
+"The job of a manager is to get better outcomes
 from a group of people working together"
-In the case of the Engineering Manager 
+In the case of the Engineering Manager
 or EM, the role combines technical
-expertise with managerial skills to lead 
+expertise with managerial skills to lead
 engineering projects and teams effectively.
-There are three things managers think about 
+There are three things managers think about
 every day: the first one is the "Purpose" or
-the why. Is making sure that your team knows what 
+the why. Is making sure that your team knows what
 success looks like and cares about achieving it.
 Second one is "People" or who. Is making sure
-we have the right people, the right 
+we have the right people, the right
 skills and people are motivated.
-The third one is the "Process" 
+The third one is the "Process"
 or the how. Is spending just
 enough time coordinating what needs to get done.
 In my experience, as you grow,
-the truly big changes in technology require 
+the truly big changes in technology require
 a lot of coordination, clear communication,
 leadership and of course technology.
 Coding becomes the "easy part",
-convincing others to get behind an idea is 
+convincing others to get behind an idea is
 more time consuming but also more impactful.
-There's a few resources that helped 
+There's a few resources that helped
 me look into this and consider if I
-wanted to take this path. I leave 
+wanted to take this path. I leave
 the resources in the description.
-The first one is this Principles 
+The first one is this Principles
 You survey where it's quite useful
 to see your work style based on your strengths.
-In my case I'm an Orchestrator: I'm quite 
+In my case I'm an Orchestrator: I'm quite
 good at connecting things together from
-different perspectives which is 
+different perspectives which is
 a good skill to have as an EM.
-I'm also very eager to see the gaps in 
+I'm also very eager to see the gaps in
 my skills and learn new ones. For this,
-Engineering Ladders site helped 
+Engineering Ladders site helped
 me visualize and communicate the
-overlaps and skills between my role as 
+overlaps and skills between my role as
 a Tech Lead or Principal Engineer and
-potentially as an Engineering Manager so 
+potentially as an Engineering Manager so
 I could look to expand in a specific area.
-Finally, while learning new skills always has a 
+Finally, while learning new skills always has a
 long-term impact most decisions aren't permanent.
-There's this idea of the Engineer/Manager Pendulum 
+There's this idea of the Engineer/Manager Pendulum
 by Charity Major which explains that the best
-developers and the best managers have either done 
+developers and the best managers have either done
 or switched from time to time between these roles.
-And in 2024 with the end of the 0% interest 
+And in 2024 with the end of the 0% interest
 rate contributors with manager experience
-also provide more career opportunities 
+also provide more career opportunities
 as analyzed by the Pragmatic Engineer.
-If you're considering becoming a manager you 
+If you're considering becoming a manager you
 may have heard some potential challenges like
-the number of meetings increases or that 
+the number of meetings increases or that
 it's complex to change the focus into people.
 Some of these challenges I knew when I was
-thinking about making the 
+thinking about making the
 change but others I didn't.
-In my experience coming from a Principal 
+In my experience coming from a Principal
 Engineer role the number of meetings didn't
-change as much. Other things I knew or imagined 
+change as much. Other things I knew or imagined
 but I struggled to actually internalize them.
 For example, as a Principal Engineer I cared about
-the team's wellness but as an 
+the team's wellness but as an
 EM I'm responsible for them.
-During my first six months I experienced 
+During my first six months I experienced
 some pains and learnings I did not expect.
-The first one is solving problems instead 
+The first one is solving problems instead
 of coaching or explaining versus inspiring.
-My whole career has been about solving problems 
+My whole career has been about solving problems
 and getting things done so when someone comes to
-me with a problem, either technology wise or 
+me with a problem, either technology wise or
 people wise the first thing that I do is to
-try to think on potential solutions instead of 
+try to think on potential solutions instead of
 focusing on helping them get to the solution.
-It sounds easy but I have struggled a 
+It sounds easy but I have struggled a
 lot with this one especially when I have
 limited time and I have other things to focus on.
 The role changes from explaining to inspiring.
-Second thing is delegating. From 
+Second thing is delegating. From
 The Making of a Manager book there
 are two things to consider when delegating:
-What is important to the organization and 
+What is important to the organization and
 What can you do better than anyone else.
-For the things your report is equal or better than 
+For the things your report is equal or better than
 you, you should delegate and for the things that
-you are better, unless they are the most 
+you are better, unless they are the most
 important you should delegate and coach.
 This is something that I have struggled
-with especially for things that I really 
+with especially for things that I really
 enjoy doing or that I'm really good at.
-And also, people don't like to 
+And also, people don't like to
 get delegated things that others
-don't want so for many things that 
+don't want so for many things that
 I want to delegate I need to match
-it with the personal preferences, 
+it with the personal preferences,
 skills or growth opportunities.
-Third, knowing myself and being 
+Third, knowing myself and being
 comfortable with being vulnelable..
-Third, knowing myself and being comfortable 
+Third, knowing myself and being comfortable
 with being vulnereble... vulnerable publicly.
-Your strengths and weaknesses 
+Your strengths and weaknesses
 are amplified as an EM.
-Among the reasons I wanted to become an 
+Among the reasons I wanted to become an
 EM was also to improve my weaknesses,
-like being more decisive and delegating more. 
+like being more decisive and delegating more.
 But this is something I've also struggled with
-because there are now more decisions to make with 
+because there are now more decisions to make with
 more unclear boundaries and longer feedback loops.
 It can feel lonely to be an example or leader to
-other sometimes when you're are 
+other sometimes when you're are
 struggling with some situations.
 Things like:
-if I'm not sure about the path, how 
+if I'm not sure about the path, how
 will the team take that insecurity?
-will it cause more confusion or 
+will it cause more confusion or
 unnecessary stress, for example?
 Or how to deal with misalignment with other
-leaders or some frustrations 
+leaders or some frustrations
 without poisoning the team?
-Retros and one-to-ones become 
+Retros and one-to-ones become
 great tools for this and I have
-found that sharing my pain publicly 
+found that sharing my pain publicly
 creates more trust with my reports,
-with my manager and my peers, 
+with my manager and my peers,
 and also helps my mental health.
-One thing that I've learned is 
+One thing that I've learned is
 that by moving from contributor
-to manager I now see interactions that 
+to manager I now see interactions that
 I wasn't paying attention to before.
-Just switching from being the one participating 
+Just switching from being the one participating
 more in discussions to listening more and
-participating in other forums has opened me to 
+participating in other forums has opened me to
 see other perspective that I was blind to before.
-If you're considering becoming 
+If you're considering becoming
 an Engineering Manager here are
 some tips from my short tenure in the role.
-First, know yourself do some 
+First, know yourself do some
 self- knowledge exercises.
-For example, are you comfortable dealing 
+For example, are you comfortable dealing
 with your weaknesses more publicly? or,
-what strengths are you going to be using 
+what strengths are you going to be using
 to help you in the first few months?
 Remember everything you do will get amplified now.
 Second, focus on one thing at a time.
-You will probably see many 
+You will probably see many
 things that you would like
-to improve but it's impossible 
+to improve but it's impossible
 to tackle all of them at once.
 Many tasks have unclear boundaries and it takes
-more time to see the effects of 
+more time to see the effects of
 your actions. Like, for example,
-when do do you know that the long-term vision 
+when do do you know that the long-term vision
 worked and when do you stop working on it.
-Switching Focus too much can also leave you 
+Switching Focus too much can also leave you
 confused about what has worked and what hasn't.
-And you cannot solve these issues alone so 
+And you cannot solve these issues alone so
 make sure that you involve the team on those.
 Third, care about people and rely on others.
-One of the major pressures that I get as a 
+One of the major pressures that I get as a
 manager is that people rely on me. Caring
-about others wellbeinmg and growth can put 
+about others wellbeinmg and growth can put
 a lot of pressure on you and it's draining.
 If you don't spend the effort and focus
-on them you risk wasting people's time, 
+on them you risk wasting people's time,
 careers, efforts and company resources.
-Transitioning into a manager role 
+Transitioning into a manager role
 can be very stressful (or at least
-it has been for me) and it's better 
+it has been for me) and it's better
 to do it with the most information.
-If you're looking for more resources I have 
+If you're looking for more resources I have
 put some in the description section and now is
-your turn do you want to become an Engineering 
+your turn do you want to become an Engineering
 Manager? or, if you're an Engineering Manager,
-what tips do you have for someone 
+what tips do you have for someone
 considering changing or starting in the role?
-I'll read you in the comments 
+I'll read you in the comments
 thank you for watching!
-Staying technical is important even 
+Staying technical is important even
 if you take the management path there
-are many resources that can help you 
+are many resources that can help you
 keep your technical skills up to date.
 Today I want to tell you about Code Crafters.
-Code Crafters create advanced level programming 
+Code Crafters create advanced level programming
 challenges for software Engineers. These are
-very complete and in-depth and the content 
+very complete and in-depth and the content
 and approaches are reviewed by top talent.
-They have great Hands-On tutorials like build 
+They have great Hands-On tutorials like build
 your own Redis or build your own HTTP server.
 You can also improve your programming language
-skills with one of the more than 
+skills with one of the more than
 15 trainings focused on language.
-I've partnered with them and you can get 
+I've partnered with them and you can get
 40% off using this link.
 It's also in the description.
 Happy hacking!
