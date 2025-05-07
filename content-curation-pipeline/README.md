@@ -74,6 +74,16 @@ content-curation-pipeline/
    pip install -e .
    ```
 
+### Git Configuration
+
+The repository includes a `.gitignore` file configured to:
+
+- Ignore all data files in the `data/` directory to avoid committing cached data, PDFs, and generated content
+- Preserve the directory structure with empty `.gitkeep` files
+- Exclude development artifacts, virtual environments, and IDE-specific files
+
+This ensures that data generated during pipeline execution won't be committed to version control, keeping the repository size manageable while still maintaining the required directory structure.
+
 ### Environment Setup
 
 Create a `.env` file with the required API keys:
