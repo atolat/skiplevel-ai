@@ -36,6 +36,8 @@ def parse_args():
     parser.add_argument('--debug', action='store_true', help='Enable debug logging')
     parser.add_argument('--no-eval', action='store_true', help='Disable content evaluation')
     parser.add_argument('--parallel', action='store_true', help='Enable parallel processing of sources')
+    parser.add_argument('--dual-eval', action='store_true', help='Use dual perspective evaluation (engineering manager and staff engineer)')
+    parser.add_argument('--parallel-eval', action='store_true', help='Enable parallel processing for evaluations')
     
     return parser.parse_args()
 
@@ -59,11 +61,19 @@ def main():
             data_dir=data_dir
         )
         
-        # Disable evaluation if requested
+        # Configure evaluation settings
         if args.no_eval and pipeline.config.evaluation.enabled:
             logger.info("Disabling content evaluation as requested")
             pipeline.config.evaluation.enabled = False
-        
+        elif args.dual_eval and pipeline.config.evaluation.enabled:
+            logger.info("Enabling dual perspective evaluation")
+            pipeline.config.evaluation.method = "dual_perspective"
+            
+        # Track if we're using parallel evaluation
+        parallel_eval = args.parallel_eval
+        if parallel_eval:
+            logger.info("Using parallel processing for evaluations")
+            
         # Clean cache if requested
         if args.clean:
             logger.info("Cleaning cache...")
@@ -76,8 +86,13 @@ def main():
         # Run pipeline
         logger.info(f"Running pipeline with query: {args.query or 'using config seed queries'}")
         if args.parallel:
-            logger.info("Using parallel processing mode")
-        results = pipeline.run(query=args.query, limit_per_source=args.limit, parallel=args.parallel)
+            logger.info("Using parallel processing mode for discovery")
+        results = pipeline.run(
+            query=args.query,
+            limit_per_source=args.limit,
+            parallel=args.parallel,
+            parallel_eval=args.parallel_eval
+        )
         
         # Log results
         if "error" in results:
@@ -105,8 +120,21 @@ def main():
         # Print evaluation stats if available
         if "evaluations" in results and results["evaluations"]:
             eval_count = len(results["evaluations"])
-            avg_score = sum(e.get("score", 0) for e in results["evaluations"]) / eval_count if eval_count > 0 else 0
-            logger.info(f"Evaluated {eval_count} items with average score: {avg_score:.2f}")
+            
+            if pipeline.config.evaluation.method == "dual_perspective":
+                # For dual perspective, we have manager and staff scores
+                avg_manager_score = sum(e.get("raw_evaluation", {}).get("manager_score", 0) for e in results["evaluations"]) / eval_count if eval_count > 0 else 0
+                avg_staff_score = sum(e.get("raw_evaluation", {}).get("staff_score", 0) for e in results["evaluations"]) / eval_count if eval_count > 0 else 0
+                avg_score = sum(e.get("evaluation", {}).get("score", 0) for e in results["evaluations"]) / eval_count if eval_count > 0 else 0
+                
+                logger.info(f"Evaluated {eval_count} items with:")
+                logger.info(f"  - Average Manager Score: {avg_manager_score:.2f}/10")
+                logger.info(f"  - Average Staff Engineer Score: {avg_staff_score:.2f}/10")
+                logger.info(f"  - Overall Average Score: {avg_score:.2f}/10")
+            else:
+                # Standard evaluation
+                avg_score = sum(e.get("evaluation", {}).get("score", 0) for e in results["evaluations"]) / eval_count if eval_count > 0 else 0
+                logger.info(f"Evaluated {eval_count} items with average score: {avg_score:.2f}/10")
             
         return 0
         

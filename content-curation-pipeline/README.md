@@ -22,6 +22,14 @@ It uses a configuration-based approach to customize content discovery, processin
 - **Evaluation**: Rate content based on relevance, quality, and technical depth (optional)
 - **Visualization**: Generate markdown reports of discovered content
 - **Caching**: Efficient content discovery with cache support
+- **Multi-source content discovery**: From Substack, Medium, YouTube, Papers, and Reddit
+- **Parallel content discovery**: Improved performance
+- **Content processing and text extraction**: Extract text from content
+- **Content evaluation using LLM-based scoring**: Evaluate content based on relevance, quality, and technical depth
+- **Dual perspective evaluation**: From Engineering Manager and Staff Engineer viewpoints
+- **Parallel evaluation processing**: Efficiently handle large datasets
+- **Customizable configuration**: Through YAML
+- **Command-line interface**: Run the pipeline from the command line
 
 ## Directory Structure
 
@@ -149,6 +157,30 @@ Enable parallel processing for better performance:
 python run.py --config config.yaml --parallel
 ```
 
+Run with parallel evaluation processing for large datasets:
+
+```sh
+python run.py --config config.yaml --parallel-eval
+```
+
+Run with dual perspective evaluation (Manager + Staff Engineer):
+
+```sh
+python run.py --config config.yaml --dual-eval
+```
+
+Combine options for maximum performance:
+
+```sh
+python run.py --config config.yaml --parallel --dual-eval --parallel-eval
+```
+
+Limit number of items per source:
+
+```sh
+python run.py --config config.yaml --limit 5
+```
+
 ### Utilities
 
 Clean all cached data:
@@ -205,7 +237,7 @@ processors:
 # Evaluation configuration
 evaluation:
   enabled: true
-  method: "standard"  # Options: standard, web, hybrid
+  method: "dual_perspective"  # "standard", "web", "dual_perspective"
   # ...evaluation settings...
 ```
 

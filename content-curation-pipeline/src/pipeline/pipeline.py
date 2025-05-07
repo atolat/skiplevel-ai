@@ -19,6 +19,7 @@ from .visualizers.markdown import MarkdownTableVisualizer
 from .config import load_config, get_default_config, ConfigSchema
 from .modules.content_evaluation import evaluate_content, calculate_query_metrics
 from .modules.web_evaluation import batch_evaluate_urls, evaluate_urls_with_browsing
+from .modules.dual_perspective_evaluation import dual_perspective_evaluation, batch_evaluate_urls as dual_batch_evaluate
 
 logger = logging.getLogger(__name__)
 
@@ -461,44 +462,156 @@ class ContentPipeline:
                     "source": item.metadata.source_type
                 })
             
-            # Choose evaluation method based on config
-            if self.config.evaluation.method == "web":
-                # Use web evaluation
-                urls_to_evaluate = [{"url": item["url"], "meta": {"title": item["title"]}} for item in eval_items]
-                results = batch_evaluate_urls(urls_to_evaluate, method="openai_browsing")
-            elif self.config.evaluation.method == "hybrid":
-                # Try web evaluation first, then fall back to standard for any failures
-                urls_to_evaluate = [{"url": item["url"], "meta": {"title": item["title"]}} for item in eval_items]
-                web_results = batch_evaluate_urls(urls_to_evaluate, method="openai_browsing")
+            # Choose evaluation method based on configuration
+            method = self.config.evaluation.method
+            
+            if method == "dual_perspective":
+                # Use dual perspective evaluation (engineering manager and staff engineer perspectives)
+                logger.info(f"Using dual perspective evaluation for {len(eval_items)} items")
+                # Transform items for dual perspective evaluation
+                dual_eval_items = [
+                    {
+                        "url": item["url"],
+                        "title": item["title"],
+                        "source": item["source"],
+                        "meta": {
+                            "title": item["title"],
+                            "source": item["source"]
+                        }
+                    }
+                    for item in eval_items
+                ]
                 
-                # Identify failed evaluations
-                failed_indices = []
-                for i, result in enumerate(web_results):
+                # Use parallel processing for batch evaluation
+                results = self._parallel_dual_perspective_evaluation(dual_eval_items)
+                
+                # Transform results to match expected format
+                transformed_results = []
+                for result in results:
+                    transformed_results.append({
+                        "url": result["url"],
+                        "title": result["title"],
+                        "text": "",  # We don't need to pass text back
+                        "source": result["source"],
+                        "evaluation": {
+                            "score": result["avg_score"],
+                            "tags": [],  # Add tags based on scores if needed
+                            "summary": f"Manager: {result['manager_evaluation']['summary']} | Staff: {result['staff_evaluation']['summary']}",
+                            "reasoning": f"Manager score: {result['manager_score']:.1f}/10, Staff score: {result['staff_score']:.1f}/10"
+                        },
+                        "raw_evaluation": result
+                    })
+                
+                return transformed_results
+                
+            elif method == "web" or method == "browsing":
+                # Use web-based browsing evaluation
+                logger.info(f"Using web-based evaluation for {len(eval_items)} items")
+                results = batch_evaluate_urls([{"url": item["url"], "meta": item} for item in eval_items])
+                
+                # Transform results to match expected format
+                transformed_results = []
+                for result in results:
+                    # Handle errors
                     if "error" in result:
-                        failed_indices.append(i)
+                        logger.warning(f"Error evaluating {result['url']}: {result.get('error')}")
+                        continue
+                        
+                    transformed_results.append({
+                        "url": result["url"],
+                        "title": result.get("title", ""),
+                        "text": "",  # We don't need to pass text back
+                        "source": result.get("source", "web"),
+                        "evaluation": {
+                            "score": result.get("overall_score", 1.0),
+                            "tags": result.get("tags", []),
+                            "summary": result.get("summary", "No summary available"),
+                            "reasoning": ""  # Could extract from score details if needed
+                        },
+                        "raw_evaluation": result
+                    })
                 
-                # Process failed items with standard evaluation
-                if failed_indices:
-                    failed_items = [eval_items[i] for i in failed_indices]
-                    standard_results = evaluate_content(failed_items)
-                    
-                    # Replace failed web results with standard results
-                    for i, result in zip(failed_indices, standard_results):
-                        web_results[i] = result
+                return transformed_results
                 
-                results = web_results
             else:
-                # Use standard evaluation
-                results = evaluate_content(eval_items)
-            
-            logger.info(f"Evaluated {len(results)} content items")
-            return results
-            
+                # Default to standard content evaluation
+                logger.info(f"Using standard content evaluation for {len(eval_items)} items")
+                return evaluate_content(eval_items)
+                
         except Exception as e:
-            logger.error(f"Error during content evaluation: {str(e)}")
+            logger.error(f"Error evaluating content: {str(e)}")
             return []
+
+    def _parallel_dual_perspective_evaluation(self, items: List[Dict]) -> List[Dict]:
+        """
+        Perform dual perspective evaluation in parallel using ThreadPoolExecutor.
+        
+        Args:
+            items: List of items to evaluate, each with a 'url' key
+            
+        Returns:
+            List of evaluation results
+        """
+        from .modules.dual_perspective_evaluation import dual_perspective_evaluation
+        
+        results = []
+        max_workers = min(8, len(items))  # Limit number of workers to avoid overloading API
+        
+        def evaluate_item(item):
+            url = item["url"]
+            meta_data = item.get("meta", {})
+            try:
+                logger.info(f"Evaluating: {url}")
+                result = dual_perspective_evaluation(url, meta_data)
+                
+                # Add any additional metadata from the original item
+                for key, value in item.items():
+                    if key not in result and key != "url" and key != "meta":
+                        result[key] = value
+                        
+                return result
+            except Exception as e:
+                logger.error(f"Error evaluating {url}: {str(e)}")
+                # Return a minimal result with error information
+                return {
+                    "url": url,
+                    "title": meta_data.get("title", ""),
+                    "source": meta_data.get("source", "web"),
+                    "manager_score": 1.0,
+                    "staff_score": 1.0,
+                    "avg_score": 1.0,
+                    "error": str(e),
+                    "manager_evaluation": {"summary": "", "insights": [], "scores": {}},
+                    "staff_evaluation": {"summary": "", "insights": [], "scores": {}}
+                }
+        
+        # Execute evaluations in parallel
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_to_item = {executor.submit(evaluate_item, item): item for item in items}
+            
+            for future in concurrent.futures.as_completed(future_to_item):
+                item = future_to_item[future]
+                try:
+                    result = future.result()
+                    results.append(result)
+                except Exception as e:
+                    logger.error(f"Evaluation failed for {item.get('url')}: {str(e)}")
+                    # Add a placeholder result for failed evaluations
+                    results.append({
+                        "url": item.get("url", "unknown"),
+                        "title": item.get("title", ""),
+                        "source": item.get("source", "web"),
+                        "manager_score": 1.0,
+                        "staff_score": 1.0,
+                        "avg_score": 1.0,
+                        "error": f"Executor error: {str(e)}",
+                        "manager_evaluation": {"summary": "", "insights": [], "scores": {}},
+                        "staff_evaluation": {"summary": "", "insights": [], "scores": {}}
+                    })
+        
+        return results
     
-    def run(self, query: Optional[str] = None, limit_per_source: Optional[int] = None, parallel: bool = False) -> Dict[str, Any]:
+    def run(self, query: Optional[str] = None, limit_per_source: Optional[int] = None, parallel: bool = False, parallel_eval: bool = False) -> Dict[str, Any]:
         """
         Run the complete pipeline.
         
@@ -506,6 +619,7 @@ class ContentPipeline:
             query: Search query (optional, overrides config queries)
             limit_per_source: Maximum items per source (optional, overrides config limits)
             parallel: Whether to use parallel processing for content discovery
+            parallel_eval: Whether to use parallel processing for content evaluation
             
         Returns:
             Pipeline results and statistics
@@ -534,8 +648,22 @@ class ContentPipeline:
             
             # Evaluate content if enabled
             if self.config.evaluation.enabled:
+                # Store original method to restore it later if needed
+                original_method = self.config.evaluation.method
+                
+                # If using dual perspective and parallel evaluation is requested,
+                # we will use our custom method instead of the batch one
+                if parallel_eval and original_method == "dual_perspective":
+                    # We will handle parallelization in the evaluate_content method
+                    # No need to modify the method name
+                    pass
+                    
                 evaluations = self.evaluate_content(items)
                 results["evaluations"] = evaluations
+                
+                # Restore original method if it was changed
+                if self.config.evaluation.method != original_method:
+                    self.config.evaluation.method = original_method
             
             # Generate visualization
             if items:

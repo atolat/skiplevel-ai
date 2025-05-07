@@ -1,0 +1,242 @@
+[
+  {
+    "url": "https://platocommunity.substack.com/p/21-how-we-build-engineering-resilience",
+    "title": "How we build Engineering Resilience at Carta",
+    "text": "",
+    "source": "substack",
+    "evaluation": {
+      "score": 7.425,
+      "tags": [],
+      "summary": "Manager: The article provides valuable insights into building engineering resilience, which is essential for team growth and effective people management. It offers frameworks and practical advice that engineering managers can apply to enhance their teams' adaptability and robustness. | Staff: The article is a valuable resource for senior engineers looking to enhance their understanding of engineering resilience. It provides architectural insights and promotes systems thinking, although it could benefit from more technical depth and examples.",
+      "reasoning": "Manager score: 7.0/10, Staff score: 7.8/10"
+    },
+    "raw_evaluation": {
+      "url": "https://platocommunity.substack.com/p/21-how-we-build-engineering-resilience",
+      "title": "How we build Engineering Resilience at Carta",
+      "source": "substack",
+      "manager_score": 7.05,
+      "staff_score": 7.8,
+      "avg_score": 7.425,
+      "manager_evaluation": {
+        "summary": "The article provides valuable insights into building engineering resilience, which is essential for team growth and effective people management. It offers frameworks and practical advice that engineering managers can apply to enhance their teams' adaptability and robustness.",
+        "insights": [
+          "Resilience is crucial for adapting to challenges.",
+          "Building resilience can lead to stronger team dynamics.",
+          "Practical frameworks can help implement resilience strategies."
+        ],
+        "scores": {
+          "leadership_frameworks": {
+            "score": 7,
+            "explanation": "The article likely discusses frameworks for building resilience, which is crucial for leadership."
+          },
+          "team_growth": {
+            "score": 8,
+            "explanation": "Resilience is key to team growth, helping teams adapt to challenges and changes."
+          },
+          "process_improvement": {
+            "score": 6,
+            "explanation": "While resilience can lead to process improvements, the focus seems more on individual and team resilience."
+          },
+          "people_management": {
+            "score": 7,
+            "explanation": "Managing people effectively involves fostering resilience, making this content relevant."
+          },
+          "practical_application": {
+            "score": 7,
+            "explanation": "The content likely offers practical advice on building resilience, which can be applied in real-world scenarios."
+          }
+        }
+      },
+      "staff_evaluation": {
+        "summary": "The article is a valuable resource for senior engineers looking to enhance their understanding of engineering resilience. It provides architectural insights and promotes systems thinking, although it could benefit from more technical depth and examples.",
+        "insights": [
+          "Importance of resilience in engineering systems.",
+          "Architectural strategies to enhance system resilience.",
+          "Holistic approaches to system design and operation."
+        ],
+        "scores": {
+          "technical_depth": {
+            "score": 7,
+            "explanation": "The article provides a solid understanding of engineering resilience but lacks deep technical details or code examples."
+          },
+          "architectural_insight": {
+            "score": 8,
+            "explanation": "It offers valuable insights into building resilient systems, focusing on architectural strategies and principles."
+          },
+          "systems_thinking": {
+            "score": 9,
+            "explanation": "The content emphasizes holistic approaches to resilience, considering multiple facets of system design and operation."
+          },
+          "engineering_excellence": {
+            "score": 8,
+            "explanation": "The article promotes best practices and methodologies for achieving high standards in engineering resilience."
+          },
+          "technical_applicability": {
+            "score": 7,
+            "explanation": "While the concepts are broadly applicable, the lack of specific technical implementations may limit direct applicability."
+          }
+        }
+      }
+    }
+  },
+  {
+    "url": "https://platocommunity.substack.com/p/22-how-we-evolved-our-cloud-infrastructure",
+    "title": "How we evolved our cloud infrastructure at HashiCorp",
+    "text": "",
+    "source": "substack",
+    "evaluation": {
+      "score": 6.525,
+      "tags": [],
+      "summary": "Manager: The article provides insights into evolving cloud infrastructure, which can aid engineering managers in making informed decisions about technical strategy and process improvements. While it offers practical examples, it is less focused on direct people management or team growth strategies. | Staff: The article provides a comprehensive overview of evolving cloud infrastructure, focusing on architectural decisions and technical challenges. It is valuable for senior engineers looking to understand complex cloud systems and improve their own infrastructure strategies.",
+      "reasoning": "Manager score: 6.0/10, Staff score: 7.1/10"
+    },
+    "raw_evaluation": {
+      "url": "https://platocommunity.substack.com/p/22-how-we-evolved-our-cloud-infrastructure",
+      "title": "How we evolved our cloud infrastructure at HashiCorp",
+      "source": "substack",
+      "manager_score": 5.95,
+      "staff_score": 7.1000000000000005,
+      "avg_score": 6.525,
+      "manager_evaluation": {
+        "summary": "The article provides insights into evolving cloud infrastructure, which can aid engineering managers in making informed decisions about technical strategy and process improvements. While it offers practical examples, it is less focused on direct people management or team growth strategies.",
+        "insights": [
+          "Strategic decision-making in cloud infrastructure evolution.",
+          "Process improvements through infrastructure changes.",
+          "Practical examples of cloud technology application."
+        ],
+        "scores": {
+          "leadership_frameworks": {
+            "score": 6,
+            "explanation": "The content likely discusses cloud infrastructure evolution, which may touch on strategic decision-making frameworks."
+          },
+          "team_growth": {
+            "score": 5,
+            "explanation": "While the focus is on infrastructure, there might be indirect insights into team skills development related to cloud technologies."
+          },
+          "process_improvement": {
+            "score": 8,
+            "explanation": "The evolution of cloud infrastructure is closely tied to process improvements in deployment and scalability."
+          },
+          "people_management": {
+            "score": 4,
+            "explanation": "The article is more technical, with limited direct insights into managing people or team dynamics."
+          },
+          "practical_application": {
+            "score": 7,
+            "explanation": "The content likely includes practical examples of cloud infrastructure changes that can be applied in similar contexts."
+          }
+        }
+      },
+      "staff_evaluation": {
+        "summary": "The article provides a comprehensive overview of evolving cloud infrastructure, focusing on architectural decisions and technical challenges. It is valuable for senior engineers looking to understand complex cloud systems and improve their own infrastructure strategies.",
+        "insights": [
+          "Importance of evaluating trade-offs in cloud infrastructure decisions.",
+          "Strategies for scaling cloud systems effectively.",
+          "Lessons learned from real-world cloud infrastructure evolution."
+        ],
+        "scores": {
+          "technical_depth": {
+            "score": 7,
+            "explanation": "The article provides a detailed account of cloud infrastructure evolution, touching on various technical components and decisions."
+          },
+          "architectural_insight": {
+            "score": 8,
+            "explanation": "It offers valuable insights into architectural decisions and trade-offs made during the cloud infrastructure evolution."
+          },
+          "systems_thinking": {
+            "score": 7,
+            "explanation": "The content reflects a good understanding of how different components of the cloud infrastructure interact and evolve together."
+          },
+          "engineering_excellence": {
+            "score": 6,
+            "explanation": "The article discusses best practices and lessons learned, contributing to engineering excellence."
+          },
+          "technical_applicability": {
+            "score": 7,
+            "explanation": "The insights and strategies discussed are applicable to similar cloud infrastructure challenges in other organizations."
+          }
+        }
+      }
+    }
+  },
+  {
+    "url": "https://pragmaticengineer.com/blog/managing-up",
+    "title": "Managing Up: Dealing with Your Manager",
+    "text": "",
+    "source": "blog",
+    "evaluation": {
+      "score": 4.8500000000000005,
+      "tags": [],
+      "summary": "Manager: The article provides valuable insights into managing up, a critical skill for engineering managers to influence higher management and align team goals with organizational objectives. It offers practical advice that can be directly applied to improve leadership effectiveness. | Staff: The article provides insights into managing up, which is valuable for career progression but lacks technical depth. It is more suited for understanding interpersonal dynamics within engineering teams rather than technical challenges.",
+      "reasoning": "Manager score: 6.9/10, Staff score: 2.9/10"
+    },
+    "raw_evaluation": {
+      "url": "https://pragmaticengineer.com/blog/managing-up",
+      "title": "Managing Up: Dealing with Your Manager",
+      "source": "blog",
+      "manager_score": 6.8500000000000005,
+      "staff_score": 2.8500000000000005,
+      "avg_score": 4.8500000000000005,
+      "manager_evaluation": {
+        "summary": "The article provides valuable insights into managing up, a critical skill for engineering managers to influence higher management and align team goals with organizational objectives. It offers practical advice that can be directly applied to improve leadership effectiveness.",
+        "insights": [
+          "Managing up is essential for aligning team objectives with organizational goals.",
+          "Influencing higher management requires understanding their priorities and communication styles.",
+          "Effective managing up can enhance career growth and team success."
+        ],
+        "scores": {
+          "leadership_frameworks": {
+            "score": 8,
+            "explanation": "The article likely provides structured advice on managing up, which is a key leadership skill."
+          },
+          "team_growth": {
+            "score": 6,
+            "explanation": "While managing up is important, the direct impact on team growth is less emphasized."
+          },
+          "process_improvement": {
+            "score": 5,
+            "explanation": "The focus is more on interpersonal skills rather than specific process improvements."
+          },
+          "people_management": {
+            "score": 7,
+            "explanation": "Managing up involves understanding and influencing people, which is crucial for people management."
+          },
+          "practical_application": {
+            "score": 9,
+            "explanation": "The topic of managing up is practical and directly applicable to everyday leadership scenarios."
+          }
+        }
+      },
+      "staff_evaluation": {
+        "summary": "The article provides insights into managing up, which is valuable for career progression but lacks technical depth. It is more suited for understanding interpersonal dynamics within engineering teams rather than technical challenges.",
+        "insights": [
+          "Understanding the importance of managing up for career growth.",
+          "Strategies for effective communication with management.",
+          "The role of interpersonal skills in engineering leadership."
+        ],
+        "scores": {
+          "technical_depth": {
+            "score": 3,
+            "explanation": "The article focuses on soft skills rather than technical content."
+          },
+          "architectural_insight": {
+            "score": 2,
+            "explanation": "There is minimal discussion on system architecture or design patterns."
+          },
+          "systems_thinking": {
+            "score": 4,
+            "explanation": "The content touches on organizational dynamics but not on technical systems."
+          },
+          "engineering_excellence": {
+            "score": 3,
+            "explanation": "The focus is on career management rather than engineering practices."
+          },
+          "technical_applicability": {
+            "score": 2,
+            "explanation": "The applicability is more towards career development than technical implementation."
+          }
+        }
+      }
+    }
+  }
+]

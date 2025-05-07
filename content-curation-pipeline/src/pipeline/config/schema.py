@@ -56,7 +56,7 @@ class EvaluationConfig:
     
     # Core settings
     enabled: bool = False
-    method: str = "standard"  # "standard", "web", or "hybrid"
+    method: str = "standard"  # "standard", "web", "browsing", "dual_perspective"
     
     # Evaluation settings
     criteria: Dict[str, float] = field(default_factory=lambda: {

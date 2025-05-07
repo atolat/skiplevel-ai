@@ -13,7 +13,6 @@ sources:
     custom_urls:
       - "https://newsletter.pragmaticengineer.com/p/career-laddering"
       - "https://newsletter.theengineeringmanager.com/p/management-frameworks"
-      - "https://platocommunity.substack.com/api/v1/posts"
     limit: 10
     timeout: 30
     max_retries: 3
@@ -24,7 +23,6 @@ sources:
         - "theengineeringmanager"
         - "engineeringorg"
         - "managementmatters"
-        - "platocommunity"
   medium:
     type: medium
     name: Medium Articles
