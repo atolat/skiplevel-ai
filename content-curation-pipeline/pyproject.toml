@@ -5,7 +5,7 @@ description = "Content curation pipeline for technical content"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    { name = "Arpan Patel", email = "arpan@skiplevel.ai" },
+    { name = "Arpan Tolat", email = "arpan@skiplevel.ai" },
 ]
 dependencies = [
     "beautifulsoup4>=4.12.0",

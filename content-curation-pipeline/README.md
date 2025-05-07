@@ -277,4 +277,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Credits
 
-Developed by Arpan Patel (arpan@skiplevel.ai). 
+Developed by Arpan Tolat (arpan@skiplevel.ai). 
