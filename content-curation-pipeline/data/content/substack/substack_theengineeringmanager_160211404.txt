@@ -1,0 +1,345 @@
+Many of you that read my articles are 
+
+operators
+
+ of some kind.
+
+You may run one or many teams, or even a whole company. And, even if you are not a manager by definition, you may wield a great deal of influence over directions and decisions.
+
+The Engineering Manager is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+
+In the midst of the current LLM explosion, we as operators find ourselves amongst:
+
+A blistering pace of improvement in the capabilities of LLMs. New models and products are being released at a rate that is hard to keep up with.
+
+Immense noise and hype online making all sorts of claims, good and bad, about what the future holds.
+
+An expectation from our companies to go full-on with "AI", which typically means LLMs, both in developer tooling and in customer-facing products. AI is the new data is the new cloud.
+
+Echoes in the industry that we are all now overstaffed as a result of productivity gains: that everyone should do more with less, and that AI is the answer to that.
+
+Note: this article is not a technical overview of how to 
+
+build products
+
+ with LLMs. Instead, the intent is to touch upon what leadership should do from the perspective of the productivity of teams and organizations, and consequently how we should think about spending our budgets to make that happen. There are plenty of hot takes out there on AI. This is not intended to be one of them.
+
+What we'll cover related to LLMs is:
+
+The (real) rising floor of developer productivity.
+
+The changing size of organizations.
+
+The increasing importance of code reviews.
+
+The changing nature of interviews and identifying talent in short spaces of time.
+
+The intent is that this should provoke thought and discussion, and will hopefully help you think about how to allocate your budget and focus in the coming months and years.
+
+The floor is rising
+
+With 
+
+Copilot
+
+, 
+
+Cursor
+
+, 
+
+Cline
+
+ and other LLM-based developer tools, the floor of developer productivity is rising.
+
+At the time of writing in 2025, I believe even the most AI-skeptical developers are now seeing the 
+
+insane 
+
+productivity gains that LLMs can provide. Yes, it was true that, several years ago, the promise and the hype 
+
+far
+
+ outweighed the consistent proof of benefits, but in a post 
+
+GPT-4
+
+ world, LLMs have become an integral part of the developer's toolkit, even if it is just for fast research or rubber ducking rather than agentic pair programming.
+
+I don't know many developers that would give them up now, myself included. I go too fast with them to go back to the old way of doing things.
+
+If for some reason (!) you haven't fully leaned into LLM-assisted coding yet, the benefits are plentiful:
+
+LLMs are 
+
+fantastic
+
+ for getting over the cold start problem of a new idea. You can go from nothing to a throwaway prototype in no time at all, starting with a vague prompt of what you want and iterating on it. There are numerous "vibe coding" projects that are generating some 
+
+serious revenue
+
+.
+
+You can use a prompt to sketch out whole architecture ideas with back of the envelope calculations and tradeoffs.
+
+Copilot-style autocompletion is now 
+
+very
+
+ good unlocks the next step in your thought process.
+
+Agent-based tools like Cursor or Copilot Chat, when kept under control, can be a great way to get a lot of boilerplate code written quickly.
+
+Writing tests, and therefore driving up code coverage, is now much easier. LLMs can write tests for you, and agent-based tools can execute the red-green cycle for you as you go.
+
+If you haven't yet spent an afternoon or evening with Cursor, then please, please, please make time and see how fast you can go from a blank page to a fully functioning hobby project. It is 
+
+incredible
+
+ how fast you can go from nothing to something.
+
+So in terms of the 
+
+Gartner hype cycle J-curve
+
+, we are clearly on the upward slope towards enlightenment. The tools are getting better, and they are getting better 
+
+fast
+
+. It is unclear as to how far the 
+
+Bitter Lesson
+
+ will take us, and predictions currently range from being on the cusp of hitting a plateau of productivity to full-blown AGI, but it 
+
+is
+
+ clear that an organization that does not embrace LLMs will be left behind by their competitors.
+
+As an operator, up-skilling your team to use these tools is now 
+
+essential
+
+. Securing the necessary budget to give everyone access to the Pro tiers of ChatGPT, Cursor, or whatever tools represent the best fit for your team is a table stakes activity. And yes, this does mean that your budget will increase, but the productivity gains from an existing team will more than make up for it. Trade the cost of hiring new people for the cost of acquiring tooling.
+
+You should also take the 
+
+adoption
+
+ of this tooling seriously. It is not just a case of giving everyone subscriptions and hoping for the best. You need to invest time and effort into training your team on how to use these tools effectively.
+
+Run a survey to see what tools your team is already using and how they are using them. As part of the survey, identify which of your engineers are already fully ingrained in the new LLM workflows and which are not.
+
+Identify champions based on the previous point and have them run training sessions and also overindex on pair programming with those who are less familiar (or more skeptical) of the tools.
+
+Promote a culture of sharing best practices and tips for using LLMs. Get your champions to lean in and share their workflows and processes with the rest of the team. Videos work wonders here.
+
+Track the usage of AI tools over time as you adopt them. For example, Cursor offers team analytics, and you can see how many lines of code are being generated and accepted. Use this as part of the feedback loop to see how your team is progressing. Is usage increasing or decreasing? Why?
+
+Cross-reference the usage data with other metrics you are collecting. For example, how is the average number of commits to the codebase changing as tool usage increases? What about the number of incidents or reported bugs? What's happening with your DORA metrics as a result?
+
+Focus on showing that the tools are making a real difference, and this too can be motivation to bring the most skeptical engineers on board.
+
+Organization sizes are changing
+
+Given that the way that we create software has changed, there is another operator's consideration: the 
+
+size
+
+ of your organization.
+
+Layoffs have been rife since the end of 
+
+ZIRP
+
+. Overlapping this period has been the rise of LLMs, and in some cases, the two have been conflated: organizations haven't 
+
+just
+
+ shrunk because of AI efficiency gains, but they also haven't 
+
+just
+
+ shrunk because of the macroeconomic environment either; the two are becoming somewhat intertwined, if you believe what these companies are saying.
+
+However, it is true that from a company-operator's perspective, the hard-to-exactly-quantify, but definitely 
+
+real
+
+, productivity gains from LLMs allow you the ability to do more with less.
+
+And amongst a tricky economic environment, instead of staying same-sized and increasing output, there has been a trend in many organizations to reduce headcount and combine this with AI tooling to (sort of) 
+
+maintain
+
+ the same level of output.
+
+If you think about it, many of the world's largest companies are (or 
+
+were
+
+) staffed to pre-LLM productivity levels off of the back of ZIRP, and you could argue that there consequently has been an exchange of a large chunk of money that used to pay salaries for a smaller chunk of money that pays for tokens and subscriptions.
+
+One could even argue, especially at large companies, that if all developers could go, let's say, twice as fast with the new tooling, then other bottlenecks would appear that would limit the speed of progress anyway, so less really is more.
+
+These bottlenecks may already exist: the sometimes glacial speed of making decisions, the amount of change and new features that your users can stomach at once, the time it takes to go through cycles of shipping and 
+
+learning
+
+ and iterating and so on.
+
+Many companies are already at the point where they effectively block the speed of their own progress in other ways than just the number of developers they have. Making those developers faster may not actually help them ship more features, and in fact, it may make things worse.
+
+Maybe you work for a company like this.
+
+Going back to the operator's perspective, if you currently work for a 
+
+small
+
+ or 
+
+medium
+
+-sized company, a good idea would be to focus your attention on giving everyone access to the right tools and training to become more productive 
+
+before
+
+ you go on another hiring spree. Get everyone coding like they should be coding in 2025 first, assess and prove the productivity gains, get your tooling in place, and 
+
+then
+
+ look at hiring more people.
+
+And remember that tooling goes beyond developers: we're talking about 
+
+all
+
+ employees. A pro subscription to ChatGPT is just as useful for a marketer's efficiency as it is for a developer. Giving each employee in a 50-person company a ChatGPT Pro subscription is still cheaper than hiring a senior developer or two. Think about macro efficiency gains across the whole organization, not just in engineering.
+
+Reviews are more important than ever
+
+The flip side of the productivity gains is that more code is being written, and, most importantly, not all of it has been as carefully thought through as handcrafted code.
+
+If you've used Cursor without specifically asking the prompt to slow down, go step-by-step and ask for your input frequently, you've likely seen it go off and blast out hundreds of lines of code that is hard to keep track of.
+
+Now, this is 
+
+great
+
+ for getting a prototype up and running, but it is not so great for production code: the code generation starts to go faster than you can meaningfully comprehend it as a human, and bugs can be introduced that are hard to spot. In the best case, the code can be messy or unoptimized. In the worst case, it can be full of security holes that could seriously compromise your organization.
+
+As such, with the faster production of code, as an operator it is more important than 
+
+ever
+
+ to ensure you have a strong review process in place: if your most senior engineers were getting a half-arsed rubber stamp thumbs up from their peers (not advised, but it happens), now you need to ensure that 
+
+all
+
+ code is being scrutinized as the origins of it are less clear.
+
+You could:
+
+Make it clear to your organization that even though LLMs can generate lots of code almost instantly, human reviewers can only digest 
+
+so
+
+ much. Keep PRs small, commits clear, and code easy to read.
+
+Increase the number of required reviewers on your PRs. For example, go from one reviewer to two. You could also have engineers flag their own PRs that have heavy LLM usage to call out that they need extra scrutiny.
+
+Give people a refresher on security best practices (shock horror!) so they can be better aware of when LLMs are generating code that is insecure.
+
+Make improvements in your incident postmortem process to ensure that you are learning from your mistakes. Share any production issues that stemmed from overlooked generated code widely across the organization so that everyone can learn from them.
+
+Investigate AI tools such as 
+
+DeepCode by Snyk
+
+ or 
+
+Graphite's Diamond
+
+ that could help detect issues in code before it is even reviewed by a human.
+
+Am I even interviewing you? Or your LLM?
+
+The typical tech interview process for individual contributors, which involves some combination of coding challenges, white boarding, and system design, has had another curve ball thrown at it by LLMs.
+
+When interviewing remotely, we may have previously been concerned about candidates using a search engine to look up answers, but now we have to consider that they might be side-channeling all of the questions to an LLM.
+
+If you are an interviewer, how can you tell that off to the side of the Google Meet window is another browser window with a prompt open? By the time you have described the system design specification, the candidate could have easily typed it into the prompt and have gotten an incredibly detailed and plausible answer back.
+
+And hey, don't just take my word for it, try it: open Grok and type "I am doing a system design interview. Help me with it. I have to design Instagram from scratch. Give me back of the envelope calculations and follow the structure of the ByteByteGo book."
+
+Scary, huh?
+
+If your candidates are good at placing their windows on the screen in the right places and keeping their eye movement under control, you might not even notice that they are doing it. How are we meant to get good signal from candidates now that we can't figure out if we're talking to them or a prompt?
+
+If you want to test a candidate completely without LLM assistance, you could ask them to share their entire screen so you can see what is going on. However, this feels invasive. Alternatively, a lighter touch version is to have the interviewer share 
+
+their
+
+ screen and problems are tackled together via pair programming and high bandwidth conversation where it would be hard for the candidate to be typing away into a prompt and then trying to pass off the answer as their own.
+
+Alternatively, you could go in the complete opposite direction: 
+
+accept
+
+ that LLMs are now part of the job, and like the rest of the article, 
+
+embrace them
+
+.
+
+For example, if you want to hire people that can tackle large and ambiguous problems quickly with LLMs, get them to demonstrate these skills in the interview. This is similar to exams at school that are open book: you can use whatever resources you want, but you have to demonstrate that you know how to use them and that you can think critically about the answers that they give you.
+
+The choice is yours as an interviewer: either allow LLMs or don't, but 
+
+be explicit about it ahead of the interview so that the candidate knows what to expect
+
+. If you do allow LLMs, you should also be clear about the rules of conduct in the interview: are they allowed to use them for everything? Are they allowed to use them for some things? What are the boundaries? Don't make them guess.
+
+Regardless of which way you go, you'll need to adapt your interview process to ensure that you are getting the right signal.
+
+Having candidates seek solutions to leetcode problems is 
+
+not
+
+ going to work. LLMs can easily dump code for doubly linked lists and binary trees, and annotate the answers with all of the big-O complexities attached.
+
+Instead, questions that you ask should be sufficiently ambiguous that part of the interview is figuring out the specific 
+
+requirements
+
+ of the problem and what the code or system should do. Doing this in a conversational manner is a great way to see how the candidate thinks, and if you've not allowed LLMs to be used, it should be obvious through long periods of silence if they're trying to bend the rules.
+
+Spot-test their knowledge: the interviewer should be able to interrogate components of the candidate's solution as they go along, asking questions about the design and implementation that highlight whether the candidate 
+
+actually
+
+ has knowledge here, or at least is able to think about their solution critically and from first principles. For example, if they think a cache should be implemented, ask them why, and what the tradeoffs are. Ask for some examples of caches they have used before and how they worked. Pick a point in the solution and go fully down the rabbit hole with them. Think latency, throughput, and failure modes. Answers should be fairly instantaneous if they know their stuff.
+
+If candidates come to a solution quickly, see if there are alternative ways in which they could have approached the problem. For experienced engineers, it should be possible to have a conversation about the tradeoffs of different approaches to the one they have taken. If they've used a batch processing system, ask about how a streaming system could look. If they've written code that is synchronous, ask them how they would make it asynchronous, and so on. Probe deeper.
+
+Use methods of collaboration that LLMs are 
+
+not
+
+ good at. For example, a shared whiteboard is a great way to think about problems together, interactively, proving that you are really working together with the candidate in the same way that you would if they were a new hire.
+
+Design your interview process to find the kinds of candidates that you really want to work with. If you're looking for people that are great at using LLMs, then have your interview process find these people. Be open about it.
+
+If instead you value candidates that are great at coding or design solutions unassisted despite the tools we all now have available, that's also fine, but be open about that too. Let them know way ahead of time that this is how it's going to be. You can't have it both ways, and you need to design your process accordingly to get the right signal.
+
+And that's a wrap
+
+If you haven't already, you need to start bringing your team(s) into the present day. Software development isn't just changing, it 
+
+has
+
+ changed, and if you haven't been adapting already, you're getting left behind. This isn't just important for your company, but it's also incredibly important for your employees: you owe them access to the best tools available to do their jobs.
+
+Happy prompting.
+
+The Engineering Manager is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

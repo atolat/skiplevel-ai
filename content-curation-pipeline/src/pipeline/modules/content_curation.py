@@ -178,12 +178,12 @@ def curate_urls_from_reddit(query: str, limit: int = 10) -> List[Dict]:
                             
                             # Check that the URL is valid before adding it to results
                             if is_valid_url(full_url):
-                                results.append({
-                                    "url": full_url,
-                                    "title": submission.title,
-                                    "source": f"reddit_{subreddit_name}",
-                                    "meta": meta_data
-                                })
+                            results.append({
+                                "url": full_url,
+                                "title": submission.title,
+                                "source": f"reddit_{subreddit_name}",
+                                "meta": meta_data
+                            })
                 
                 # Break if we have enough results
                 if len(results) >= limit * 2:  # Get double the requested limit to allow for filtering

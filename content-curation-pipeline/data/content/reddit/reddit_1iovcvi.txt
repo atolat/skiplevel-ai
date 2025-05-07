@@ -1,0 +1,14 @@
+# Feeling Undervalued as a Senior Engineer in a Non-Tech Leadership Environment – Advice Needed
+
+Hey everyone,
+
+I’m a Senior Software Engineer working in a company where most of the higher-ups have little to no technical knowledge. I handle almost all of the tech work—Android, iOS, web (full-stack), and more—alongside my Technical Lead. The product we’ve built is quite unique and provides significant value to the company.
+
+The issue is that these non-technical leaders seem to think that software development is some kind of magic and don’t acknowledge the effort behind it. In meetings, they appreciate and praise each other (mostly people who speak up(i mean doing jokes etc), like the TL) but completely overlook my contributions, even though I handle a huge part of the R&D and development work.
+
+I know that if I left, they’d be in serious trouble, yet the lack of appreciation is really killing my motivation. I work hard and deliver results, but it feels like my efforts go unnoticed.
+
+How do I deal with this situation? Any advice would be greatly appreciated.
+
+## Comments
+

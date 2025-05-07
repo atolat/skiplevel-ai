@@ -1,0 +1,256 @@
+[This is a paid article - preview only]
+
+This content requires a subscription to read in full.
+Below is the preview content available without a subscription.
+
+---
+
+‘
+
+The Mythical Man-Month
+
+’ by Frederick P. Brooks was published in 1975, 50 years ago. The book is still quoted today, most famously in the form of “Brooks’ Law;” the eponym that adding manpower to a late software project makes it even more late. But in many ways, computing then and now are worlds apart. So, what truths does the book still contain, or does it belong in a museum of computing history?
+
+In a series of articles, we’ve been working through Mythical Man-Month (MMM) to see which predictions it gets right or wrong, what’s different about engineering today – and what’s the same. We’ve covered a lot of ground:
+
+Part 1
+
+: the joys and woes of programming, why we ship faster than 50 years ago, “Brooks’ law”, time spent coding then and now, and the concept of the “10x engineer” (covering chapters 1-3.)
+
+Part 2
+
+: the evolution of software architecture, communication challenges on large projects, and the ideal structure of tech orgs (chapters 4-7).
+
+Part 3
+
+: estimations, developer productivity with programming languages, the vanishing art of program size optimization, prototyping and shipping polished software (chapters 8-11).
+
+Today, we near the end, covering chapters 10 and 12-15 of 16, and looking into:
+
+Tooling for developer productivity, then and now. 
+
+This has taken huge leaps over the decades, thanks to code becoming portable across systems and open source. It was difficult to be a productive developer decades ago.
+
+Bug catching was harder. 
+
+Today, there are many more tools to catch bugs and regressions with; automated tests, feature flags, and more. What has not changed is that poor specification is what tends to create unexpected bugs.
+
+Shipping software projects on time.
+
+ Surprisingly, almost nothing has changed in 50 years; projects slip and there’s a tendency to mask delays. Milestones and good engineering leadership matter for shipping software, predictably.
+
+Importance of documentation. 
+
+This used to be important, then became critical for “waterfall” development, before being deprioritized in the 2000s. Today, more detailed upfront documentation is used in the planning stages.
+
+The Mythical Man Month: the 1995 edition
+
+1. Tooling for developer productivity, then and now
+
+Chapter 12 of MMM is “Sharp tools” and it covers ways of making developers more effective, back in the early days of computing. In the 1970s, developer productivity was a massive challenge due to rapid technological change.
+
+ 
+
+It’s interesting to learn how hard it was to be productive at that time because of a host of issues we don’t have to think about, today.
+
+Dev tools weren’t portable
+
+Brooks writes:
+
+“The technology changes when one changes machines or working language, so tool lifetime is short.”
+
+This was Brooks’ own experience: he worked on a new operating system called IBM 360, which was built on new hardware, which the OS development team had to build the tools to develop for. Later, devs who built programs on top of the IBM 360 needed a new set of APIs, and had to rewrite existing programs from other systems.
+
+These days, programs are much more portable.
+
+ Hardware architecture has become more standardized since the 1990s, and now change is slower. At the hardware level, architecture families like the 
+
+x86 processor family
+
+, the 
+
+x86-64
+
+ (the 64-bit version of the x86), and 
+
+ARM
+
+ allow portability of programs within an architecture family.
+
+Meanwhile, operating systems like Windows, Mac, and Linux distributions integrate with various hardware, and upgrading to a new computer no longer means changing the operating system. Across OSs, Microsoft’s Windows is known for 
+
+prioritizing backwards compatibility
+
+, so 16-bit programs can run on 32-bit Windows versions, and 32-bit programs on 64-bit Windows versions.
+
+A level above the OS, software layers can also create cross-platform compatibility across operating systems. Examples of software platforms include the 
+
+Java Virtual Machine
+
+ (JVM), web browsers for running JavaScript-based web applications, and 
+
+Unity
+
+ for games development. 
+
+We previously did 
+
+deep dives on how to build a simple game
+
+, using 
+
+Electron
+
+ for building desktop apps, and others.
+
+Hoarding tools
+
+It used to be common for programmers to keep tools to themselves and not share them with colleagues, according to Mythical Man-Month:
+
+“Even at this late date, many programming projects are still operated like machine shops, as far as tools are concerned. Every master mechanic has their own personal set, collected over a lifetime and carefully locked and guarded – the visible evidence of personal skills. Just so, the programmer keeps little editors, sorts, binary dumps, disk space utilities etc., stashed away in their file.”
+
+This was the pre-internet age, when hoarding tools could give a developer a big edge in their work.
+
+The internet and the rise of open source has made sharing of developer tools commonplace. 
+
+Today, tools are easy enough to distribute within a team by checking them into a shared code repository, while dev tools are often released as open source for anyone to use, fork, and contribute to. There’s an ever-growing list of open source developer tools:
+
+Backstage
+
+ (developer portal created by Spotify, which we published 
+
+a deep dive about
+
+).
+
+Jenkins
+
+ (popular build system)
+
+Visual Studio Code
+
+ (popular IDE)
+
+React
+
+ and 
+
+Next.JS
+
+ (popular frontend frameworks)
+
+Since the mid-2010s, GitHub has become the de-facto place to share and list open source projects, and the portal makes discovering and contributing to open source tools easier than ever.
+
+Platform teams matter – kind of
+
+Brooks makes an interesting observation about the need for “common tools”:
+
+“The manager of a project needs to establish a philosophy and 
+
+set aside resources for the building of common tools.
+
+At the same time, they must recognize the need for specialized tools, and not begrudge their working teams their own tool-building. This temptation is insidious. One feels that if all those scattered tool builders were gathered to augment the common tool team, greater efficiency would result. But it is not so.”
+
+That observation feels like it could have been written today, when larger engineering teams still struggle with whether to build their own, custom solutions/services, or to integrate into internal platforms.
+
+Platform and program teams were born out of this realization at Uber, back in 2014.
+
+ 
+
+From the article, 
+
+The platform and program split at Uber
+
+:
+
+In the spring of 2014, Uber’s Chief Product Officer, Jeff Holden, sent an email to the tech team. The changes outlined in this email would change how engineering operated and shape the culture for years to come. The email kicked off with this:
+
+“After a huge amount of data collecting, thinking and debating among many folks across the company, we are ready to launch Programs & Platforms! (Attached to this email) you’ll find out whether you’re on a Program or Platform team, and where your seat will be with your new team.” (...)
+
+Program teams – often referred to as Product teams at other companies – represented between 60–70% of the engineering population. These teams organize around a mission and are optimized for rapid execution and product innovation. (...)
+
+Program teams: using the “building blocks” provided by platform to build products
+
+Platform teams own the building blocks which Program teams use to ship business impact. Programs are built on top of Platforms, which enable Programs to move faster.
+
+Platform teams: providing the “building blocks” (usually: services, libraries, tools)
+
+The need for platform teams seems to remain constant at mid and large-sized groups. Many companies at around 100 or more software engineers decide it’s sensible to create a team that takes care of the solutions used by other teams; be it infrastructure or internal services. In this way, much is unchanged since the 1970s. Indeed, the single major change I can see is that more platform teams opt to 
+
+adapt
+
+ open source solutions, rather than build them from scratch, thanks to open source solutions spreading rapidly.
+
+Interactive debuggers speed up developers
+
+Brooks’ book describes slow debugging as a major obstacle in the way of programming at speed:
+
+“There is widespread recognition that debugging is the hard and slow part of system programming, and slow turnaround is the bane of debugging.”
+
+Mythical Man-Month argues that interactive debuggers – which were rare at the time – should speed up development, and Brooks had the data to prove it:
+
+“We hear good testimonies from many who have built little systems or parts of systems [using interactive programming/debugging]. The only numbers I have seen for effects on programming of large systems were reported by John Harr of Bell Labs. Harr’s data suggests that 
+
+an interactive facility at least doubles productivity in systems programming.
+
+”
+
+These days, major IDEs support interactive debugging; i.e., pausing the code running at a breakpoint, inspecting and making changes to variables, and stepping into (or over) functions. These tools definitely help development, and Brooks was right to believe that better debuggers lead to faster development speed.
+
+Developer efficiency shot up from the 1970s
+
+The book cannot help but reveal just how much developer productivity has evolved since it was published, half a century ago:
+
+Programs are portable when changing computers; usually even when changing operating systems
+
+Tools are not just easy to share with other developers, they’re often open source, with large investment in making them even more useful
+
+Debuggers have become dramatically more capable, even though debuggers have not evolved much since the 1990s in capability, as we cover in 
+
+A brief history of debugging
+
+. We also covered 
+
+Antithesis, a startup innovating in this area
+
+)
+
+Still, developer productivity remains an elusive topic today, even though it gets plenty of attention. There are efforts to measure it more precisely at the team-level, including frameworks like 
+
+DORA
+
+, 
+
+SPACE
+
+, and 
+
+DevEx
+
+. You may remember that consulting giant McKinsey 
+
+got involved
+
+ in the debate, to which 
+
+Kent Beck and I published a response
+
+. We’ve also covered 
+
+real world examples of measuring developer productivity
+
+, as well as 
+
+how LinkedIn does it
+
+, and 
+
+what Uber does
+
+.
+
+2. Bug catching was harder
+
+Chapter 13 is “The whole and the parts” and goes into detail about sensible debugging approaches for the time, and techniques for finding bugs.
+
+What hasn’t changed

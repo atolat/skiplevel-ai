@@ -1,0 +1,718 @@
+# How I went from construction to Software Engineer.
+
+# Preface:
+
+I have waited about 6 years to post this. I read and bookmarked several posts like this one to motivate myself and get advice from people like me.
+
+Warning: This is not a post about how I went from making 20k to 200k in 6 months while working full time. It's far more achievable and probably slower than you might expect.
+
+# Getting Started:
+
+At 30 years old, research led me to Software Development. The pay and WLB were both far beyond what I had achieved up to this point in my life.
+
+I thought at the time that I would learn how to make mobile apps for Android. I started learning Java on [codeacademy.com](https://codeacademy.com). This was a long time ago, the site has had a complete overhaul. I cannot speak of it's current state. I learned enough to gain a bit of confidence and I was sure I would become a Software Developer.
+
+I was working full time in construction. Working construction is hard. Up at 5AM long commutes, hard work. I was never going to motivate myself. That's why I enrolled in community college.  I was making 48k at the time. Luckily I dropped out of college a long time ago and actually had credits for some of my general education. I found that I could complete my Associates degree in about two years while working full time.
+
+Courses I took (not sure it's that important):
+
+* Java, C++, SQL, PHP, Microsoft Access, Linux, HTML/CSS
+
+# Making a pivot:
+
+After some exposure to a few different languages and reading through different forums, including this one, I decided Web Development was the shortest path to success. I stand by this advice. When I took PHP in college this became even more clear. Weeks and weeks into Java and C++ we were printing stars \*\*\*\* to the console. With PHP everything was tangible. The browser provided enough that I could see something substantial in minutes, not hours.
+
+I learned HTML/CSS dead last on this list. If I could go back I'd definitely learn this first. I was about to get my AS and decided that I needed to learn JavaScript, which I would need to learn on my own.
+
+Learning Outside of School:
+
+[freecodecamp.org](https://freecodecamp.org) to be honest I haven't used it much in the past few years but for me it was the single best resource. I have heard great things about the Odin Project, but I cannot vouch for it.
+
+# The Shit Hit the Fan:
+
+My boss in construction caught word that I recently got my AS and was interested in making a career change. He fired me immediately (although he knew I'd been in school).  My wife and I both had family in California. We picked up and moved in with her family. Things were pretty bad at this point.
+
+I was now in Fresno with the goal of getting my first job in development. There's a company in Fresno (and now the rest of the country) called Bitwise ([bitwiseindustries.com](https://bitwiseindustries.com)). Without going into too much detail, their philosophy is that underprivileged communities can teach themselves to code and improve their community by brining higher paying jobs. Anyway, it was the only place locally that I knew I could talk to other people learning and take Javascript / Angular classes for $250 for a six week class.
+
+Sleeping on my sister-in-laws spare mattress made me the most motivated student at Bitwise. I was that annoying guy who wanted to meet everyone and talk about code all day to anyone. When a part time position was posted in the Bitwise slack. I was surely the first person to respond.
+
+# My First Job:
+
+Days away from going back to work in construction, I took a job offer that was now full time for $3,000/month.
+
+I was hired as a "Developer Lead" basically a large Silicon Valley web agency had most of their work done in India. It was my job to understand what was being made and communicate with clients. I was not on the hook for any code, but I was able to ease into it as I felt comfortable.
+
+# Pay Raises/Promotions:
+
+Apparently I was pretty good at being a Dev Lead. I went from $36k, to $48k in a matter of months. Then the company my boss did all his work for hired me directly (everyone was cool with this) for $58,000/year.
+
+I know this is not good money, but remember I'm living at my sister-in-laws house and I've almost doubled my pay in 10 months while learning a lot.
+
+There's a bit of falling out, a few other guys leave, I ask for more money, now I'm making $75,000/year.  I am suddenly the top dog and living up to expectations (yes 75k is low).
+
+One year after 75K comes 85k. Then after about 6 months I was promoted to Development Experience Manager and making 92k. Keep in mind I'm still doing the same job I started doing for $3,000/year.
+
+# What about writing code?
+
+Right. I want to write code, not lead an offshore team. I had been studying React in my free time for about 3 years now.
+
+A designer who had left our company a year or so ago hit me up out of nowhere. She asked if I was interested in working at a startup as a React developer. I had just got my promotion, but I couldn't pass up the opportunity.
+
+Two quick interviews later and I was a Software Engineer making $125,000/year. After 90 days I felt comfortable enough to make this post.
+
+# Key Takeaways(edit):
+
+* Learn early on what you really want to do.
+* Take a crappy job if you can afford to.
+* Study in your free time.
+* Make connections wherever possible.
+* Soft skills and networking are underrated.
+* Learn git  
+
+
+Edit: Proof:  
+Not that anyone questioned the authenticity of my story but...  
+7 years ago: [https://www.reddit.com/r/cscareerquestions/comments/4rm294/im\_30\_years\_old\_employed\_full\_time\_i\_want\_to/](https://www.reddit.com/r/cscareerquestions/comments/4rm294/im_30_years_old_employed_full_time_i_want_to/)  
+
+
+6 years ago:
+
+[https://www.reddit.com/r/cscareerquestions/comments/5spjnu/can\_i\_expect\_to\_make\_over\_20\_usdhr\_before/](https://www.reddit.com/r/cscareerquestions/comments/5spjnu/can_i_expect_to_make_over_20_usdhr_before/)
+
+2 years ago:  
+[https://www.reddit.com/r/cscareerquestions/comments/liwttb/i\_think\_im\_being\_seriously\_underpaid\_can\_i/](https://www.reddit.com/r/cscareerquestions/comments/liwttb/i_think_im_being_seriously_underpaid_can_i/)
+
+6 months ago:  
+[https://www.reddit.com/r/cscareerquestions/comments/wl1oz6/what\_is\_the\_appropriate\_job\_title\_for\_this/](https://www.reddit.com/r/cscareerquestions/comments/wl1oz6/what_is_the_appropriate_job_title_for_this/)
+
+  
+
+
+## Comments
+
+### Comment 1 by u/ThisApril (150 points)
+
+Congrats! And thanks for putting the post together. Hopefully it inspires someone like you.
+
+Also:
+> My boss in construction caught word that I recently got my AS and was interested in making a career change. He fired me immediately
+
+So, logically, he was afraid that he'd lose you because you'd find a non-construction job, so he made sure to lose you immediately?
+
+...that makes even less sense than when I would get rejected from retail things because of having a CS degree.
+
+#### Reply 1 by u/[deleted] (63 points)
+
+[deleted]
+
+#### Reply 2 by u/driftking428 (30 points)
+
+At the time I was super angry. Looking back I'm glad he did it. He was offended I wouldn't want to work for him forever. He told me one day he might pay me 100k and he didn't know anyone making 100k in "IT".
+
+#### Reply 3 by u/doughie (7 points)
+
+It sucks but I can kind of understand why they don't want to hire and train someone with a degree, but if that person is already fully trained and it isn't affecting their work then that's just jealousy.  No other explanation other than crabs in a bucket mentality.
+
+#### Reply 4 by u/Gabbagabbaray (2 points)
+
+Kind of had the same retaliation in a heavy equipment mechanic job when starting my degree. Stopped getting raises when i was previously a 'high performer', stopped getting the good customer jobs, stopped getting additional training like welding certs. Eventually got fired for refusing overtime since it was interring with class.
+
+### Comment 2 by u/abiw119 (104 points)
+
+Thanks for sharing 👍👍
+
+#### Reply 1 by u/bioinformaticsthrow1 (14 points)
+
+Indeed. Posts like these should hopefully inspire others. Breaking into tech is completely life changing.
+
+### Comment 3 by u/SquaremanJ (31 points)
+
+Congrats.  I’m 37, and am currently transitioning out of construction, where I’ve been for the last 15 years.  Almost halfway done with my BS in computer science.  Can’t wait!
+
+#### Reply 1 by u/fadswaffer (6 points)
+
+Same here! Was doing plumbing and have about a year and a half left on my cs bachelors
+
+#### Reply 2 by u/KneeDeep185 (5 points)
+
+My path was very similar, was a construction PM and decided to go back to school at 31. I've now been a full time dev for about 3.5 years, and I can say with 100% confidence that my construction experience has given me a leg-up with my peers in certain aspects of the job.
+
+#### Reply 3 by u/driftking428 (3 points)
+
+Hell yes! You can do it!
+
+#### Reply 4 by u/[deleted] (2 points)
+
+[deleted]
+
+#### Reply 5 by u/krkrkra (1 points)
+
+I’m 37 too, but a different mixed career and SAHD. Wrapping up an MSCS now, looking for internships. Good luck!
+
+#### Reply 6 by u/CMDRBUCKSAVAGE (1 points)
+
+Manufacturing for 8 years, now 30, just over a year before the BS!
+
+### Comment 4 by u/mungthebean (62 points)
+
+Most realistic rags to riches as opposed to the bootcamp for 6 months making $200k at FAANG bs
+
+#### Reply 1 by u/[deleted] (-25 points)
+
+I did a 12 week boot camp and make over $200k at FAANG
+
+### Comment 5 by u/warLord23 (26 points)
+
+Awesome post and straight to the point! I recently shared my journey from management to engineering and had more or less the same takeaways. 
+
+For me, the important lesson is to keep learning in your free time and if your employer can support it, then squeeze every ounce you possibly can from that time and opportunity. My employer offered me a part-time mentorship which probably worked really well in my favor. 
+
+The 2nd most crucial takeaway from your story is to be able to make connections and talk to people around you or teams that you would like to work in. It is highly underrated and believe me, knowing people outside your team or organization can open up new opportunities that you might haven't thought about before. Great post and I wish you all the luck in the world. More power to the people who wish to make the change and transition to engineering.
+
+#### Reply 1 by u/driftking428 (4 points)
+
+Thanks!
+
+### Comment 6 by u/arabianbandit (22 points)
+
+Do you think your experience in construction gave you any sort of edge in terms of soft skills, resilience, or anything else?
+
+#### Reply 1 by u/driftking428 (30 points)
+
+Honestly, my job in construction gave me a lot of skills that helped with my first job. In construction I was a small job superintendent. I did a little bit of the work myself, but mostly the framers, plumbers, etc did the bulk. But I picked up a lot. 
+
+Working as a dev lead at a web agency was seriously almost the same job. The client says what they want. We talk through how we'd do it and give an estimate. There are pieces that need to be done by deadlines. 
+
+You have to follow the word of the contract. Then when you think you're 100% the client picks it apart and you make fixes as fast as possible. 
+
+For me my success in both jobs came from being honest, relatable, easy to talk to. Clients want plain English as often as possible and I gave that to them.
+
+### Comment 7 by u/kage1414 (17 points)
+
+Your construction boss really fucked you over just because you were planning a career change. You were still months away from getting a development job.
+
+#### Reply 1 by u/driftking428 (14 points)
+
+It sucked. I don't want to downplay that part of it. But looking back I'm glad he did it. Who knows how long I would have stayed where it was comfortable. By then I was making $58k, I just hated my job...
+
+But yeah he's a huge asshole. Way before any of this happened too.
+
+### Comment 8 by u/[deleted] (36 points)
+
+Congrats on the accomplishments, definitely had the resilience to stick with it
+
+### Comment 9 by u/Peaceminusone208 (16 points)
+
+Good going!
+and thnx for sharing
+
+### Comment 10 by u/powok (14 points)
+
+This is the kind of post we need in these hard times
+
+### Comment 11 by u/[deleted] (13 points)
+
+Congratulations, fella. Construction is hard. You don’t have enough free time and when you do, all you want to do is sleep. You did a great job working your way up to something that provides better for your family.
+
+I’m currently in a similar situation. I opted to finish my associates in CS in lieu of going full BS, while I work in construction as well. So, I feel you. It ain’t easy and the culture is completely different. I’ll be done at the end of February.
+
+I wish you the best, sir. Let’s hope we become even better engineers.
+
+#### Reply 1 by u/driftking428 (7 points)
+
+Yeah people don't understand how hard construction really is. I think it prepared me for the worst and it makes me appreciate working from home every day. Especially when it's snowing or 100 degrees out. 
+
+Good luck out there! Grind leetcode, sorry....
+
+### Comment 12 by u/[deleted] (9 points)
+
+[deleted]
+
+#### Reply 1 by u/driftking428 (15 points)
+
+I got along with people in construction, but I always knew they weren't "my people". They were always gone obsessed Trump loving guys, which is fine but it's not me. 
+
+The culture in software has been way more chill. In construction I worked weekends, I stayed late, I stayed for emergencies, I didn't get PTO. 
+
+Software has a much more chill vibe overall. There are still deadlines and "emergencies" but really people are nicer, more educated, down to earth. 
+
+This is just in my 2 teams. I can't speak for all of SWE.
+
+### Comment 13 by u/LordShesho (7 points)
+
+Just want to say great work and thank you for the writeup. I wouldn't say anything about your career path is unusual, except the momentum you built for income growth. 
+
+For example, I started with a computer science degree and went into a low-code environment at the same pay you had starting, 36k. 6 months later, different job, more code, 50k. But that jump to 75k and being dev lead? That happened after another 5 years. The jump to 120k? Another 3 years after that.
+
+So, don't put yourself down or make light of your accomplishments or income throughout your career. Everyone has their own journey, and your journey looks to be going well and has a promising path into the future. Best of luck!
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Thanks! I was just trying to shake off those people... before they latched on,
+
+### Comment 14 by u/[deleted] (6 points)
+
+That’s awesome congratulations on getting you job you want and making that switch! 
+
+I’m currently where you started. I work in construction and have just started the full stack web development course on Codecademy. I try do a bit everyday (fail these last two days because of other problems) and hope to get into the industry either this year if I am lucky or next year. 
+
+Thanks for giving me inspiration and hope!
+
+#### Reply 1 by u/driftking428 (2 points)
+
+You can do it. Just stick with it. It feels very hard sometimes, just commit and don't look back.
+
+### Comment 15 by u/DC50kARC (5 points)
+
+Awesome journey, true underdog story!
+
+### Comment 16 by u/bishopExportMine (5 points)
+
+I'm a junior engineer with almost 2 yoe.
+
+I just learned html and css for the first time last week.
+
+#### Reply 1 by u/ParathaOmelette (0 points)
+
+Ok?
+
+### Comment 17 by u/LUV_2_BEAT_MY_MEAT (6 points)
+
+>Things were pretty bad at this point. I was now in Fresno
+
+damn you werent kidding they were bad
+
+#### Reply 1 by u/driftking428 (3 points)
+
+This guy gets it!
+
+### Comment 18 by u/[deleted] (6 points)
+
+Mwahaha mf went from builder to builder.getBuilder().build() ☠️☠️☠️
+
+### Comment 19 by u/hydratemydear (9 points)
+
+Thanks for sharing. Hope to learn from more posts like this. How did you study React? Also freecodecamp.com?
+
+#### Reply 1 by u/driftking428 (4 points)
+
+I did a lot of React tutorials. My first job paid for [frontendmasters.com](https://frontendmasters.com) which is an amazing site, it's just hard to justify $40/month unless you're really using it a lot. But it has some of the very best developers and courses for sure. 
+
+That being said. I'll say what everyone else says (because it's true). Just build something. Think of what you'd like to see and make it. It becomes way more real and important to you that way.
+
+### Comment 20 by u/rayreaper (3 points)
+
+It's quite refreshing to hear a story like this, instead of the "I become a Developer in 3 weeks", etc.. Far too often I have friends who read clickbait / bullshit posts which gives them an unrealistic expectation of how difficult it can be to switch careers into Software Development.
+
+### Comment 21 by u/Bimlouhay83 (3 points)
+
+Congrats man! I needed to hear that today. I've been learning html, css, js(and React) for a year now. Did some self learning, then a bootcamp. I've been trying to get out of construction, but it's hard. I haven't done any work as a SWE. I think I'm going to have to go back to laboring this season and it's been weighing on me pretty hard. I've been worried my journey was ending and I am going to get stuck pouring concrete. This story gives me a little hope when I was almost out. Thank you.
+
+#### Reply 1 by u/driftking428 (2 points)
+
+You can do it. Good luck!
+
+### Comment 22 by u/[deleted] (3 points)
+
+[deleted]
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Thanks!
+
+### Comment 23 by u/Jay_Acharyya (3 points)
+
+quick question how do I get into construction?
+
+#### Reply 1 by u/driftking428 (1 points)
+
+Lol. If you're serious where I live we have Labor Ready and Labor Max. They are temporary day labor. We used them a lot for unskilled labor on our jobs.
+
+If you went there, showed up on a job site sober and worked hard you'd easily find a job.
+
+Also pretty sure construction companies will just hire you. No leetcode.
+
+### Comment 24 by u/AirlineEasy (13 points)
+
+I swear to God reddit makes it seem like coding really is just learning how to print money
+
+#### Reply 1 by u/driftking428 (22 points)
+
+Right, all I had to do was study every night from 6pm until 9pm when I slept for 2 years. Then sleep on the floor on a mattress for a year while accepting a $36k/year job. Then work my way up over 4 years....
+
+Simple bro, just do it.
+
+#### Reply 2 by u/SarcasmIsKey (7 points)
+
+System.out.println("$$$");
+
+#### Reply 3 by u/portalsrus (5 points)
+
+I mean, if you learn how to do it and are able to get a job, you can make money. But your statement is really dismissive and takes away a lot of the hard work that OP put into it. They were working a full time job, while going to school on the side and putting in thousands of hours over the course of 4ish years to just land their first gig. Then they worked really hard over the next two years to up-skill themselves and prove to others of their worth. 
+
+What the OP did is definitely replicable for many people, if they had the will/drive to do so. But at the end of the day, the vast majority of people are simply not willing to put in anywhere near the amount of work and effort that OP did to better their lifestyle and income potential.
+
+#### Reply 4 by u/mungthebean (2 points)
+
+I mean, it's literally csCAREERquestions
+
+### Comment 25 by u/Dr_Bust-A-Loaf (2 points)
+
+Congratulations! Very encouraging story. Thanks for sharing!
+
+### Comment 26 by u/nickmaran (2 points)
+
+Thanks for posting. I just want to know do employers ask you about why did you change your career and if yes, how do you respond?
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Only my first employer would have asked and they didn't. The guy who hired me was super down to earth. I believe we spoke about it but there wasn't an interview question about it. 
+
+I'm an honest person. I likely would just blurt out the truth as it came to me.
+
+### Comment 27 by u/sans-connaissance (2 points)
+
+Great post! Congratulations! Also, your old construction boss is the scum of the earth for firing you for the reasons you gave in the post.
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Oh that's just the icing on the cake. That guy is a miserable POS. 
+
+He "fired" me and tried to deny my unemployment. Got 2 other supervisors to make fake "write up" documents and get on a phone call with unemployment and say how bad I was. 
+
+I ended up winning, but I had already cashed out my 401k and I think I got like 3 weeks of unemployment ...
+
+Which remind me. An emergency is an emergency, but if you cash out your 401k, unemployment subtracts that money from what they'll pay yout.
+
+### Comment 28 by u/walkslikeaduck08 (2 points)
+
+Congrats!
+
+### Comment 29 by u/Warbird01 (2 points)
+
+Awesome story!
+
+### Comment 30 by u/SchockWaves (2 points)
+
+Thank you for sharing, and well done!  One of these days I'll make a similar post about my experience.
+
+Not enough people here talk about the slow grind of working low paying non-coding jobs and working your way up.  That's how it works for a lot of us who pivot careers.
+
+### Comment 31 by u/Spiritual-Mechanic-4 (2 points)
+
+excellent post.
+
+connections and soft skills.  yep.
+
+network, network, network.  linkedin isn't social media, it's a job networking site, I blindly accept every connection request, even the low value recruiter spam connections, because now you're accesible in that persons huge network.  And the value of your in-person connections is probably 100x what each linkeding connection is.
+
+If you're a decent person who has demonstrated having your shit together, jobs will find you.
+
+### Comment 32 by u/ZeboThePenguin (2 points)
+
+Did you study a lot of leetcode in your free time? Or mainly focused on learning languages and building projects etc?
+
+#### Reply 1 by u/driftking428 (2 points)
+
+I did some leetcode. I like [https://projecteuler.net/](https://projecteuler.net/) if you're newer and I use [codewars.com](https://codewars.com) because it's free. 
+
+I think I underestimated how much I learned just tinkering with the code as a dev lead. Seeing other people's commits, making tweaks here and there. I learned a lot, slowly. 
+
+My advice is to build something. Buy a domain, put up a site, then build projects to link to it. That is real motivation and real learning.
+
+### Comment 33 by u/SteveDaveCornbread69 (2 points)
+
+Major congrats my man! Inspiring story for sure. How’s the WLB these days?
+
+#### Reply 1 by u/driftking428 (2 points)
+
+I'm on a small team so in general is super chill 9-5 nobody cares if you have a dentist appt or need to leave an hour early. People leave to pick up kids from work. Very low key. 
+
+I've had some tough and long days, but I haven't worked a 45 hour week yet.
+
+### Comment 34 by u/GimmickNG (2 points)
+
+Congratulations!
+
+#### Reply 1 by u/driftking428 (1 points)
+
+Thanks!
+
+### Comment 35 by u/Djglamrock (2 points)
+
+I love the take a crappy job if you can afford it. Sometimes we get too much of a sense of entitlement and think we are above stuff.
+
+### Comment 36 by u/[deleted] (2 points)
+
+Civil ➡️ CS gang represent ✊
+
+#### Reply 1 by u/Ill_Scene_737 (1 points)
+
+Joining you!
+
+### Comment 37 by u/blurryclouds (2 points)
+
+Congrats! Love to see Bitwise get a shoutout here. I toured their office a few years back and love their mission and approach, it's awesome to hear a success story out in the wild!
+
+#### Reply 1 by u/driftking428 (3 points)
+
+I love Bitwise. They definitely aided in my success through networking. I actually got one of my friends from the JavaScript class a job too. He's at 90k now at the place I just left. He was working at Home Depot when we met at Bitwise.
+
+### Comment 38 by u/rogerramjetz (2 points)
+
+Congratulations.
+
+This is really impressive and inspiring.
+
+Thanks for sharing!
+
+### Comment 39 by u/letsgoowhatthhsbdnd (2 points)
+
+so what’s the timeline, you reached 125k in how many years after starting?
+
+#### Reply 1 by u/driftking428 (5 points)
+
+About 6 years from knowing 0 code.
+
+About 4 years from my first day at my first tech job.
+
+### Comment 40 by u/cgyguy81 (2 points)
+
+Yes, networking is underrated.  All of my jobs so far (except the first one) were due to me being referred to or being recommended for the job.  I got my current job here in the US (I'm not American) through someone I used to work with in the UK.  I got that job in the UK through someone else that I worked with in Australia.  I got that job in Australia through someone else I've worked with in Canada (home country).  And I got that job in Canada through internship lol.
+
+Edit: the weird thing is, I don't even have LinkedIn (I do but I forgot the password and have not been updated since I created it, so it's completely blank)
+
+#### Reply 1 by u/driftking428 (2 points)
+
+The designer who recommended me. We worked on quite a few projects before. When she left the agency I remember saying, "What are we going to do without you?" It was sincere, but I know that stuck with her. A year or so later I was the nice relatable dev she knew.
+
+### Comment 41 by u/YodaCodar (2 points)
+
+TBH I want to go the other way around lol
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Lol. To be honest I knew a lot of people in construction that loved it. It does have it's redeeming qualities. There's a lot of money to be made too.
+
+My dad worked in construction his whole life. I knew as a kid that I never wanted to do it long term.
+
+### Comment 42 by u/Puzzleheaded_Two_36 (2 points)
+
+Congrats on your career change!
+
+This motivates me too, I'm almost 22, and I dropped out of electrical engineering last year after one semester, hopefully, I can start studying CS in a different school soon this fall.
+
+### Comment 43 by u/Timotron (2 points)
+
+But what leetcode did you get asked?
+
+
+Amazing dude congrats.  
+
+Best advice ever.  Take a shitty job to learn to how to do the job.
+
+#### Reply 1 by u/driftking428 (1 points)
+
+No leetcode. They just knew I was a "Development Experience Manager" at a major Silicon Valley agency and had years of experience. I got recommended and had the right attitude. I even told them I wasn't an expert in React.   
+
+
+I worked with several big industry names like Cisco. I don't wanna mention too many more I've practically doxed myself already.
+
+### Comment 44 by u/Beachside_Dev (2 points)
+
+Thanks for the inspiration man. Love to see others doing good <3
+
+### Comment 45 by u/Upstairs_Comedian1 (2 points)
+
+Thanks for sharing with us, this is inspiring. I am learning Reactjs and looking for my first tech job.
+
+### Comment 46 by u/Prestigious_Passion (2 points)
+
+Great post, gonna share this with some people who have thought about making a career change but don’t think it’s possible
+
+#### Reply 1 by u/driftking428 (1 points)
+
+Thanks. I think the key is to dive in head first and don't look back. 
+
+If you are a badass developer, someone will hire you. Or you can go build your own stuff.
+
+### Comment 47 by u/AmatureProgrammer (2 points)
+
+Fuck, my soft skills are shit. Anyways, congrats! It gives me hope
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Lol. You gotta treat work like any social group. Make friends, make people like you. You can learn to code better, most people can't fix their personalities.
+
+### Comment 48 by u/lesChaps (2 points)
+
+You made good choices.
+
+### Comment 49 by u/Which_Establishment4 (2 points)
+
+Thanks for posting!
+
+### Comment 50 by u/latrion (2 points)
+
+I'm here basically. Have an old associates in cs, but have been doing construction and project management for the last 7 years. 
+
+Currently working through python tutorials on YouTube trying to get a better grasp on that.  
+
+Congratulations, I hope I'm able to do something similar... At least get a job, don't care much about the first ones pay.
+
+### Comment 51 by u/Over_Krook (2 points)
+
+Congrats, I always find these an interesting read. I got into the industry in a non traditional way myself, yet my experience was so much different. Hopefully this motivates others trying to achieve the same goal.
+
+### Comment 52 by u/Moan-Alisa (2 points)
+
+Very inspiring, thank you for sharing!
+
+### Comment 53 by u/[deleted] (2 points)
+
+Jeez, like I needed any more inspiration OP. Thanks for the share! 
+
+After 20 years in concrete I'm completely over it (actually was a couple years ago but financials weren't really in my favor yet). So I've spent the last 2-3 months on winter layoff dipping my toes in different programming pools, and thanks to you I might have a couple more to add to my list.
+
+### Comment 54 by u/Lychosand (2 points)
+
+Hoping my life can echo yours mate!  Need to hunker down!
+
+### Comment 55 by u/[deleted] (2 points)
+
+im trying to do something similar right now doing bach in commerce plannig to do masters in data science 2 year program
+
+### Comment 56 by u/jmking (2 points)
+
+Congrats! The thing I love most about this industry is the fact it's accessible to people of all sorts of backgrounds.
+
+### Comment 57 by u/Erk20002 (2 points)
+
+I was sort of similar. Dropped out of college the first time, went into the workforce and was making 36k after 7 years doing back office work for a mortgage company. They had recently brought back tuition reimbursement (they cut it after the whole housing market crash in 2008) and I decided it was time to go back to school. Graduated 4 years later (they were selling the part of the company I was in) and got a job making 45k. Went from 45 to 60k in a year. Now I make 85k (Midwest). I'm happy I made the jump
+
+### Comment 58 by u/[deleted] (2 points)
+
+[removed]
+
+#### Reply 1 by u/driftking428 (2 points)
+
+Please feel free to share. But I want to ask you for a small favor. I know there are plans to open a new Bitwise near me in Greeley, CO. I read some press release from last year but I can't find out anything else. I'd love to contribute to the new location if you can find me any info. Thanks!
+
+### Comment 59 by u/[deleted] (2 points)
+
+[deleted]
+
+#### Reply 1 by u/driftking428 (5 points)
+
+I'm not going to disagree with you but I can assure you the misery of working in construction greatly outweighs the misery of burnout on my home office.
+
+### Comment 60 by u/laCroixCan21 (1 points)
+
+Glad it worked out for you, too bad the entire tech industry is doing massive layoffs right now.
+
+### Comment 61 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 62 by u/ILikeFPS (1 points)
+
+> This is not a post about how I went from making 20k to 200k 
+
+> Two quick interviews later and I was a Software Engineer making $125,000/year. 
+
+Just found that a little bit funny. It's cool that you were able to pick up React on the side and end up getting a well paid software engineer position, it's hard to learn stuff on the side while working. 
+
+It definitely helps to stick with it and not give up. Those kinds of salaries are not very common in my country so I'd have to guess you're in USA which probably helps too.
+
+#### Reply 1 by u/driftking428 (5 points)
+
+Yes. I am in the US. As hard as I worked I cannot say I am not lucky. Living in the US, having a job that I could pay the bills while I learned. I met many Indian developers who are more qualified than I am. Luck is always a factor. 
+
+Haha. Fair enough. I did make some pretty big leaps, but I definitely put in the work.   
+
+
+36k, 48k, 55k, 75k, 85k, 92k, 125k. I would love to see my whole career follow that pattern!
+
+### Comment 63 by u/rusty-roquefort (-17 points)
+
+You forgot one _really_ important point in your key takeaways: Have a rich family in California that can subsidize your living expenses so you can afford to live under what would otherwise be starvation wages.
+
+#### Reply 1 by u/tarheel1825 (21 points)
+
+My god you people suck, OP spent six years working and studying toward this and you think a spare mattress is a privilege check????
+
+#### Reply 2 by u/driftking428 (5 points)
+
+My sister in law has 3 kids and a 3 bedroom apartment that costs $900/month.   
+
+
+They had an old mattress that they pulled out of the garage into the living room for my wife and I to sleep on. 
+
+I think you missed that part of the story.
+
+### Comment 64 by u/[deleted] (-2 points)
+
+We really need a different sub for this and for newbies man
+
+### Comment 65 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum account age requirement of **seven** days to post a comment. Please try again after you have spent more time on reddit without being banned. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 66 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 67 by u/laCroixCan21 (1 points)
+
+Oh God you worked at Bitwise?
+
+#### Reply 1 by u/driftking428 (1 points)
+
+I mostly hung out there for networking. I took a few JavaScript classes.
+
+### Comment 68 by u/[deleted] (1 points)
+
+i feel like this is a old post read something similar to this  few months ago
+
+#### Reply 1 by u/driftking428 (1 points)
+
+Wasn't me.
+
+### Comment 69 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 70 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+

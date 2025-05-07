@@ -1,0 +1,78 @@
+QFM019: Engineering Leadership Reading List May 2024
+
+Everything that I found interesting last month about engineering leadership
+
+In this month's Engineering Leadership Reading List, we kick off with Nicola Ballotta's Don't Manage Up, Team Up Instead, which challenges traditional hierarchical management, advocating for a collaborative "Teaming Up" approach. This article highlights the importance of mutual help, open communication, and shared responsibility, emphasizing equality and distributed leadership as keys to fostering innovation and collaboration within teams.
+
+The Key Takeaways from the 2024 Tech Leader Compensation Survey reveal ongoing industry turbulence, with disparities in compensation and an increase in interim and advisory roles. This survey underscores the need for tech leaders to navigate hybrid work environments and address equity gaps to maintain competitive advantage and team morale.
+
+Effective communication is a recurring theme this month. Vinita Bansal's How to be Direct Without Being Rude provides practical strategies for maintaining honesty and empathy in conversations, crucial for leaders aiming to foster a respectful and transparent work culture. Similarly, Managing High Performers emphasises the need for structure, feedback, and clear expectations to help high performers reach their full potential, highlighting the delicate balance between guidance and autonomy.
+
+In a thought-provoking piece, 3 reasons you shouldn't hire a Technical CTO, Allan Degnan humorously argues the essential role of technical competency in leadership, illustrating the pitfalls of non-technical leadership through satire. This theme is echoed in Culture of Competency, which stresses the interconnectedness of technical skills and cultural alignment in driving business performance.
+
+Low Process Culture, High Process Culture - Accidentally in Code examines the transition from low-process to high-process cultures. The article explores the benefits and challenges of both approaches, emphasising that true success often depends on a collective mindset and the willingness to transcend procedural compliance.
+
+Finally, The Anatomy of a Successful Team Squad delves into the implementation of the Spotify Squad Model, highlighting the balance of autonomy and agility with the need for supportive culture and leadership. And We're in the midst of a fundamental shift in leadership discusses the shift from positional authority to influence-based leadership, drawing lessons from activists and thought leaders to inspire and motivate teams.
+
+As always, the Quantum Fax Machine Propellor Hat Key will guide your browsing. Enjoy!
+
+Don't Manage Up, Team Up Instead (hybridhacker.email): Nicola Ballotta argues that "Managing Up" reinforces hierarchical structures that stifle innovation and collaboration, advocating instead for a "Teaming Up" approach where mutual help, open communication, and shared responsibility drive team success. Ballotta provides practical steps and addresses challenges to implement this collaborative method, emphasising the importance of equality and distributed leadership within teams.
+
+#TeamCollaboration #Leadership #WorkCulture #Innovation #Teamwork
+
+Key Takeaways from the 2024 Tech Leader Compensation Survey (ctocraft.com): The 2024 Tech Leader Compensation Survey highlights that tech leaders face ongoing industry turbulence, with significant job changes and disparities in compensation, particularly in equity value between men and women. Despite most leaders working in hybrid or remote settings, North America continues to offer higher average compensation compared to Europe, and there is a notable increase in interim and advisory roles.
+
+#TechLeadership #CompensationTrends #HybridWork #EquityGap #TechIndustry
+
+How to be Direct Without Being Rude (techtello.com): The article by Vinita Bansal emphasises the importance of being direct in communication without being rude, highlighting the need for careful word choice, empathy, and humility. It outlines strategies such as avoiding judgemental language, balancing honesty with inquiry, backing opinions with evidence, and refraining from using authority to ensure conversations are effective and respectful.
+
+#CommunicationSkills #Directness #Empathy #Humility #EffectiveCommunication
+
+3 reasons you shouldn't hire a Technical CTO (linkedin.com): The article uses some (not so subtle satire) to argue against hiring a non-technical CTO for technology-driven businesses, emphasising that technical competency is crucial for effective software development and operational success. It contends that competent technical leadership can streamline processes, reduce errors, and foster a productive culture, whereas a lack of technical skills can lead to inefficiency and strategic missteps. When I first read this, I completely missed the #satire hashtag in a footnote at the end and then proceeded to try (in good faith) to tear down the article using logic and reason. I should have just let the article do the talking.
+
+#TechLeadership #SoftwareDevelopment #BusinessStrategy #CTO #HiringPractices
+
+Low Process Culture, High Process Culture - Accidentally in Code (cate.blog): The author shares their experience transitioning from a low-process to a high-process work culture, highlighting the challenges and benefits of both. They emphasise that while processes can ensure adequacy and avoid pitfalls, true success often depends on the collective mindset and the willingness to go beyond mere procedural compliance.
+
+#WorkCulture #ProcessManagement #Feedback #Teamwork #CareerGrowth
+
+Software Engineering Onboarding - Defining The Rules of Fun (startupstash.com): The article emphasises the importance of an effective and efficient onboarding process for new software engineering employees, highlighting the need for clarity, quick integration, and a focus on work-life balance through practices like defining core working hours, minimising meetings, and fostering continuous learning.
+
+#Onboarding #SoftwareEngineering #WorkLifeBalance #EmployeeWellbeing #StartupCulture
+
+The Anatomy of a Successful Team Squad - by Nicola Ballotta (hybridhacker.email): This article details an experiment with implementing the Spotify Squad Model within a team to manage increasing workloads and improve focus on new features, highlighting the benefits of autonomy, agility, and innovation while also addressing challenges like over-reliance on autonomy and resource intensity. The article emphasises that while the Squad Model can offer significant advantages, its success depends on a supportive culture, strong leadership, and careful adaptation to specific organisational contexts.
+
+#TeamSquad #AgileDevelopment #SpotifyModel #Leadership #Innovation
+
+Managing High Performers (staysaasy.com): The article provides advice on managing high performers, suggesting that even the best employees need structure, feedback, and clear expectations to reach their full potential. Managers should actively guide high performers, engage in career planning, pay them competitively, and address any issues promptly to maintain their motivation and effectiveness.
+
+#Leadership #Management #HighPerformers #CareerDevelopment #EmployeeEngagement
+
+The Secret Ingredient of the Successful Team - by Hagai Levin (medium.com): Hagai Levin attributes the success of his current team to the genuine care they have for their products, customers, and each other, which fosters an agile and highly productive work environment, contrasting with his previous experience where a lack of care led to lower motivation and effectiveness.
+
+#TeamSuccess #WorkCulture #AgileTeams #Leadership #EmployeeEngagement
+
+Why can't I focus? (peterszasz.com): This article discusses common reasons for difficulty in maintaining focus, such as multitasking, overcommitting, and unclear goals, and offers practical solutions like embracing single-tasking, setting clear priorities, and practising mindfulness and structured recovery sessions to enhance concentration and mental resilience.
+
+#Focus #Productivity #Mindfulness #SingleTasking #MentalHealth
+
+How to be a great team player - by James Samuel (softwareleads.substack.com): James Samuel emphasises that great teams achieve synergy when members work together harmoniously, fostering psychological safety, sharing knowledge, offering encouragement, providing feedback, and holding each other accountable, which collectively elevate the team's performance beyond individual capabilities.
+
+#Teamwork #Synergy #Leadership #Collaboration #EngineeringTeams
+
+We're in the midst of a fundamental shift in leadership (fastcompany.com): The article discusses a significant shift in leadership dynamics, highlighting that traditional models relying on positional authority are being replaced by influence-based approaches. It argues that effective leadership now emphasises referent, expert, and informational power, drawing lessons from activists and thought leaders to inspire and motivate without coercion.
+
+#LeadershipShift #InfluencePower #ThoughtLeadership #RemoteWork #EmpathyInLeadership
+
+Culture of Competency (linkedin.com): The article argues that technical competency is crucial for technology companies, emphasizing that both culture and tech skills are interconnected. It highlights that competent technical leadership improves software delivery efficiency and overall business performance, while poor hiring practices and undervaluing skills can lead to significant operational issues.
+
+#TechLeadership #CompetencyMatters #SoftwareDevelopment #DigitalTransformation #TechCulture
+
+Regards,
+M@
+
+[ED: If you'd like to sign up for this content as an email, click here to join the mailing list.]
+
+Originally published on quantumfaxmachine.com.
+
+You can also check out the Slideshare version here.

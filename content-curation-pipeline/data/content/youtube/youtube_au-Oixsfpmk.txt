@@ -1,0 +1,57 @@
+So you want to become better than 99% of 
+programmers. But you are doing the exact  
+same things that 99% of programmers are 
+already doing. Watching video tutorials,  
+doing online courses and solving Leetcode 
+problems. Everbody is doing that. Doing  
+what everyone else is doing is the very 
+definition of how to become average. And  
+there’s nothing wrong with that. But if you 
+want to get ahead of others, you have to be  
+willing to do what others are not willing to 
+do. Here are 5 such things you can do right now.
+Most people think that programmers code all 
+day. In reality, programmers spend most of  
+their time debugging code. Breaking things and 
+fixing them is an essential skill to become a  
+skilled programmer. Yet, beginners don’t spend 
+any time learning the right way to debug code.  
+To get started with learning debugging, you can do 
+this course called Software Debugging on Udacity.
+When I was a beginner, I would watch the 
+longest possible programming tutorial,  
+learn as many programming languages as 
+I could and build as many projects as  
+possible. In other words, I thought quantity 
+is all that matters. But in programming,  
+quality matters much more than quantity. One 
+great project on your resume can easily give  
+you an edge over someone who has 
+10 basic projects on their resume.
+Let me ask you a question. During my last 2 
+years working as a Software Engineer at Google,  
+let’s assume that I have written a total of 10,000 
+lines of code? How many total lines of code do you  
+think I have read during the same period? It would 
+be easily 100,000 lines of code which is 10 times  
+what I have written. Yet, new programmers spend 
+no time reading code written by experienced  
+programmers. Go to Github and spend 30 minutes 
+trying to understand someone else’s code everyday.
+The biggest disadvantage beginners face is 
+that often, they don't get the opportunity  
+to collaborate with experienced programmers. 
+As a result, they never learn what it’s like  
+to collaborate with other engineers on the team. 
+To solve this problem, you can start contributing  
+to open source projects. I will link a guide 
+in the description to help you get started.
+To become a top 1% coder, you need to know what  
+a top 1% coder looks like. But where 
+can you even find a top 1% coder? At  
+conferences and meetups. To find meetups 
+happening near, you can use meetup.com.
+But before you can do any of this, you need 
+to know How to think like a programmer. Watch  
+this video for that. My name is Sahil 
+and I will see you in the next one.

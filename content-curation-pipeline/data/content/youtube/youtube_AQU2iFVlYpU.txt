@@ -1,0 +1,25 @@
+bro what's up dude you're a software
+engineer right yeah what exactly do you
+do like what exactly is coding software
+engineers build software by writing code
+when somebody says that they're coding
+they're essentially taking a programming
+language a common one such as python or
+java and then they're putting together a
+bunch of tiny building blocks to create
+a bigger piece of software kind of like
+how when you're building a house you're
+essentially laying down a bunch of tiny
+little bricks together but at the end
+you get a house some common building
+blocks in programming languages are
+conditional statements which only
+execute a certain piece of code if a
+certain condition is met or loops which
+allow you to repeat a certain action
+over and over again for a certain number
+of times when you put together all these
+building blocks over and over again you
+can eventually build a really big piece
+of software kind of like this app that
+you're watching this video on right now

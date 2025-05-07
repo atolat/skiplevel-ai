@@ -1,0 +1,1157 @@
+# My Job Hunt as a Software Engineer with 5 YOE, 100k to 290k TC.
+
+# TL;DR
+CS Bachelors with 5 YOE looking to switch jobs. Prepped for 5 months, passed 5/6 onsites and improved TC from 100k to 290k.
+
+#Background
+I have a CS Bachelors and 5 YOE, all at a large financial services company. I'd previously solved around ~100 LC problems on on a different account back when I was looking for my first SE job (The site probably had ~300 problems total back then, oh how times have changed...)
+
+November of last year I started casually doing problems, about a few per month. I didn't start seriously studying until April, when I started studying System Design and did ~400 problems over the course of 5 months. I started applying to jobs in July and interviewed in August.
+ 
+# Methodology
+## LeetCode
+[My LC stats](https://imgur.com/a/JUrA6vo).
+I solved an average of three new problems a day. One or two of these would be from NeetCode 150, until I finished. Instead of topic by topic, I did a different topic every day and cycled through them. I would also redo/look over past problems a day, a week and a month after solving them.
+
+For non-NeetCode problems, I just sorted by interview frequency. In August when I was interviewing/had interviews scheduled, I did company tagged problems, also sorted by frequency.
+
+For each problem, I'd spend anywhere from 10-30 minutes trying to solve it myself, depending on if I thought I was getting anywhere. After that I'd go straight to the answer. NeetCode's are usually the best, there were only a few problems where I preferred other solutions to his. For non-NeetCode problems I would first check if the official LC solution was any good. (it really depends on the Author, you usually can tell right away from the comments) If not, I'd go digging around in the discussion.
+
+A few times a week, I would also try solving a problem exactly how I would during an interview. (Asking questions, annotating what I was doing out loud, using well thought out variable names, commenting everything, going through Big-O out loud).
+
+## System Design
+Because my old company is pretty dated tech-wise, I didn't have much experience with System Design despite my 5 YOE. I started off reading [DDIA](https://dataintensive.net/), but decided after a few chapters it was too dense and not great ROI from an interviewing perspective. However, it was a great read and I will go back to it at some point. 
+
+I ended up reading the intro in [Alex Xu's System Design book](https://www.amazon.com/System-Design-Interview-insiders-Second/dp/B08CMF2CQF), as well as the topics in [System Design Primer](https://github.com/donnemartin/system-design-primer) to gain some basic knowledge.
+
+I then went through the examples in the Alex Xu book, as well as the ones in [Grokking](https://www.educative.io/courses/grokking-the-system-design-interview), for each example I took notes and practiced writing out the APIs, diagram and schemas.
+
+Finally, I went through and watched some mock interviews on the [Exponent youtube channel](https://www.youtube.com/c/exponentTV). These are pretty scripted but I thought they were still a decent representation of what an actual interview is like.
+
+This prep brought from zero to pretty comfortably giving SE2 system design interviews, and I was even up-leveled at one of the companies I interviewed at.
+
+## Behavorial
+I made sure I had 2 stories for each of the common Rainforest Leadership Principles, about 15 total with overlap. For all other companies I just adapted my Rainforest stories on the fly.
+
+# Job Hunt
+In total I submitted ~50 applications at ~25 companies. They were all through either recruiters, or applying directly on the Company site. Some notable ones below:
+
+Company|Result
+:--|--:
+Rainforest | Offer (L5)
+Audible|Offer (L5)
+Bloomberg | Offer (SSE)
+Capital One | Offer (SSE)
+Dropbox | Rejected (Resume Screen)
+Google| Ghosted by Recruiter
+Lyft | Rejected (Onsite)
+Microsoft|Rejected (Resume Screen)
+Spotify | Canceled Onsite
+Toast|Offer (SSE)
+Twitter|Rejected (Resume Screen)
+Uber|Canceled Phone Screen
+
+I ended up passing 5 of the 6 onsite loops I attended. After negotiating with the competing offers I had, I accepted one at 290k TC, Boston HCOL.
+
+# Thoughts and Takeaways
+These are all just my opinions, please take them with a grain of salt!
+
+* LC premium is worth it. While not all the solutions will be like this, there were some that alone justified the entire cost, as they solidified my understanding of certain concepts.
+
+* Over-studied Dynamic Programming.
+ * DP never really clicked for me, despite dedicating a large amount of time and trying various resources.
+ * Out of all the problems I encountered between OAs, Phone Screens and On-sites, I only received a single DP problem, which was really an optimally greedy problem with a DP solution.
+ * I could have just gotten lucky, it could also be a different story if you are interviewing with Google.
+
+* Under-studied Arrays and Strings.
+ * I feel like these are sometimes glossed over since they are more "basic" data structures and I was guilty of this myself.
+ * At least a third of the problems (with probably another third being DFS/BFS problems) I received were Array/String related, with no special data structure/algorithm beyond that.
+
+* Overall I was overprepped for algos. Case in point, for graphs I made sure I was comfortable with Union-Find, Djiktra's, Bellman-Ford, Kruskal's, Prim's, and was seriously considering some of the more obscure ones as well. I used these algorithms a grand total of 0 times during my interviews.
+
+ * If your interviewer is having a really bad day could they give you a problem that needs some obscure algorithm to solve? Sure, but I feel like the overall ROI from knowing these is quite low, and the time would be better spent making sure you're really confident in the two granddaddy algorithms DFS and BFS, especially if you don't have as long as I did to prepare.
+
+* Communication is extremely important! Coming from a consulting background I feel like the bar on this for SEs isn't all that high, so being a strong communicator will definitely allow you to stand out. If you aren't comfortable in this, I suggest doing mocks with friends/coworkers, or looking for people in NeetCode's discord. 
+
+* One upside to Rainforest's ridiculous emphasis on LPs is that it overprepares you for other behavorial interviews, I definitely felt like my behavorial interviews gave me a leg up. If you're not interviewing with Rainforest but are just looking for a structured way to prep for Behavorial, it honestly wouldn't be a bad idea to create stories for the common ones.
+
+* Following the advice in [this post](https://www.reddit.com/r/cscareerquestions/comments/ujjhpi/not_all_can_make_top_5_salaries_by_definition_but/) was great for negotiating.
+
+* Finally, for those on the grind for their first position, I promise it gets better! The difference between my first job and second job was truly night and day. 
+
+This subreddit has helped alot in terms of retaining my sanity this past year, so if you're interested in any of the specific interview experiences or are looking for advice, feel free to reach out, I'd love to help out.
+
+## Comments
+
+### Comment 1 by u/bony_doughnut (413 points)
+
+> - Under-studied Arrays and Strings.
+
+> - I feel like these are sometimes glossed over since they are more "basic" data structures and I was guilty of this myself.
+
+So true! Most of the questions I've seen require fairly basic Data structures, and not much more than 1 dimensional or 2 dimensional array manipulation (not going to mention Strings separately, because they're just arrays anyway).
+
+Congrats on the pay bump, 3x is fucking awesome!
+
+#### Reply 1 by u/X-0v3r (6 points)
+
+Always the same thing, most people will ask you for Design Patterns and Algorithmic Structures just for the sake of asking even before real technical skills and worse, sometimes telling you that you MUST use them for mostly no reasons even when the projects' really don't need em'.
+
+&nbsp;
+
+Same thing, asking X years of experience when mostly the job don't require such qualified people for their shitty projects since all they ask you is: "Do the job, no asking even if you could do far better and prevent technical debt".
+
+Then they go like:
+
+- "Why is that guy quitting, he seemed to have done nothing and got payed" (No, I finished all the required job as fast as I can as you asked, and I was doing nothing because I was bored as hell since I was over-qualified. 
+- "We can't find good people to do the job, they're all silent quitting !" (Either they're extremely cherry picking as usual with 7-10 interviews for a single damn job which wasn't the norm at all 15 years ago, or either they're not paying enough to get the right guys).
+- "Why people are all Freelancing ? They're too expensive !" (Glad I went that way, reap what you sow).
+
+### Comment 2 by u/ZolaThaGod (300 points)
+
+As someone with ~4 YOE at one company, also making $100k, and who has been grinding LC for the last 6 weeks… this was a very encouraging read. 
+
+Well done dude.
+
+#### Reply 1 by u/claring (62 points)
+
+You're basically exactly where I was a few months ago, keep it up man!
+
+#### Reply 2 by u/TwinkForAHairyBear (3 points)
+
+You need to remember that if this path was achievable by everyone, then this post wouldn't get 1500 upvotes. And now consider the fact that this sub's baseline itself is very high (ah yeah so help me choose between Meta and Google, what a tough life I have). The chance that you're going to follow OP's steps and get the same result is very, very slim.
+
+#### Reply 3 by u/[deleted] (1 points)
+
+100k TC or base?
+
+Im also confused if OP 100k was TC or base...
+
+### Comment 3 by u/halofixers (419 points)
+
+It’s a testament to how stupid the moderators are that OP had to resort to saying “Rainforest” instead of “Amazon” because the automod removes any post that contains the word Amazon. Imagine being on one of the most popular forums for discussing tech companies and you can’t even say the name of a FAANG company without censoring yourself in ridiculous ways
+
+#### Reply 1 by u/shytries (236 points)
+
+Lmao thank you for this comment. I was like wtf is a rainforest leadership principle
+
+#### Reply 2 by u/ClassicPygmySquirrel (23 points)
+
+And here I thought it was Rainforest Café 🙃💀
+
+#### Reply 3 by u/ShadowWebDeveloper (39 points)
+
+We could turn it off, but be careful what you wish for.  A lot of people didn't want to hear about Big N as often as they did before we had the weekly threads and Automod enforcement.
+
+We'll talk about it internally and maybe run a poll or something to figure out what the community wants.
+
+(Also, please try to remember that the moderators here are normal folks doing a thankless job for free.)
+
+#### Reply 4 by u/cranburycat (15 points)
+
+Lol, after your comment only I realized what’s rainforest!
+
+#### Reply 5 by u/[deleted] (57 points)
+
+I don't disagree, but the subreddit voted in these rules. People used to complain constantly about how the sub was too focused on FAANG companies. It's akin to a financial careers sub complaining about people talking about the big investment banks.   
+
+
+Pure salt from jealous people, pretty much.
+
+#### Reply 6 by u/CalRobert (6 points)
+
+And here I thought it was the company that provides Amazon product info in an API (rainforestapi.com)
+
+#### Reply 7 by u/[deleted] (2 points)
+
+Thats a wack rule
+
+#### Reply 8 by u/gamesuxfixit (-2 points)
+
+Doesn't this filter actually serve its purpose...? Posts with considerable content will typically have users that are willing to replace Amazon with Rainforest and users that just post some commonly asked question about Amazon are probably less likely to use search and see that it's a common workaround to name dropping it.
+
+#### Reply 9 by u/elliotLoLerson (1 points)
+
+Yep inalso had no idea what rainforest was. Thank you for this.
+
+#### Reply 10 by u/ccricers (1 points)
+
+The biggest irony has to be bot with crude string-match heuristics in a sub related to software careers. In a sub that has many brags about FAANG offers and high TCs, we should have the most tremendous, intelligent bots in the business!
+
+### Comment 4 by u/[deleted] (100 points)
+
+[deleted]
+
+#### Reply 1 by u/claring (78 points)
+
+In terms of specific tech/languages, I did get the standard "tell me about X project or Y technology on your resume". One company that I didn't move forward with the onsite with required Java for their phone screen, which was definitely not normal.
+
+### Comment 5 by u/lifting_and_coding (180 points)
+
+5/6 is a killer success rate, nice work
+
+### Comment 6 by u/floondi (64 points)
+
+Curious what your other offers were
+
+#### Reply 1 by u/G67jk (-3 points)
+
+and which one accepted?
+
+### Comment 7 by u/BoKKeR111 (30 points)
+
+Were all the technical interviews coding challenge based and design? I am switching from Europe to US and from this it seems that I should be grinding leetcode and books. I am only on 4y experience but here technical interviews are not that common. You might get a home coding assignment or pair program on site. Would you mind sharing your CV layout.
+
+#### Reply 1 by u/claring (53 points)
+
+All but two technical interviews were standard LeetCode or System Design style interviews.
+
+The two that I encountered that were different were:
+
+1. Lyft Laptop Interview, had to work on an assignment on an IDE of your choice, googling/Stack Overflow allowed, 1.5 hr time limit
+2. Capital One Case interview, was asked to look over some code, explain what it did, how it could be improved, etc.
+
+I'd say if you're specifically looking at Big Tech in the US, then yeah grinding leetcode will be pretty necessary. However, there's always the [Hiring without whiteboards](https://github.com/poteto/hiring-without-whiteboards) list.
+
+### Comment 8 by u/Botaz2 (26 points)
+
+How did you review "past problems a day, a week, and a month after solving them"? Did you take note of each of the problems on a notebook, doc, or excel sheet to make the process much more manageable? Or do you have any other recommendations on how to go about this?
+
+#### Reply 1 by u/claring (26 points)
+
+I had an excel sheet where I tracked problems, Big-O, and notes, kinda like what NeetCode had if you've seen his videos. I added a column tracking the next date to redo a problem.
+
+#### Reply 2 by u/FacelessWaitress (14 points)
+
+I know you're asking OP, but anki may be a helpful app. It's a spaced-repitition flashcard app, I put all dsa problems I solve in it.
+
+### Comment 9 by u/mungthebean (50 points)
+
+As someone in a similar spot as you were pre offers, this is really helpful
+
+I just finished going over Neetcode 1D DPs with an okay grasp. I’ll probably save myself the headache and skip 2D DPs unless I manage to get a Google on-site
+
+So it seems like aside from the array and string basics, a lot of emphasis is placed on backtracking / sorting / tree reversal since you mentioned DFS/BFS?
+
+#### Reply 1 by u/claring (33 points)
+
+Yeah, I wasn't feeling too comfortable with DP even after 30-40 problems, especially bottom-up. 
+
+Backtracking (kind of like DFS), Sorting and Trees yes. I didn't specifically get anything that required me to invert a tree, but DFS/BFS on trees and graphs is a definite must know and imo probably the highest ROI algorithms you could study.
+
+### Comment 10 by u/isospeedrix (20 points)
+
+dam meanwhile i cant get past 170k with 10 yoe
+
+hard life. maybe next year. though my skill is very average so its hard to compete with pros
+
+#### Reply 1 by u/RationalTactician (10 points)
+
+You should look into over employment brother
+
+#### Reply 2 by u/everestster (9 points)
+
+Jump ship every 2-3 years, bro. This is how you learn and grow.
+
+### Comment 11 by u/Toasted_FlapJacks (15 points)
+
+Nice write up! 
+
+Do you have any thoughts on system design approach differences since you built your knowledge of systems through resources vs what you've seen/experienced at work?
+
+#### Reply 1 by u/claring (21 points)
+
+If you already work in Big Tech and are at the level where you're participating in design work I suppose it would be easier? 
+
+I considered my system design preparedness prior to starting studying essentially zero, and the process I followed prepared me pretty well.
+
+### Comment 12 by u/EarlyWormGetsTheWorm (14 points)
+
+How much do you think personal projects help?
+
+For exanple I have an Angular/Typescript+Node.Js +Postgresql project that I had hosted on AWS but I recently stopped paying for it because it got so expensive. 
+
+I have basically no Leetcode experience and I am just wondering if my time outside of work is best spent grinding Leetcode or investing time in my personal project again. 
+
+I have about 4YOE just fyi.
+
+#### Reply 1 by u/claring (19 points)
+
+If you have 4 YOE the 4 YOE is going to matter much more than a personal project imo, of course there are exceptions.
+
+#### Reply 2 by u/JeffMurdock_ (7 points)
+
+> I have about 4YOE just fyi
+
+At 4 YOE, they care much more about your job experience than personal projects, unless you're completely changing tracks. So, for instance, if you're currently a full-stack engineer who wants to become a MLE, go ahead and pimp out your machine learning projects!
+
+#### Reply 3 by u/Sesleri (15 points)
+
+Always exceptions but most ppl don't care about your personal project
+
+#### Reply 4 by u/UnoMaas (4 points)
+
+Another worm? Like... Are they friends? 
+
+Also following for answer.
+
+#### Reply 5 by u/TheBrinksTruck (1 points)
+
+Probably only matters if you have 0-1 YOE, and are looking at smaller companies who don’t LeetCode. I got my current internship because of my projects, but it’s also probably because I had nothing else to really “brag” about, I had no other experience.
+
+#### Reply 6 by u/throwaway2492872 (1 points)
+
+Leetcode. Unless you're not interested in most large companies in the US. It's kinda the requirement at 90% of the places I've interviewed.
+
+#### Reply 7 by u/mcmaster-99 (1 points)
+
+Unless your personal project is something really reall special and unique that solves most real-world problems, it definitely wont even be brought up during interviews. Companies want experience that can be applied on the job.
+
+### Comment 13 by u/WingedBacon (28 points)
+
+On the topic of DP, for what it's worth, a friend of mine who works at a MANGA company and has ran a good amount of interviews agrees with you and said they don't ask DP questions (this is as of a year ago, maybe it wasn't true in the past). While I'm sure this isn't universally true, it's probably worth keeping in mind in terms of prioritization (he also suggested I study less DP,  which I was prioritizing at the time).
+
+#### Reply 1 by u/kino33solo (23 points)
+
+I got asked a DP question for Google about two months ago
+
+#### Reply 2 by u/TTwelveUnits (6 points)
+
+what is dp?
+
+### Comment 14 by u/sklslldlk (38 points)
+
+hey mate, so you started at 100k out of college or with one year of experience?
+
+#### Reply 1 by u/claring (75 points)
+
+I started lower than that, at around 75k, 100k was my TC prior to getting this new Job.
+
+### Comment 15 by u/namonite (11 points)
+
+Good idea to go straight to the LC answer if you’re spinning your wheels. Care to elaborate the ROI of this, studying the answer instead of spending hours trying to figure it out yourself? 
+
+I’m sure there are plenty including myself that think you need to figure out every problem
+
+#### Reply 1 by u/claring (45 points)
+
+My train of thought was if I'd spent 30 minutes without at least getting really close, I would have failed the problem in an interview setting anyways.
+
+The important part is to really study and understand the answer afterwards.
+
+Imo, spending hours to get to a patched together solution that technically passes all the OJ tests is worse than spending 30 minutes, not getting to a solution, then spending an hour on really understanding the optimal solution and why it is optimal.
+
+### Comment 16 by u/g-o-dude (32 points)
+
+500 LC completed! POGGERS!
+
+### Comment 17 by u/OldManFleming (8 points)
+
+I’m super curious how you managed to keep your first offers open while you were still finishing on sites for other companies. Did you manage to fit all those on sites / negotiations into a few weeks? Negotiating with 5 companies and doing 6+ hour on sites all at once sounds like a nightmare lol. No way I could do that while having an existing full time job
+
+#### Reply 1 by u/claring (13 points)
+
+I managed to time it decently enough to where I received all the offers within a span of 5-6 days. 
+
+For the onsites I took PTO the week or so I had them scheduled. I'm also lucky enough where my prior job had amazing work life balance so I was never too stressed.
+
+### Comment 18 by u/lhorie (6 points)
+
+> Some notable ones
+
+What's the story with the cancelled loops? You mean you cancelled them after receiving offers from other companies?
+
+#### Reply 1 by u/claring (11 points)
+
+Yeah, I sent out all my applications around the same time but some companies were just slow in getting back. Spotify got back 2 weeks after I applied about a phone screen, at that point I already had a few onsites scheduled.
+
+### Comment 19 by u/Alexanderdaawesome (5 points)
+
+When you say 290K is that base pay, or is that including all forms of payout like stock options?
+
+#### Reply 1 by u/[deleted] (13 points)
+
+It’s Total Compensation (TC). That includes things like stocks and bonuses
+
+### Comment 20 by u/EngStudTA (16 points)
+
+Obviously all lies. I have reliable information from this sub that no one is hiring nor will anyone ever hire again.
+
+### Comment 21 by u/[deleted] (4 points)
+
+[deleted]
+
+#### Reply 1 by u/claring (1 points)
+
+It was a mix between hybrid and remote positions.
+
+### Comment 22 by u/RandyMoss93 (4 points)
+
+Ahh, back to our roots
+
+### Comment 23 by u/daddyKrugman (3 points)
+
+So you went with Audible? Nice.
+
+#### Reply 1 by u/ExpensiveGiraffe (1 points)
+
+Curious how different it is working for Audible vs Amazon.
+
+### Comment 24 by u/AK-3030 (3 points)
+
+Any advice on how to talk about projects especially if you feel like your experience is a bit weak?
+
+#### Reply 1 by u/claring (13 points)
+
+Don't be afraid to embellish. I'd advise against making things up completely as you could be caught with your pants down, but don't be afraid to talk things up and make things seem more impressive than they actually are.
+
+### Comment 25 by u/Pariell (3 points)
+
+Hi fellow Boston area dev! Great job on the new offer!
+
+### Comment 26 by u/papayon10 (3 points)
+
+How many hours a day would you study
+
+#### Reply 1 by u/claring (7 points)
+
+On average I'd say 3-4 hours a day, over 5 months. A few longer days towards the end when I had onsites coming up.
+
+### Comment 27 by u/suurkate (3 points)
+
+I interviewed at Google in April and 2/4 of my questions were DP. I’m sure it’s not true that 1/2 of Google questions are DP, but for anyone reading this, it’s still worth knowing.
+
+(I now work at Google).
+
+### Comment 28 by u/EngineeredPapaya (3 points)
+
+As someone with 8yoe who also switched jobs this year, I can confirm this was basically the same process for me and all of OP's advice is golden.
+
+### Comment 29 by u/[deleted] (3 points)
+
+Terrifying to think theres 1000's of dudes in their 40s and 50s still making under 90k because they dont know the business game all they kno is how to push code.
+
+Severly underpaid nerds providing way too much value... know ur worthhhhh. Just google ur years of experience, job title, and average salary.
+
+As for OP congrats sounds like ur making what u shud be now, keep it up! Try and get nicer yearly raises. Im at 84k with 0 yoe, 2 months at first job, LCOL beach city work from anywhere model.
+
+All other offers were mid 60s.
+
+So i negotiated hard for this one.
+
+However i will renegotiate yearly for 10 to 20k more a year if at same company. Plan to stay here 2 years.
+
+So 100k+ next year and 120k the 2nd year estimating (we have already had the salary raise convo and its basically already set to go)
+
+At which point with 2 yoe il be targetting a base salary of 130k if i dont get that here and i rly still want more than 120k base then il jump ship. 
+
+Im fine capping out at a base salary between 120-150k.
+
+I dont personally need more than that.
+
+### Comment 30 by u/AK-3030 (8 points)
+
+Can you share links to rainforest? Its the only company I’ve never heard of on your list
+
+#### Reply 1 by u/AwesomeLowlander (25 points)
+
+Hello! Apologies if you're trying to read this, but I've moved to kbin.social in protest of Reddit's policies.
+
+#### Reply 2 by u/JeffMurdock_ (3 points)
+
+Amazon. I think this subreddit has some filter around that name appearing in the main post text or title.
+
+#### Reply 3 by u/tonganz (2 points)
+
+Amazon
+
+#### Reply 4 by u/loops_____ (1 points)
+
+Dude…
+
+### Comment 31 by u/ohhellnooooooooo (14 points)
+
+automatic squealing snobbish one yoke onerous juggle dependent act cheerful
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+
+#### Reply 1 by u/claring (68 points)
+
+The 290 TC was after negotiation.
+
+#### Reply 2 by u/Glittering_Praline20 (4 points)
+
+How did you negotiate without any competing offers? 
+
+I'm in the same situation now and feel like i'm getting slightly lowballed
+
+#### Reply 3 by u/ninjaturtlez777 (9 points)
+
+Yeah I hope he negotiated, I had no competing offers and got 250k+ TC at one of the above companies. same yoe. Also all of these companies can pay starting bonus of 100-200k USD over 1-2 years if competing with other offers
+
+#### Reply 4 by u/EEtoday (1 points)
+
+I can't believe they had that much wiggle room
+
+### Comment 32 by u/elmer_glue_sniffer (4 points)
+
+do you have any advice for getting past the faang resume screen? i've spent months preparing for the technical interview but i'm beginning to lost motivation because i can't even get one oa. i've had my friends/recruiters look at my resume and they all think it's pretty good but at this point, i think i need more feedback. i have 1 yoe as a software engineer but i didn't major in cs in college. amazon is what i'm currently aiming for.
+
+#### Reply 1 by u/claring (11 points)
+
+My advice would be (assuming your resume isn't the problem)
+
+1. Get on LinkedIn if you aren't already, Rainforest recruiters are constantly spamming people there.
+2. While on LinkedIn, try reaching out to people in the "people" tab of the companies you're interested in and politely asking if they will refer you. Check if there are any who went to your school/worked at your company. Won't always work, but sometimes it will. 
+3. Economy is wonky right now, and 1 YOE isn't alot. Meta/G and some others is probably really tough for new grad/few YOE right now. (Hiring freeze/reductions) I myself got ghosted by my G recruiter after saying they would set me up for a phone screen. If you stick it out for a year or two you will probably be a stronger candidate, and hopefully the hiring environment will also be better.
+
+### Comment 33 by u/qwertypoi901 (2 points)
+
+Thanks for the insight!
+
+### Comment 34 by u/gojo278 (2 points)
+
+Great info, thanks for the write up. Was your previous job in the Boston area or elsewhere?
+
+#### Reply 1 by u/claring (2 points)
+
+Yeah, my previous job was also in the Boston area.
+
+### Comment 35 by u/[deleted] (2 points)
+
+[deleted]
+
+#### Reply 1 by u/claring (2 points)
+
+Yeah, I sent in applications for 5 different MSFT positions on their website, got individual rejection e-mails like a month later for each one lol.
+
+### Comment 36 by u/NickSinghTechCareers (2 points)
+
+Some serious grind right here. Congrats!🎉
+
+#### Reply 1 by u/ankitrajputt (2 points)
+
+This is crazy
+
+### Comment 37 by u/prelabsurvey (2 points)
+
+The post might be a little old for OP to answer, but can anyone hypothetically show what the time breakdown was for this 5 month study period?  It looks like it was 2 hours or so per day for 5 months.  I’d be curious to see how OP varied the studying between the weekdays, weekends, consistency, etc
+
+Edit: on mobile and can’t see the LC stats that well but it looks like OP missed only 8 days from April 1- September 20. That is crazy consistency.  Still wondering how much time it took and how OP the one managed the grind.
+
+#### Reply 1 by u/claring (2 points)
+
+Hey, I'd say I studied on average about 3 hours a day over the 5 months, with longer hours on weekends, as well as longer hours towards the end of 5 months.
+
+This was only possible because my former job had amazing WLB, and I could often finish my work on 20hrs/week. I also took PTO towards the end to further study and have onsites.
+
+Yeah, I really think consistency is key. The only days I recall skipping were ones I physically couldn't i.e. I was out camping with no service.
+
+### Comment 38 by u/valbaca (2 points)
+
+Great job and excellent write up.
+
+Basic question: what programming language? and what's your background (web, backend, frontend, etc?)
+
+#### Reply 1 by u/claring (2 points)
+
+Python for all the interviews, background is backend engineering primarily.
+
+### Comment 39 by u/[deleted] (1 points)
+
+AWESOMEEE
+
+### Comment 40 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/ExpensiveGiraffe (1 points)
+
+Not OP, but similar story a few months before. 
+
+Benefits weren’t really negotiable IMO. I’m assuming you mean health insurance, etc. Unless you’re a big-name dev, these are pretty set in stone by HR. 
+
+$200k base at Amazon is pretty up there, I don’t think you’d be able to get that unless you were SDE 3? I’m SDE2 and getting to $175k base was pulling teeth. 
+
+The Amazon offer is usually:
+
+Base pay 
+
+Year 1 cash bonus 
+
+Year 2 cash bonus 
+
+RSUs (stocks, 5%/15%/40%/40%)
+
+
+So let’s say you get offered
+
+Base: $170,000
+Year 1 Sign-on Payment: $120,000
+Year 2 Sign-on Payment: $94,000
+RSU: 2000 stocks of AMZN
+
+Y1 TC: $290k + 100 Amazon shares
+Y2: $264k + 300 Amazon shares 
+Y3: $170k + 800 Amazon shares
+Y4: same as Y3 
+
+(You usually get bonus shares annually starting on Year 3, so it’ll in actuality stay closer in total value to your Y1 TC).
+
+### Comment 41 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 42 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 43 by u/danno52 (1 points)
+
+Would love to hear which company you ended up accepting!
+
+### Comment 44 by u/icycream23 (1 points)
+
+May I have the link to the Rainforest leadership principles?
+
+#### Reply 1 by u/claring (4 points)
+
+[Here](https://www.amazon.jobs/en/principles) are the official ones.
+[Here](https://www.scarletink.com/interviewing-at-amazon-leadership-principles/) is a great explanation of what they want.
+
+### Comment 45 by u/Signior (-3 points)
+
+With 5 YOE you should be able to tackle L6 no? Seems odd you have multiple L5 offers with 5 YOE, but great TC bump nonetheless
+
+#### Reply 1 by u/lhorie (16 points)
+
+I interview candidates for that level. Most candidates I get that have passed recruiter screening for this level have 10 YOE or more. You'd have to have an exceptional resume w/ 5 YOE to be considered for staff level (at least for companies where L5 is in the ~300k band) </two-cents>
+
+#### Reply 2 by u/claring (11 points)
+
+I felt more comfortable applying to L5 roles since I had essentially zero system design experience prior to starting studying, but yeah either way the TC bump means I'm not complaning.
+
+#### Reply 3 by u/bony_doughnut (7 points)
+
+Idk, imo L6 (at a non-startup) is quite rare for 5 yoe, less rare for 7-8 yoe, and more normal for 10+
+
+### Comment 46 by u/mig21greaterthanf16 (0 points)
+
+Were your onsite rejections due to technical or behavioral reasons ? Just asking
+
+#### Reply 1 by u/claring (1 points)
+
+If I had to guess I would say it was technical.
+
+### Comment 47 by u/Isvara (0 points)
+
+I am seriously underpaid if noobs are getting 290k 😱
+
+### Comment 48 by u/TruthHurts35 (0 points)
+
+What is TC ? Please tell me what it is, thank you.
+
+#### Reply 1 by u/claring (2 points)
+
+TC is short for Total Compensation, the sum of base salary, stock and cash bonuses.
+
+### Comment 49 by u/ericlikescars (-1 points)
+
+Where'd you go to school?
+
+### Comment 50 by u/Lopatou_ovalil (-1 points)
+
+do not forget to mention country and theoretically state.
+
+### Comment 51 by u/quitebizzare (-2 points)
+
+I don't mean this to sound rude but what the hell? It seems like you don't have any specific experience for the roles you applied to. E.g expert in compiler design and working on a new language from scratch. When you join you'll just be a regular dev at stand ups getting paid 290k? That is mind blowing to me. I couldn't pass the leet code exams but I would bet I'm as good a developer as you or At Least half as good!
+
+Do you think you're getting paid more than some of the team you'll be on or is everyone paid around 300k? It means a sprint for that team would cost millions.. Which is shocking
+
+Fair play to you. I just don't understand how these high salaries can work
+
+#### Reply 1 by u/Firm_Bit (3 points)
+
+Not OP obviously but two things. One, the first step to maxing comp is to get to a company that can simply outbid others for your work. A good engineering at Apple is simply better compensated than a better engineer at Ford. Two, there is a competitor premium on some of these salaries. These companies are very willing to keep you fat and happy even if your productivity is lower than would be required to offset your cost. The reason is that part of what they’re buying is insurance against you going to a competitor or worse, starting a company yourself. Sounds a little silly but the nature of software is such that a small garage start up can really threaten their profits very quickly. In aggregate these policies have helped these companies maintain dominance.
+
+#### Reply 2 by u/randonumero (1 points)
+
+I used to think like you and while I'm 99% sure that most people posting here inflate their salaries and I hold firm to the belief that the average person on here will probably not crack 100k salary unless they move to a M-HCOL area and/or get to senior, you're wrong. 
+
+Most companies don't hire experts because most companies don't need experts. In fact it's fair to say that leetcode interviews are meant to find people with certain fundamentals who can theoretically learn whatever language and concepts the company needs. Even at companies that do more concrete interviews, they usually want a doer and not necessarily an expert. It's also fair to mention that a lot of expertise comes from working on a small number of things over a long period of time which is why within a company you often find experts. You yourself may be your team or company's expert at something.
+
+You probably are as good of a developer as the OP and maybe even better. Where they excelled was their ability to get and pass interviews that you say you can't. That doesn't mean they're better or worse than you, just different. I worked with an ex-Netflix employee who was a garbage developer but he knew things about large scale system the rest of us didn't and clearly at one point passed their interview. There was a post a couple of months ago about a guy whose worked at several FAANG and excels at leetcode but sucks with concrete development and has to jump every couple of years. Leetcode interviews are like SATs, they don't tell you who is the smartest, most likely to succeed...they tell you who excels at that metric. What I'm saying is to avoid the rabbit hole of measuring yourself against a stranger who makes more working at a different company and likely living in a different city. 
+
+>Fair play to you. I just don't understand how these high salaries can work
+
+Big part is they are not salaries. At 290k TC OP probably makes 150-180k salary. I'd say that's probably close to standard for high mid to senior level in a HCOL city like Boston. The rest of total compensation comes from stock, bonuses and for some people the cash value of benefits. If the stock falls then your projected TC will fall some with it. Bonuses may or may not be refreshed and depending on the company you may not get the full bonus.
+
+From a business perspective, most companies can pay high salaries because they have cash to spend via investment or they make enough revenue to pay. When they don't we see companies close as was the case with many startups recently who couldn't raise more than they were spending. Of course that means that some of the companies many people here covet for high TC are nowhere near profitable but are able to raise funding rounds.
+
+Historically high salaries have also been a good hedge against attrition. Where I live there's a major company that was paying new grads roughly \~30k/year more than their peers. Those people generally stayed for 5+ years because they couldn't find similar pay in the market for their current level. Many people I met would stay there from college until retirement largely because of that initial pay.
+
+A month or so ago I read something about a guy from my state who got laid off recently from his remote job. He was making close to double what companies around here pay and was striking out in his job search because he wouldn't entertain relocating and can't find another high pay remote job that's not asking for at least hybrid.
+
+Some companies pay a lot and some don't. You may be like me and at a company that doesn't pay top rates but still pays you well for your local market.
+
+### Comment 52 by u/FakespotAnalysisBot (-23 points)
+
+This is a Fakespot Reviews Analysis bot. Fakespot detects fake reviews, fake products and unreliable sellers using AI.
+
+Here is the analysis for the Amazon product reviews:
+
+>**Name**: System Design Interview – An insider's guide, Second Edition 
+
+>**Company**: Alex Xu
+
+>**Amazon Product Rating**: 4.6 
+
+>**Fakespot Reviews Grade**: B
+
+>**Adjusted Fakespot Rating**: 4.6
+
+>**Analysis Performed at**: 09-20-2022 
+
+[Link to Fakespot Analysis](https://fakespot.com/product/system-design-interview-an-insider-s-guide-second-edition) | [Check out the Fakespot Chrome Extension!](https://chrome.google.com/webstore/detail/fakespot-analyze-fake-ama/nakplnnackehceedgkgkokbgbmfghain)
+
+*Fakespot analyzes the reviews authenticity and not the product quality using AI. We look for real reviews that mention product issues such as counterfeits, defects, and bad return policies that fake reviews try to hide from consumers.*
+
+*We give an A-F letter for trustworthiness of reviews. A = very trustworthy reviews, F = highly untrustworthy reviews. We also provide seller ratings to warn you if the seller can be trusted or not.*
+
+#### Reply 1 by u/bitwise-operation (6 points)
+
+I’d say bad bot, but I don’t want it to analyze my review
+
+### Comment 53 by u/az908 (1 points)
+
+Thank you for sharing, very helpful to see some of the important things you ran into!
+
+### Comment 54 by u/eggpreeto (1 points)
+
+how did you schedule job hunt and interview? how did the negotiation go?
+
+#### Reply 1 by u/claring (2 points)
+
+I took PTO for the 2 weeks or so all the on-sites were scheduled. The 290 TC is after negotiation, which went well.
+
+### Comment 55 by u/[deleted] (1 points)
+
+Would you mind elaborating more on your transition from consulting to SWE? Personally coming from a finance background myself looking to make the transition.
+
+### Comment 56 by u/Alexanderdaawesome (1 points)
+
+Been looking for something like this. Thanks for the tip
+
+### Comment 57 by u/xsolwonder (1 points)
+
+Thank you for your insight.
+
+I am in a similar board (6 YoE, at a big company with old tech stack, in middle of cracking challenges and practices and just refreshed my resume)
+
+Any tips on mentally handling the job search and interview cycles or just grinding thru problems? Felt burned out so taking a week break from coding practices since I currently passed a FAANG phone interview and am waiting for onsite round, so could figure out anything to help me mentally handle more of the burdens.
+
+#### Reply 1 by u/claring (3 points)
+
+I'm lucky to have had extremely good WLB at my old job, where I could easily coast and spend the extra time studying. Obviously this will not be true for everyone.
+ 
+I think taking a break if you're burnt out is definitely the right call, being on top of your mental game is honestly more important for interviews than your LC count.
+
+### Comment 58 by u/SolWizard (1 points)
+
+Was 290k your highest offer? Curious what your rainforest offer was (or if that was it)
+
+### Comment 59 by u/venmome1dollar (1 points)
+
+what are Rainforest Leadership Principles?
+
+#### Reply 1 by u/claring (1 points)
+
+See [here](https://www.amazon.jobs/en/principles).
+
+### Comment 60 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 61 by u/NasirBarkah (1 points)
+
+Congrats! 500 leetcode is a lot. Do you think you would've gotten by with like ~200?
+
+#### Reply 1 by u/claring (2 points)
+
+Alot for sure, andyeah definitely. A good amount (50) of problems were DP, which barely came up. Then a good chunk of problems were graph algos, KMP, math, bitwise stuff that I probably could have done without. 
+
+I think 200 is plenty to start interviewing with.
+
+### Comment 62 by u/Initial_Ad6132 (1 points)
+
+ya 5/6 is insane ROI op good job!
+
+### Comment 63 by u/PerfectConfection578 (1 points)
+
+audible is rainforest is audible
+
+#### Reply 1 by u/claring (2 points)
+
+Yep, you have to do two separate onsite loops though.
+
+### Comment 64 by u/boastfuldred4 (1 points)
+
+Congratz! How did you manage your full-time job and also setting aside time to grind leetcode? What did your routine look like?
+
+### Comment 65 by u/[deleted] (1 points)
+
+Nice job mate. 3x is a lot.
+
+I need to start looking myself.
+
+### Comment 66 by u/cj_vantrillo (1 points)
+
+Amazing! I just went through a similar route this summer and now I’m an Amazon L5 in Boston :D
+
+### Comment 67 by u/[deleted] (1 points)
+
+There's a section in this sub's discord for matching mock interview, so presumably you can find people here for that too.
+
+### Comment 68 by u/AK-3030 (1 points)
+
+There was another post on here that said anything below senior doesn’t have system design. Is that not true? Also what specific role did you apply to
+
+#### Reply 1 by u/claring (2 points)
+
+Definitely not true, all FAANG and other top companies start asking system design at the SE2 equivalent level for sure. I've even heard about new grads being asked them, though I don't know how true this is.
+
+### Comment 69 by u/Chupoons (1 points)
+
+I believe part of the long study stint was your wide spread of targets.
+
+Had you focused on a single target your time invested could have been more limited.
+
+May I ask, did you study with a bias towards any company or was the study period entirely planned from the beginning?
+
+#### Reply 1 by u/claring (1 points)
+
+True, if you're targeting a company that is known to ask a select few questions studying those would probably be your best bet. Some (Rainforest, G etc.) have so many tagged that it isn't really feasible though.
+
+I didn't study with a bias towards any company, until I had onsites lined up.
+
+### Comment 70 by u/kalashnikovBaby (1 points)
+
+Why did you do different topic problems every day? Why not finish one topic at a time for leetcode?
+
+### Comment 71 by u/Khandakerex (1 points)
+
+This is fantastic! I agree with over studying some data structures over others. Some people make it seem like you have to know every niche algorithm on the planet.
+
+### Comment 72 by u/SharpenedStinger (1 points)
+
+Insane post, insane work ethic. Thanks a lot and have fun at your new role!!
+
+### Comment 73 by u/bonbon367 (1 points)
+
+Congrats, and nice post. I had a very similar situation and prep plan as you. I personally found Alex Xu’s new system design book the best SD resource I used. He goes into much much more detail in the case studies for his new book.
+
+### Comment 74 by u/starraven (1 points)
+
+Toast?
+
+#### Reply 1 by u/quitebizzare (2 points)
+
+Restaurant company I think
+
+### Comment 75 by u/gibran800 (1 points)
+
+That's amazing! Congrats! Well deserved!
+
+### Comment 76 by u/OkResponsibility2470 (1 points)
+
+>Finally, for those on the grind for their first position, I promise it gets better! The difference between my first job and second job was truly night and day.
+
+dear fucking god I hope it is
+
+### Comment 77 by u/TheBrinksTruck (1 points)
+
+I might’ve missed it, but why didn’t you apply to Rainforest? Or did you just hit mention it in your list?
+
+Congrats though, I’m about to graduate so I’m definitely going to take some of these tips in my upcoming job search.
+
+### Comment 78 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+#### Reply 2 by u/Mission6830 (1 points)
+
+Congrats & thank you for sharing!
+
+### Comment 79 by u/techgirl8 (1 points)
+
+What language do you use for leetcode? I know neetcode uses python. Do you think python is the easiest to solve lc problems?
+
+#### Reply 1 by u/claring (2 points)
+
+I use python as well, and yes I do think python is the easiest.
+
+### Comment 80 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 81 by u/saintshing (1 points)
+
+Thanks for your sharing!
+
+May I ask what is the tech stack you used for your previous job? Was it purely backend? Did you work on devops and large scale distributed systems? Do you think it's worth to work on some full stack portfolio projects (especially for someone with less work experience)? When you do coding tests are you allowed to use something like github copilot? Sorry for asking so many questions
+
+#### Reply 1 by u/claring (2 points)
+
+I worked mostly in the backend, tech stack was mostly Java. I did occasionally work on devops. Our product is a rather boutique financial one that isn't as concerned with scale. 
+
+It's always worth it working on projects, since they make you a better developer. From an applying to jobs perspective, your prior experience and internships will probably matter much more.
+
+Of course, you'll have no choice but to put some strong projects on your resume if you're just starting and have none.
+
+Most companies use a specific platform (Coderpad, Hackerrank etc) for the coding tests and you most certainly will not be able to use copilot.
+
+### Comment 82 by u/its-me-reek (1 points)
+
+Asked dikstra last week at google lol
+
+### Comment 83 by u/ElCheapo86 (1 points)
+
+damn.. at 5 YOE with chemical engineering, I was at 67k salary... now with 11 yrs, I'm at 150k but I work on dangerous processes where people could die. I do automation programming. No real work from home, you have to be there at the plant. hours can go long. Another co. I just interviewed for wanted me but said they wouldn't be able to pay me what I'm even making now. Out of 300 engineers on staff, they had one PLC programmer. I would have been the second, but they won't pay more than 150k w/ 11 YOE... I get called all hours of the night and weekends by 3 plants. 
+
+If you ask me, for someone who wants to stay technical... don't waste your time with other engineering when the sky is the limit in CS.
+
+#### Reply 1 by u/EEtoday (1 points)
+
+I know right.  At this point why would anyone go into any other field
+
+### Comment 84 by u/iggy555 (1 points)
+
+Nice job
+
+### Comment 85 by u/vizk0sity (1 points)
+
+Hi man, thanks for the advices. I just failed at rain forest due to LP and OOD. Do you think I should spend a lot of time practicing OOD and knowing all the patterns ? Unfortunately we don’t use enough of them at work. Thanks!
+
+#### Reply 1 by u/claring (1 points)
+
+Unless you feel like you really bombed OOD, my guess is it was the LP, Amazon really cares about those. You might already know, but there's a bar raiser round who alone can fail you on just LPs.
+
+For OOD knowing all the patterns probably isn't as important as being able to identify the classes, use cases, interactions etc.
+
+### Comment 86 by u/[deleted] (1 points)
+
+Congratulations!
+
+### Comment 87 by u/bobsbitchtitz (1 points)
+
+Congrats! My path was similar $60k to $220k in 5 years but I didn't do nearly as much prep which has come back to bite me in the ass for my next hop.
+
+### Comment 88 by u/gamesuxfixit (1 points)
+
+> Out of all the problems I encountered between OAs, Phone Screens and On-sites, I only received a single DP problem, which was really an optimally greedy problem with a DP solution.
+
+You didn't do onsites for most of the companies that were likely to ask them though (MSFT, Uber, Twitter, Dropbox, maybe Google depending on which stage you got ghosted at).
+
+### Comment 89 by u/EEtoday (1 points)
+
+The things we do for money
+
+### Comment 90 by u/zerocoldx911 (1 points)
+
+Where is this? Offers are very dependent on the cost of living
+
+#### Reply 1 by u/claring (2 points)
+
+Boston, HCOL.
+
+### Comment 91 by u/nense0 (1 points)
+
+An honest question: Were those 2 examples for the LP from "rainforest" real ones or stories that you made up?
+
+#### Reply 1 by u/claring (3 points)
+
+They were all real stories, but embellished to make them seem more impressive and fit the LPs better.
+
+### Comment 92 by u/Accomplished-Sir-777 (1 points)
+
+As somebody who went from 95k to 310k with 1.5 YOE, can definitely say that interviews depend on the role. Most of the questions asked were closer to LC hard or more. Although would definitely say the strengths werent shown by just the coding challenges, but "shooting the shit" with the interviewers.
+
+### Comment 93 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 94 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 95 by u/Knoxxyjohnville (1 points)
+
+What sort of tech stack did you come from and which are you going too?
+
+### Comment 96 by u/herrokitty696969 (1 points)
+
+Congratulations man, this is super helpful!
+
+### Comment 97 by u/Honor_Bound (1 points)
+
+I’m a relatively new CS student so a majority of your post made zero sense to me but I’m definitely saving this to hopefully remember to come back to closer to graduation lol
+
+### Comment 98 by u/throwaway2492872 (1 points)
+
+This is one of the most important posts I've seen on this board. I see you negotiated to 290 but what was the range of the offers you received? Pre and post negotiation? Really valuable info.
+
+### Comment 99 by u/Slggyqo (1 points)
+
+Didn’t read your entire post, but I like the fact that you’ve detailed the duration. 
+
+Don’t get discouraged because it takes a long time, people. Nothing good comes easy.
+
+### Comment 100 by u/NewSchoolBoxer (1 points)
+
+This is a nice post but I want to give a counterpoint. I never leetcoded in my life. Blocks me from Big M and Big G but not Rainforest who floods my LinkedIn inmails.
+
+I got an offer from one of the other companies listed by OP in normal cost of living for $170k base salary. Including expected performance bonus cited in the offer letter and 401(k) match but NOT signing bonus, TC is under $200k. First year bonus is pro-rated unless you start in January and there is a calendar cutoff to receive any money. No one seems to account for that. No stocks options. I’m above OP’s SSE.
+
+They had a 4 question coding exam I thought I scored low as hell on with 0 points from 2 of the 4 questions. Still passed and the hiring manager told me the test was strictly pass/fail with no higher salary for performing better. Other coding exams were design questions versus further coding. So the design book is probably a good idea.
+
+### Comment 101 by u/WickedSlice13 (1 points)
+
+What company were you at before?  I feel like that could have a big impact in getting past initial screenings for the next job
+
+### Comment 102 by u/k032 (1 points)
+
+Was the LeetCode grinding worth it? Ive never really had complicated tech interviews at the 2 jobs I've been at, one with a defense contractor another with a large Fortune 500ish company. 
+
+Like the idea of having to re-learn BFS / DFS and other obscure algorithm things seems like a hassle.
+
+But being 4 yoe with like $120k tc makes me think.
+
+#### Reply 1 by u/claring (1 points)
+
+It's definitely not easy and like with anything else, consistency is key. 
+
+At the same time, I can't think of another profession where you can put in so little for such a big return salary-wise, considering what lawyers and doctors have to go through to get to a similar level of compensation.
+
+### Comment 103 by u/rkwong792 (1 points)
+
+Thanks for sharing and congrats. I’m using Neetcode’s 75 questions as well. Did you finish the blind 75, then move to the neetcode 150 questions on his website? Thanks.
+
+#### Reply 1 by u/claring (2 points)
+
+I believe NeetCode 150 is just an expanded version of the Blind 75, so if you first finished Blind 75, there'd be 75 left in NeetCode 150.
+
+I just started with NeetCode 150, but there shouldn't be a difference either way.
+
+### Comment 104 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 105 by u/darexinfinity (1 points)
+
+Isn't Audible just an extension of the Rainforest?
+
+I haven't heard of Capital One being that good with pay (that or WLB).
+
+I'm not sure what Toast is. A startup?
+
+If I took a guess you're with Bloomberg.
+
+### Comment 106 by u/cstransfer (1 points)
+
+My story is almost exactly the same. 🙌
+
+### Comment 107 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 108 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 109 by u/createdthistoaskthat (1 points)
+
+Thanks so much for sharing
+
+### Comment 110 by u/actual_factual_bear (1 points)
+
+As a software engineer myself, reading this thread makes me want to murder myself.
+
+#### Reply 1 by u/vhef21 (1 points)
+
+Why though?
+I’m not an SWE so please ELI5? 
+Is it because of the work put in? Or something else?
+
+### Comment 111 by u/HansDampfHaudegen (1 points)
+
+OP, you say you submitted 50 applications. Can you update the table if you applied after a recruiter reached out (almost guaranteed phone screen) or if you had an employee referral application or cold application?
+
+### Comment 112 by u/bert_cj (1 points)
+
+Did you do leetcode on weekends?
+
+### Comment 113 by u/bhutams (1 points)
+
+Didn't see you answering this elsewhere, but did you have to consult any textbooks during your studying? Or did you only use leetcode for prep?
+

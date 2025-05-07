@@ -1,0 +1,1139 @@
+# WSJ - Tech jobs are gone and not coming back. 
+
+[https://www.wsj.com/tech/tech-jobs-artificial-intelligence-cce22393](https://www.wsj.com/tech/tech-jobs-artificial-intelligence-cce22393)
+
+Finding a job in tech by applying online was fruitless, so Glenn Kugelman resorted to another tactic: It involved paper and duct tape.
+
+Kugelman, let go from an online-marketing role at [eBay](https://www.wsj.com/market-data/quotes/EBAY), blanketed Manhattan streetlight poles with 150 fliers over nearly three months this spring. “RECENTLY LAID OFF,” they blared. “LOOKING FOR A NEW JOB.” The 30-year-old posted them outside the offices of Google, [Facebook](https://www.wsj.com/market-data/quotes/META) and other tech companies, hoping hiring managers would spot them among the “lost cat” signs. A QR code on the flier sent people to his LinkedIn profile.
+
+“I thought that would make me stand out,” he says. “The job market now is definitely harder than it was a few years ago.” 
+
+Once heavily wooed and fought over by companies, tech talent is now wrestling for scarcer positions. The stark reversal of fortunes for a group long in the driver’s seat signals more than temporary discomfort. It’s a reset in an industry that is fundamentally readjusting its labor needs and pushing some workers out.
+
+Postings for software development jobs are down more than 30% since February 2020, according to Indeed.com. Industry layoffs have continued this year with tech companies shedding around 137,000 jobs since January, according to Layoffs.fyi. Many tech workers, too young to have endured the dot-com bubble burst in the early 2000s, now face for the first time what it’s like to hustle to find work. 
+
+Company [strategies are also shifting](https://www.wsj.com/tech/techs-new-normal-microcuts-over-growth-at-all-costs-b80bb18b?mod=article_inline). Instead of growth at all costs and investment in moonshot projects, tech firms have become laser focused on revenue-generating products and services. They have pulled back on entry-level hires, cut recruiting teams and jettisoned projects and [jobs in areas](https://www.wsj.com/articles/tech-industry-reversal-intensifies-with-new-rounds-of-layoffs-11673134201?mod=article_inline&mod=article_inline) that weren’t huge moneymakers, including virtual reality and devices. 
+
+At the same time, they started putting [enormous resources into AI](https://www.wsj.com/finance/stocks/breaking-down-the-tech-giants-ai-spending-surge-e282ca24?mod=article_inline). The release of ChatGPT in late 2022 offered [a glimpse into](https://www.wsj.com/articles/chatgpt-ai-chatbot-app-explained-11675865177?mod=article_inline&mod=article_inline) generative AI’s ability to create humanlike content and potentially transform industries. It ignited a frenzy of investment and a race to build the most advanced AI systems. Workers with expertise in the field are among the few strong categories. 
+
+“I’ve been doing this for a while. I kind of know the boom-bust cycle,” says Chris Volz, 47, an engineering manager living in Oakland, Calif., who has been working in tech since the late 1990s and was laid off in August 2023 from a real-estate technology company. “This time felt very, very different.” 
+
+For most of his prior jobs, Volz was either contacted by a recruiter or landed a role through a referral. This time, he discovered that virtually everyone in his network had also been laid off, and he had to blast his résumé out for the first time in his career. “Contacts dried up,” he says. “I applied to, I want to say, about 120 different positions, and I got three call backs.”
+
+He worried about his mortgage payments. He finally landed a job in the spring, but it required him to take a 5% pay cut.
+
+# No more red carpet
+
+During the pandemic, as consumers shifted much of [their lives](https://www.wsj.com/articles/amazon-sales-surge-amid-pandemic-driven-online-shopping-11604003107?mod=article_inline) and spending online, tech companies went on hiring sprees and took on far too many workers. Recruiters enticed prospective employees with generous compensation packages, promises of perpetual flexibility, [lavish off sites](https://www.wsj.com/articles/tech-startups-ditch-the-office-for-far-flung-bonding-trips-11623854510?mod=article_inline) and even a [wellness ranch](https://www.wsj.com/articles/forget-the-officesalesforce-is-making-a-wellness-retreat-for-workers-11644510615?mod=article_inline). The fight for talent was so fierce that companies hoarded workers to keep them from their competitors, and some employees say they were effectively [hired to do nothing](https://www.wsj.com/articles/these-tech-workers-say-they-were-hired-to-do-nothing-762ff158?mod=article_inline).
+
+A downturn quickly followed, as higher inflation and interest rates cooled the economy. Some of the largest tech employers, some of which had never done large-scale layoffs, started cutting tens of thousands of jobs. 
+
+The payroll services company ADP started tracking employment for software developers among its customers in January 2018, observing a steady climb until it hit a peak in October 2019. 
+
+The surge of hiring during the pandemic slowed the overall downward trend but didn’t reverse it, according to Nela Richardson, head of ADP Research. One of the causes is the natural trajectory of an industry grounded in innovation. “You’re not breaking as much new ground in terms of the digital space as earlier time periods,” she says, adding that increasingly, “There’s a tech solution instead of just always a person solution.” 
+
+Some job seekers say they no longer feel wined-and-dined. One former product manager in San Francisco, who was laid off from Meta Platforms, was driving this spring to an interview about an hour away when he received an email from the company telling him he would be expected to complete a three-part writing test upon his arrival. When he got to the office, no one was there except a person working the front desk. His interviewers showed up about three hours later but just told him to finish up the writing test and didn’t actually interview him. 
+
+The trend of ballooning salaries and advanced titles that don’t match experience has reversed, according to Kaitlyn Knopp, CEO of the compensation-planning startup Pequity. “We see that the levels are getting reset,” she says. “People are more appropriately matching their experience and scope.”
+
+Wage growth has been mostly stagnant in 2024, according to data from Pequity, which companies use to develop pay ranges and run compensation cycles. Wages have increased by an average of just 0.95% compared with last year. Equity grants for entry-level roles with midcap software as a service companies have declined by 55% on average since 2019, Pequity found.
+
+Companies now seek a far broader set of skills in their engineers. To do more with less, they need team members who possess soft skills, collaboration abilities and a working knowledge of where the company needs to go with its AI strategy, says Ryan Sutton, executive director of the technology practice group with staffing firm Robert Half. “They want to see people that are more versatile.”
+
+Some tech workers have started trying to [broaden their skills](https://www.wsj.com/tech/ai/ai-skills-tech-workers-job-market-1d58b2dd?mod=article_inline), signing up for AI boot camps or other classes. 
+
+Michael Moore, a software engineer in Atlanta who was laid off in January from a web-and-app development company, decided to enroll in an online college after his seven-month job hunt went nowhere. Moore, who learned how to code by taking online classes, says not having a college degree didn’t stop him from finding work six years ago. 
+
+Now, with more competition from workers who were laid off as well as those who are entering the workforce for the first time, he says he is hoping to show potential employers that he is working toward a degree. He also might take an AI class if the school offers it. 
+
+The 40-year-old says he gets about two to three interviews for every 100 jobs he applies for, adding, “It’s not a good ratio.”
+
+# Struggling at entry level
+
+Tech internships once paid salaries that would be equivalent to six figures a year and often led to full-time jobs, says Jason Greenberg, an associate professor of management at Cornell University. More recently, companies have scaled back the number of internships they offer and are posting [fewer entry-level jobs](https://www.wsj.com/lifestyle/careers/computer-science-majors-job-market-7ad443bf?mod=article_inline). “This is not 2012 anymore. It’s not the bull market for college graduates,” says Greenberg.
+
+Myron Lucan, a 31-year-old in Dallas, recently went to coding school to transition from his Air Force career to a job in the tech industry. Since graduating in May, all the entry-level job listings he sees require a couple of years of experience. He thinks if he lands an interview, he can explain how his skills working with the computer systems of planes can be transferred to a job building databases for companies. But after applying for nearly two months, he hasn’t landed even one interview. 
+
+“I am hopeful of getting a job, I know that I can,” he says. “It just really sucks waiting for someone to see me.” 
+
+Some nontechnical workers in the industry, including marketing, human resources and recruiters, have been laid off multiple times.
+
+James Arnold spent the past 18 years working as a recruiter in tech and has been laid off twice in less than two years. During the pandemic, he was working as a talent sourcer for Meta, bringing on new hires at a rapid clip. He was laid off in November 2022 and then spent almost a year job hunting before taking a role outside the industry. 
+
+When a new opportunity came up with an electric-vehicle company at the start of this year, he felt so nervous about it not panning out that he hung on to his other job for several months and [secretly worked for both companies](https://www.wsj.com/articles/these-people-who-work-from-home-have-a-secret-they-have-two-jobs-11628866529?mod=article_inline) at the same time. He finally gave notice at the first job, only to be laid off by the EV startup a month later.  
+
+“I had two jobs and now I’ve got no jobs and I probably could have at least had one job,” he says.
+
+Arnold says most of the jobs he’s applying for are paying a third less than what they used to. What irks him is that tech companies have rebounded financially but some of them are relying [on more consultants](https://www.wsj.com/articles/consultants-emerge-as-early-winners-in-generative-ai-boom-8df71d38?mod=article_inline) and are [outsourcing roles](https://www.wsj.com/articles/next-wave-of-remote-work-is-about-outsourcing-jobs-overseas-54af39ba?mod=article_inline). “Covid proved remote works, and now it’s opened up the job market for globalization in that sense,” he says. 
+
+One industry bright spot: People who have worked on the large language models that power products such as ChatGPT can easily find jobs and [make well over $1 million](https://www.wsj.com/tech/ai/the-fight-for-ai-talent-pay-million-dollar-packages-and-buy-whole-teams-c370de2b?mod=article_inline) a year. 
+
+Knopp, the CEO of Pequity, says AI engineers are being offered two- to four-times the salary of a regular engineer. “That’s an extreme investment of an unknown technology,” she says. “They cannot afford to invest in other talent because of that.”
+
+Companies outside the tech industry are also adding AI talent. “Five years ago we did not have a board saying to a CEO where’s our AI strategy? What are we doing for AI?” says Martha Heller, who has worked in executive search for decades. If the CIO only has superficial knowledge, she added, “that board will not have a great experience.” 
+
+Kugelman, meanwhile, hung his last flier in May. He ended up taking a six-month merchandising contract gig with a tech company—after a recruiter found him on LinkedIn. He hopes the work turns into a full-time job.
+
+  
+
+
+## Comments
+
+### Comment 1 by u/Platinum_Tendril (792 points)
+
+wait they aren't paying big money for moonshot projects
+
+  
+but they are also putting enormous resources into AI
+
+#### Reply 1 by u/dsm4ck (472 points)
+
+It makes sense if you don't think about it.
+
+#### Reply 2 by u/ClittoryHinton (176 points)
+
+When the LLM bubble implodes because they are unprofitable and running outta cash, we will see new levels of pain
+
+#### Reply 3 by u/marx-was-right- (11 points)
+
+😆😆😆  the jokes basically write themselves with this industry
+
+#### Reply 4 by u/k0fi96 (73 points)
+
+We have reached the point where there is enough history of companies failing because the balked at the new trend. Once you get to a certain size you can afford to chase every trend because the consequences of it it being the next big thing and you not being a leader are far greater. I think Zuck said, that it would be impossible for them to overspend on AI.
+
+
+It's ironic how some people constantly call for these companies to fail, but when layoff happen you get a different contingent upset they are not hiring more and growing. The duality of forums this size is fascinating.
+
+#### Reply 5 by u/Chronotheos (17 points)
+
+Rainforest developing satellites and aircraft is a moonshot.  Rainforest analyzing spending patterns or using logistics data alongside AI to squeeze more efficiency is not.
+
+#### Reply 6 by u/diamondpredator (4 points)
+
+Because they're stupid and think AI is a "sure thing" and not a moonshot full of vaporware.
+
+#### Reply 7 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 8 by u/KSRandom195 (1 points)
+
+The reality is the first company to get working AGSI wins.
+
+And not just wins the AI race, but may win the world.
+
+It’s _that much_ of a leap.
+
+With the sudden success of GenAI lots of folks think it may be just around the corner. I’m not sure. But you would be foolish not to try.
+
+#### Reply 9 by u/maz20 (1 points)
+
+>but they are also putting enormous resources into AI
+
+Yeah well remember that also  just like us, not all investors are also content to merely just "sit around idly by doing completely whatsoever nothing at all for several years on end, only just waiting and waiting ever so long until maybe the money printer (Fed) *might* eventually decide [to (re-)start printing out investment capital again](https://www.reddit.com/r/cscareerquestions/comments/1avadgm/comment/krfhefw/?context=3)".
+
+***And so*** for those folks, AI is basically the newest coolest thing/kid on the block/horizon -- so, if you feel you must absolutely *somehow* invest, in say "*something something* 'tech'" one way or another, well, then yes -- "AI" it shall be!
+
+\*Edit: [it looks like the Fed may be cutting rates sometime soon too.](https://www.reddit.com/r/cscareerquestions/comments/1fjztqi/comment/lnsstcv/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) However, we'll still have to see whether this *actually* translates into a real bona fide "expansionary investment-capital-policy" from the Fed (ie what tech *actually* needs!!), or merely just "some less interest for your home loan & Uncle Sam's federal budget books" lol //
+
+#### Reply 10 by u/Neither-Emu4717 (1 points)
+
+A lot of AI specific roles require a very specific skill set from applicants. If you have a basic B.S in computer science and have been in the workforce for awhile without an LLM or statistical focus you’re likely not going to hear back
+
+Now a new grad who’s moldeable and just took classes in many different CS areas, or applicants who received a masters or PhD in an AI or adjacent concentration are going to be the priority and are gonna be raking in dough
+
+#### Reply 11 by u/wanzerultimate (1 points)
+
+they are investing in AI to replace specific jobs without requiring new jobs, then they will pop the bubble and create a recession, will be their excuse for mass technological unemployment for which they will get an enormous windfall. This has been discussed on here quite often.
+
+#### Reply 12 by u/[deleted] (1 points)
+
+AI - aka offshoring
+
+#### Reply 13 by u/CHNimitz (1 points)
+
+Couldn't agree more, US tech companies are driving themselves to a cliff.
+
+#### Reply 14 by u/Puzzleheaded_Sign249 (0 points)
+
+But AI isn’t a moonshot project, what are you talking about?
+
+#### Reply 15 by u/relapsing_not (-1 points)
+
+what should they put their resources into ? building tired old web apps while everyone else is racing towards AGI?
+
+#### Reply 16 by u/[deleted] (-3 points)
+
+I will be down voted to hell for this, but AI pays off. It increases the productivity of every single person that I have seen use it. This sub is in denial about the usefulness of AI.
+
+### Comment 2 by u/Verynotwavy (473 points)
+
+>Some tech workers have started ... signing up for AI boot camps  
+...  
+One industry bright spot: People who have worked on the large language models ... can easily find jobs and [make well over $1 million](https://www.wsj.com/tech/ai/the-fight-for-ai-talent-pay-million-dollar-packages-and-buy-whole-teams-c370de2b?mod=article_inline) a year
+
+Good article to push naive / prospective / dumb tech workers into AI lol
+
+These people are not going break into AI without a top PhD + publications + relevant experience. I might be proven totally wrong, but today's AI R&D is arguably cannibalizing itself, e.g., SearchGPT and Perplexity, o1 / multi-modality and YC funded GPT wrappers, AI training on AI, etc
+
+#### Reply 1 by u/Devloser (101 points)
+
+This is true! Even with AI PhD+publication+experience, you need to be extremely competent to secure a job. Those massive salaries are also rare. There is an excess of AI PhDs there too. If you step into any department in universities, you see a good number of researchers in AI related topics. And I don't think it’s only hype! It’s scalability makes it unique. You have a reasonable AI solution, there is tons of demand.
+
+#### Reply 2 by u/Spirited_Ad4194 (38 points)
+
+I don't understand this either. On the one hand, I see people say that you can't get into AI at all unless you have all those things and have also cured cancer, which certainly is true for some jobs.
+
+At the same time, I see a lot of people who are my college seniors (i.e graduated within the last few years with a Bachelor's) getting jobs in AI/ML or at Data Science
+
+It's obviously not the same level, but why does no one seem to mention that there are multiple tiers of jobs in this field and not just one?
+
+#### Reply 3 by u/[deleted] (8 points)
+
+Depends on what you mean by "break into AI". If it's just deploying AI services from the likes of Amazon or GCP, then you don't need a top PhD and several publications. If it means actually developing LLMs then yes, you need a PhD.
+
+#### Reply 4 by u/[deleted] (8 points)
+
+>Good article to push naive / prospective / dumb tech workers into AI lol
+
+Hell, this is what the crazy rush to join CS during the golden era was essentially doing.
+
+"Look at all this money to be made! These guys are working 4 hour days and making $300k salaries! Take a quick bootcamp and we can get you hired!"
+
+It's the media, and social media, cashing in on a trend. The thing is their entire business is about pushing trends, they don't care if they last. If some sucker actually *believes* the media / social media, they're fucked when the trend dies out.
+
+And here we are in 2024.
+
+AI won't be any different. "AI's the future! Go into AI! Look at all this money!" followed by "Lol, AI is dead, anyone who pursued AI's a fucking dumbass".
+
+#### Reply 5 by u/st4rdr0id (3 points)
+
+> Good article to push naive / prospective / dumb tech workers into AI lol
+
+The problem is, the AI bubble won't create nearly as many jobs. The AI job market can only accomodate a few AI experts working at megacorps building the most famous AI products. Unlike software, there is no need to build taylor-made AI systems for every single company. Most companies will just buy some generic AIaaS from the likes of MS. In 2 years the fad will be mostly over. Besides, programmers cannot be easily retrained into AI experts.
+
+#### Reply 6 by u/MillennialSilver (1 points)
+
+I don't think you need all that to break into AI, but you definitely do for $1m+ salaries and red carpet treatment.
+
+#### Reply 7 by u/Autigtron (1 points)
+
+Exactly.  AI bootcamps lol.  The type of AI tech workers desired are not AI bootcampers.  It is an individual with a doctorate in AI and high end mathematics.
+
+### Comment 3 by u/specracer97 (1024 points)
+
+There is a single sentence out of all that word vomit which matters.
+
+Companies are paying the equivalent of several engineers to random AI "talent".  I've seen this play out where devs we had, who have exactly zero AI skill, would claim to have it, and get hired for triple the going rate for senior devs.
+
+It's a bubble.  All the hallmarks are there.  Nobody other than Nvidia is making meaningful progress towards ROI, per their quarterly calls.  It's going to violently pop the way it always does.  Give it a few months after that and then we see investment in customer value again instead of the AI ego race.
+
+#### Reply 1 by u/RockleyBob (188 points)
+
+I think journalists and employees continue to focus too much on the AI hype and miss the buried lede:
+
+>####What irks him is that tech companies have rebounded financially but some of them are relying on more consultants and are outsourcing roles. “Covid proved remote works, and now it’s opened up the job market for globalization in that sense,” he says.
+
+This is what we should all be worried about in the near term. My company just laid off anyone below senior/architect and is bringing on a consulting firm which mostly employs offshore devs.
+
+Prior to the pandemic, there were negative perceptions of remote work and offshore workers. Both of these perceptions are being challenged. We showed companies that work can get done remotely. That naturally led to them asking “how remote?” 
+
+While claims that remote workers were less capable might have had some truth in the past, it will not remain that way forever. The people in Asia and Eastern Europe are every bit as smart. As job listings increase, their educational institutions will adapt and we will continue to see ever better candidates.
+
+US tech companies got extremely wealthy off of our labor. They now comprise a full third of the S&P 500’s total value. [The tech sector was responsible for 90% of the market’s total gains last year.](https://www.statista.com/chart/amp/30219/main-contributors-to-s-p-500-gains-in-2023/)
+
+Nothing against the people in offshore markets who are doing exactly what I would in their shoes, many are equally capable. The problem is that the things US workers built in the US are driving the US economy, and now we’re allowing those US companies to continue to make money here and employ workers elsewhere. That’s not right.
+
+#### Reply 2 by u/[deleted] (24 points)
+
+[deleted]
+
+#### Reply 3 by u/PurelyLurking20 (78 points)
+
+Yeah AI is not good enough to replace employees and when it is, it won't be tech employees replaced first, it'll be almost all general office workers, THEN the tech employees
+
+They're just cutting corners rn with substandard "AI" replacements
+
+#### Reply 4 by u/panthereal (20 points)
+
+If your company doesn't know how to test someone's knowledge at all before hiring them at triple the  senior dev's rate then you have much, much bigger problems than a bubble.
+
+#### Reply 5 by u/PinotRed (142 points)
+
+Oh come on.
+
+Nvidia, currently valuated at 12% of US GDP. If that’s not a bubble, I don’t know what is.
+
+#### Reply 6 by u/gneissrocx (59 points)
+
+This sub is interesting in the sense that there are people who use AI to help their workflow daily and people on here who say it slows them down. I'm not sure which is true. 
+
+Even if the bubble pops, I don't see companies massively increasing head count if less engineers can do similar amounts of work with the help of LLMs. Hiring will probably pick up a little but if there are 1 million CS grads + 100k Unemployed Devs + 500k offshore engineers, I can't imagine there will be enough jobs for everyone
+
+Source: I pulled numbers out of my ass like a magician
+
+#### Reply 7 by u/FunkyPete (6 points)
+
+>Nobody other than Nvidia is making meaningful progress towards ROI, per their quarterly calls.
+
+To be fair, that's the equivalent of saying during the .COM boom that only Sun Microsystems and Cisco were making any return on their investments. Companies like Amazon were famous for pouring more and more money into the internet every year without making a profit or even narrowing their losses. 
+
+It was true at the time that the hardware companies were the only ones profiting, and obviously 99% of the software companies in the .COM boom failed spectacularly -- but Amazon did actually thrive and is one of the biggest companies in the world because of it. Sun and Cisco both declared bankruptcy.
+
+I'm not saying that means NVIDIA will crash, I'm just saying that it's likely that SOMEONE will emerge to make profit off of the software in generative AI, we just can't tell who it will be yet.
+
+#### Reply 8 by u/Chili-Lime-Chihuahua (2 points)
+
+Yeah, I feel like it's a bubble as well. I also think when the bubble pops, there will be some initial pain/panic (maybe a lot), but my hope is that is smooths out/balances out spending/budget, and you'll see hiring pick up.
+
+#### Reply 9 by u/CandidPiglet9061 (2 points)
+
+It’s a bubble the same way NFTs were a bubble the same way crypto was a bubble the same way IoT was a bubble the same way….
+
+Just another hype cycle, it’s always like this
+
+#### Reply 10 by u/[deleted] (2 points)
+
+To be fair the last bubble lasted almost 12 years by my estimation.  Starting from the release of the social network to post Covid bubble.  I think the barriers to the bubble are higher.  You're less likely to hire a kitchen manager to an AI position than you were to hire them to make a REST API call for a mobile web app, but I still think it could last longer than months.
+
+#### Reply 11 by u/mistaekNot (2 points)
+
+have you used any of the LLMs? the tech feels like magic and it’s still improving. def not a bubble - bubble implies that something useless is being overvalued heavily - not the case with AI
+
+#### Reply 12 by u/Puzzleheaded_Sign249 (2 points)
+
+What if it’s not a bubble? What if AI companies are actually undervalued? If you don’t invest in your skills now, you might get left behind
+
+#### Reply 13 by u/[deleted] (1 points)
+
+All the people on this sub constantly yelling "hype" and "bubble" about AI believe they know or see something that the C-suites of all the top tech firms in the world don't know or see. That doesn't mean it won't turn out to be a bubble. But you should zoom out a bit. How much is your judgement clouded by the fact that you personally are or might be negatively affected by heavy investment in AI?
+
+I'm sure plenty of people can come up with anecdotes about some clueless manager at their company who thinks everything can and should be done with AI. But that doesn't mean that the industry as a whole is misguided about its investment strategy. I'd love to listen to some of these redditors explain to a room full of FAANG execs why they're wrong and how they could be doing things better.
+
+#### Reply 14 by u/breqa (1 points)
+
+Sweet
+
+#### Reply 15 by u/mmcnl (1 points)
+
+This. And I say that as an NVDA shareholder.
+
+#### Reply 16 by u/[deleted] (-7 points)
+
+This sub is so funny. This sub be like "I wanna get into AI since this is the future and where the demand is growing". Also this sub: "AI is overhyped and a bubble". 
+
+We can say the stuff we say, but our revealed preferences show that people believe in AI because ML/AI is so fckin popular as a field for people to get into.
+
+#### Reply 17 by u/uwkillemprod (-13 points)
+
+If AI is a bubble, that's bad news, cause it was tech's saving grace, 
+
+The copers are saying:
+
+"But.... But... they lowered interest rates, that should override supply and demand 😫😫"
+
+### Comment 4 by u/isotopes_ftw (428 points)
+
+I scanned the article. The evidence that jobs are gone forever is:
+
+1. A marketing guy who hasn’t found a new job (not a software dev).
+2. Am experienced professional who had to look for a job instead of getting hooked up by one of his friends - he did find a job for a 5% pay cut.
+3. A coding boot camp graduate who couldn’t find a job in 7 months.
+4. AI hype.
+5. Less internships posted (no info cited).
+6. A guy complaining that entry level jobs ask for prior experience.
+7. A statement about non-technical tech workers having a harder time.
+
+In others words, this article is making very strong claims based on flimsy anecdotes.
+
+#### Reply 1 by u/69Cobalt (73 points)
+
+Lmao #2 is the kicker. Like oh no you had to apply to 100 listings to get a job with a 5% cut! The horror! How can the industry survive if you are not catered to and lavished with immediate praise and attention! 
+
+Not denying that the industry is currently in a rough patch but I can't help but feel tech workers became so spoiled by what clearly was unusual conditions and any regression to the white collar workforce mean whatsoever is taken as a sign of horrific abuse.
+
+#### Reply 2 by u/Clueless_Otter (10 points)
+
+I rolled my eyes and knew what kind of article I was in for when it started with a marketing guy then started talking about "tech workers." No, WSJ, a marketer is not a tech worker, they're a marketer. Might as well say the janitor who cleans Google's offices or the the customer service agent when I call Amazon are tech workers.
+
+#### Reply 3 by u/salgat (8 points)
+
+There was definitely a situation during COVID where companies were hiring folks who had no business in the industry because they were getting desperate. Those jobs are probably gone forever, but the normal developer jobs never left.
+
+#### Reply 4 by u/Chili-Lime-Chihuahua (15 points)
+
+I agree with the points you're making. Something people lose sight of, at times, are all the different positions/roles at tech companies. I clicked on a YouTube video a few months ago with a title like, "How I broke into Big Tech in only 6 months!" or something like that. The person in the video had been a real estate agent and became a recruiter. She wasn't lying, and I'm probably not the demographic she's really targeting, but it didn't feel quite right to me/slightly misleading.
+
+#### Reply 5 by u/ForsookComparison (14 points)
+
+The only one of these which should concern this sub is point number 5. There are less internships and more graduates.
+
+We're getting to the point where landing a job as a CS Grad is reserved for those with powerful/connected parents. There's a lot of careers/fields in the same boat and I'd hate to see it happen to tech work.
+
+#### Reply 6 by u/krabizzwainch (6 points)
+
+Yes, the first thing that stuck out to me was “online marketing” as the position they were laid off from. That instantly told me this was poorly researched in the first like 4 sentences. It showed nothing about “tech jobs” and more about “non tech jobs at tech companies”.
+
+#### Reply 7 by u/lIllIlIIIlIIIIlIlIll (4 points)
+
+I read the entire thing. Halfway through after reading the 3rd anecdote I thought, "This article's claim could be proven in like 3 pie charts."
+
+Then I read the rest of it and I didn't even get one histogram. Just more anecdata. All cited links are links to more WSJ which I'm going to assume is full of more claims backed with anecdata and more links to itself.
+
+#### Reply 8 by u/Gigamon2014 (5 points)
+
+TBH I dont think the article is wrong.
+
+Its implying that the ease of which engineers found jobs for the last few years is over. I've been in the field 5 years, 8 if including my time studying and definitely have noticed a marked difference in the amount of opportunities out there. The article isnt implying that the market is dead but that its looking more like the kind of competition experienced in fields like finance and thats just the truth. 
+
+A skilled professional whose had to actually get up and look for a job instead of just getting hooked up is a big deal. Most people struggle immensely with interviewing and knowing that its now becoming a requirement in this field is going to be bad news for a lot of people...as interviewing is a skill in itself. Also, AI hype also matters because that means decision makers are thinking they can plug skills gaps with AI and thus wont sign off on budgets for picking up new talent.
+
+#### Reply 9 by u/awakening_brain (1 points)
+
+WSJ is known for making big claims based on a few data points.
+
+#### Reply 10 by u/stewadx (1 points)
+
+Yeah I agree that this is mostly just schadenfreude / unemployment porn but the article did actually include a chart showing some ADP data that shows software employment levels far below 2018 levels.
+
+#### Reply 11 by u/pacman2081 (1 points)
+
+Even for # 2 maybe the guy was overpaid
+
+#### Reply 12 by u/[deleted] (1 points)
+
+[deleted]
+
+### Comment 5 by u/walkslikeaduck08 (114 points)
+
+Sounds like this (https://archive.ph/kc0hF) article from The NY Times proclaiming “Dot-Com Is Dot-Gone, And the Dream With It”, circa 2001. 
+
+We don’t know, the WSJ doesn’t know, no one knows what the future holds. But yeah, for right now and likely the next few years, the market sucks. It’s kind of the nature of any high paying industry
+
+#### Reply 1 by u/Prior_Advantage_5408 (7 points)
+
+The dotcom bust is not comparable because it didn't have the sheer number of new grads continuing to pour into the field, nor the infrastructure that companies have created to enable outsourcing post-COVID.
+
+#### Reply 2 by u/Many-Presentation-82 (0 points)
+
+dude! This link just opened a forbidden blocked by police p\*\*\* p\*\*\*\*graphic website!!!
+
+#### Reply 3 by u/Strong-Piccolo-5546 (-1 points)
+
+it took a long time for the dotcom market and the stock grants you used to get to come back. it really was not until circa 2015 and later that it was like the dotcom 90s again.
+
+#### Reply 4 by u/[deleted] (-43 points)
+
+[deleted]
+
+### Comment 6 by u/Ok-Letterhead3405 (113 points)
+
+WSJ publishes a lot of junk to try and manufacture consent for eroding worker pay, benefits, work-life balance improvements, WFH, etc. It's a money rag for money people. They have something to gain from this, and I think one of those things is creating fear among workers to put downward pressure on wages, or keep it down. There's also a lot of money being invested into bullshit AI, and if Wall St loves anything, it's bullshit money. They need decision makers in companies to keep buying into it.
+
+Never take WSJ or CNBC at face value.
+
+#### Reply 1 by u/Aurongel (4 points)
+
+“Manufacture consent” is exactly the phrase that sprung to mind for me as well. WSJ is and has always been a public mouthpiece for C-suites and investors to steer public sentiment away from their own best interests.
+
+#### Reply 2 by u/philzway (-1 points)
+
+WSJ is owned by Bezos too iirc
+
+### Comment 7 by u/FitGas7951 (18 points)
+
+I'm astonished. A WSJ article about people out of work that doesn't call them bums.
+
+### Comment 8 by u/[deleted] (44 points)
+
+I worked for a SF tech startup for a few years but at their east coast office. The SF staff all were overpaid, incredibly young and inexperienced, and very entitled.
+
+The expectation was that they were fed for breakfast and lunch, by the company. Additionally, that they were managers or directors by 25-30. All were overly confident and very full of themselves.
+
+Meanwhile, us plebs on the east coast with decades of experience were actually bringing in revenue and doing all of the actual technical work for less money, and buying our own meals! The company was sinking and decided to layoff most of the SF office in the end and move operations to the east coast. We managed to recover, make a profit, and were acquired by another company.
+
+### Comment 9 by u/[deleted] (13 points)
+
+[deleted]
+
+#### Reply 1 by u/robocop_py (9 points)
+
+Actual title: Tech Jobs Have Dried Up—and Aren’t Coming Back Soon
+
+That last word is pretty important.
+
+### Comment 10 by u/startupschool4coders (67 points)
+
+Sort of true but sort of superficial hype.
+
+#### Reply 1 by u/[deleted] (10 points)
+
+[deleted]
+
+### Comment 11 by u/dippocrite (75 points)
+
+WSJ - The sky is falling 
+
+Reality - The market is fluctuating and roles are evolving as they always have been
+
+#### Reply 1 by u/[deleted] (3 points)
+
+I’ve been in the industry for over 25 years.  I have seen the dot com bust, the 2008 recession, and this time.
+
+It’s fundamentally different this time.  LLMs can do a lot of the grunt work that you would have hired an entry level developer for to free up the time of mid/senior developers and the market is not as amenable to throwing money at moonshots.  
+
+It’s no longer a simple thing as - get degree, grind leetcode, and the world is your oyster. 
+
+You have to give a reason for a company to hire you besides “I codez algorithms real gud”
+
+#### Reply 2 by u/[deleted] (-20 points)
+
+[deleted]
+
+### Comment 12 by u/EyeAskQuestions (40 points)
+
+1. Tech jobs are NOT The only software jobs out there.
+
+2. AI is over-fucking-blown. How are you all Computer SCIENCE students but you've chucked the SCIENCE part clean out the window for sensationalized Computer FICTION from TechBro marketers? 
+
+  
+This constant doom and gloom shit on reddit about "AI" is so..corny.
+
+#### Reply 1 by u/upsidedownshaggy (11 points)
+
+It's because a lot of Computer "Science" grads skated by in their CS courses because they knew it was going to pay well.
+
+#### Reply 2 by u/loxagos_snake (5 points)
+
+That needed to be said.
+
+There's so much speculation and fiction going on around in this sub, especially regarding AI. People saying how the current LLMs can already do a junior's job and I'm like...*how?* Today alone I probably became a target for termination by Skynet because I had to bully ChatGPT/Copilot to write a couple of tests for a method that updates a fucking entity. My prompts were extremely detailed, too.
+
+- "Please use frameworks A,B,C to test this functionality. One of these tests should assert behavior during an exception. Only focus on that one method."  
+
+- "Here's some wrong code that tests unnecessary stuff using frameworks X,Y,Z as you asked"
+
+### Comment 13 by u/JRLDH (15 points)
+
+What kind of SWE are y’all doing that AI LLM can replace you?!
+
+I’ve been in this field from hobby to university degree to gainfully employed starting in 1986. So I guess I’m an old fart. But even though I don’t develop as my main job anymore (I manage a team) I know what my team does and sometimes I still code/debug small parts. It’s low level embedded work dealing with proprietary protocols and bus topologies.
+
+How would one use AI here? “Hey, AI, write a decoder for our undocumented encrypted format container and then translate this to smb commands making sure that the data ends up at the correct addresses of an embedded system running our proprietary algorithm. Then debug this with bus sniffers followed by testing if the fix works over temperature and that it doesn’t violate maximum supply current specifications”
+
+#### Reply 1 by u/alpacaMyToothbrush (1 points)
+
+Ironically, graph rag over your current documentation (if you don't have documentation, I don't see how you're onboarding new people) is *exactly* the sort of thing an LLM is good at.
+
+I did just that today and was able to use it as a *much* better search to pull up documentation about another team's codebase, and was actually able to properly contribute to an architecture meeting a couple hours later because of it.
+
+People that don't know how to use gpt will underestimate it.  kids that trust it too much will overestimate it.  Used correctly given its limitations, it's useful as hell.
+
+#### Reply 2 by u/Deathspiral222 (-5 points)
+
+> Hey, AI, write a decoder for our undocumented encrypted format container
+
+This is exactly the kind of thing the latest version of chatGPT is good at.
+
+### Comment 14 by u/rostovondon (12 points)
+
+Articles proclaiming permanent doom and gloom are always a pretty reliable bottom signal, just like the quiet quitting articles and Facebook PM day of tiktoks were a top signal. Tech is inherently cyclical and I feel quite confident that there’ll be a rebound soon
+
+### Comment 15 by u/stealthybutthole (6 points)
+
+Holy fuck I'm way too employed to read all that shit.
+
+### Comment 16 by u/tacopower69 (6 points)
+
+Landing a job offer in 2022 was literally getting on the last lifeboat off the titanic lol, or maybe getting a job 2021-2022 was like finding the last bit of gold before the mine dried up.
+
+#### Reply 1 by u/takingphotosmakingdo (2 points)
+
+unfortunately the titanic still sunk for me in 2024 after boarding it in 22...
+
+Why did i change ships? sigh
+
+### Comment 17 by u/PuzzleheadedPop567 (11 points)
+
+If anything, this article makes me think a rebound is coming. Economic forecasts in mainstream sources are basically always wrong, and they tend to already report on the lagging indicators.
+
+The tech recession started like 2-3 years ago and they are just reporting on it now. By the time they start reporting on job growth, we’ll be 2-3 years into it.
+
+### Comment 18 by u/perestroika12 (4 points)
+
+Reading these articles must be like when people who work at the fed reads Bloomberg or something.
+
+I’m at a staff eng at a public unicorn with a headcount of 60. We have access to 3-4 different models for coding. From copilot, open ai, anthropic, etc. 
+
+I have yet to see the gains states by ai companies and the media. There are efficiency gains for sure. They are not enough to replace every junior or make every senior both the designer and coder for a larger project.
+
+What I can see is less juniors over time as these models get better because a single junior is more productive. We have 30ish e4 in my org. I could see that becoming 25ish over time.
+
+### Comment 19 by u/GuyF1eri (6 points)
+
+Not everything is so black and white. The job market fluctuates. Worse isn’t the same as “gone”. 
+
+Let’s wait to see how the fed rate cuts and seemingly plateauing AI boom pan out
+
+### Comment 20 by u/quantum-black (4 points)
+
+When a new opportunity came up with an electric-vehicle company at the start of this year, he felt so nervous about it not panning out that he hung on to his other job for several months and [secretly worked for both companies](https://www.wsj.com/articles/these-people-who-work-from-home-have-a-secret-they-have-two-jobs-11628866529?mod=article_inline) at the same time. He finally gave notice at the first job, only to be laid off by the EV startup a month later.  
+
+“I had two jobs and now I’ve got no jobs and I probably could have at least had one job,” he says.
+
+What an idiot
+
+### Comment 21 by u/HRApprovedUsername (91 points)
+
+Im not reading that long brick of text but its wrong and you are dumb. Good day.
+
+#### Reply 1 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 2 by u/RockleyBob (-7 points)
+
+>Im not reading that long brick of text but its wrong and you are d--b. Good day.
+
+Damn, at the moment this comment has 45 upvotes? An article you couldn't be bothered to read is wrong and OP is the d--b one? It's a relevant article to the sub and even though I'm not a fan of the WSJ's politics, it's America's most read 'hard' newspaper.
+
+Also seems to go against some rules:
+
+>Please be thoughtful and professional when commenting. Ask yourself, What Would Turing Do?
+
+>Please do not: troll, make a comment just to brag, or be a jerk. This means don't antagonize, don't say "c--e" or "t--ch gr--s".
+
+>Don't belittle others. Do embiggen others.
+
+Let's be better people.
+
+*reposting censored version since autmod thinks I'm being an as--ole
+
+### Comment 22 by u/HarveyDentBeliever (3 points)
+
+This is it folks, this is the bottom. This article + big rate cut today by the Fed.
+
+### Comment 23 by u/ListerfiendLurks (5 points)
+
+I stopped reading after the second sentence where it stated the guy worked in MARKETING lol.
+
+### Comment 24 by u/senatorpjt (4 points)
+
+water important psychotic seemly frighten violet kiss stocking bag edge
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+
+### Comment 25 by u/MidichlorianAddict (6 points)
+
+We are simply transitioning to a normal job market. Software related careers really took a boom in 2020 because everybody was working from home or in some way using software more than usual.
+
+### Comment 26 by u/kandrew313 (7 points)
+
+The problem is capitalism doesn't work if most of your people are out of a job. This AI stuff is going to get worse when bipedal robots really start impacting the labor force. They need to start implementing universal basic income NOW! That way, when this automaton and AI really touches every American family, we're ready to take care of the ones without a job.
+
+#### Reply 1 by u/terrany (5 points)
+
+The funny/weird thing about capitalism or greed in general is that you'll have people and their descendants \^1000th degree, with more wealth than they'd ever need, just keep pulling the ladder higher and higher up. Doesn't matter if they're 99.99% of the way to imploding the economy, as long as they're still competing to be richer than the other 0.01%, it won't stop.
+
+### Comment 27 by u/LiveEntertainment567 (7 points)
+
+Put the original title
+
+### Comment 28 by u/n_orm (3 points)
+
+>Knopp, the CEO of Pequity, says AI engineers are being offered two- to four-times the salary of a regular engineer. “That’s an extreme investment of an unknown technology,” she says. “They cannot afford to invest in other talent because of that.”
+
+>Companies outside the tech industry are also adding AI talent. “Five years ago we did not have a board saying to a CEO where’s our AI strategy? What are we doing for AI?” says Martha Heller, who has worked in executive search for decades. If the CIO only has superficial knowledge, she added, “that board will not have a great experience.” 
+
+Wow, the world is really ran by idiots
+
+#### Reply 1 by u/takingphotosmakingdo (1 points)
+
+if this was true than folks like me that can build the physical infra for AI would be getting hired.  
+(we're not)
+
+### Comment 29 by u/IronManConnoisseur (8 points)
+
+This reads like one of those SAT English section articles. It’s the same pattern of anecdotal quote and then sentence from the other over and over and over.
+
+### Comment 30 by u/-CJF- (5 points)
+
+AI is one of the biggest bubbles in history and offshoring will fail like it always does. Not like they haven't tried that before the pandemic.
+
+### Comment 31 by u/[deleted] (8 points)
+
+AI might be part of it, but 2021 is definitely not coming back. Not only that, but I am of the belief that companies are learning to be leaner and I am not sure if it will go back to even pre-pandemic. Elon Musk first started this, and I thought it was bullshit when he first did it, but the fact that Mark Zuckerberg declared "year of efficiency" and so many companies followed with layoffs, it's only confirmed it for me.
+
+Other fields have come back to job levels that are similar to pre-pandemic levels (think late-2019 or early-2020 levels). Tech has not. And I will give you the data. This is the [number of job postings for banking and finance](https://fred.stlouisfed.org/series/IHLIDXUSTPBAFI). This is the chart that [compares tech roles to broader jobs in the economy](https://fredblog.stlouisfed.org/2023/03/was-there-a-tech-hiring-bubble/?utm_source=series_page&utm_medium=related_content&utm_term=related_resources&utm_campaign=fredblog).
+
+You can either have your head in the sand, or accept and adapt to the reality we live in. I rather do the latter.
+
+#### Reply 1 by u/loveCars (3 points)
+
+> companies are learning to be leaner 
+
+This is probably cyclical as well: 
+
+ - Companies start small, lean, and hyper-efficient.
+ - As their product grows, they add heads to keep ahead of the competition
+ - As their headcount grows, inefficient employees find places to hide
+ - # of inefficient employees hit critical mass, the company cuts
+ - Competitors keep developing new or better products
+ - Company has to hire again and start new projects to stay ahead
+
+Lean and mean forever can only happen if the company stops making new, better products.
+
+### Comment 32 by u/MAR-93 (6 points)
+
+Cooked
+
+#### Reply 1 by u/the_real_candlejack (3 points)
+
+Can someone explain to me what this phrase means and why I keep hearing it on instagram reels relating to software engineers? Is there some kind of malaise virus going around?
+
+### Comment 33 by u/calihotsauce (2 points)
+
+The supply of jobs was always like this pre-pandemic, hardly anyone could get an entry level job in tech and industry hire roles grew at a relatively small pace. The big difference now though is that there are tens of thousands of laid off people with shiny big tech companies on their resume so that’s not enough to stand out anymore.
+
+### Comment 34 by u/PLTR60 (2 points)
+
+WSJ - the famous fortune tellers
+
+### Comment 35 by u/Change_petition (2 points)
+
+>  “Five years ago we did not have a board saying to a CEO where’s our AI strategy? What are we doing for AI?” 
+
+CIO - "where’s our AI strategy?"
+
+VP of Digital - "where’s our AI strategy?"
+
+Intern in Digital - "Chat_gpt, where’s our AI strategy?"
+
+And then the $hit flows up in colorful PPTs. Thousands are laid off and replaced with GPTs.
+
+### Comment 36 by u/BobbyShmurdarIsInnoc (2 points)
+
+Please, for the love of fucking god, do NOT let 10 million baristas and mechanics learn "hello world" in Python and start applying for "AI" roles. Can we please also skip the part where 500,000 people start getting "AI" degrees or some SWE takes an ML course on Coursera and qualifies as an expert?
+
+### Comment 37 by u/Fabulous_Sherbet_431 (2 points)
+
+This article would’ve made some sense (the first anecdote is goofy as shit either way) in mid-2023, but it’s not what’s happening with hybrid positions in NYC and the Bay Area. The recruiter story for Meta, for example, is about some guy busting his ass in 2022, then getting let go, with everything framed as doom and gloom. Except it wasn’t. Meta hired a ton of people in 2024—he just wasn’t there anymore.
+
+And EV startups were a straight-up bubble, so it’s no surprise someone starting at the end of the cycle got let go.
+
+It’s all just selective framing with barely any real, actionable data.
+
+### Comment 38 by u/champagneparce25 (2 points)
+
+Crazy that every single post I’ve seen here lately is some doomer shit about the industry. Followed by a flood of “is CS field finished??” posts
+
+### Comment 39 by u/Helliarc (2 points)
+
+Tech investment follows trends. Before AI was the crypto bubble, before the crypto bubble was the cloud, before the cloud was e-commerce. Investment paid off until crypto wasted a LOT of money, and investors were rugged. They threw everything they had left at AI. Well, AI isn't really paying off now, either... if you knew what the next trend would be(nobody does.) and studied on it, you'd catch the next tech employment wave. Any bets on what that will be? I'm going in on embedded systems, smart devices, robotics, and automated systems. Get those C/QT certs and Django skills brushed up. That new microwave with a TV built into it isn't going to code itself! And the company making them needs a quick django website to market it. "Smart" refrigerators are back on the menu, and an oven that provides video feed over wifi is cooking. The reason I think this is because of interest rates dropping. Lots of debt holders are looking forward to the opportunity to refinance on value equity. This money will go towards lowering credit card debt, home improvement/renovations, luxury home appliances, luxury electronics, energy saving systems, vehicles, and computers. The thing is, no one trusts GE, Armana, Whirlpool, Samsung, Apple, Intel, Amazon... they are now mindful consumers with a wad of cash looking for a next generation product that will last. So, some investors are going to see the value in developing and producing a high-quality home appliance. This requires high-quality parts and medium quality developers. The problem is that medium quality c/embedded developers are older, harder to find, and probably already have cushy jobs at big systems companies. So, the pool is small, and these large systems companies have the money/equity to increase wages and hire new talent. Now it's a race to shotgun everyone with even a hint of programming experience, assess which hires are competent, and lay off the rest. Just like they did with every other tech "boom". I'm in the thick of it right now, and if you can simply manage packets with QT, parse a CSV, and edit an ini file in a console, you're a genius. Make it all web accessible, and you're a god.
+
+### Comment 40 by u/nyquant (2 points)
+
+So all the money that would have gone into salaries for people is now blown into power plant smoke, producing the electricity for AI training costs, before that AI actually generates any profits? 
+
+Who is on the receiving end of those money flows, besides maybe NVIDIA?
+
+### Comment 41 by u/mmahowald (2 points)
+
+Having worked with AI- this is some bootlicking bullshit.
+
+### Comment 42 by u/sriracha_cucaracha (2 points)
+
+the tech jobs are now in Bangalore bruh
+
+### Comment 43 by u/Civil-Call-7593 (2 points)
+
+WHY IS NO ONE TALKING ABOUT SECTION 174?!?
+
+#### Reply 1 by u/[deleted] (1 points)
+
+[removed]
+
+### Comment 44 by u/YoungSimba0903 (2 points)
+
+Doubtful. Rate cuts are happening, the economy and these companies will shift back into growth mindsets and new companies will pop up once interest rates get lowered a bit more. Hiring will pick up. People have to temper expectations though. The pandemic was a once in a lifetime global event. The market will have a healthy demand but don't expect 2021 demand. If we get back even close to 2018/2019 numbers that would be a W.
+
+### Comment 45 by u/swift-sentinel (2 points)
+
+It may be time to walk away from this economy.  Perhaps they can do better with fewer people.  I think it is in everyone's interest to sell their assets, get out of debt, and do something else.  We should work to create value, profit from it directly, and stay out of debt.  I'm out.
+
+### Comment 46 by u/AngryWebDeveloper (6 points)
+
+Yall have got to stop this fear mongering bullshit in this sub
+
+### Comment 47 by u/ScrummieKeeper (2 points)
+
+Oh no! Anyway, …
+
+### Comment 48 by u/mx_code (2 points)
+
+This article is like 6 months late, it reports nothing and it’s just an alarmist take.
+
+As always, WSJ fantasizing about what tech workers actually do rather than providing substantial analysis… just that before they wrote about the over employed
+
+### Comment 49 by u/[deleted] (2 points)
+
+This article is cancerous. I mean, I’m actually interested in AI. Ive taken a bunch of certs and im doing a masters in ML. It is absolutely not any less competitive than any other tech field. It may even be more competitive. I hope no one is actually buying the BS in this article 🤦‍♂️
+
+#### Reply 1 by u/Dramatic_Pen6240 (2 points)
+
+Do you think that ai will replace jobs in tech?
+
+### Comment 50 by u/haveacorona20 (2 points)
+
+Because everyone is disagreeing with this, I'm going to agree with the article. This sub has been arrogantly wrong about almost everything.
+
+#### Reply 1 by u/[deleted] (1 points)
+
+[removed]
+
+### Comment 51 by u/in-den-wolken (2 points)
+
+I appreciate the first guy's hustle, but he appears to have no tech degree or actual tech skills. (Based on his LinkedIn.)
+
+Competition for undifferentiated cog-in-the-machine roles that anyone could fill, will be the toughest. Not too surprising.
+
+This has nothing to do with whether SWE and related *technical* jobs are going away, as implied by "tech jobs" in the WSJ's clickbait title.
+
+The coders mentioned in the story were bootcamp grads. Yes, that was always a bubble. Props to those who timed it exactly right. It actually should encourage us that *not a single person with a CS or adjacent degree is mentioned*.
+
+### Comment 52 by u/Gammusbert (1 points)
+
+“No one will ever hire you again”- Some Guy
+
+Ok lol have fun believing that
+
+### Comment 53 by u/FinalSir3729 (1 points)
+
+You guys are just realizing this? Lolllll
+
+### Comment 54 by u/NecessaryNo9626 (1 points)
+
+Is this the bottom?
+
+### Comment 55 by u/UniqueIndividual3579 (1 points)
+
+Soft skills are a help. I got a MBA after my CS because I realized I knew nothing about how a business works. With both I can talk to techies in their language and senior management in their language.
+
+### Comment 56 by u/AnimaLepton (1 points)
+
+>When a new opportunity came up with an electric-vehicle company at the start of this year, he felt so nervous about it not panning out that he hung on to his other job for several months and secretly worked for both companies at the same time. He finally gave notice at the first job, only to be laid off by the EV startup a month later.  
+
+Shouldn't have quit lol
+
+### Comment 57 by u/No_Share6895 (1 points)
+
+well dang i wish someone would have told me the job im working right now is gone.
+
+### Comment 58 by u/bigpunk157 (1 points)
+
+Feels bad for the one guy that ditched OE only to be laid off by the other role, but this is why we either accept OE is going to be a thing or we unionize, aaaaaaand incoming comments saying why we don't need a union lol
+
+### Comment 59 by u/the_real_candlejack (1 points)
+
+What's the philosophy behind making broad, pessimistic statements that are not backed by fact? Can't call it clickbait, since it's behind a paywall.
+
+### Comment 60 by u/KevinCarbonara (1 points)
+
+I guarantee you I make more money at my tech job than the person who wrote this article
+
+### Comment 61 by u/ebbiibbe (1 points)
+
+An online marketing job isn't a tech job. Those fluffy jobs always go first in lean times.  WSJ is such trash now. Goodness.
+
+### Comment 62 by u/_ncko (1 points)
+
+This article is just a summary of the discourse that occurs in this subreddit. I believe there is a significant probability that the author just gathered their info by reading this subreddit and then reaching out to people for interviews.
+
+This article is no more authoritative than this subreddit.
+
+### Comment 63 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 64 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 65 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 66 by u/Hexigonz (1 points)
+
+lol it’s still growth at all costs. It always will be. It was never about growing headcount, it’s about growing the share price and the bottom line. Layoffs support that
+
+### Comment 67 by u/Cultured_dude (1 points)
+
+Articles need to stop benchmarking against 2020 and 2021. Has anyone seen numbers benchmarking job openings from years 2012 to 2019? I also consider that time an exceptional moment for all the reasons discussed in this forum.
+
+Also, journalists must delineate between tech jobs - i.e., data, engineer, and science roles - and business jobs at tech companies. Marketing is not a tech job.
+
+### Comment 68 by u/th3DataArch1t3ct (1 points)
+
+Not coming back? This is garbage. The trend it run lean but their is a lot of waist in tech that can be justified with jobs. It just will not happen till next year. 
+
+It is seeming like the new trend of starve yourself till it starts to affect you businesses and then hire followed by layoffs to “trim the fat”.
+
+### Comment 69 by u/BejahungEnjoyer (1 points)
+
+Some of these statements are so stupid you wonder how it passed an editor. An AI engineer does not make $1mm per year. If your title is Principal Applied Scientist and you're famous for some paper then perhaps you can clear a mill, but your average ai engineer is not anywhere close.
+
+### Comment 70 by u/CazualGinger (1 points)
+
+Makes me wonder if I should consider learning another trade, or something. No fucking clue what I'd do if I got laid off and couldn't find another job.
+
+### Comment 71 by u/ogroyalsfan1911 (1 points)
+
+That’s good for AI as a resource.
+
+### Comment 72 by u/[deleted] (1 points)
+
+>They have pulled back on entry-level hires, cut recruiting teams and jettisoned projects and [jobs in areas](https://www.wsj.com/articles/tech-industry-reversal-intensifies-with-new-rounds-of-layoffs-11673134201?mod=article_inline&mod=article_inline) that weren’t huge moneymakers, including virtual reality and devices. 
+
+AI is often not a moneymaker (at least not yet), so entry-level AI jobs are extremely rare and difficult.
+
+### Comment 73 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 74 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 75 by u/[deleted] (1 points)
+
+The reality for long term tech workers is you just get creative with your resume, sprinkle the whole thing with AI references, spend about a week cramming on every AI topic, and then they are still knocking down doors and wining and dining you. If you don't have AI on the resume you don't get the time of day. Tech hiring is always about adapting to fit the latest hype cycle and bubble.
+
+### Comment 76 by u/doghouse2001 (1 points)
+
+Well I'm retiring soon so you can have my job. You'd have to be willing to support dead and unpopular languages, but the jobs and money are there.
+
+### Comment 77 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 78 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 79 by u/softwaredoug (1 points)
+
+Jobs don't "come back". Instead new jobs, with different skills are created. That's always been the cycle. Stay up to date and evolve with the market.
+
+### Comment 80 by u/BananaBreadFromHell (1 points)
+
+Fun take. Once dumb CEO’s who hastly jumped on the AI hypetrain will be looking desperately for qualified devs who will have to fix the wreck AI(lol) caused.
+
+### Comment 81 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 82 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 83 by u/Last-Marzipan9993 (1 points)
+
+This sticks out to me as I've been preaching & teaching EQ, Collaboration, Communication & Leadership for 3 years, these aren't necessarily difficult skills to gain with the right help, but it's not something the typical software engineer ever thought they'd need (as a software engineer with advanced AI skills & coach consultant today, I went into the field initially not wanting to deal with people all the time, yet I manage them today) In a market that is tough you need skills that set you apart by a large margin.
+
+*"Companies now seek a far broader set of skills in their engineers. To do more with less, they need team members who possess soft skills, collaboration abilities, and a working knowledge of where the company needs to go with its AI strategy,"* says Ryan Sutton, executive director at Robert Half. *“They want to see people that are more versatile.”*
+
+### Comment 84 by u/[deleted] (1 points)
+
+can we talk about something else for a bit
+
+### Comment 85 by u/wanzerultimate (1 points)
+
+this always was where open source was going to lead us. The scam of the ages, really. Want a job? Lobby your congress critter against open source.
+
+### Comment 86 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 87 by u/movdqa (1 points)
+
+This has been a cyclical thing since at least the 1980s.
+
+I remember when large tech companies like Wang, Digital Equipment Corporation, Data General and lots of others went through downsizing, and later got sold off to other companies. There was the 2000 internet bubble and The Great Recession. Our son graduated into the aftermath of The Great Recession with internships and work history but couldn't land a job and started graduate school and got a job after starting; which was nice as his employer paid for most of his grad school costs.
+
+If you have a job, make sure that you're as useful and revenue-generating as possible. If you're just out of school, it's really tough as there are so many others out there that have experience which is what you need.
+
+My company did an RIF back in 2020 and there were plenty of other jobs available in the company but I decided to take the package and take some time off. I have a major disability and it was as good a time to retire as any.
+
+I think that tech jobs will come back but it may take a few years.
+
+### Comment 88 by u/sickomodetoon (1 points)
+
+Lot’s of finance tech jobs here. Dynamics coder: https://cruit.work/jobs/van-lanschot-kempen/microsoft-dynamics-developer?code=TOOZWA74&extra=123
+
+### Comment 89 by u/RollyHuxley (1 points)
+
+the rise of single employee or 3 person startups is on the rise
+
+### Comment 90 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 91 by u/HumptyDrumpy (1 points)
+
+somehow I feel the problem started a bit musky
+
+### Comment 92 by u/[deleted] (1 points)
+
+If I lose my job I’ll go work on a farm
+
+### Comment 93 by u/invest2018 (1 points)
+
+ChatGPT produces code the kind of code that an English major would produce via imitation. It doesn’t actually understand the logic its writing. Way too much hype. When this bubble bursts, faith in AI will be a casualty.
+
+### Comment 94 by u/OddChocolate (1 points)
+
+Hey where are the “tech is everywhere” guy, the “it’s not the market it’s your skill issue” guy, the “coasting and clocking in 500k” guy, the “AI can’t replace our job” guy, and all other delusional tech guys?
+
+### Comment 95 by u/StarshipFisherPrize (1 points)
+
+Where's this great economy Biden and Jean-Pierre have been raving about the last three-and-a-half years? Everybody's so concerned with muh civil rights that anyone who's been doing a great job then suddenly laid off are asking the same question. I'm really sick of people talking about what a great president he's been when he can't string a coherent sentence together and then when he can he lies through his teeth about how great we're doing and how job numbers have "increased". In the meantime we keep sending hundreds of billions over to a fight we have no dog in and giving billions to illegal immigrants! Sorry..."asylum seekers". I'm sure a lot of back-tracking and fact-checking is going on there. Whatever!
+
+You can come at me with whatever you want with your Trump hate but we were doing a LOT better under Trump. I had the best job I'd ever had in my life and my family was doing well, pulling out of debt and prospering. Now? We're in an even worse state than we were before. 
+
+  
+It's been a year and a half and in that timeframe I've been laid off not once but TWICE.
+
+#### Reply 1 by u/Allucation (1 points)
+
+Pretty much every single country in the world is doing worse now than under Trump. But the conditions that started this didn't start under Biden. 
+
+They started under Trump. That's not to blame him. This would've happened even if Trump had done everything right, but COVID fundamentally changed the whole world and most of us just have not adapted.
+
+Biden does not control every single economy in the world to have this be a worldwide thing, as influential as the US economy may be.
+
+### Comment 96 by u/Wulfbak (-2 points)
+
+Clickbait.
+
+### Comment 97 by u/FatFailBurger (-8 points)
+
+I say it again, get out of CS and get into trades.
+
+#### Reply 1 by u/baldanders1 (18 points)
+
+Great idea!  Everyone can become a millionaire plumber!
+
+#### Reply 2 by u/[deleted] (9 points)
+
+No. Fuck off.
+
+#### Reply 3 by u/cthulol (3 points)
+
+Been romanticizing about this a bit lately.  Have any reccs on trades to get into?
+
+#### Reply 4 by u/AirplaneChair (-1 points)
+
+Yeah, if I was in college right now, I’d go military officer or bust my ass towards PA school.
+
+### Comment 98 by u/[deleted] (-1 points)
+
+As usual, this sub is still in denial about how useful the AI is and how it's making software engineers almost 10 times more productive right now.
+
+### Comment 99 by u/SynapticSignal (0 points)
+
+I think it just means that software development will shift to be focused on data mining and collecting data rather than developing new apps. 
+
+The tech startup era is over. Machine learning and data analytics will dominate.
+
+### Comment 100 by u/Don_Michael_Corleone (0 points)
+
+>Kugelman, let go from an online-marketing role at [eBay](https://www.wsj.com/market-data/quotes/EBAY),
+
+Since when is a marketing role a tech job? Brain dead journalists as usual will use anything to write their garbage
+
+### Comment 101 by u/iBN3qk (0 points)
+
+AI projects take more work than traditional ones.
+
+### Comment 102 by u/humpyelstiltskin (-2 points)
+
+waaaay too long, didnt read? anyone?
+
+### Comment 103 by u/Then-Explanation-892 (-2 points)
+
+I did coding dojo bootcamp and have an arts degree. I now make 220k TC at FAANG without knowing how to code. OP doesn’t know what he’s talking about
+
+#### Reply 1 by u/savage-millennial (2 points)
+
+survivorship bias. downvoted.
+
+-sincerely, another bootcamp grad
+

@@ -1,0 +1,363 @@
+# Kind of at an impasse. Mid 30s senior engineer with no desire to enter into management and mulling over future career options.
+
+Just curious what other people in my age range and YOE (~10) are doing to grow their careers. My compensation is about ~$200k with a ~10% bonus, which seems fantastic and I would have never dreamed of even a few years ago, but the problem is you get used to it and then after a few years of working hard and not being rewarded more (my salary is pretty much at the top end and not gonna increase much according to my employer), the motivation to work hard starts to drop and you start to look for the next thing. The field I work in is computer vision so it's somewhat niche and pays decent, although not super high end unless you do FAANG or more advanced deep learning. Anyway, the problem I'm facing right now is I don't see a path forward really in terms of career growth. What I've noticed is people my age generally either:
+
+1) Start to transition into management, because theres more top end career growth (i.e. director, VP, president, etc...) and real equity compensation
+
+2) Stay in engineering, although a lot of engineers I've seen do this become disgruntled and/or lazy, most likely because the compensation is stagnant and theres very little incentive to work hard. Most companies seem to top out early on compensation for engineers with the exception of FAANG.
+
+So with these two options staring at me in the face 1) really isn't gonna happen just due to the fact that I'm introverted and not really management material. I also wouldn't enjoy the work as well. 2) doesn't seem like a great option either because you always wanna be on an upward trajectory. 
+
+So I've been mulling over other potential options that might fit with my skillset. The only options I can see are:
+
+1) Try consulting, although most jobs are gonna be full time
+employment, so finding contracts might be difficult. Hourly consulting is also a pain with tracking hours and stuff.
+
+2) Somehow start my own business, but starting an engineering business is gonna be incredibly difficult, just due to how complex things are now and the division of labor, you can't really have full expertise over anything and need to hire other people, which requires a good amount of capital
+
+3) possibly try over employment. I think this would fit with my skillset the best but is a legal grey area. I actually wonder why this isn't more common as working multiple jobs is actually a way to ensure better financial security incase one employer has layoffs.
+
+4) Possibly FAANG but this would require a fair bit of leetcoding preparation, also my field (computer vision) I think most of the interest would be in generative deep learning which isn't really my expertise. 
+
+Anyway long winded rant aside, wondering what other people are doing when they hit this age/YOE and similar-ish situation and what they did if they managed to find success.
+
+## Comments
+
+### Comment 1 by u/obscuresecurity (110 points)
+
+1. Introverts can be managers too.  Good ones even.
+
+2. There's more money out there, trust me.  But you have to fight harder as your level goes up.  At the middle of 2022 is the highest I've seen salaries.  So if you got your current job then, almost everything will be a downgrade.
+
+In time the market will change, one way or another.  And another "Great Resignation" lies ahead, once the market gets liquid enough.  Too many people took jobs to eat, that they don't like.  So give it time.
+
+Also once you make enough money.  Money is a goal.  But maybe not the only goal.  Just sayin.
+
+#### Reply 1 by u/jucestain (6 points)
+
+1) I agree with, but if you are quiet or introverted, more than likely you arent gonna be put up for a leadership position, just what I've witnessed. But I totally agree I think being extroverted and a good manager can even be orthogonal at times.
+
+2) I think I gotta search a little harder and grow my network.
+
+Totally agree overall though my current life situation though I can focus pretty much completely on the job (single, no kids) so I'm still tryin to up the compensation as much as I can.
+
+### Comment 2 by u/rajhm (153 points)
+
+As you know, 10 YOE is a lot different from 2 YOE, but 18 YOE is basically the same as 10 YOE, right? Hence pay flattens out.
+
+You can settle in and chill without getting disgruntled. 
+
+There should be plenty of companies interested in computer vision for industry, retail, security, creative applications, etc. who can pay more than 200k for an IC, though.
+
+#### Reply 1 by u/jucestain (13 points)
+
+> There should be plenty of companies interested in computer vision for industry, retail, security, creative applications, etc. who can pay more than 200k for an IC, though.
+
+I will try searching but any suggestions on what industries and where to look? I typically search for "computer vision" or "image processing" on linkedin and indeed.
+
+### Comment 3 by u/jfcarr (80 points)
+
+I have 35 YOE and here's what I've done, mainly in an IC role. 
+
+I did try management for a couple of years and found I didn't like the amount of corporate administrivia or the never-ending meetings. After that, I did consulting for about 5 years but the travel and billable hours things were taking a toll.
+
+Through consulting, I eventually found a niche that I liked, logistics and manufacturing automation. Companies in these areas like to hire people who know the industry and the technology so that's where I've been for the past 16  years or so.
+
+You don't have to always be on an upward trajectory. You don't want to be promoted into a position where you either don't do well or that causes you a lot of stress and frustration. 
+
+You combat issues like becoming disgruntled and/or lazy by keeping yourself challenged by learning on your own and by establishing a good WLB to focus on things outside of work. You also need to work on keeping yourself financially, mentally and physically fit.
+
+#### Reply 1 by u/jucestain (37 points)
+
+> 35 YOE
+
+Thank you for your service lol.
+
+I think last two paragraphs have some insight, thank you.
+
+#### Reply 2 by u/BringBackManaPots (4 points)
+
+> administrivia
+
+chill breau it's only 11:14 on a tuesday
+
+#### Reply 3 by u/[deleted] (1 points)
+
+[deleted]
+
+#### Reply 4 by u/Blankcarbon (1 points)
+
+What’s your comp look like these days? Has AI helped you in this space either?
+
+### Comment 4 by u/SoftwareMaintenance (26 points)
+
+Sometimes you hit the top of your pay band. Then your salary stagnates. To me, if the salary is high, that is bearable. The problem is there stops being a desire to exceed expectations. But I still think it might be okay to chill while making a lot of money.
+
+#### Reply 1 by u/alpacaMyToothbrush (6 points)
+
+I wouldn't have an issue with stagnant comp if it just kept up with inflation. I'm getting 2.5% raises and am now 10% lower than I was a couple years ago and the message I'm getting from management is there isn't anything they can do (with a heavily implied 'good luck out there in the current market')
+
+Time to rise and grind I guess.
+
+### Comment 5 by u/FlyingRhenquest (19 points)
+
+I'm 50 and still in engineering. I enjoy it and am really good at it, and don't enjoy management aspects of the job. I'm just reaching the point now where I feel like I could benefit from leading a team, in terms of accomplishing what I want to accomplish, but I still don't care for it.
+
+#### Reply 1 by u/[deleted] (4 points)
+
+That's ~25 years of active development, wow. What would you say has been your biggest challenge over the years?
+
+### Comment 6 by u/Marcona (26 points)
+
+OP your never going to be satisfied. You need to do some serious soul searching and ground yourself. You already make more money than the vast majority of people will ever make in their careers. Of course compensation gets stagnant towards the top end of your career. There's a huge difference in 2 years of experience vs 10 YOE. But not much from 10 YOE to 15 YOE.
+
+If your only going to be satisfied with your career if there's only more money to work towards your gonna die unhappy. You earn enough money in the career that literally gives you the best perks in the world. You can do pretty much everything you ever wanted to do. At the end of the day a job is a job.
+
+#### Reply 1 by u/WhompWump (9 points)
+
+OP needs to see this more than anything. There's more to life than work and often those people who are getting paid well and settle are ok with it because it gives them a stable career where they know what to expect and how it fits into their lives with respect to their families and everything else.
+
+It's good to have some fire to climb up but what is it all for if you're just living to work? There's a reason people take so much pride in their families and their hobbies at a certain point and they're more likely to talk about that than work in off the cuff situations.
+
+### Comment 7 by u/xiongchiamiov (9 points)
+
+>1) really isn't gonna happen just due to the fact that I'm introverted and not really management material.
+
+It has nothing to do with introversion, but if you know you won't enjoy the job then fair.
+
+>2) doesn't seem like a great option either because you always wanna be on an upward trajectory. 
+
+I don't think that is true. Can you explain why you think it is?
+
+----
+
+Really you have three main options, not two:
+
+1. Sit as a senior engineer.
+2. Fork left into management.
+3. Fork right into IC leadership.
+
+A staff+ position will provide opportunity to grow in your career and compensation. But it is also a different job - the responsibilities will be different. Many people don't want to do that work and would rather just code. Check staffeng.com and The Staff Engineer's Path if you're potentially interested in that path.
+
+I transitioned to line management and then staff positions at about a decade in, and enjoyed getting to do something different. I anticipate after a decade of this I'll transition again, to a director or a small startup CTO. This is not about growth (or else I would've pushed these transitions faster), but rather ensuring that I continue to enjoy my job.
+
+### Comment 8 by u/Aromatic-Ad-5155 (12 points)
+
+I'm in the same boat as you. I've been building a real estate portfolio and will FIRE in a few years. Fuck working for corporations forever.
+
+#### Reply 1 by u/jucestain (4 points)
+
+I want to do more real estate but its damn pricey where I live (VHCOL area) and rents are high but way lower than a mortgage unless I were to put down 50%+ or something. But yes I will for sure have at least a rental or two at some point.
+
+### Comment 9 by u/[deleted] (8 points)
+
+[deleted]
+
+#### Reply 1 by u/EtadanikM (4 points)
+
+It's much more difficult to FIRE today than it was before the 50% inflation of everything. Real estate in many places have literally doubled in price and unless your salary has doubled as well, it's just not possible to FIRE on the same time lines, sad to say.
+
+Honestly, the level of inflation we have experienced in the past five years is the sort of disaster that the FIRE calculators from 2019 or so never accounted for. They thought a stock market crash was the only danger, never thought that high inflation might drastically change people's expense calculations.
+
+#### Reply 2 by u/jucestain (3 points)
+
+I think if engineers were compensated better (i.e. better equity) that would fix a lot of issues. I see a lot of 40-50 year olds that come into work beaming but they are upper management lol... When theres a link between effort and reward that brings a lot of satisfaction.
+
+### Comment 10 by u/blind99 (3 points)
+
+I'm in the same boat as you, in my mid thirties and I pretty much identified the same options you did but #4 for me would require relocating. I don't have an answer.
+
+### Comment 11 by u/Terrible_Positive_81 (3 points)
+
+I am not from the US but I would think 200k is an extremely good amount with probably only FAANG paying more. I am in your situation but at 40 and I would say keep your job for as long as possible. I hate management too, the worst thing about management is the increased amount of meetings you got to attend I hate that. Right now I work remotely and hardly any meetings so sometimes it doesn't even feel like working. If I was you I would just ride out what you got, even maybe try semi quiet quitting where you just do less. The reason why I say stay is because if they make you redundant they will have to pay out quite a lot as it seems you been at that company for a long time. You seem like a good engineer so you can put your problem solving skills to do other stuff. Create some digital product or drop ship are some ideas as a second hustle/business which is what I am trying to start and do so when and if they do make me redundant I will get a pay out and continue with my other business
+
+### Comment 12 by u/NewSchoolBoxer (8 points)
+
+Maybe you shouldn't be unhappy when you get paid peak east coast salary outside of New York or DC. Bad feeling for me to get 2% pay increases but I still get paid more than anyone I know working outside of CS or engineering.
+
+Career growth is a pyramid. Not everyone can keep moving up. Team lead kind of sucks since I do more work and have 2x the meetings for 10% more pay and get evaluated to a higher standard. As in, I could have just exceeded lower expectations for a bigger bonus. My manager was jealous since I was at the same pay grade as him.
+
+FAANG pay outside of California and Seattle isn't necessarily higher. Microsoft's jobs in Atlanta don't pay above market. There's no need. All these companies also had big layoffs. You're right though if you want to go that route, you need to leetcode. You get asked to code DFS or BFS on the spot, which never happens in a real job or other coding tests.
+
+Managment, consider an MBA. Only other way into that is getting promoted on the job, but management doesn't necessarily pay more like I was saying. It's all company dependent. Some people get an MBA then complain about being stuck in middle management. Same pyramid structure. You aren't guaranteed to move up. Maybe you're better at management than engineering. It's possible your potential is higher there.
+
+Don't start your own business. Most businesses fail. Exception if you have an MBA or trick people into funding you with nothing to show.
+
+Overemployment is a decent idea. There's a subreddit for it. Independent consulting is a bad idea. You pay an extra 6% in ponzi scheme social security taxes and big companies are vendor locked with Big 4 Consulting or Indian-owned consulting. You can take W2 contractor with no benefits jobs as a form of overemployment. I see $60-85 pay ranges with 10 YOE, which is crap, but fine as a second job.
+
+### Comment 13 by u/void-crus (2 points)
+
+Options are not mutually exclusive.
+
+You can do #4 once a year trying to get into FAANG while looking for contracts for #1 and exploring ideas for #2.
+
+Don't do #3. WorkNumber and other databases exist and it's easy for HR to run a check on you. It will ruin your reputation for life.
+
+#### Reply 1 by u/[deleted] (1 points)
+
+[deleted]
+
+### Comment 14 by u/luquoo (2 points)
+
+Given your post I personally think you would make a great manager, but would likely also hate it.  Try consulting around as a way to get a better picture of the field.  You might be in a position to find a job that pays more or is just straight up more interesting and fullfilling.
+
+
+The consulting angle is worth checking out because there are a ton of companies out there right now thinking about how to integrate AI and ML into their products, and your knowledge and exp could be extremely useful in making their dream projects a reality, even just figuring out if its worth it to do it.
+
+### Comment 15 by u/colddream40 (2 points)
+
+Engineering is one of the few office jobs you can parralel track as an IC
+
+### Comment 16 by u/sekex (2 points)
+
+We're hiring in Gemini, hit me up in the DM if you're interested
+
+### Comment 17 by u/wwww4all (2 points)
+
+If you want $$$, then you have to do the FAANG leetcode monkey dance and work their web problems.
+
+If you want to stay in your niche, your $$$ will level out, because your options are limited.
+
+#### Reply 1 by u/[deleted] (0 points)
+
+OO-OOO-OOO AAH-AAAH-AAAH
+
+### Comment 18 by u/SuedeAsian (1 points)
+
+Are you aware that staff+ is the next level from senior engineer? Your post makes it sound like you're making a dichotomy between being an IC and having career growth, but maybe that's just cause of your specific niche. I wouldn't be surprised if other companies were hiring for staff level computer vision engineers (even non FAANG).
+
+### Comment 19 by u/[deleted] (1 points)
+
+Is there a lot of job security in computer vision? How does one get into computer vision and image processing without experience? What sort of math do you use and does having strong math skills help a lot trying to get into this field? Is it worth pursuing a Master's if you already have a BSCS? Do you think ASU Online, CU Boulder and other online MSCS programs are worth it to get into this field?
+
+Also, does having a background in signals and systems (electrical engineering class) help at all?
+
+### Comment 20 by u/peterbuns (1 points)
+
+Think about what metrics matter most and take steps to improve those metrics. Maybe you're really ambitious and won't be satisfied unless you're clawing your way up the latter. Maybe you've got enough money and you'd rather decrease stress, increase PTO, squeeze all your work into a few hours per day so that more free time is available, etc. For me, low-stress and lax PTO are important to me, so I'm reluctant to sacrifice those just to increase comp.
+
+### Comment 21 by u/Onikiri (1 points)
+
+It's a common issue to run into this dilemma once you get to a high enough level. If there's no motivation to grow and improve your technical abilities, an option is to shift more into a mentoring / training / consulting role where you leverage all your experience and knowledge to help others. You may find that stepping into the "teaching" role may be more fulfilling.
+
+Be the SME for your group/dept, be a trainer to ramp up other teams, etc.
+
+For the record I'm an introvert, but I love helping my team out. After work I revert back to an introvert and play video games.
+
+### Comment 22 by u/AchillesDev (1 points)
+
+I'm doing a lot of consulting on the side (MLE/DE stuff as well as computer vision) via my network (this is where a long career at startups is a major help), as well as paid writing and e-learning gigs via O'Reilly. I'm also a member at [tribe.ai](http://tribe.ai) which helps get gigs when time frees up, but I've been lucky to be pretty busy this year.
+
+#### Reply 1 by u/Defiant-One-695 (1 points)
+
+How much do you make doing all of this?
+
+### Comment 23 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 24 by u/dzentelmanchicago (1 points)
+
+I tried to enter OE world and then I lost J1 lol
+I would do OE solely for the money so I could save up and escape the corporate world.
+
+### Comment 25 by u/fsk (1 points)
+
+If you're making $200k and can save $50k+/year, you're very close to being able to retire in 10 years.
+
+#### Reply 1 by u/beastkara (1 points)
+
+This was true when inflation expectations were only 20% over 10 years. Can't say I feel confident if that number is 30-80%.
+
+### Comment 26 by u/Strong-Piccolo-5546 (1 points)
+
+cut back spending and maximizing saving and investing. This way you can retire in 10 years. I am 49 and I am about done. I am ready to retire. I never made a FAANG income, but I started investing 25 years ago.
+
+### Comment 27 by u/Additional_Carry_540 (1 points)
+
+You need to find fulfillment somewhere else. Think about what makes you happy, and try to make into a career. Maybe coding was once that for you, but if it is no longer true, then perhaps it’s time to move on. I’m not saying quit right away, but work towards your goals incrementally over time. In 10 years, your life could look completely different.
+
+### Comment 28 by u/[deleted] (1 points)
+
+Why not just keep chilling and making a bunch of money? People care too much about working and grinding in this country. You are making a good deal of money and should be saving a good deal of it too. Do something else with your life, put some time into hobbies etc.
+
+### Comment 29 by u/ExperienceTop880 (1 points)
+
+Take a long vacation in a 3rd world country. See how people live and how few opportunities most truly have. Gain a new perspective on life and you will be happier.
+
+### Comment 30 by u/percocetpenguin (1 points)
+
+I'm in the exact same boat as you, considered the expert on computer vision based object detection at my job, but I have no growth path.  I dread being in meetings all day and management at my work is all meetings, so that's not an option for me.
+
+I've resolved to using the free time to work on personal growth projects so that I can get into generative work.
+
+### Comment 31 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 32 by u/lhorie (1 points)
+
+I did some freelance and consulting over the course of my career. Consulting is kinda hit or miss, it really depends on whether you can land and keep good clients. It doesn't necessarily guarantee high pay either.
+
+
+Haven't done overemployment but I hear it's stressful and harder to pull off now with more RTO.
+
+
+I'm currently staff eng at a big tech company. The pay is very good and the workload is still fairly technically oriented, though at higher levels it becomes very common to code less or not at all.
+
+### Comment 33 by u/incywince (1 points)
+
+move higher on the IC career path. Lead, staff, sr staff, principal, and so on. If that track doesn't exist where you are, be that kind of person anyway, irrespective of title. Do more design, be responsible for bigger pieces of software. That's how you get more stock and other kinds of compensation if not just base pay. You could also switch jobs to get better pay, but with your years of experience, it could help a lot to be responsible for bigger projects.
+
+### Comment 34 by u/LeopoldBStonks (1 points)
+
+People who want to be managers for the wrong reasons end up making terrible managers. You should seriously consider management as you would probably make a good one with your experience level. Also maybe consider starting your own company. I am getting into computer vision but am working on a side project because my company changed my role, I have some specialized CV experience but really want to transition to AI or CV full time to chase the compensation you currently have, once I am comfortable I will start a business whether my current side project fails or not. With AI becoming more of a buzzword everyday it would realistic for you to start something (depending on your focus in CV). Instead of looking for a new job maybe consider becoming your own boss.
+
+### Comment 35 by u/robobob9000 (1 points)
+
+Honestly when you reach that level there are diminishing returns to career progression. Sure, you could transition into management or prep for FAANG. But realistically, is going from $200k to $400k going to be worth the additional stress of managing/worrying about PIP? $0 > $100k is life changing money, $100k > $200k will make you comfortable, but going from $200k > $300k doesn't change much.
+
+There's nothing wrong with coasting at $200k, and instead investing your time and energy into other things in your life. Family, hobbies, health, travel, entrepreneurship, volunteering, etc.
+
+### Comment 36 by u/ExperienceTop880 (1 points)
+
+Witness the horror of impoverished nations and even the underbelly of developed nations and you’ll stfu with this entitled whiny nonsense.
+
+### Comment 37 by u/DesperateSouthPark (0 points)
+
+Go Amazon! You can learn and improve a lot.
+
+### Comment 38 by u/Mediocre-Ebb9862 (0 points)
+
+I don’t understand the doubts you see in faang, didn’t get the bit about faang not having upward trajectory?
+
+### Comment 39 by u/beastkara (0 points)
+
+Computer vision senior engineers make more than that compensation, and you know this. 
+
+If you upskilled you'd be in a more challenging position. If you don't want to do that, management, project management, are going to be your opening. 
+
+Consulting is going to require upskilling anyway, and often sales skill.
+
+#### Reply 1 by u/jucestain (0 points)
+
+Any pointers for where to look for higher paying positions (companies, industries, where to look, etc)? 
+
+I'm thinkin its gotta be a public company (for RSUs) but the only ones that come to mind are FAANG.
+
+### Comment 40 by u/defmacro-jam (0 points)
+
+Do you really need more money?  I don't know -- I'm at 35 YOE and I'm still in engineering. I'm over 55 so I intend to stay put and run out the clock.
+

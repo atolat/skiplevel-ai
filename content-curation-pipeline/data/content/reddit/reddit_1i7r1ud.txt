@@ -1,0 +1,131 @@
+# Seeking Guidance: Advanced Front-End vs. Broader Engineering Skills for Career Growth
+
+I have 14 YOE as a developer, with the last 10 focused on front-end development. I’m happy with my current job—it's remote, the pay is fair, and the workload is manageable. The company is a competent and stable startup, though we’re currently in a "very tight" (in a promotion sense) mode, working hard to achieve profitability. As a Senior developer, I don’t foresee an immediate opportunity to become a Staff-level engineer.
+
+The main thing that’s bothering me is the feeling of falling behind in my skillset. At the same time, I’m struggling to find "advanced front-end" resources that will help me level up. I want to be in a stronger position within the company when staff opportunities arise, and also be prepared for the job market in case things change.
+
+So, I’m seeking advice: Should I focus on finding "advanced front-end" materials to advance my skills, or should I shift my focus to broader engineering topics like system design and architecture?
+
+## Comments
+
+### Comment 1 by u/[deleted] (24 points)
+
+“Advanced frontend” is either platform engineering or design systems engineering. 
+
+Most staff+ end up working at the language, framework, “bare metal” browser level or deeper into core libraries. 
+
+Anywhere product-y tends to be extremely repetitive.
+
+### Comment 2 by u/salty_cluck (10 points)
+
+Im not sure what you consider advanced frontend so this question is kind of vague. I also don’t know what you work on so your advanced could be Wordpress plugins with css animations or dealing with 500 microfrontends and all of their details. Or caching. Or performance. Or…you get the idea. I know people with 14 yoe that don’t do SPAs. Or don’t know what a FCP is because they're essentially pixel pushers and aren't really observing the perf of their stuff. It’s a whole different world depending on where you work. 
+
+You should know a bit around the entire stack, including some system design and architecture , but know one area pretty good. Basically the T shaped dev you read about. 
+
+Staff usually has nothing to do with stack. Staff is being a force multiplier among other things. It’s not the goodest coder or the person who can pass the most system design interviews.
+
+Pick a goal. Then pick a topic and go learn it if it contributes to your goal.
+
+### Comment 3 by u/kevinkaburu (7 points)
+
+From my experience, there's indeed a cap to most front-end work like CRUD stuff or simple UI dev. Advancing often means branching out into back-end, system design, or then diving deep into niche, high-demand front-end areas like building complex interactive apps or tools from scratch, FW/library dev, etc. 
+
+Understand API design can really up your game in collaborating effectively with back-end teams. If the goal is to be photorealistic sim and games for the web-oriented, you can even look away from web-focused jobs. There are great opportunities in small indie studios as an integrated dev. This can always be reassuring. Focus on broadening your skills while finding a niche to excel in. This flexibility not only opens up staff-level roles but also makes you more bulletproof in the job market.  
+
+Also, taking up side projects, teaching, or writing about advanced topics is a way to sharpen and showcase your skills.  
+
+At the Staff level, you'd be expected to mentor, influence broader technical decisions, and contribute to the organization's technical leadership. You'd initiate and drive the implementation of novel solutions using your advanced front-end expertise. This could involve researching new technologies, devising innovative user experience methods, or pioneering new approaches for app performance optimization. Your extensive front-end knowledge will be instrumental in refining and implementing strategic plans and ensuring that the latest front-end trends and technologies are considered in high-level decision-making. 
+
+You may be tasked with researching emerging technologies, suggesting multi-team improvements, or optimizing frontend deployments at scale. Staff engineers also liaise more frequently with non-technical stakeholders, translating complex technical concepts and contributing to strategic discussions.
+
+Staff engineers at the front end are especially crucial for ensuring high-quality, user-friendly interfaces and for innovating on new UI/UX possibilities, which makes your deep expertise potentially very valuable.
+
+#### Reply 1 by u/octopusbroccoli (2 points)
+
+Thanks for the complete comment.
+
+### Comment 4 by u/cougaranddark (7 points)
+
+Definitely expand into back end. Build some API endpoints with Go and Python. Go for an AWS certification. Those things will help you on the system design side of things which can open a lot of doors.
+
+### Comment 5 by u/originalchronoguy (13 points)
+
+Unpopular opinion, I think there is a ceiling of what you can do on the front end.
+
+Sure, if you can make a 3D video game running Need-For-Speed entirely in the browser or make a Photoshop clone that is all running off javascript,  or even a BeOS/Amiga OS in a web browser, you are pushing the boundaries of the front end. Those are ultra niche and there will always be a demand for devs with strong mastery of the DOM. But rare.
+
+But if you are just doing pixel perfect layout from a Figma or CRUD, there is a ceiling.  
+I would venture into more of the backend. I would want to see a developer, on the front end, have the technical skills to negotiate an API contract with a backend team. To do that, requires being knowing the nuance. Same with system design. How can a front-end only developer dictate how a scaleable distributed system is designed if they never worked in that domain?
+
+#### Reply 1 by u/trojan_soldier (17 points)
+
+This is a popular, but sadly misguided opinion. If we are working in a startup or talking about a pure web programmer, this can be true. However I have seen several staff level engineers in middle and enterprise scale companies who never had to touch backend code.
+
+I am using frontend eng in a broader term here. Typically we call them client engineers. They can be mobile or web engineers. The scope of work is beyond implementing pixel-perfect work. Usually involves: 
+
+- Guiding full-stack developers to come up with a scalable, type-safe API schema that can survive for years to come. 
+- Running experimentation (imagine A/B tests) with product owners and data scientist. A great eng usually able to come up with some experiment ideas to boost company's metrics because they are familiar with which areas can be optimized.
+- Architecting reusable modules and flexible infrastructure for other client or full-stack engineers to use. Imagine a design system or in-house observability libraries.
+
+Most of these require a lot of soft skills to convince other devs. Also being comfortable stepping out of your comfort zone to run data analysis and driving future projects.
+
+#### Reply 2 by u/octopusbroccoli (1 points)
+
+Thanks for the complete comment
+
+### Comment 6 by u/wwww4all (5 points)
+
+Watch a movie called Jiro Dreams of Sushi.
+
+You may learn what it takes to get "advanced" anything skills.
+
+If you want advanced skills and advancement in tech roles, you have to do whatever it takes.  And, whatever it takes are usually more that what you think, whatever you think "advanced" skills are needed.
+
+Staff roles are more than just advanced skills, they can help.  It's about leveraging skills to advance business goals that advance company goals and deliver impact and critically showcasing impact to important stakeholders.  That's a lot of squares you have to circle.
+
+Anyway, as the movie shows, sometimes you have to prove that you can make rice, sometimes for few years, before you can advance into making sushi.
+
+#### Reply 1 by u/teslas_love_pigeon (3 points)
+
+OP if you do watch this movie, realize not everyone has the same takeaway message. Jiro neglects every aspect of his life besides sushi making, he ignores his family and is a basically a recluse. It's not something to strive for IMO, at least not in such an extreme as Jiro.
+
+#### Reply 2 by u/NonProphet8theist (2 points)
+
+I'm just trying to get back into frontend dev now after an RTO mandate and some time off. In interviews I they are asking me to make rice, more or less. I went senior relatively quickly so got more into "advanced" stuff and I think maybe that's hurting me in these interviews, because I haven't exactly worked on basics.
+
+If I'm going for mid-level to senior, what's the equivalent of making rice? I think if I have that knowledge I can start making it into later rounds.
+
+### Comment 7 by u/Wulfbak (2 points)
+
+I assume you have lots of Javascript experience. You could always parlay that into writing server-side code. You can write Node APIs using Javascript. 
+
+Personally (and don't flame me if you love server-side JS), I never saw the point of this when we already have robust languages like C# and Java for backend development, and they include powerful frameworks. But, there are companies who look for server-side JS.
+
+#### Reply 1 by u/octopusbroccoli (2 points)
+
+I agree with you about the server-side thing. The company I'm working now uses Python in the backend, so it's a good thing to learn and to have in the tool belt.
+
+### Comment 8 by u/liquidpele (1 points)
+
+Front end is a cesspool of low wage react bootcamp labor.
+
+### Comment 9 by u/casualfinderbot (-8 points)
+
+There is no “advanced front end”. You’re basically doing the same thing over and over and over.
+
+- fetching data and dealing with caching
+- rendering lists of stuff. 
+- rendering detail views of stuff.
+- navigating around
+- building forms
+- small amounts of client side state management (toggles, is the modal open)
+- styling stuff
+
+I just described 99% of front end work ^.
+
+If you want to do something that is actually hard and related to front end you either need to work on very niche applications (IE figma) or build tooling like frameworks and libraries
+
+#### Reply 1 by u/Ok_Parsley9031 (2 points)
+
+Can confirm, at my last company I was building generic dashboards and web apps with React. My new role I’m working on a large lib written in TypeScript (frontend) and it’s a completely different experience.
+

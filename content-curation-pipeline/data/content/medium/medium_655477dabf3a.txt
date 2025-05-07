@@ -1,0 +1,99 @@
+I Wrote Your Software Engineering Goals For 2025, So You Don't Have To
+
+Regardless of the level you're at, there is always something you can do to grow, so what will it be this year?
+
+You know that yearly goal-setting exercise at work most of us loathe? If you do, maybe you shouldn't. Loathe it, that is. Any goal you set for the quarter, half-year, or the entire upcoming year should help you advance your career. Yes, it's usually coupled with company goals, but that doesn't mean you can't be smart - pun intended - about it. I'm not even going to preach about setting acronymic SMART goals, but rather just using opportunities to your advantage. Conventional wisdom may suggest that goals should be measurable, while I think the outcome of your goals should make you feel happy. Does that make me a hippie software engineer? Fine, so be it. But we spend a 3rd of our days working, we may as well make the most of that time.
+
+Define YOUR next level
+
+To grow, you need to understand where you're at. Often, engineers make the mistake of comparing themselves to other engineers. In fairness, this is not just a software engineering tendency. This is a human tendency. But I'd argue it's the wrong one. You tend to compare yourself to another engineer, either because you admire them or you are jealous of their success.
+
+While the former is largely a positive sentiment, it typically sets people up for failure. I might very well admire President Obama, but I will never be able to become the next president of the USA. I'm neither American nor do I possess many of the qualities a president like Obama was, requires. Admiration has the tendency to breed unrealistic expectations of ourselves.
+
+The latter - jealousy - is inherently a negative sentiment, and thus the wrong incentive or drive to reach a new level in your career or your skills. It can be powerful, and I won't deny that it can work, but again, like with admiration, you're running the risk of setting yourself up for failure and ending the year disappointed. Often when we're jealous of someone else's success, and we try to replicate it, we do so without knowing their journey. And journeys vary from person to person.
+
+The best engineer you can compare yourself to for healthy growth, is yourself.
+
+This is not rocket science. As soon as you're honest with yourself about where you're at in your career, you have every chance of defining quite successfully your growth path for the future, be that short or longer term.
+
+There are no soft skills
+
+Last year I have reached the conclusion that all the skills we've been calling "soft skills" in software engineering are frankly just as hard - and at times even harder - than the so-called "hard skills". You can be the best at systems design if you're difficult to work with, struggle with passing your knowledge on, documenting your ideas, delivering in a timely manner, people will prefer to turn to engineers who possess not just the knowledge but also the skills that make that knowledge have the most impact.
+
+The assumption is often that the soft skills are easy to hone, but I find that a surprising number of engineers are actually much quicker at learning a new programming language than mentorship, communication, documentation, empathy, patience, adaptation, time management and the likes. None of this is easy and most of these don't necessarily come naturally to most engineers, so it's a learnt skill, and it takes time. Years. Prepare yourself for that and every year focus on just one, or maybe two. Last year, for instance, I spent polishing up my communication skills, and it did me good, but more on that later.
+
+Assume that picking up soft skills will be at least as tough and time-consuming as getting proficient in a new development stack.
+
+No matter what level you're at, working on your soft skills is incredibly important. Ask your team-mates for feedback, talk to your manager, or go as high as the CTO if you can. They'll all give you ideas on which soft skill they see you needing to work on the most, then do the work. Patiently. This is not a sprint-sized task, not even an epic or a saga. Or a deliverable. You don't just learn time management and check it off the list. You continuously become better at it because even when you think you're great at it, there'll be a project that will make you improve on that, or you'll meet engineers who have an even more efficient workflow.
+
+About that code
+
+Think less about the code, more about the problem you're solving. Far too often I see engineers fixating on the code rather than the issue they're solving. This tendency is natural up to a point, but as you move on from being a junior software developer, you need to develop the ability of zooming in and out of the code and understand where certain approaches make more sense than others.
+
+Think of it like a LEGO set. You need to understand what you're building for the building blocks to make sense.
+
+Remember that code is merely the machine-readable representation of the solution for the business you work for, the most valuable artefact is the solution, not the code; therefore you should try to get to the solution as efficiently as possible.
+
+That's not to say that code quality doesn't matter. Quite the opposite. The way I tend to look at keeping the code I write at a quality-level that both myself and the teams I work are happy with, is by keeping in mind just one software design principle: KISS. Always keep simplicity in mind. The business will thank you, you'll thank yourself, and so will everyone working on that code later.
+
+The fine art of communication
+
+This is not something you'll pick up in a single year, maybe not even ten. It's going to be an ongoing learning experience, and you need to accept that. As you grow in your career, your communication skills will also be tested in contexts you have not yet been in. It's one thing to have a chat with a peer, and quite another having to defend a migration that costs the business 3-months worth of your effort, a complete refactor of your frontend from monolith to microfrontends to engineering managers, product owners, VPs, and even CTOs.
+
+Each of these conversations comes with a different set of challenges. Boring the VP of engineering with nitty-gritty details is not only pointless but quite likely a waste of their time. On the other hand, your peer will likely need precisely that level of minute detail to properly grasp what you're trying to achieve.
+
+It's no wonder every tool out there, from Slack to Jira, is trying to solve one core challenge: communication. Because it's hard. Damn hard.
+
+The tone, the content, and the delivery of the message all matter a great deal. Often a debate is best had in person or a Zoom meeting with video on, while text-based communication often works well for asynchronous communication or information meant to be referenced later. Never forget that effective communication can move mountains in an engineering organisation. Two people can present the exact same solution, and the one who will be listened to and recognised for it will be the one with better communications skills.
+
+Notes to graduates and juniors
+
+Folks, please learn the damn languages you claim to know. Over the last few years, I keep seeing an increasingly degraded graduate and junior candidate pool. I haven't yet looked into what might be causing this - one suspect is AI - but rocking up to a web developer interview not knowing the basics of HTML is simply unacceptable.
+
+Skipping the basics to appear more experienced is not going to help anyone. I'd rather work with a junior who just knows HTML, CSS, and JS than a "React expert" Googling "how to create a React input".
+
+To be perfectly honest, I actually don't consider any library or framework to be a skill, but rather the application or the intersection of a technology stack. A good Python engineer will pick up both Django or Flask as they go. A Good JS engineer will tackle anything from Next.js to Vue, Angular or whatever else there is, in no-time and without any real negative impact on the team. A "React engineer" trowing Tailwind at everything, however, will quickly become a burden on their team.
+
+If you want a one-liner advice, this is it: just learn to program. Everything else will inevitably follow, and believe it or not, you will be much more proficient and efficient in solving real-world challenges while learning how to zoom in and out of the code and keeping it simple.
+
+Dear seniors and above
+
+When exactly did we become coding micromanagers? This is so not what we're paid for. Whether our team-mates decided to use a switch instead of what perhaps could have easily been a simple if statement, or didn't put a few constants into a separate file, is far too trivial to police. In fact, what senior, staff and principal engineers should do, is quite the opposite.
+
+Senior engineers exist to solve the high-level problems, and come up with solutions to prevent the low-level issues occurring. Focus on having a multiplier effect.
+
+Instead of just looking at a problem, be that infrastructural, business-logic level or architectural, and trying to solve that specific problem, think about why the problem occurred in the first place, is there a chance of it happening again, and devise a solution to prevent it once and for all. It can be as "simple" as writing easy to parse documentation, or as complex as migrating an entire codebase. My rule of thumb is if you get asked the same question more than once, it's a preventable issue, and likely yours to solve.
+
+Sometimes, less, really is more
+
+Do less. Over 2024 I tried doing just that. I realised not everything had to be solved by me. There were people ready to lend a hand. Tasks didn't have to be finished early, and sometimes being late wasn't my fault - we just underestimated the work's complexity.
+
+Just like you would do on an airplane in a decompression event. You first place the oxygen mask on your own face, then anyone else needing support next to you. When you're well rested, in a happy place you're a much better engineer and your problem-solving skills work far better than when you're burnt out, stressed out and sleep-deprived.
+
+You cannot be a good software engineer if you're not in a good place emotionally. Take care of yourself first.
+
+Don't do the bare minimum, that's not what this is about, but only do the maximum of what you can within the time you have and for the money you're paid. A business agreement between employer and employee goes both ways. It has to be worth to both you and the company you work for. Overworking yourself and then complaining you're not being appreciated enough is not the right strategy and I have learnt that very early on in my career when my manager told me "If I ever catch you again working until 1AM, I will fire you." The moral of the story is: don't work harder, learn to estimate the work better.
+
+AI isn't here to take your job
+
+But you also cannot stay oblivious to it. If you're using it like a tool, be very vigilant, not to shoot yourself in the foot with it. The last thing you want is realising a year from now that you've forgotten the basics or that you've ended up with a codebase so bloated and entangled that nobody can make sense of it anymore. Efficient code that maximises business value will forever remain a key consideration.
+
+You don't have to be impressed by AI to know how to use it wisely or integrate it. Dismissing it outright is the irresponsible thing to do.
+
+AI integration is also something I would encourage developers to look into. You don't have to like or care about AI to be tasked with an AI integration. Think of it like any ol' API. Like it or not, machine learning and generative AI is becoming one of the many capabilities a software can have, and some old features even migrate to using AI. You can't ignore that if you want to maximise your potential as a software engineer.
+
+It was never meant to be easy
+
+Eight years ago, I wrote an article that went viral. I still stand by it. Coding has become pop culture, but programming has not. Software engineering is not easy, and it's not meant to be easy. Moreover, it's a volatile profession, and while it pays well, you can also find yourself without a job for many months, no matter how experienced you are.
+
+The best software engineers stay because they love software engineering. Solving problems is what makes them tick.
+
+It takes a special kind of "crazy" to enjoy solving tough problems and do that for decades. Coding is and will remain a relatively small part of the job and, in some ways, increasingly the easier part, while everything else seems to get tougher and tougher. We're not in 1999 anymore, and as much I question the need of increasingly abstract levels in modern software development, it is the reality we have to work with every day.
+
+With software becoming increasingly popular, it also means we inevitably end up in business contexts that we never thought of before and learning how to build products we couldn't even imagine a decade or two ago with people we never had to interact with before. We can only do that by continuously growing not just our programming skills, but our soft skills as well. It's the key to staying visible, staying relevant in our industry.
+
+So, what other goals are you looking at this year, or which one of the above are you looking to focus on in 2025?
+
+P.S. A year later this 2024 recommendation of how to become a better software engineer, still applies, so you might want to give that a read as well. 😉
+
+Attila Vago - Software Engineer improving the world one line of code at a time. Cool nerd since forever, writer of codes, blogs and books. Author. Web accessibility advocate, LEGO fan, vinyl record collector. Loves craft beer! Read my Hello story here! Subscribe for more stories about LEGO, tech, coding and accessibility! For my less regular readers, I also write about random bits and writing.

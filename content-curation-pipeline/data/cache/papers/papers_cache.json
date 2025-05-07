@@ -1,0 +1,127 @@
+{
+  "arxiv_search_6e04831c1be1c13502d77a16ae744f88": {
+    "timestamp": 1746588591.7628748,
+    "data": [
+      {
+        "entry_id": "http://arxiv.org/abs/2505.02836v1",
+        "title": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene\n  Generation",
+        "summary": "Synthesizing interactive 3D scenes from text is essential for gaming, virtual\nreality, and embodied AI. However, existing methods face several challenges.\nLearning-based approaches depend on small-scale indoor datasets, limiting the\nscene diversity and layout complexity. While large language models (LLMs) can\nleverage diverse text-domain knowledge, they struggle with spatial realism,\noften producing unnatural object placements that fail to respect common sense.\nOur key insight is that vision perception can bridge this gap by providing\nrealistic spatial guidance that LLMs lack. To this end, we introduce\nScenethesis, a training-free agentic framework that integrates LLM-based scene\nplanning with vision-guided layout refinement. Given a text prompt, Scenethesis\nfirst employs an LLM to draft a coarse layout. A vision module then refines it\nby generating an image guidance and extracting scene structure to capture\ninter-object relations. Next, an optimization module iteratively enforces\naccurate pose alignment and physical plausibility, preventing artifacts like\nobject penetration and instability. Finally, a judge module verifies spatial\ncoherence. Comprehensive experiments show that Scenethesis generates diverse,\nrealistic, and physically plausible 3D interactive scenes, making it valuable\nfor virtual content creation, simulation environments, and embodied AI\nresearch.",
+        "published_date": "2025-05-05T17:59:58Z",
+        "url": "http://arxiv.org/abs/2505.02836v1",
+        "pdf_url": "http://arxiv.org/pdf/2505.02836v1",
+        "authors": [
+          "Lu Ling",
+          "Chen-Hsuan Lin",
+          "Tsung-Yi Lin",
+          "Yifan Ding",
+          "Yu Zeng",
+          "Yichen Sheng",
+          "Yunhao Ge",
+          "Ming-Yu Liu",
+          "Aniket Bera",
+          "Zhaoshuo Li"
+        ],
+        "categories": [
+          "cs.CV"
+        ]
+      },
+      {
+        "entry_id": "http://arxiv.org/abs/2505.02835v1",
+        "title": "R1-Reward: Training Multimodal Reward Model Through Stable Reinforcement\n  Learning",
+        "summary": "Multimodal Reward Models (MRMs) play a crucial role in enhancing the\nperformance of Multimodal Large Language Models (MLLMs). While recent\nadvancements have primarily focused on improving the model structure and\ntraining data of MRMs, there has been limited exploration into the\neffectiveness of long-term reasoning capabilities for reward modeling and how\nto activate these capabilities in MRMs. In this paper, we explore how\nReinforcement Learning (RL) can be used to improve reward modeling.\nSpecifically, we reformulate the reward modeling problem as a rule-based RL\ntask. However, we observe that directly applying existing RL algorithms, such\nas Reinforce++, to reward modeling often leads to training instability or even\ncollapse due to the inherent limitations of these algorithms. To address this\nissue, we propose the StableReinforce algorithm, which refines the training\nloss, advantage estimation strategy, and reward design of existing RL methods.\nThese refinements result in more stable training dynamics and superior\nperformance. To facilitate MRM training, we collect 200K preference data from\ndiverse datasets. Our reward model, R1-Reward, trained using the\nStableReinforce algorithm on this dataset, significantly improves performance\non multimodal reward modeling benchmarks. Compared to previous SOTA models,\nR1-Reward achieves a $8.4\\%$ improvement on the VL Reward-Bench and a $14.3\\%$\nimprovement on the Multimodal Reward Bench. Moreover, with more inference\ncompute, R1-Reward's performance is further enhanced, highlighting the\npotential of RL algorithms in optimizing MRMs.",
+        "published_date": "2025-05-05T17:59:50Z",
+        "url": "http://arxiv.org/abs/2505.02835v1",
+        "pdf_url": "http://arxiv.org/pdf/2505.02835v1",
+        "authors": [
+          "Yi-Fan Zhang",
+          "Xingyu Lu",
+          "Xiao Hu",
+          "Chaoyou Fu",
+          "Bin Wen",
+          "Tianke Zhang",
+          "Changyi Liu",
+          "Kaiyu Jiang",
+          "Kaibing Chen",
+          "Kaiyu Tang",
+          "Haojie Ding",
+          "Jiankang Chen",
+          "Fan Yang",
+          "Zhang Zhang",
+          "Tingting Gao",
+          "Liang Wang"
+        ],
+        "categories": [
+          "cs.CV",
+          "cs.CL"
+        ]
+      },
+      {
+        "entry_id": "http://arxiv.org/abs/2505.02831v1",
+        "title": "No Other Representation Component Is Needed: Diffusion Transformers Can\n  Provide Representation Guidance by Themselves",
+        "summary": "Recent studies have demonstrated that learning a meaningful internal\nrepresentation can both accelerate generative training and enhance generation\nquality of the diffusion transformers. However, existing approaches necessitate\nto either introduce an additional and complex representation training framework\nor rely on a large-scale, pre-trained representation foundation model to\nprovide representation guidance during the original generative training\nprocess. In this study, we posit that the unique discriminative process\ninherent to diffusion transformers enables them to offer such guidance without\nrequiring external representation components. We therefore propose\nSelf-Representation A}lignment (SRA), a simple yet straightforward method that\nobtain representation guidance through a self-distillation manner.\nSpecifically, SRA aligns the output latent representation of the diffusion\ntransformer in earlier layer with higher noise to that in later layer with\nlower noise to progressively enhance the overall representation learning during\nonly generative training process. Experimental results indicate that applying\nSRA to DiTs and SiTs yields consistent performance improvements. Moreover, SRA\nnot only significantly outperforms approaches relying on auxiliary, complex\nrepresentation training frameworks but also achieves performance comparable to\nmethods that heavily dependent on powerful external representation priors.",
+        "published_date": "2025-05-05T17:58:05Z",
+        "url": "http://arxiv.org/abs/2505.02831v1",
+        "pdf_url": "http://arxiv.org/pdf/2505.02831v1",
+        "authors": [
+          "Dengyang Jiang",
+          "Mengmeng Wang",
+          "Liuzhuozheng Li",
+          "Lei Zhang",
+          "Haoyu Wang",
+          "Wei Wei",
+          "Guang Dai",
+          "Yanning Zhang",
+          "Jingdong Wang"
+        ],
+        "categories": [
+          "cs.CV"
+        ]
+      },
+      {
+        "entry_id": "http://arxiv.org/abs/2505.02828v1",
+        "title": "Privacy Risks and Preservation Methods in Explainable Artificial\n  Intelligence: A Scoping Review",
+        "summary": "Explainable Artificial Intelligence (XAI) has emerged as a pillar of\nTrustworthy AI and aims to bring transparency in complex models that are opaque\nby nature. Despite the benefits of incorporating explanations in models, an\nurgent need is found in addressing the privacy concerns of providing this\nadditional information to end users. In this article, we conduct a scoping\nreview of existing literature to elicit details on the conflict between privacy\nand explainability. Using the standard methodology for scoping review, we\nextracted 57 articles from 1,943 studies published from January 2019 to\nDecember 2024. The review addresses 3 research questions to present readers\nwith more understanding of the topic: (1) what are the privacy risks of\nreleasing explanations in AI systems? (2) what current methods have researchers\nemployed to achieve privacy preservation in XAI systems? (3) what constitutes a\nprivacy preserving explanation? Based on the knowledge synthesized from the\nselected studies, we categorize the privacy risks and preservation methods in\nXAI and propose the characteristics of privacy preserving explanations to aid\nresearchers and practitioners in understanding the requirements of XAI that is\nprivacy compliant. Lastly, we identify the challenges in balancing privacy with\nother system desiderata and provide recommendations for achieving privacy\npreserving XAI. We expect that this review will shed light on the complex\nrelationship of privacy and explainability, both being the fundamental\nprinciples of Trustworthy AI.",
+        "published_date": "2025-05-05T17:53:28Z",
+        "url": "http://arxiv.org/abs/2505.02828v1",
+        "pdf_url": "http://arxiv.org/pdf/2505.02828v1",
+        "authors": [
+          "Sonal Allana",
+          "Mohan Kankanhalli",
+          "Rozita Dara"
+        ],
+        "categories": [
+          "cs.AI",
+          "cs.CR",
+          "cs.ET"
+        ]
+      },
+      {
+        "entry_id": "http://arxiv.org/abs/2505.02825v2",
+        "title": "Towards Application-Specific Evaluation of Vision Models: Case Studies\n  in Ecology and Biology",
+        "summary": "Computer vision methods have demonstrated considerable potential to\nstreamline ecological and biological workflows, with a growing number of\ndatasets and models becoming available to the research community. However,\nthese resources focus predominantly on evaluation using machine learning\nmetrics, with relatively little emphasis on how their application impacts\ndownstream analysis. We argue that models should be evaluated using\napplication-specific metrics that directly represent model performance in the\ncontext of its final use case. To support this argument, we present two\ndisparate case studies: (1) estimating chimpanzee abundance and density with\ncamera trap distance sampling when using a video-based behaviour classifier and\n(2) estimating head rotation in pigeons using a 3D posture estimator. We show\nthat even models with strong machine learning performance (e.g., 87% mAP) can\nyield data that leads to discrepancies in abundance estimates compared to\nexpert-derived data. Similarly, the highest-performing models for posture\nestimation do not produce the most accurate inferences of gaze direction in\npigeons. Motivated by these findings, we call for researchers to integrate\napplication-specific metrics in ecological/biological datasets, allowing for\nmodels to be benchmarked in the context of their downstream application and to\nfacilitate better integration of models into application workflows.",
+        "published_date": "2025-05-05T17:51:56Z",
+        "url": "http://arxiv.org/abs/2505.02825v2",
+        "pdf_url": "http://arxiv.org/pdf/2505.02825v2",
+        "authors": [
+          "Alex Hoi Hang Chan",
+          "Otto Brookes",
+          "Urs Waldmann",
+          "Hemal Naik",
+          "Iain D. Couzin",
+          "Majid Mirmehdi",
+          "No\u00ebl Adiko Houa",
+          "Emmanuelle Normand",
+          "Christophe Boesch",
+          "Lukas Boesch",
+          "Mimi Arandjelovic",
+          "Hjalmar K\u00fchl",
+          "Tilo Burghardt",
+          "Fumihiro Kano"
+        ],
+        "categories": [
+          "cs.CV"
+        ]
+      }
+    ]
+  }
+}

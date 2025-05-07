@@ -1,0 +1,47 @@
+The Sad Reality of Software Engineering Salaries💰
+
+This is only going one way
+
+The wider public still believe that software engineers are "Scrooge McDucking" and rolling around in cash.
+
+If most people believe something it must be true, right?
+
+Let us look into the numbers from the 2024 Stack Overflow Developer Survey and explore what is actually going on in the market.
+
+The Developer Salary Decline
+
+As software engineers, we understand that there is a tension between earning and learning. Ideally in any software engineering position you get both.
+
+The world economy since the covids has been challenging and therefore it is no great shock that developer salaries have encountered a market correction. This has come as a shock to those software developers who saw a recession-proof career path and now experience the same squeeze as every other sector.
+
+Back-end developers have received a median $9K USD annual decrease, while blockchain developers had their median salaries sliced by double that.
+
+It's a bad picture for many in software development. It's so bad that even people managers have experienced salary decreases.
+
+A Call For Change
+
+You won't like this one.
+
+Salaries are dropping. There is no getting away from this.
+
+This is against a backdrop of software development still hard work. AI hasn't yet stepped in to supercharge our productivity.
+
+We need employers to step in. While developers need to remain adaptable, update skills constantly employers need to support continuous learning. We are paid for the value we bring to an organization, so the faster we up skill the faster our salaries will increase.
+
+AI will make it ever easier to find a *good enough* junior developer, and that means we need to get this production line moving. The alternative is that salaries will move into a death spiral, and I believe that will draw salaries down the drain with it.
+
+Conclusion
+
+The sad reality of software engineering salaries is a stark reminder that nothing is guaranteed in tech.
+
+Developers need to remain on the ball, improve themselves and if they're not sufficiently valued in their current position find a new position.
+
+Disagree? Let me know in the comments.
+
+If you wanted the full picture of how salaries are looking, well it's right here:
+
+About The Author
+
+Professional Software Developer "The Secret Developer" can be found on Twitter @TheSDeveloper and regularly publishes articles through Medium.com
+
+The Secret Developer wants a pay increase.

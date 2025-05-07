@@ -1,0 +1,447 @@
+# I got promoted to senior software engineer for my communication skills
+
+Just a little change of pace as far as what we focus on in this sub. I'm on a team with plenty of 4-6 YOE engineers who are way better at full stack web dev than I am. However I was the only one considered for a managerial position because I am able to effectively communicate with the stakeholders. I like focusing on the 'why' and drilling down to the core value of the engagement with the client. 
+
+Jerking your leet-girkins only will get you so far in your career. Faang isn't everything. Just focus on what you do best and do good work!
+
+How does communication play a role on your teams?
+
+## Comments
+
+### Comment 1 by u/nomiras (215 points)
+
+Probably goes without saying, but be humble as well.  My senior manager told me that the other interviewees were not humble at all and I stood out in that regard.
+
+#### Reply 1 by u/ghostinthekernel (25 points)
+
+We actually interviewed a guy for a seniorish position who submitted great code for the assignment he was given. We were all looking forward to the interview. Once the interview started he started saying stuff like "I did this like this because people that do this like that instead are stupid" at about 5 minutes into the conversation. Red flags started increasing in number and I actually just lost all hope once he said something like "Doing something that way is retarded", yet he was a grown ass man. The simple thought of having to deal with him on a daily basis already was stressing me out. We all voted to discard him as an applicant. We found a not-as-senior colleague who, on the other hand, is a pleasure to work with and who still brings a lot of contribution to the table.
+
+#### Reply 2 by u/Preact5 (42 points)
+
+You all have definitely humbled me in the comments. That's great advice thank you.
+
+#### Reply 3 by u/ricric2 (44 points)
+
+OP is so humble he wants to share his humbleness with the world!
+
+#### Reply 4 by u/answersareallyouneed (11 points)
+
+Careful with this one though - I think it's all too easy to overcorrect, undervalue yourself, and undersell your accomplishments. It took me a while to learn that "being humble" didn't mean not acknowledging places where you've gone above and beyond with your work or taken lead on tackling specific problems.
+
+#### Reply 5 by u/CookingGoBlue (19 points)
+
+That’s a really good point. I think it is a very good idea to be able to relate your prior experience to a new role, but also show you are open to new ideas and working collaboratively during interviews. You don’t want to brag, but you want to show competency in your current work, potential for a new job, and ability to integrate yourself into the new team culture.
+
+#### Reply 6 by u/nonpondo (4 points)
+
+Is that why all those software developer YouTubers no longer have software developing jobs?
+
+### Comment 2 by u/CookingGoBlue (166 points)
+
+Great points, for those early in career who are looking to also excel in non code parts of work what should they focus on? I think that documentation, code demos, writing well crafted communication verbally and in writing are in important. How did you get better at it, and how did you structure your improvement?
+
+#### Reply 1 by u/Preact5 (161 points)
+
+I think the single biggest thing you can do is always help out your teammates. Be the dude everyone goes to for help when they get stuck.
+
+Focus on the value that you're delivering to the client. It's easy to get wrapped up in implementation details. 
+
+Be able to clearly articulate blockers. 
+
+Work on breaking a large problem down into smaller problems.
+
+Being charismatic helps. That one is hard to develop.
+
+Edit: act like you're on a team. Build your team up and lean on them when you have to.
+
+#### Reply 2 by u/moosesmeeses1 (32 points)
+
+I have similar experience. I was just promoted to a senior even though I am the first to admit that my technical skills are not at that level when it comes to choosing technologies and laying the foundations for apps.  I read code well and can follow existing patterns but I am not someone who geeks over design patterns and new language features.
+
+What has set me apart has been that I pay attention in meetings and try to understand the business use behind features and how our apps fit in with the big picture. This allows me to ask strong questions during refinement and to also catch bugs and things that do not make sense logically in PRs.  I often call out something in sprint planning that will turn into a blocker if the work is pulled in.
+
+Paying attention to demos and really understanding other teammates prs and the reasoning behind them can give you really valuable insight to help drive future work and see bugs in code and thinking before they go to production.
+
+#### Reply 3 by u/rump_truck (8 points)
+
+Try to keep your eye on the big picture. You're not just writing software for the sake of writing software, you're writing software to solve some sort of business need. What is that need? How does your software solve that need? Is there a better way to solve that need? Understanding what the customer needs will help guide product and engineering decisions. For instance, does the customer care more about fast results or accurate results? If they want fast results, then you can use eventually consistent datastores and probabilistic data structures to speed things up. If they need 100% accurate results, then you need to take the time to make sure they are right.
+
+Whatever part of the stack you're working in, note your boundaries and try to understand at least one layer of the code on the other side of that boundary. That will put you in a great place to understand dependencies and to anticipate and resolve blockers. For instance, I mainly focus on back-end code, but I'm familiar enough with our build pipelines to plumb any new secrets through the environment, I can make database schema changes, and I know who consumes my API so I can notify them in advance about any breaking changes.
+
+When you're writing or presenting, think about who your audience is, what they want and/or need from you, and what they don't want and/or need. Business people usually don't want or need technically correct answers, they're usually looking for timelines, or to surface and resolve blockers, or they're trying to resolve a customer issue. Senior engineers usually want to discuss general approaches, while juniors need you to get a bit deeper into implementation details.
+
+#### Reply 4 by u/bazwutan (4 points)
+
+What does this person care about? What is this person worried about? What is the thing that this person doesn’t understand and needs to understand? How does this person interact with others, and what does that say about how they like to be interacted with? Etc etc
+
+Empathy is a skill that you can improve, and one that is enormously helpful in communicating effectively and understanding where better communication can help your team and your org. Sounds fluffy and bullshit but it doesn’t take a lot to really get useful. As a starting point, make an effort to memorize everyone’s name and try and find either one thing you have in common or one thing you like about each person you interact with.
+
+#### Reply 5 by u/[deleted] (2 points)
+
+I was also the go to person for stuff like presentstions and cross team projects. The biggest thing imo is having a nice/helpful attitude. A lot of people have a very standoffish or "youre dumb/I dont like what youre saying" vibe when communicating.
+
+Ask a lot of questions, try to really understand what someone is saying. Even if you think theyre dead wrong it helps to know exactly what theyre thinking to get them to understand your point of view.
+
+### Comment 3 by u/scalability (45 points)
+
+Reminds me of [this greentext](https://www.reddit.com/r/ProgrammerHumor/comments/kiakmi/cookie_driven_development/)
+
+#### Reply 1 by u/Preact5 (6 points)
+
+Hahahaaa!!!!! That's hilarious and awesome.
+
+### Comment 4 by u/AmatureProgrammer (9 points)
+
+Any tips on better communication? Like I'm socially awkward af so I'm not good at these things.
+
+#### Reply 1 by u/Preact5 (9 points)
+
+That's a really good question. I'm gonna try to give some good advice but please let me know if it's not helpful, I'm just kind of rambling.
+
+I would say, pick one person on the team you feel the most comfortable with and just message them a bit during your lunch hour and just chat? I do that sometimes and it helps build familiarity with your coworkers. Obviously it's not social hour, but yeah just chatting a bit more about memes or different topics, work related or not.
+
+In terms of work related conversation and meetings, getting over the anxiety of speaking on a call is tough. I assume that's the bulk of what you're talking about? Being comfortable with looking like you don't know the answer is a skill you develop over time by presenting your blockers during standup. I feel like through that process I was able to learn to separate my ego from my work, and always ask questions that are high level in terms of 'how should I go about implementing this?' conversations.
+
+One awkward conversation I have learned to have is 'hey this ticket is going to carry over this sprint.' being direct and keeping a good tab of everything that still needs to be done and documenting the issues you're having (blockers) is a good approach.
+
+Another thing is, if someone says during standup that they need help or a pull request review, jump in there and help them out. 
+
+In general the more you talk to people the better you will get at it haha I know that's terrible advice but if you can find a way to turn it into a fun thing instead of something that gives you anxiety, that's how I did it.
+
+#### Reply 2 by u/LawfulMuffin (2 points)
+
+Just be able to at least pretend to care about what other people are talking about. And ask questions about the person you are talking to. People love to talk about themselves
+
+### Comment 5 by u/SuitableRazzmatazz64 (32 points)
+
+Keep in mind that the managerial track isn’t necessarily a “promotion” - often, it’s more of a lateral move.
+
+(OP: Sounds like you’re making good progress in your career! Nice work! Best of luck!)
+
+#### Reply 1 by u/Preact5 (15 points)
+
+I am going to have my own team working with me so I would think this is a step up. I still get to code. Ill be the lead dev.
+
+#### Reply 2 by u/[deleted] (2 points)
+
+[deleted]
+
+### Comment 6 by u/youmade_medothis (8 points)
+
+OP is confusing a managerial role with a promotion. In tech, they are often (sometimes?) considered separate tracks of "technical" work and ICs can be paid more than managers. (Pay being a proxy for importance/impact)
+
+Congrats to OP!
+
+#### Reply 1 by u/Preact5 (1 points)
+
+Thank you
+
+### Comment 7 by u/LawfulMuffin (8 points)
+
+Or what happened to me: all the other engineers turned it down first 😂
+
+#### Reply 1 by u/[deleted] (2 points)
+
+This unironically happened to me in university. I was #16 on a 12 person grad program at a bank. I got a call in Winter saying one of the three in front of me had declined, and that the position was mine if I wanted it :')
+
+#### Reply 2 by u/Preact5 (1 points)
+
+I mean they could be lying to me.
+
+### Comment 8 by u/darexinfinity (6 points)
+
+I'm not saying you're wrong, but I find it strange to be promoted simply from having one sharp skill.
+
+### Comment 9 by u/ben-gives-advice (16 points)
+
+Congratulations! Leading is communicating.
+
+#### Reply 1 by u/Preact5 (7 points)
+
+Thank you. I'm looking forward to doing more management / business analyst type of work.
+
+### Comment 10 by u/Feroc (13 points)
+
+Congratulations and I can only agree.
+
+For a long time I was comparing myself to my co-workers and yes, the seniors around me where better from a technical point of view. They could have probably told me the best design patterns for any issue and how Wildfly will handle the code at the end and how we should scale it so it could handle 5 million datasets. 
+
+On the other hand they couldn't explain their solution to Harriett from HR or actually create a simple solution where the other developers won't need to study their code for an hour and debug through layers of abstractions and generics.
+
+Communication and work organization are also very important. Maybe those won't necessary lead you down the "development expert" road of a career, but there are many paths to go.
+
+#### Reply 1 by u/Preact5 (3 points)
+
+Yes and I think that's up to me if I want to continue programming, I need to keep my axe sharp.
+
+### Comment 11 by u/protonengine (4 points)
+
+Is this a "Senior Software Engineer" role or is this just a management position? They both have different requirements and mean different things at different companies or tier of company.
+
+#### Reply 1 by u/Preact5 (1 points)
+
+Senior software engineer.
+
+### Comment 12 by u/HopefulHabanero (24 points)
+
+> Jerking your leet-girkins only will get you so far in your career. Faang isn't everything. Just focus on what you do best and do good work!
+
+And doing your best work will only get you so far when you end up in an org with a tiny promotion/retention budget and a manager who isn't a good advocate for you.
+
+Your anecdote doesn't defy the conventional wisdom nearly as much as you think it does. We all know leetcode doesn't make you a good software engineer. But it does make you good at interviewing, and being good at interviewing puts control of your career into your own hands. Not some director who doesn't care about you except to do whatever they can to pay you as little as possible.
+
+#### Reply 1 by u/Preact5 (3 points)
+
+Yep I've been there. No amount of good work puts you in a good position if it's a bad organization.
+
+Leetcode is good but grinding it maybe isn't the best as far as skills go.
+
+I've never been asked to program in an interview before though. So I'm not sure how leetcode would have helped in my experience.
+
+### Comment 13 by u/Certain_Shock_5097 (9 points)
+
+>and drilling down to the core value of the engagement with the client
+
+Sounds like management to me, or sales or marketing. You sound like you could bs the customers into buying everything. "I now realize I can't live without your SaaS product. Please take my last milking cow."
+
+#### Reply 1 by u/Preact5 (2 points)
+
+I actually am the opposite in my freelance work. I actively have to convince the client that they don't need my services. Usually it's due to cost but I never prescribe a solution for the sake of it.
+
+#### Reply 2 by u/xtsilverfish (1 points)
+
+Yeah I kinda chuckled as he simply described the age-old technique of schmoozing the client and telling them what they want to hear.
+
+### Comment 14 by u/randomkid1227 (5 points)
+
+Am I the only one puzzled by senior software eng being a managerial position? Asking as someone that went from Sr. To tech lead/team lead
+
+### Comment 15 by u/Acrobatic_Astronomer (9 points)
+
+Don't take this the wrong way, but do you believe you are ready for a leadership role? I'm going to ramble on a bit and hope this is useful for you. I wish for you to succeed but seems like you can still use some guidance.
+
+Your title says you got promoted to senior, your post says considered for manager, then you mention that you're a possible lead and/or software architect. Better figure out what you are. Based on your comments in this thread, I'd guess you're somewhere in the 1-3 YoE range, it almost seems like you aren't ready yet for a leadership position.
+
+You've got plenty of people on your team with 4-6 YoE. Did you mean that none of them are seniors or are none of them being considered for a leadership position? You sure they didn't just decline when offered? I've declined possible management roles because fuck that. Not too mention, if they are much better than you technically, there is going to be some friction and resentment created if you start telling them what to do and don't have the experience or reputation to back it up. 
+
+> Jerking your leet-girkins only will get you so far in your career. Faang isn't everything. Just focus on what you do best and do good work!
+
+Be careful, because it almost sounds like you're gloating a little bit and people pick up on that pretty quickly. Seems like you drank the kool-aid of what upper management told you. You're probably just excited and want to share that excitement, which is cool too in moderation.
+
+Managers need communication skills, 100% true. Architects/designers need them too, but not as much. If you're designing something, you better have the breadth and depth needed to design it right, communication can help you get the requirements, but not the actual design, that comes from experience.
+
+&nbsp;
+
+And I know I might have come across as bashful, but that is not my intent. I wish you nothing but success, just be careful and tone down your excitement and expectations, and approach it slowly. Especially if you are going to be in a lead/management position, don't try to change things right away, people fucking hate that.
+
+- Don't micromanage
+- Delegate and don't try to do everything yourself
+- Listen to feedback
+- Observe before making any changes
+
+#### Reply 1 by u/jontelang (9 points)
+
+I agree with this, the post is all over the place which is.. ironic
+
+#### Reply 2 by u/bigshakagames_ (6 points)
+
+Are you telling me one guys anecdotal experience isn't proof that leetcode is useless??? In all seriousness, this is the comment I was looking for. For all we know his boss likes him and gave him a promotion or managerial role, I've worked in plenty of places where shit cunts got promoted just because they were the bosses friend, so he's right that social skills are a good thing to have but  to say this is proof that leetcode will only get you so far is laughable. Reading his other comments makes it seem like he's all over the place.
+
+#### Reply 3 by u/Preact5 (-2 points)
+
+I definitely need to see the offer letter to know what my responsibilities entail before I formally accept. 
+
+All valid points thanks for reading my post and taking the time to tell me all of that.
+
+### Comment 16 by u/weigookin (3 points)
+
+Obviously you were a project manager in disguise
+
+#### Reply 1 by u/Preact5 (2 points)
+
+I definitely want to give the BA role a try.
+
+### Comment 17 by u/dysosmia (8 points)
+
+The jokes on you for thinking this managerial promotion is a good thing. The others probably know something you don’t.
+
+#### Reply 1 by u/Preact5 (5 points)
+
+?
+
+### Comment 18 by u/[deleted] (12 points)
+
+TC or GTFO
+
+#### Reply 1 by u/Cryptic_X07 (19 points)
+
+This type of comment never fails to make me laugh when I’m on blind because I can picture the innocent noob posting and an evil nerd going “tc or gtfo” 😂
+
+#### Reply 2 by u/Preact5 (-5 points)
+
+6 figs
+
+### Comment 19 by u/cscq9694845 (9 points)
+
+>Jerking your leet-girkins only will get you so far in your career. Faang isn't everything
+
+Yes, yes, well done on being "senior". But is your TC more or less than a FAANG new grad?
+
+#### Reply 1 by u/sexymalaydude (14 points)
+
+I like the post. 
+
+But posting FAANG isn't everything kinda removes some credibility of this post.
+
+Feel like it should stand on its own merit. 
+
+FAANG or not, big tech or not, SWE or not, communication is a key driver for promotions.
+
+#### Reply 2 by u/SloppySmooth (4 points)
+
+New grad faang TC or cope
+
+#### Reply 3 by u/Preact5 (4 points)
+
+Probably just a little more or the same. 
+
+I'm min maxing my quality of life not my TC
+
+### Comment 20 by u/Opheltes (4 points)
+
+Since I became team lead, I’ve found my 2 most important skills are communication and organization. 
+
+The former entails (among other things) capturing requirements into specs, writing clear test plans, and explaining complex concepts. I’d also lump being personable into that. I’m laid back and extroverted, so I get along well with my team. They aren’t afraid to ask questions and own up to their mistakes to me.
+
+Organization means making sure everyone is on task, nothing falls through the cracks, important things get attention and unimportant ones get put on the back burner, meetings get the proper follow-up, etc.
+
+### Comment 21 by u/Erledigaeth (2 points)
+
+That's amazing! Could you share some tips about how to be an effective communicator in CS?
+
+### Comment 22 by u/SloppySmooth (2 points)
+
+just nightcrawlermax
+
+### Comment 23 by u/[deleted] (2 points)
+
+I tell people all the time that while you should totally focus on your engineering skills, you cannot sleep on soft skills. 
+
+In a weird way I’d even argue the higher you go the more important they become. The higher you go the less you’re actively programming, and the more it becomes about communication.  
+
+Communication is insanely important to teams, and I know because I’ve suffered in every team that had poor communication. 
+
+As a side note, I’ll admit I’m not a great engineer. Don’t get me wrong, I meet my deadlines and do my work, but it’s not something I’m either passionate or good at. I credit all my career progress to my social skills. Turns out most teams prefer someone good enough that’s a cool person than a super genius who is a dick (and oh boy that’s a stereotype in our world for a reason). Obviously this has its exceptions like some role that requires a genius and is mission critical, but those jobs are few and far in between. The more likely option is you to work for one of the billion sass companies doing some boring B2B thing 
+
+And I am comparing myself to some coworkers and such who are objectively better programmers than me, but haven’t progressed as much, and the common theme is bad communication skills.
+
+### Comment 24 by u/kernalsanders1234 (2 points)
+
+This better have came with a pay bump or I’m crying for you
+
+
+
+…only For the next year
+
+#### Reply 1 by u/Preact5 (1 points)
+
+Yep.
+
+### Comment 25 by u/Jon_The_Greatest (2 points)
+
+If this is true it is amazing.
+
+### Comment 26 by u/mephi5to (3 points)
+
+When I finished Masters in Ukraine most of my classmates went into consulting firms that EU and US hire. Most of the ppl still there as Sr or Staff engineers. But the guy who spoke English reaaaaaally well back in high school  got promoted to manager on his FIRST year because he could communicate to clients. On his 3rd year he became regional manager for the the whole company. Don’t get me wrong he was sharp. He was really good at math and coding. But English made much bigger impact than his fluency in Java, Cpp, and Pascal all together :)
+
+### Comment 27 by u/annzilla (3 points)
+
+This has been my experience as well. I'm a career changer and had to work with difficult clientele for years and also have management exp as well. 
+
+I might not be the most technical or experienced but got promoted to senior relatively quickly because I can work with people, esp the non technical people and can do a good job building consensus. I think people like working with me in general and that helps a lot.
+
+#### Reply 1 by u/Preact5 (-1 points)
+
+> I think people like working with me in general and that helps a lot.
+
+Being likeable goes a long way but you almost can't control that. I just try to be nice and supportive. Act like I'm on a team.
+
+### Comment 28 by u/infinity884422 (4 points)
+
+Grinding alert code only gets you into the door, if you want to make serious TC and rise thru the ranks, soft skills are way more important Id say. The higher you go, the less you code and the more you lead / bring value
+
+### Comment 29 by u/[deleted] (1 points)
+
+Can you share some examples from your work + tips?
+
+### Comment 30 by u/[deleted] (1 points)
+
+Same - making a good relationship with senior leaders and customers can really go a long way. I got promoted to team lead because of that with like a 20% raise. Communication is far more important than actually being able to code, we can all pretty much code decently enough, but talking to the VP or a 2* general about your project and goals is something that not everyone can do
+
+### Comment 31 by u/cjrun (1 points)
+
+I’d miss being on a product team, but the stresses are more manageable to me when coming from humans rather than solving tricky technical issues.
+
+#### Reply 1 by u/Preact5 (0 points)
+
+Oh I'll be leading a product team as the lead engineer. I get to design the solution then implement it with my team once it's approved by the client.
+
+### Comment 32 by u/afl3x (1 points)
+
+reach obtainable door shy toy frighten direction scale merciful rustic
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+
+#### Reply 1 by u/Preact5 (1 points)
+
+That was a bit crass but I get sick of all the leetcode posts.
+
+### Comment 33 by u/HornyCrowbat (1 points)
+
+I've seen a lot of people get passed over for leadership positions because they aren't sociable at work. Just doing your job is not enough.
+
+### Comment 34 by u/RobotsAndMore (1 points)
+
+Good for you! I found that communication skills to be exceedingly important. Being able to talk with the director of another department on a voice chat AND correct him without any animosity is a skill in itself. I am not shy but I am an introvert. I found asking things as a question rather than making declaratory statements to work best. "Are you sure about that? It's my understanding that it works like this..."
+
+### Comment 35 by u/[deleted] (1 points)
+
+>because I am able to effectively communicate with the stakeholders. 
+
+And for any given project which involves code and requirements, this skill is arguably even more important than your overall technical ability.
+
+### Comment 36 by u/Pkrepgod (1 points)
+
+Congrats!!
+
+### Comment 37 by u/AerysSk (1 points)
+
+Same here. I am a junior with 1 YoE, but due to my good communication skills I am frequently selected as the communicator in the meetings. I received 40% salary bump just recently.
+
+### Comment 38 by u/Extension_Lemon_6728 (1 points)
+
+It’s crucial. Without good communication, the work developers put in mean nothing.
+
+### Comment 39 by u/Preact5 (0 points)
+
+Let me be clear. 
+
+Grinding leetcode and becoming a kick ass individual contributor is more lucrative. I'm not saying fuck leetcode or anything I just don't find it enjoyable so I am a bit adverse to grinding mediums.
+
+You do you guys, I'm just gonna 'cope' with my new senior position lol.
+
+#### Reply 1 by u/midnightscare (5 points)
+
+the polite humble guy is coming out of his shell
+
+### Comment 40 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+

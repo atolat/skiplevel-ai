@@ -1,0 +1,611 @@
+# Becoming a go-to person gets you promoted. Here's how to do it as a software engineer
+
+## Comments
+
+### Comment 1 by u/w1n5t0nM1k3y (1761 points)
+
+Being the go-to person makes things your responsibility. Be careful how many responsibilities you take on.
+
+#### Reply 1 by u/tony_bologna (511 points)
+
+> I'll do this lil work item to be helpful :)
+
+*You should ask Tony, he's the expert.  Tony can you do this, since you're the expert?  Do you know what this insanely obscure error means?  We'll assign it to you, since you're the expert.*
+
+:(  ^(Be careful what you volunteer for)
+
+#### Reply 2 by u/2this4u (47 points)
+
+Ha, yep. After becoming a senior developer I decided this is about the limit of the money/responsibility trade-off I'd like to have
+
+#### Reply 3 by u/hi65435 (11 points)
+
+Yeah I really struggle with that point. I mean it's cool when I've proven I know stuff in a certain aspect of a project. It's not so great when people basically ask me to solve stuff for them/don't take interest in putting much effort from their side. Especially if it's one of the less glamorous things like automated testing
+
+#### Reply 4 by u/extra_rice (10 points)
+
+My team solve this by pair programming. I'm the go-to guy in my team for many things, but my teammates approach me to pair so they can eventually be autonomous on their tasks. I do the same for when I'm stuck (especially when it's around internal process/tooling).
+
+It's nice to feel needed, but don't be a hero for your team and cause a bottleneck.
+
+#### Reply 5 by u/abrandis (12 points)
+
+Exactly, be smart about how smart or "go to" you want to be...   The general rule is if you want me to be a go to then  I get a certain level of (money, authority, latitude etc.) commensurate  with my "go-to ness "that ..otherwise ....nope..   
+
+It's natural to want to take the initiative and be productive, but unless there's a clear path and reciprocation for your efforts don't do it...  take it form an old timer, it's just making someone  else look good while you get more and more responsibility dumped on you.
+
+#### Reply 6 by u/jkordani (7 points)
+
+Exactly. In addition to not overworking yourself, make sure that the random things you're trying to take on are actually core to the business and align with your career goals.
+
+My career stalled because I was seen as capable of doing a bunch of different things, so I would keep "taking on water".  I would end up getting asked to fill random short term needs, meanwhile others would be groomed to take over ownership of core modules. Guess who was deemed mission critical and who wasn't at the latest round of layoffs.  It didn't help that I had a revolving door of supervisors over the last two years, making it difficult to assess my value when the time came.
+
+Obviously sample size of one, but I found it to be a struggle to become strictly necessary to any one endeavor.  As soon as some need arose that I could take care of, I was usually the "last aboard" and therefore seen as more available than others on any given team, so I would be pulled away.
+
+I would say that while being flexible in your skillset is a good thing, it's incumbent on you to fight for getting work that is core to the mission.  Becoming the engineer with 1000 tricks by itself is not enough.  Having management understand and support your career goals is also critical, otherwise your face having to answer "what do you even do here"
+
+Edit: a word
+
+#### Reply 7 by u/warmuth (52 points)
+
+takes like this always rise to the top on reddit. in my opinion it really is the hyper competent go to guys that rise to the top. 
+
+redditors seem to be more afraid of being the under-appreciated chump that does thankless unrewarded work
+
+why not think about what could be gained rather than be afraid of what could be lost?
+
+y’all know the permanent senior/staff engineer whos been at that role for 20 years instead of rising to take on more responsibilities? type who’s more content to stay in his box and do predefined roles and nothing more? thats who i imagine is upvoting this kind of sentiment
+
+#### Reply 8 by u/GManASG (2 points)
+
+Hard lesson I had learn
+
+#### Reply 9 by u/StendallTheOne (2 points)
+
+Come to say the same thing.
+
+I have been the go-to person almost all my life (54 yo now) and it doesn't get you to earn more money. Specially if you are an agreeable person and don't like to go dogfighting for money.
+But certainly gets you in much more work and trouble.
+
+Not the best way to step up.
+Buy it's a great way for others to step up on your work.
+
+#### Reply 10 by u/turbo_dude (2 points)
+
+For "go to" read "people pleaser", your poor boundary setting will lead to you being responsible for a bunch of uninteresting crap that needs constant attention.
+
+#### Reply 11 by u/poloppoyop (2 points)
+
+The Excel guy syndrome.
+
+If there are no Excel guy in your company, you're it: time to change company and next time don't let anyone know you can do a pivot table in Excel.
+
+#### Reply 12 by u/silkflowers47 (-4 points)
+
+Being responsible is the first thing people look at isn’t it?
+
+#### Reply 13 by u/agumonkey (1 points)
+
+And be sure that the company cares about that.
+
+Sometimes they will have a very shallow grid policy and will never know what you do beside the fact that nothing went up in smoke.
+
+I love being the go to person, but I got played by coasters.
+
+#### Reply 14 by u/dastree (1 points)
+
+I had a manager who was super pro more responsibility but the best part was, when she saw me taking on too much, she gave me an article called something like "not my monkey"
+
+You dont have to take on all the responsibility.  Everyone else's problem isn't yours.  Helped me a lot.   Really helped me with delegation.
+
+#### Reply 15 by u/the_gnarts (1 points)
+
+I really don’t mind the extra responsibilities as long as everyone understands
+I still clock out after eight hours of work and while on vacation I won’t be
+working on all those things at all. (Unless they assign a backup, which I
+remind them they should but rarely do.) Boss keeps throwing tedious extra
+tickets into my sprint with highest priority? No worries. I’ll drop everything
+I work on for this but damn right will I remind him that the extra context
+switching will cost hours of my time on the company clock and whatever
+he randomly prioritized last week will now be delayed even more.
+
+I pity our scrum master though, the amount of cognitive dissonance it
+takes to perform the job under these conditions must be hard for a
+rational person to muster week after week.
+
+### Comment 2 by u/Librekrieger (637 points)
+
+For most of my career I found being the go-to person made you the stuckee. What changed my career was watching and learning from a couple of folks that were always totally engaged in meetings, offering crucial insights and asking key questions. Real questions, sometimes uncomfortable questions, not to make themselves look smart but to drive the team to the right solutions.
+
+One of them used to ask to attend meetings he wasn't invited to. He'd even show up without asking, and I noticed everyone was glad to have him involved because he brought so much to the table.
+
+I started doing that, offering my opinion when I knew it was worthwhile even if nobody was asking for it. And offering to take on stuff when it was clear SOMEONE needed to do it but nobody thought it was their job. And that's when I started being promoted.
+
+#### Reply 1 by u/Wapook (124 points)
+
+I like your way of doing things and I think it’s what we all should strive for. “nothing is somebody else’s problem” is a great attitude. 
+
+That said, it is often the case that growing your skills and contributions isn’t 1:1 with growing in your career path. They should be, but they’re not. I’m glad you were rewarded for that. In general I think what gets rewarded with promotion is company and org/team specific. If you find you’re at a company where doing the right things doesn’t rewarded, well, might be time to consider if that’s where you want to be long term to grow.
+
+#### Reply 2 by u/Schmittfried (82 points)
+
+>offering my opinion when I knew it was worthwhile even if nobody was asking for it
+
+On the other hand, how do you do that without annoying people, coming off as someone sticking their nose into everything?
+
+#### Reply 3 by u/Bost0n (3 points)
+
+It seems people are focusing on the later paragraphs in your comment. While I agree with you there, want to reiterate the first thing you said. If you are a kick ass, rockstar at your portion of the project, it can hurt your prospects for promotion. When evaluating a promotion, it seems like decision makers can’t help but think, “Who will do this work if Librekriger is no longer going to?”  It can and does help to gain promotions in the technical positions, but more often than not, I’ve experienced it hurting in the managerial path. That being said, management is not for everyone.
+
+#### Reply 4 by u/whoami38902 (6 points)
+
+Isn’t this obvious though? If you want to be a senior dev, then start acting like one.
+
+#### Reply 5 by u/pmk2429 (2 points)
+
+This is pretty on point; both as an observation perspective and from actionable item. I've seen this playout quite some times in front of me and I can certainly agree that showing such qualities puts you in a higher role, one that comes with real responsibilities. Many senior folks at my company do exactly this and I've grown to admire their opinions on architectural discussions.
+
+#### Reply 6 by u/shivawu (1 points)
+
+I think you either need to already build out a good rep in the org, or enter a meeting with people there being open minded, otherwise this can easily backfire
+
+#### Reply 7 by u/Smok3dSalmon (1 points)
+
+My manager tries to do this, but he offers my opinions and my colleagues. It makes me seething mad, lmao. Joining a new team next week. Cannot wait to give him some candid feedback in my exit interview.
+
+#### Reply 8 by u/GenTelGuy (1 points)
+
+On one hand I want to follow this advice, on the other hand I absolutely hate spending time in meetings. But I want the money and title, but I hate the meetings
+
+### Comment 3 by u/tistalone (88 points)
+
+Everything is predicated that your leaders and your responsibilities are aligned. If you're doing extra and your leaders don't recognize it, there's something that needs to be done to address this gap or else it will lead to burn out.
+
+#### Reply 1 by u/fitbitware (19 points)
+
+100%! Also don't expect your leader/boss know about what you do. Preach for your self a lot.
+
+#### Reply 2 by u/plaregold (5 points)
+
+Or being seen as insubordinate. I have a command and control style leadership where they want to be involved in the decision making process for everything. Slows everything down and creates an environment where taking initiative can backfire.
+
+There's no one sized fit all algorithm to successfully navigating office politics.
+
+### Comment 4 by u/MedicOfTime (25 points)
+
+I’m currently the go to guy on my team/space/org. I asked for a promotion recently and was told that 1) I’m def working 1 or 2 levels above my pay grade and 2) they aren’t giving me a promotion for it.
+
+### Comment 5 by u/funhru (74 points)
+
+It makes one the person to stack in the current position forever.
+
+The best promotion pace that I've saw:
+-  make fast shitty release
+- attend a conference and promote this "cool" solution
+- got promotion and move to other department 
+- someone would fix all the customers problems.
+Repeat.
+
+Other good approach is to make a problem and resolve it afterwards.
+
+#### Reply 1 by u/tistalone (24 points)
+
+Take it as signal for what your leaders primarily care about: just shipping things shortsightedly.
+
+The strategies you mentioned are very effective with inexperienced leaders like that.
+
+### Comment 6 by u/rustyrazorblade (66 points)
+
+A lot of folks here are saying they don’t think this is true, but from what I’ve seen at my time at Apple, Netflix and my own experience at various other companies, this is generally how it works. 
+
+One of the important things to keep in mind is that if you’re the go to for something easy, this won’t apply.  Being the person that turns a crank isn’t valuable.  You need a skill that takes time to develop and is influential. 
+
+Another thing to keep in mind is that promotions are political, so if you’re not constantly advocating for yourself, you’ll be passed over when maybe you shouldn’t be. 
+
+If you’re an ass, or unlikable, nobody is going to fight for you to get promoted. 
+
+Lastly, if you work at a shitty company, none of this might apply. Go somewhere else that values your skills.
+
+#### Reply 1 by u/Jaggedmallard26 (13 points)
+
+>  You need a skill that takes time to develop and is influential
+
+And of course the other advantage of this is that if it fails to get your noticed in your current job. You now have a valuable, marketable skill you can use in job interviews.
+
+#### Reply 2 by u/brucial (3 points)
+
+well said, nothing is absolute here. the overall point is to get really good at something(s), advocate for your ideas, and make a noticeable impact. i've been promoted and promoted people myself doing just that (largish tech co).
+
+this all goes out the window if you work for a shitty company or have a shitty manager. get out!
+
+#### Reply 3 by u/Holmlor (0 points)
+
+It's not a question of if it;s true it not, it's verifiable company policy.  
+People saying it's not true are delusional.
+
+### Comment 7 by u/[deleted] (13 points)
+
+In my experience you don't get promoted and you don't get a pay raise but now they expect more from you.
+
+### Comment 8 by u/DMking (14 points)
+
+All i've seen a "Go-to" person get is more work for the same pay
+
+#### Reply 1 by u/Noctevo (1 points)
+
+I agree but in many cases you can use this to ask for more money, because if you leave they will have to hire (n) workers to replace you and it's not only more expensive for the company but also difficult to find a good replacement. That's how I did, I now work part time and earn more than before when I was hired full time
+
+### Comment 9 by u/rage_whisperchode (12 points)
+
+I’d like to float somewhere between “go-to” and “completely useless”.
+
+I’ve only worked at two shops in the last 12 years of my career, and both times I unintentionally became the “go-to”. I’m tired of the stress of having to make all the decisions and be a critical contributor. I just want to have an easy, chill time writing code and building cool shit.
+
+Is there an article for how to do this?
+
+#### Reply 1 by u/clrbrk (1 points)
+
+Sshhh if everyone does this, then no one can do this.
+
+### Comment 10 by u/key_lime_pie (119 points)
+
+I've never worked at a company where being a go-to person got anyone promoted.  Promotions have always gone to people who curry favor with management, usually through things that have nothing to do with the efficiency or output or reliability of their work.  People who make themselves into go-to people end up working long hours and weekends and getting pats on the back and nice e-mails praising them and encouraging others to be more like them, then they get laid off just like everyone else.
+
+#### Reply 1 by u/AssiduousLayabout (42 points)
+
+If you're the go-to person for something important and your current company isn't recognizing that appropriately, you can look for your "promotion" elsewhere - use the experience as a feather in your cap for your resume / as a great story you can tell during the interview and find a better job elsewhere.
+
+#### Reply 2 by u/caks (24 points)
+
+You've only worked at shitty companies
+
+#### Reply 3 by u/ecz4 (6 points)
+
+I have the same experience. So much so, I'm convinced all hard work will always be rewarded with more work.
+
+#### Reply 4 by u/Holmlor (-1 points)
+
+Taking on the work of others is not being the go-to person. That makes you a doormat and you should be ~~fired~~ promoted to the competition.
+
+#### Reply 5 by u/publicOwl (1 points)
+
+Depends on the size of the company you work for. The bigger the company, the more rigid the promotion process, and the more likely the person reviewing your case doesn’t know you. If you can have quotes from other people saying you’re the go-to person for XYZ, especially if those people are a higher grade than you, that goes a very long way if you know how to sell it.
+
+I’ve been the go-to person for niche things a few times, and especially if that’s helped me unblock a production bug or something, being able to leverage that in year-end reviews and promotion cases has been really handy. Even if you don’t end up saving the day, building a little personal project under the guise of “innovation” can go a long way with people who don’t know any better, especially if you can demo it to your team in a lightning talk or something, even in reality all you did was dick around with a shiny new technology and stumble on something which could be retrofitted into something useful for your team.
+
+#### Reply 6 by u/hotdogswithbeer (1 points)
+
+Ive been promoted more than people who  code way better than me simply because i have a great relationship with the customer and was willing to travel to install and troubleshoot our distributed software.
+
+### Comment 11 by u/tes_kitty (122 points)
+
+Being the go-to person makes you too valuable in your position to promote.
+
+#### Reply 1 by u/silverslayer33 (30 points)
+
+This only seems true if you think the only true promotion is into management or other non-engineering roles. Unless your org is dumb as bricks, I don't see any way to become "too valuable" in a lower-level engineering role to be promoted out of it into a higher engineering role. In fact, I've seen (and even personally experienced) the opposite more often than not - if you're the most knowledgeable in a product or some component of your software, you're too valuable to *not* be promoted up the engineering ladder into a role where you're allowed to focus more on guiding the architecture forward, mentoring more junior engineers working on it, and other higher-level duties aside from just being a code monkey who knows something well.
+
+That said, this obviously doesn't always earn you a promotion - many companies will happily make you take on these additional responsibilities without the pay or title to go with it. That's why the even better advice for getting a promotion is to hop jobs if you have transferable skills and knowledge for that higher-level role.
+
+#### Reply 2 by u/Naouak (20 points)
+
+Unless you manage to create a team under you. It happened to me and in a couple of year I started from being the go to person to a manager of 7 people while still being a go-to person that now redirect often in my team.
+
+#### Reply 3 by u/nzre (4 points)
+
+That's not something that happens at big tech. If you follow your ladder, there's no such thing as "too valuable to promote". I wonder if this is something that commonly happens elsewhere or if people just propagate what they hear.
+
+#### Reply 4 by u/warlockflame69 (1 points)
+
+Going from junior to senior dev or even staff this advice is great. But going from dev to manager or dev to architect not happening
+
+### Comment 12 by u/TheStatusPoe (17 points)
+
+In my case, becoming the go to person ended with being the only person on my team laid off
+
+#### Reply 1 by u/AsparagusIAm (2 points)
+
+Elaborate on how did that happen?
+
+### Comment 13 by u/pribnow (8 points)
+
+"when you know things, then people ask you to do things"
+
+### Comment 14 by u/User1382 (81 points)
+
+Being a bullshitter gets you promoted. Talk a lot, but don’t say much. 
+
+This article is a perfect example
+
+#### Reply 1 by u/PointManBX (13 points)
+
+I know people who cant do the basics of their current role, but being a good communicator and politician certainly helps them in their network.
+
+#### Reply 2 by u/FarkCookies (0 points)
+
+It is quite funny how us developers don't bother investing in communication skills yet to label "bullshitters" those who have them (by nature or learning).
+
+#### Reply 3 by u/Full-Spectral (1 points)
+
+I feel that we need to have further discussions in order to come to a better understanding of methodologies we could use to leverage improved throughput via various potential modifications of team dynamics within the context of... Sorry, I have to take this call, it's the CEO...
+
+### Comment 15 by u/favorthebold (6 points)
+
+Becoming the go-to person in many companies means you'll never be promoted because they can't afford to lose you from your current role.
+
+### Comment 16 by u/FalseWait7 (6 points)
+
+> Becoming a go-to person gets you exploited.
+
+Here, fixed it for you.
+
+### Comment 17 by u/jaskij (10 points)
+
+In my current workplace being the go to person inside the team made the boss complain I don't get shit done.
+
+#### Reply 1 by u/flukus (2 points)
+
+You unblocked 6 people and allowed them to progress, but you aren't being productive because you haven't closed a jira ticket all week.
+
+#### Reply 2 by u/Holmlor (1 points)
+
+Both are valid. If you're shooting the shit solving your peers' problems then you are not spending time on your shit.
+
+### Comment 18 by u/WarriorZombie (28 points)
+
+All good advices. Don’t just sit in your butt waiting for a minuscule raise, take charge of your career and stand out. 
+
+Same principle works for general life approach.
+
+Does not guarantee that you will not be laid off, though, but it does help you land your next job
+
+### Comment 19 by u/KevinCarbonara (5 points)
+
+Speaking from experience: This is BS. All it does is get you more responsibility. Having too much responsibility makes you un-promotable.
+
+Rapidly switching jobs gets you promoted. I've gotten a promotion with every move. Corporations are not your friend. They will never reward your hard work.
+
+### Comment 20 by u/NeuroXc (19 points)
+
+You don't want to get promoted. You want raises. And no, those two things don't necessarily come together.
+
+Be a slightly above average dev. When your company inevitably gives you the spiel that "we can only offer a 1% raise this year due to our CEO buying a new yacht", go find a recruiter. Get a 50% raise by switching companies every 2-3 years until you find one that actually values retaining employees. And they are rare.
+
+### Comment 21 by u/Mamoulian (3 points)
+
+If there's anywhere to get promoted to that isn't management.
+
+### Comment 22 by u/absentmindedjwc (4 points)
+
+Yeah.. be careful with this...
+
+In my experience, being *too much* of a go-to person *absolutely guarantees* that you will *never* be promoted.  If you become irreplaceable in a given position, they'll never move you out of that role.
+
+#### Reply 1 by u/thefoolhasreturned (1 points)
+
+Until you say your leaving
+
+### Comment 23 by u/Paradox (23 points)
+
+Hardly. Becoming a go-to person gets you taken advantage of, while those that play the office politics game get promoted.
+
+How often have we all heard "Ooh you did really well this year and got some really good work done, but we gave the promotion to <nepobaby>. Keep working hard and you'll get it next year" followed by "Oh you just missed it this year, but keep doing it (sucker)"
+
+### Comment 24 by u/[deleted] (18 points)
+
+Lol. Bollocks.
+
+### Comment 25 by u/ManicChad (17 points)
+
+Bullshit. Absolutely bullshit. They come to get you to do more work. You’ll never get promoted because they’ll have to fill the hole you’ll leave as you move on from those responsibilities. If you’re a unicorn and they don’t have another unicorn then they’ll promote someone else.
+
+### Comment 26 by u/mikkolukas (3 points)
+
+>Becoming a go-to person gets you promoted.
+
+Pfff, that certainly depends on the competence of your management 😆
+
+I have experienced to be berated for being the go-to person 🙄
+
+#### Reply 1 by u/Holmlor (0 points)
+
+Name & shame. Government job?
+
+### Comment 27 by u/valkon_gr (3 points)
+
+I will use this guide on how not to do things.
+
+### Comment 28 by u/B1SQ1T (3 points)
+
+Isn’t the general consensus that job hop > promotion?
+
+#### Reply 1 by u/Holmlor (2 points)
+
+It's not always true. I have a buddy that has stayed at the same company since 1999 and we keep leap-frogging each other in salary. I've moved around a lot. I have certainly done the more interesting work and my skill is nearing archmaster. He's in QA for a defense contractor and hasn't learned much since his master's degree.
+
+### Comment 29 by u/[deleted] (3 points)
+
+Or laid off, because the boss just sees your work suffering from the time you spend helping others.  Or you happen to work at a company that has a policy against individuals who try to make themselves indispensable.  And no, it’s not a fairly tale, I know two large corporations that have that policy. So it entirely depends on your circumstances.  What does not is showing managers that they can trust you.
+
+#### Reply 1 by u/jkordani (2 points)
+
+Can you tell me more about this policy? How does it work?
+
+#### Reply 2 by u/Holmlor (1 points)
+
+Don't work at a large company. They are universally shit to work for.  
+Google is such a joke now; they teach their new employees wrong on purpose.  
+Their motto used to be "Don't be evil," and they no longer let anyone say that. Not since they started operating in China.  
+Never mind the woke stuff that makes you unemployable anywhere else, if you go full-retard.
+
+### Comment 30 by u/heavy-minium (3 points)
+
+Good way to deadlock yourself. A long time ago I've been hindered in advancing my career because I was the go-to person for AWS and Azure implementations and wanted to shift into other topics. It took me a few years to realize I was sabotaging myself and the team balance by being too proactive and reducing the opportunities for others to shine.
+
+Looking back at this, the overreliance on my person was a high risk and bad management. As a lead, you need to be aware of the bus-factor and make sure that skills and experience are well balanced between team members. People trying to become indispensable can be contra-productive to that goal, and they can deadlock themselves into their current position.
+
+### Comment 31 by u/Pharisaeus (9 points)
+
+> Becoming a go-to person gets you promoted.
+
+No, it doesn't. On the contrary, it makes you too important to move to a different position. Companies learned over time that you don't want to trade a great engineer for a mediocre manager. If you prove yourself as technical expert you're going to stay as exactly that, although your "title" might be changing - eg. going to senior, principal, staff... but doing exactly the same stuff as always, that's not a promotion.
+
+#### Reply 1 by u/xmsxms (7 points)
+
+> doing exactly the same stuff as always, that's not a promotion.
+
+If you're given a new title and more money I would argue it is. I don't think your duties have to change for it to be called a promotion.
+
+#### Reply 2 by u/Paradox (1 points)
+
+Loads of companies figured out that they don't even need to give you a new title. What are you going to do, get a different job?
+
+### Comment 32 by u/blahblah98 (7 points)
+
+Being the go-to person has gotten me repeatedly fired.  Fragile manager egos really can't handle it.  The go-to people who survive are required to be complete & total suck-up / sell-outs, or cultivate a giant unassailable public persona.
+
+#### Reply 1 by u/vinciblechunk (6 points)
+
+Same, being a go-to person has made me perceived as a threat and dealt with. What actually gets you promoted is job hopping.
+
+#### Reply 2 by u/Holmlor (2 points)
+
+This has not been my experience primarily in automotive development.  
+All of my managers appreciated my ability to handle many issues thereby reducing their work-load.  
+I think the issue is that type of work requires substantial skill whereas front-end development is trivial (made difficult only by the complete pofs that is javascript though there are ever more solutions to that issue now) and when you have high-demand but (relatively) trivial work it attracts a lot of posers and yes-men.  
+When we went to hire a front-end developer the quality of candidates was laughably terrible. Perhaps 1/40 were remotely qualified.
+
+### Comment 33 by u/austeremunch (2 points)
+
+Why in the fuck do I want to be promoted? More work for shit pay? Nah dude. Job hop. Promotions are for absolute suckers.
+
+### Comment 34 by u/dhilu3089 (2 points)
+
+It's a good skill and natural progression for any passionate engineer.  
+
+But being a go to person can either get you a good promotion/recognition  and/or you will be troubled into being called for every firefighting event within your organization, and suddenly you become responsible for a unrelated totally shitty projects stability. 
+
+So it's also a good skill to recognize above fact, curb your enthusiasm at certain things, and say you don't know stuff or have skill and enjoy best of both worlds
+
+### Comment 35 by u/Lngdnzi (2 points)
+
+Yeah no thanks. Been there done that. More responsibilities same pay. Thanks but no thanks
+
+### Comment 36 by u/porkycloset (2 points)
+
+As other people have mentioned, being this person will also get you a lot of extra work and you have to balance your visibility with having a manageable workload. Especially if you work in tandem with non-technical people, they will reach out to you to solve all their problems. Again, good for visibility, bad for workload. Any good manager worth their salt will help you deal with this.
+
+### Comment 37 by u/pguan_cn (2 points)
+
+Oh, I clicked in to see how to get promoted when I am already the go-to person, wrong place.
+
+### Comment 38 by u/[deleted] (1 points)
+
+dumbass. you're such a fucking waste of space
+
+### Comment 39 by u/Capable_Chair_8192 (0 points)
+
+Taking on responsibilities is the way to get promoted… but I would be surprised if you really need that to get to senior. Seems like staff level or higher.
+
+### Comment 40 by u/shaunscovil (0 points)
+
+As someone who has held the titles of Senior SWE, Senior Manager, Director of Engineering, and (currently) VP of Engineering, I can confirm that this article is on point. Take notes.
+
+### Comment 41 by u/cheezballs (1 points)
+
+There's a fine line here. Am I the only one who's not constantly thinking about promotions?
+
+#### Reply 1 by u/Holmlor (1 points)
+
+It's a cultural thing. Some cultures really value titles a lot more than others.  
+That cultural difference is why in the US they seem like desperate, creepy, virgins.
+
+### Comment 42 by u/[deleted] (1 points)
+
+It gets you promoted until the value you're providing as the go-to person outweighs the value you would provide at a higher level, ar that point being a go-to person is exactly why you're having a hard time getting promoted.
+
+### Comment 43 by u/Wiltix (1 points)
+
+You don’t need to be a go to person, you need to have a good understanding of a certain aspect of the product or stack. 
+
+That is my take away from this, all of the go to people I have worked with have hordes information, you go to them with a question and instead of helping you they put it on their to do list.  
+
+This does not benefit anyone other than the go to person, it’s damaging for the business in the long run.
+
+### Comment 44 by u/[deleted] (1 points)
+
+Yeah but is exhausting
+
+### Comment 45 by u/chiefeh (1 points)
+
+Something I learned (that won't apply to everyone), is that chasing promotions isn't necessary the best move career-wise. I've worked at a company where working hard and getting promoted would lead to a slow-motion avalanche of progressively increasing responsibility leading to eventual, but inevitable burnout. 
+
+I survived there because I worked at managing expectations, being clear about what my boundaries were, and being careful not to take on too much. 
+
+I got passed over for promotions, but maintained a relatively low-stress workload that was predictable and manageable. None of the go-getters at that company are still there, they all burned out years ago and many of them have left the industry.
+
+#### Reply 1 by u/ceene (2 points)
+
+To me it's very strange to see people straight out saying that they "want more responsibilities". I definitely do not want more responsibilities. I want MORE money but LESS responsibilities.
+
+### Comment 46 by u/SwitchOnTheNiteLite (1 points)
+
+I am a "go to" person, but I am not looking for a promotion, cause all they do is write reports, handle HR cases and beg their bosses for a bigger budget next year.
+
+### Comment 47 by u/Brian_Entei (1 points)
+
+In the service industry (retail, automotive repair, etc.), being the go-to person usually causes management to keep you exactly where you are (at the same hourly rate no less), meanwhile the people who stare at their phones all day, stir up drama, and suck up to management etc. get a raise/promoted.  
+Ask me and my family how we know.  
+We never got a raise, never promoted.  
+Glad I don't work in retail anymore, and that my brother doesn't work in automotive anymore.  
+My dad, if he were still alive, would still be working in automotive service.
+
+#### Reply 1 by u/Holmlor (1 points)
+
+I guarantee what you think is "indispensable" is not the same as what the owner thinks is indispensable and that disconnect is why you never get promoted.
+
+### Comment 48 by u/tubbana (1 points)
+
+Does this help if I just want raises but not promotions
+
+### Comment 49 by u/mirvnillith (1 points)
+
+I’m just glad I’m not in a position where promotion is a priority.
+
+### Comment 50 by u/[deleted] (1 points)
+
+Being a go-to person also makes you indispensable, which can be *very* limiting to progression. It's a balancing act that takes a lot of effort.
+
+### Comment 51 by u/warlockflame69 (1 points)
+
+Been there. Don’t recommend unless you like many meetings and can never take time off cause you’re too valuable. Heck it may not even promote you because you are needed where you are at cause you’re so good at it!!
+
+### Comment 52 by u/[deleted] (1 points)
+
+This is clearly not the case in my country, lol.
+
+Say this thing in my country, and you will be laughed at.
+
+That's why I work for a foreign company now.
+
+### Comment 53 by u/SkittishUnicorn (1 points)
+
+I hate this take. Work on teaching other people on your team how to be an equal go-to person. Work is a lot more pleasant when you have other teammates that are confident and competent in what your team owns.
+
+### Comment 54 by u/Ribak145 (1 points)
+
+not really tbh, being a good fit in the eyes of the one making the decision gets you promoted
+
+and sometimes luck
+
+and sometimes nepotism
+
+meritocracy got you the degree, it wont 'win over' the hearts and minds of people outside of university
+
+### Comment 55 by u/emericas (1 points)
+
+This is me right now, and I hate it.   
+
+
+Im kidding but it certainly makes my life a little more difficult..
+

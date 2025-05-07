@@ -1,0 +1,237 @@
+This month we have a mailbag question from a reader who asks:
+
+Hi James,
+
+Your newsletter 
+
+"being in the details"
+
+ resonated with me.
+
+I would like to ask your opinion about managers writing code. I skim PRs but don’t critically review them and don’t write code. Should EMs write code in their day job?
+
+Thanks!
+
+The Engineering Manager is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+
+It's a great question, and given the higher scrutiny we've seen on the role of engineering managers in the past few years, it's worth spending some time on it.
+
+Before we go any deeper, the short answer is that it depends exactly on what you mean by coding. I think that there is a big difference between being 
+
+in
+
+ the code and 
+
+writing
+
+ code. All managers should be in the code, but not all managers should be writing code.
+
+But spending some time digging into the nuances of the question can, I think, highlight both the practical aspects of ensuring that managers are sufficiently 
+
+in
+
+ the code, and, more importantly, identify the existential worry that many engineering managers may have about their role, and what they can do about it.
+
+Let's get going.
+
+Refresher: measuring your impact
+
+We'll begin by revisiting Andy Grove's equation for measuring a manager's impact, which states that 
+
+the output of a manager is the output of their team, plus the output of the neighboring teams under their influence
+
+. This is always useful to refer to when thinking about how to spend your time. I contemplate it a lot.
+
+There are, of course, a multitude of ways to increase your output as a manager. These range from, and are not limited to:
+
+Hiring and retaining great people.
+
+Owning the team's strategy and roadmap, and ensuring efficient execution.
+
+Making decisions to ensure that the team is working on the right things and saying no to the things that don't matter.
+
+Dealing with fires, escalations, and other crises that pop up all of the time.
+
+Building a strong culture within the team so that people are engaged, challenged, and motivated.
+
+Mentoring and coaching your reports so they get better and can have more work delegated to them, thus increasing output further.
+
+Managing the team's stakeholders so they can offer their steer to the team early and often.
+
+Actively performance managing the team so that superstars can continue to shine and underperformers can be coached or exited.
+
+Building close working relationships with other teams so that smooth collaboration happens across the organization, leading to a better and more cohesive product.
+
+And so on.
+
+Now, it isn't a stretch to say that engineering managers, who typically get to a senior individual contributor level before transitioning to management, are 
+
+also
+
+ often very good at writing code.
+
+However, there's a whole 
+
+team
+
+ of people working for them who are 
+
+also
+
+ very good at writing code, and typically they won't be spending as much time on the items listed above, which means they can be more productive at writing code than the manager can.
+
+So, therefore, surely it makes sense for managers to focus on the things that 
+
+only they can do
+
+, and leave the coding to the people who have more time for it and are better at it as a result?
+
+Right?
+
+Or is there something else at play here?
+
+2025 cultural backdrop
+
+The last few years have created somewhat of an existential crisis for engineering managers.
+
+Since the tail end of the Covid-19 pandemic, where the 
+
+zero-percent interest rate environment ended
+
+, leading to high inflation and interest rates, the end of cheap debt and plentiful investment, and the consequential slowdown in growth and corrective layoffs at many technology companies, managers have 
+
+felt the brunt of the "great flattening"
+
+, where the number of managers has been reduced in favor of more individual contributors.
+
+This has typically meant that the average number of direct reports per manager has increased, the amount of scope per manager has increased too, and the number of total layers in the org chart has shrunk.
+
+This, therefore, feeds into a narrative that managers worth their salt need to be more productive, more impactful, and more efficient than before.
+
+Depending on where you read your opinions on the internet, It can also build a more toxic picture: that managers are just unnecessary overhead for having some number of individual contributors; that it is a non-technical job for those that aren't as good as others at actually building the product.
+
+Hmm.
+
+For those that made a conscious decision to move into management and learn this new role, and especially for those who take their craft 
+
+seriously
+
+ as managers, it can feel like the tide has turned against them.
+
+As such, engineering managers, and the organizations that they work for, are pushing for ways for managers to differentiate themselves, typically by being more technical, more hands-on, and more in the details than they may have been before.
+
+This isn't a bad thing. When done right, it can be extremely beneficial. I wrote extensively about 
+
+being in the details
+
+ from a senior leadership perspective.
+
+I would argue that being in the details is the key tenet of not just being a great manager in the climate that we find ourselves in, but also being a great manager 
+
+full stop
+
+.
+
+For senior leaders such as Directors and VPs, being in the details covers ideas such as having ICs report to you, as well as managers; doing regular, hands-on deep dives into the architecture and codebases your team owns; mixing up 1:1s with pair programming sessions, code reviews, and other technical activities, and more.
+
+But what does this mean for frontline engineering managers? Is the new normal just about writing more code and doing less of the other things that peacetime managers would normally do?
+
+Writing code versus being in the code
+
+It's more nuanced than that.
+
+Here is a list of statements that represent how I would want my engineering managers to be in terms of their relationship with the codebase:
+
+Should they be 
+
+able
+
+ to write code? Yes.
+
+Should they understand how the codebase and their features and services are built? Yes.
+
+Should they be able to do code reviews? Yes.
+
+Should they review all design documents and architecture proposals from their team? Yes.
+
+Should they be able to debug and triage production issues? Yes.
+
+Should they be able to pair program with their reports? Yes.
+
+Should they be accountable for the quality of the code that their team produces? Yes.
+
+Should they write code themselves? 
+
+Maybe.
+
+Why maybe?
+
+It depends on the manager, the team, and the organization. As a senior leader, I would rather my managers be 
+
+in
+
+ the code as per the above list, but not necessarily putting themselves in the critical path by 
+
+writing
+
+ code, given that they are likely to be interrupted more often, have more meetings, and be pulled in more directions than their reports.
+
+I expect you to know how everything works, insofar that if I asked you to show me how a feature works by tracing through the code, you could do it. However, I would also know that there are other people on the team that are better placed to be the primary implementers of features in the area that you understand really well.
+
+But, if you are a manager that is absolutely 
+
+itching
+
+ to write code and stay close to the details, then so be it and more power to you.
+
+Here's some approaches that might work for you:
+
+Explicitly set aside uninterrupted time for coding.
+
+ This could be a day a week, or a few hours a day, or whatever works for your team. Make sure that your team knows that you are doing this, to keep interruptions to a minimum. Block it out in your calendar, and set your statuses accordingly.
+
+Pair program with your reports.
+
+ This is a great way to get into the code, and also to mentor your reports at the same time. It's a win-win. Sure, you're not taking the lead on the coding yourself, but you're in the details by proxy of collaborating with others. I love doing this myself.
+
+Do code reviews.
+
+ Don't just skim PRs (sorry, reader!), but really dig into them: run the branch locally, test it, think critically about the design and the implementation, and provide feedback. Record a video of your review to highlight things that could be better.
+
+Increase your coding involvement during specific occasions.
+
+ Depending on how you and your team work, you may find that prototyping phases are where you can get your hands dirty effectively. That code isn't going into production, so go to town! Alternatively, you might be great at digging in during incidents or times of high stress. Find the times that work for you and your team, and lean into them. This approach isn't about spending a consistent amount of time coding every week; it's about finding the 
+
+right
+
+ times to be in the code where you can be most effective.
+
+Find time for exploratory coding that expands the knowledge of your team.
+
+ Block out some regular time to stay on top of the latest technologies in a way that is fun and engaging for you, sharpens your skills, but also brings back learnings to your team. For example, if your team uses Apache Flink and the latest version has new aggregation functionality that could make your pipelines simpler, spend a couple of hours doing a prototype with it for a team-specific use case and then share it back.
+
+And finally...
+
+Going back to the original question: should managers write code? I think it's best to rephrase that.
+
+Should managers be 
+
+in
+
+ the code? Yes, absolutely.
+
+Should managers 
+
+write
+
+ code? Maybe, but it also depends on what you mean by writing code.
+
+If you mean being the primary implementer of features, then probably not. If you mean being an integral part of how your team produces code, then yes, absolutely. I recommend it highly.
+
+So there we are.
+
+I enjoyed doing this month's article as a mailbag question. If you ever have a question that you think would make a good article, please send it in! I'd love to hear from you, and I'll try my best to answer it.
+
+Happy coding (in some form), managers.
+
+Subscribe now

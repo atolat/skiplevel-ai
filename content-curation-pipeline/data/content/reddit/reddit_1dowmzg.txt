@@ -1,0 +1,174 @@
+# Seeking Advice: How to Transition from Principal Software Engineer to Tech Lead/Architect?
+
+Hi everyone,
+
+I’ve been a software developer for 20 years, and while I’ve gained a lot of experience, I feel stagnant in my career. Currently, I’m a Principal Software Engineer, but my role feels more like a "super senior" software engineer.
+
+# My Situation:
+
+* I work on the UI team, handling feature work, bug fixes, and tech debt.
+* My job isn’t terribly interesting or impactful, and I want to transition to a tech lead or architect role.
+* Despite my experience, I feel behind compared to peers who are younger and have already achieved these roles.
+
+# Challenges:
+
+* Lack of progression has impacted my soft skills, especially in leadership.
+* Finding opportunities to get noticed within the wider organization is difficult.
+* Concerned about how potential employers will view my career progression, especially as I approach my mid-40s.
+
+# Accomplishments:
+
+I have published several books, including one with O’Reilly, but being a published author didn’t seem to help much in my last job search.
+
+# Questions:
+
+* How can I have a bigger impact on my organization?
+* What steps can I take to move towards a tech lead or architect position, even if it’s not at my current company?
+* Are there any strategies or resources to improve my leadership skills and visibility?
+
+I love what I do but feel stuck and worry about my future employability. Any suggestions, ideas, or resources would be super helpful.
+
+Thank you so much. Love this sub.
+
+## Comments
+
+### Comment 1 by u/[deleted] (92 points)
+
+Be careful with the “tech lead” thing. You will find yourself a glorified Jira clerk in no time while your skills stagnate and you burn out.
+
+Obviously this varies by company but I did the TL thing once and it was a major headache.
+
+#### Reply 1 by u/IWantToFileComplaint (20 points)
+
+OP you must take into account for this scenario. I was “forced” to accept the TL role and then higher ones in exchange of better pay. While I am not a glorified Jira clerk, most of the days I have no time to actually develop things and If I do, it’s usually a small task since I can’t commit to bigger ones. Again it might depend on the company but it goes without saying that once you accept a management position you will have to manage more and develop less.
+
+#### Reply 2 by u/ConsulIncitatus (10 points)
+
+Agree.  Team lead means you'll do a portion of your EM's job without any real authority, recognition, or pay.  My or does not have "team lead" roles.
+
+#### Reply 3 by u/thinksInCode (4 points)
+
+That doesn't sound very enjoyable :) Maybe I am doing a premature optimization for my future job prospects, I am just afraid of the situation where I look like I haven't grown in 20 years and no one wants to hire me because of it.
+
+### Comment 2 by u/kittysempai-meowmeow (31 points)
+
+What do you actually enjoy doing?  You say your soft skills are suffering, but you need those skills to lead or have an architect role.  
+
+Principal engineer is supposed to be a role for super-senior technologists that still want to be an individual contributor (ie not a manager) while also being a force multiplier for others through mentorship and setting examples for technical patterns etc.  It's theoretically reserved for true experts, and is basically the top of the ladder for individual contributor development roles so in no way is that title considered below a tech lead or architect title.  It's just a different very high level role.  
+
+I ask what you enjoy doing because as an architect and mentor I've dealt with a lot of people who thought they wanted to become an architect or lead purely because they didn't know how else to move up when a company didn't have IC roles above say Senior and so they thought that was how they needed to get promoted.   But talking with some of these people, they had no leadership skills, no big picture thinking skills, struggled to make decisions and weren't good communicators.  Really all they liked doing, and what they were good at (in some cases anyway), was just development.  
+
+As an architect at a larger company, I didn't write code for production.  I built POCs and templates on occasion, but mostly I sat in a lot of meetings soaking in the business situation and the technical landscape for pretty much the entire enterprise so I could be that person who could tie everything together.  Every development team was its own little silo that knew very little about what went on around it, and I had to plan out how large scale projects that affected multiple teams would work, design the data contracts and then hand off the big picture design to the individual teams to figure out the details and build it.  I had to be good at sussing out information from business people who didn't think like techies and often didn't know what pieces of information were important.  I had to write A TON.  I had to be able to write documents designed to go to the C-Suite as well as documents for developers and those are VERY different.    
+  
+People also came to me when they had hard technical problems they didn't know how to solve, and although some people wanted to just throw the problem over the fence, my job was to help THEM solve it - coaching, advice, maybe even detailed instruction - but not to do it for them.  I needed to help them grow.
+
+I say all this because I think you should figure out why it is you want to be an architect and whether you'd be happy not writing all that much code and sitting in meetings all day and writing a ton of documentation, or having to deal with staffing issues and direct reports.  A lot of people aren't.   While I don't mind the discovery sessions or the writing at all, I'm not motivated by having direct reports, and I did decide I preferred being more directly involved in the implementations so I've moved away from "ivory tower" architect roles and management toward the staff or principal level engineering roles, where I can continue to be a force multiplier but also be directly involved in development.  I don't see it as a step backwards at all, more of a step sideways.  If I retire with the title Principal Engineer I'd be satisfied, and I consider myself fairly ambitious.
+
+I do agree with folks that say being UI focused can be limiting, if and only if you actually want to move out of UI.  There are plenty of people who are UI experts and do well with that but the industry may not respect UI as much as backend development, unfortunately.  It's never a bad thing to branch out and do some full stack work.
+
+#### Reply 1 by u/thinksInCode (2 points)
+
+Your comment gives me something to think about for sure.
+
+I get your point about soft skills. Mine are definitely lacking, I feel, but one of the things I am trying to figure out is ways to improve them. 
+
+I think my main concern, in all of this, is that the next time I am looking for a job they would see a lack of progression and not want to hire me. This is my big concern because I worry about not being able to provide for my wife and son. 
+
+I'm not excited about all the aspects of a lead/architect role - but I think if I had the right set of skills for it I would like it. I just don't know how to get myself there.
+
+### Comment 3 by u/demosthenesss (3 points)
+
+What problems beyond your team are you seeing/facing for the overall UI?
+
+What part of solving those can you be a leader on - keeping in mind likely the problems are a strong mix of technical and people and process?
+
+### Comment 4 by u/Belbarid (3 points)
+
+Career Architect, here. Enterprise, Project, Solution, and Cloud, at varying points in my career. Don't assume we have much of an ability to affect anything. Most of the time I find myself implementing a non-technical manager's idea of "best practices" and have no agency at all. Asking "How does this solve the problem" usually draws an "I've made myself clear, just do it." Asking "What value do we need here" normally gets me a "We have a policy, so follow it." 
+
+
+May I suggest a career in Serial Killing? If you're bad at it you get three hots and a cot for the rest of your life.
+
+### Comment 5 by u/Judge_Agitated (3 points)
+
+Isnt principal engineer above a team lead?
+
+#### Reply 1 by u/thinksInCode (1 points)
+
+Maybe. I’m sort of principal in name only. I am overleveled for my skills and impact, I feel.
+
+### Comment 6 by u/GongtingLover (2 points)
+
+For the people in this thread, does having tech lead on your resume hurt your chances of getting a new job?
+
+#### Reply 1 by u/IdeaJailbreak (2 points)
+
+I got a no recently and the reason given was that I just wasn't writing enough code in my TL role to jump into an IC position at a startup where I would be writing code more frequently. I spend 40-50% of my time writing code so I didn't think it would be a big issue but it was a sticking point for them. Probably more of a problem for startups where they really want code monkeys and need less mentorship/stakeholder management though.
+
+### Comment 7 by u/txiao007 (2 points)
+
+How big is your company/employer?  Is it a publicly traded company with a market cap of $50+B?
+
+The Principal Software Engineer in the MAANG company is a BGD (Big F'ing Deal).  
+Anyone with the "Chief Architect" is usually also in the "Office of CTO) Organization.
+
+### Comment 8 by u/ljwall (1 points)
+
+In terms of doing this within your current company, have you talked to your manager and are they on board?
+
+### Comment 9 by u/EdelinePenrose (1 points)
+
+What kind of cross-team and cross-department problems are you noticing and solving?
+
+#### Reply 1 by u/thinksInCode (1 points)
+
+This is the thing I have trouble with. I try to look for these problems/opportunities but always come up empty. Maybe I am not looking hard enough. I feel stuck.
+
+### Comment 10 by u/FedSmokerrr (1 points)
+
+Instead of title - which can vary wildly co to co. What do you want to do?
+
+### Comment 11 by u/ConsulIncitatus (0 points)
+
+> I work on the UI team, handling feature work, bug fixes, and tech debt.
+
+This is your first problem.  I get a lot of flack & downvotes for this on these subs, but my reality is that I hire cheap nearshore guys to do all of our React work, and where necessary just use a UX shop to create the Figmas.  UI work is a commodity these days.  It changes frequently, doesn't have lasting value, isn't a technology differentiator, and is time consuming.  Get out of UI.  AI is going to hit front end first.
+
+> Lack of progression has impacted my soft skills, especially in leadership.
+
+I have directors who were natural leaders that I spotted easily.  Others were less obvious, but I promoted them anyway because I knew they had it in them.  Ultimately, your ability to progress in an organization rests entirely on your bosses' perception of you.  If they don't view you as having leadership chops, you won't get anywhere.  It is not easy to be anointed into the ranks of leadership.  It's even harder to become anointed to senior leadership.
+
+> Concerned about how potential employers will view my career progression, especially as I approach my mid-40s.
+
+I wouldn't be too concerned about that, but I'd be careful about applying directly to EM roles.  By your age, most employers will want some leadership experience.  We generally like to hire people who have the desire to grow into leadership roles, so you'd want to make that clear to your recruiters & during your interview.  You'd be surprised at how many people *don't* want that responsibility.  My biggest problem is finding technologists who have both the desire and the potential to become leaders.  That intersection is uncommon.
+
+> I have published several books, including one with O’Reilly, but being a published author didn’t seem to help much in my last job search.
+
+Not surprised.  I won't be paying you to write books, and I would be thinking to myself, "he might decide to write another and become distracted on the job."
+
+> How can I have a bigger impact on my organization?
+
+Stop working on UI.
+
+#### Reply 1 by u/[deleted] (9 points)
+
+[deleted]
+
+#### Reply 2 by u/thinksInCode (4 points)
+
+>Get out of UI. AI is going to hit front end first.
+
+I appreciate your candid reply. I often wonder if I've gone down the wrong path. For the first decade or so of my career I was in more of a full-stack role. Java on the backend, and JS on the frontend. Around 2015 or so I took a role that was 100% frontend. I've changed jobs a few times since then but I have been 100% UI since then.
+
+I wouldn't mind at all working on backend or in a full stack role again, I think my problem there is I am so rusty with Java and backend stuff that I'd have a hard time being hired into a role at my current level, doing backend, due to my stale backend skills.
+
+Your reply has given me a lot to think about! Do you have any advice for how to get back into a fullstack or backend role? 
+
+>I won't be paying you to write books, and I would be thinking to myself, "he might decide to write another and become distracted on the job."
+
+I can see where you're coming from here but I think this is a little cynical. I've never spent any company time or resources working on any of my books, and it hasn't affected my job performance at all. I'm not saying I think that I should be prioritized as a candidate because I've published books but it is a big accomplishment and one I'm very proud of.
+
+### Comment 12 by u/EntshuldigungOK (0 points)
+
+Design systems and solutions.
+

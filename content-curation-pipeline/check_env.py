@@ -34,7 +34,8 @@ def main():
         "REDDIT_CLIENT_SECRET": "For Reddit content curation",
         "REDDIT_USER_AGENT": "For Reddit content curation",
         "MEDIUM_API_KEY": "For Medium article extraction via Medium API",
-        "GITHUB_TOKEN": "For GitHub repository access"
+        "GITHUB_TOKEN": "For GitHub repository access",
+        "YOUTUBE_API_KEY": "For YouTube video discovery and metadata"
     }
     
     # Check required keys
@@ -52,6 +53,7 @@ def main():
     missing_reddit = []
     medium_missing = False
     github_missing = False
+    youtube_missing = False
     
     for key, description in optional_keys.items():
         value = os.getenv(key)
@@ -65,6 +67,8 @@ def main():
                 medium_missing = True
             elif key == "GITHUB_TOKEN":
                 github_missing = True
+            elif key == "YOUTUBE_API_KEY":
+                youtube_missing = True
     
     # Summary
     print("\nSummary:")
@@ -91,6 +95,11 @@ def main():
         print("⚠️ GitHub token is missing. GitHub repository access may be rate-limited.")
     else:
         print("✅ GitHub token is set - Full GitHub repository access is enabled.")
+        
+    if youtube_missing:
+        print("⚠️ YouTube API key is missing. YouTube video discovery will be disabled.")
+    else:
+        print("✅ YouTube API key is set - YouTube video discovery is enabled.")
     
     # Show instructions based on where the env file should be
     if subdir_env.exists():
@@ -107,6 +116,7 @@ def main():
     REDDIT_USER_AGENT=python:content-curation-pipeline:v0.2.0 (by /u/your_username)
     MEDIUM_API_KEY=your_medium_api_key_from_rapidapi
     GITHUB_TOKEN=your_github_personal_access_token
+    YOUTUBE_API_KEY=your_youtube_api_key
     """)
     
     # Exit with error code if required keys are missing

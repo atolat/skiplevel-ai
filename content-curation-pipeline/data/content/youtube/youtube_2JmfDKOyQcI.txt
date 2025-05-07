@@ -1,0 +1,236 @@
+I was the 19th engineer to join WhatsApp
+we may have had around 20 million users
+at the time and by the time I was
+leaving the company we had 1.2 billion
+active monthly users I've been working
+in tech for 17 years so over the years I
+probably work with thousands of
+Engineers every single person wants some
+kind of influence it could be influence
+in terms of I want to get a promotion
+that's a form of influence you want to
+influence your manager or I want to get
+a different job so that's part of our
+curriculum
+influence and we say influence is about
+likability and credibility when I ask
+Peter I know Peter will deliver ex I
+know he's dependable and he's not going
+to make me feel like he's not going
+to be an and he's going to be
+pleasant to work with so like ability
+plus credibility can bring you a lot of
+influence people will come to you for
+New Opportunities if I'm building a new
+startup I'm thinking about who do I want
+on my team they're going to think of
+people who have the like ability and The
+credibility together because if you only
+have one or the other you're okay you
+might be able to tag along but you're
+not going to be the first person they
+think of so I do recommend okay even if
+you are really good at all of them
+please choose one what is your thing
+what do you want to be known for as I
+started getting more involved with
+YouTube I've been watching more content
+that it drives me crazy when I see these
+videos like top five Trends or top five
+languages to follow because I don't
+think that's what really will help you
+be successful it's not about which
+language you know because as a hiring
+manager I'm often trying to just
+understand are you a smart engineer can
+you code because what languages we're
+using today may not be applicable
+tomorrow so I want to be able to work
+with people who can learn new things
+pick up new skills and that's what I'm
+interviewing for when I talk to new
+software Engineers similar principles
+apply to success blindly following
+Trends is recipe for failure because
+you're you're always going to be a step
+behind so I encourage people to be
+inquisitive and explore your passions
+what are you good at what do you enjoy
+doing and follow
+that at whatsapp we actually had a note
+written by one of the founders we wrote
+no gimmicks and we had it posted on the
+walls we decided we're not going to do
+games we're not going to do gimmicks
+we're not going to throw in bunch of
+feates just to appease every single
+person the way we are going to appease
+every single person is by focusing on
+the core utility features like does the
+messaging actually work can you call
+someone and can you actually hear them I
+guess another word you can say is we
+focused on quality we wanted to drill in
+to make sure it worked every single time
+rather than adding on a bunch of new
+features we would get a lot of emails
+from people all over the world and they
+would tell us there was a natural
+disaster nothing was working the phone
+lines were down but I was able to use
+what WhatsApp to call the firefighters
+and I was rescued or I was in a car
+accident and I was rescued so I do
+believe it worked so when I was in
+college I actually interned for a
+threepers startup and we had a lot of
+fun I loved the ownership the autonomy I
+could really see the impact of my work I
+also felt like we were lacking Direction
+and Leadership and mentorship and that's
+part of the reason why I joined IBM and
+when I did join IBM I felt like there
+was great mentorship but I lacked the
+autonomies so WhatsApp for me struck a
+balance because at the time I was the
+19th engineer it was small enough where
+I could see the impact of the work but
+the founders had a lot of experience
+they were both from Yahoo They had a lot
+of experience working in Tech and I felt
+like that would be a great balance for
+me to find both ownership and mentorship
+and it's not like we had one-on-one
+every week it wasn't a formal mentorship
+but just by being there in a small
+company and observing and watching
+similar to my upbringing I guess just
+learning how they operate how they lead
+was a really great opportunity for me
+and I learned so much by just being
+there we may have had around 20 million
+users at the time and by the time I was
+leaving the company we had 1.2 billion
+active monthly users there were several
+values I think that was key to the
+success of WhatsApp and as we
+experienced the growth I think it was
+really important to be able to hold on
+to our engineering culture and that was
+part of my big Focus as well when I was
+starting the new office in London I went
+there in 2018 we grew the office to
+about 100 engineers in a couple of years
+and in that short period of time we were
+hiring new Engineers every week and one
+thing that we tried to really do was to
+make sure that everyone understands the
+engineering culture for WhatsApp I think
+was pretty special and if I were to sum
+up the WhatsApp engineering culture in
+one word it's challenging but I would
+say it was simplicity so simp Simplicity
+can mean a lot of different things but
+one way of achieving Simplicity is
+really prioritizing it's easy for us to
+say I'm going to do 10 different things
+and be really great at it but it's
+actually much harder to be focused on
+few core features and few core offerings
+that we will offer and prioritize them
+ruthlessly we had a clear decision maker
+who gave us clear messaging about which
+features we're going to deliver and we
+came up with with these features really
+intentionally as well we had ideas like
+okay we want to make sure even someone
+in the middle of nowhere with bad
+internet connection on an old device
+should be able to use our app so we
+wanted to prioritize the user experience
+so even people in remote places with
+body internet connection on older
+devices can use our app also we like to
+talk about can a grandma in the middle
+of nowhere use this feature and that was
+our guiding princip principle for how we
+prioritize our work we made sure that
+every single person understood what
+we're building and where we're going and
+I also implemented that in my personal
+team as engineering manager as well I
+let people know these are the things
+that we're building and this is our
+long-term overall goal so when they are
+working I can't always be there to hold
+their hand and guide them but when
+they're working they can prioritize
+their own work when they have competing
+projects or features or priorities they
+can say the these are our guiding values
+or priorities and I know exactly which
+one I need to prioritize and it would
+work also when you're working cross
+functionally if someone's asking you for
+help or giving you new ideas or
+suggestions you understand what needs to
+be done for not just yourself but for
+your team and a company as a whole so
+achieving Simplicity through
+prioritizing was one of the key factors
+for success for
+us when WhatsApp got acquired for $19
+billion I actually wasn't even sure what
+a billion dollars was the type of amount
+of money that you can't really tangibly
+describe how much is a billion dollars
+the moment that I heard the acquisition
+news I was sitting in the conference
+room it was really weird the founders
+looked a little weird I couldn't
+articulate at the time because I didn't
+know what was happening but they're like
+waving their arms and like saying you
+need to get into this conference room I
+couldn't believe my ears I wasn't sure
+what was happening but when I heard the
+news Okay Facebook's buying us for $19
+billion and I was sitting in the
+conference room thinking how much is
+that and what does that mean for me like
+I was pretty young at the time so I
+didn't know how much shares I actually
+exactly had and I wasn't really sure
+what that meant for me and I was trying
+to calculate the number what does that
+mean for me and I couldn't do the math
+so yeah it was an incredible opportunity
+and it was really exciting to be there
+and it does really change your life
+there are many things money can change
+change or doesn't change as well it can
+bring you certain fulfillment and
+stability but there's a lot more that we
+need beyond that what do you want to do
+if you don't work yeah you can stay home
+watch TV but after a while TV is kind of
+boring so I think it's about how you
+view your I don't feel like I'm working
+I'm just having fun that's why you need
+to find something that's interesting for
+you right why does Bill Gates work he's
+still doing so much he's working all the
+time but I don't know Bill Gates and I
+don't know why he's working but I was
+suspect most of these people who
+continue to work they don't see it as
+work they see it as a meaningful part of
+their life I think it was a turning
+point for my life because I was never
+financially free growing up so having
+the Financial Freedom was a little bit
+confusing at times I did have to go
+experiment a lot and explore again to
+redefine the meaning of work for myself
+to understand how do I want to spend my
+time

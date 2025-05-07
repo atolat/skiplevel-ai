@@ -1,0 +1,157 @@
+You have been preparing, excelled in the
+interviews and now joined a new company.
+Or maybe you just switched
+teams in the same company.
+You're excited but maybe
+also a little bit scared too.
+How do you cause a good first impression?
+How do you get up to speed as soon as
+possible and start providing value?
+and how do you gain your team's trust?
+I'm Christian and today I'm going to give
+you some tips based on my own experience
+in different companies and teams, and also
+learnings that I've seen from other software
+developers that can help you to get up to
+speed as soon as possible in your new team.
+Welcome to A Dev' Story!
+First of all, it's very
+important to know your position.
+There are quite a few differences
+in terms of expectations between
+a Junior Developer or a more Senior one, and
+expectations can also vary between companies.
+Typically, as a Junior Developer your
+responsibility will be yourself and trying
+to become more autonomous in the team.
+As you start growing, your influence and
+responsibility grows to that of the team,
+the organization, and even company-wide.
+So your role expectations may vary based on this.
+I recommend you to watch Beyond Developer from Dan
+North to know a little bit more about
+how to grow as a software developer.
+Having said that, my first tip is to Clear your
+Role Expectations as soon as you
+join the company or the new team.
+There are different ways to get
+this information. Typically,
+the company will have a role description
+for your position that you should check.
+You could also ask directly:
+What do you expect from me? or
+variations/complementary questions like:
+What can I do to make your job easier? or
+What would you do if you were in my position?
+Ask people in the team what they expect from you.
+Here, of course, the most important opinion will
+come from your manager, but it's also good to ask
+other roles, like maybe the product person or the
+most senior developers in the team, and sometimes
+even some stakeholders can be also useful.
+My second tip is to Understand the Team's Culture.
+Identify what are the communication
+patterns in the team.
+How do people prefer to communicate?
+Do they prefer more formal
+or informal communication?
+Do they prefer chats or Zoom calls?
+What are the team agreements?
+Some things will be quite obvious or you
+can get direct answers by just asking them.
+Other things will be a little bit more subtle
+and the team might not even be aware of them
+happening. There will be unconscious biases and
+even some inertia in the team based on the time
+they have been working together.
+Try to understand and adapt first
+to the way the team is used to doing
+things before suggesting new changes.
+There are different ways to ask questions to
+get more information. Something direct like:
+What are the team agreements?
+How do you prefer to communicate?
+or a little bit more subtle like,
+What is the best way to get
+input and feedback from you?
+My third tip is to Focus on Priorities.
+It can be hard to fully focus on the highest
+priority things when there are multiple of them.
+Ask the team and the different roles about
+what are the highest priorities and try
+to clear them as soon as possible.
+Then, when you get your first task,
+you will know how important it
+is and how much time to invest.
+Learn the highest priority things first.
+If there are too many one of the things,
+something that I do is to apply the Pareto
+Law [Principle] trying to take the
+two most important things out of 10.
+In terms of people, also identify what are the
+highest priority stakeholders
+both for you and for your team.
+There are tools like the Influence Matrix
+that can allow you to understand it better.
+In terms of questions, some useful ones are:
+What are the top priorities for the team?
+What can be dropped?
+What cannot be dropped?
+What happens if feature A doesn't get
+delivered but feature B is instead?
+Who should I meet outside of the team?
+My fourth tip is to Ship Something Small Quickly.
+Different teams have different
+ways of shipping changes to live.
+Some teams do Continuous Deployments, others do
+deliveries at the end of the Sprint, for example.
+There are also spoken and unspoken team
+conventions when shipping changes to live.
+One of the things that you can do in your first
+two weeks is to ship a very simple piece of code.
+By doing this, you will learn a lot of things
+like: what are some of the team agreements,
+what are the tools used for coding for
+committing changes for releases, who do
+you need to notify and even get some permissions
+that you need to get approved out of the way.
+This way, when you need to do
+a more complex change you will
+have a clearer vision of what
+is the full release process.
+My fifth tip is: Take Your Time Learning.
+Truth be told, most people won't expect the
+new person to be productive in
+the first weeks or even months.
+It's better to take your time, even if under
+pressure, to understand the most important things
+in depth, as opposed to rushing through them and
+then finding some important gaps down the line.
+So take advantage of these low expectations from
+the team in the first weeks in order to explore a
+little more the code base or identify areas where
+you have some gaps and ask for help in those.
+As you have seen throughout this video,
+ask a lot of questions. Enjoy the extra
+focus time these first weeks in order to be
+kind of in a "training" or "learning mode".
+Bonus tip: Have Fun and Bring your Value.
+A job is a way of living but it's also a
+way to learn new things and meet new people.
+Take the opportunity and the time to learn about
+the things that you find interesting. You can also
+share some fun facts, articles, learnings
+or even new approaches to your new team.
+Maybe there are things that you have solved
+in the past and you can provide the team
+with a quick solution for something, or grab
+those "low-hanging fruits" as they are called.
+The team will be happy to have you with them
+and by presenting some new ways of doing things,
+good challenges on current approaches
+or learning about new technologies,
+will make you and your team to
+be happier to work together.
+Now is my time to ask you:
+What additional tips do you have
+for someone joining a new team?

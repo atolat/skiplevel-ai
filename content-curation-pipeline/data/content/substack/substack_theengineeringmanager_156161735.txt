@@ -1,0 +1,311 @@
+Since my November article on 
+
+being in the details
+
+, I've had a few people ask me about the system that I use in order to do so. In my 
+
+first book
+
+ I went into great detail about how I manage information and stay organized. On reflection, my approach has evolved since then, so I thought it would be a good time to revisit the topic.
+
+The Engineering Manager is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.
+
+The system that you use to organize your activity becomes your mental model of how you do management. Therefore it should reflect how you work and how your company works, and produce the outputs that you need to be effective in your role.
+
+This, of course, means that what works for me might not work for you, and vice versa, and that's OK. The key is to have a system that you trust and that you use consistently to get the outcomes that you need.
+
+At the time of writing, I'm in an engineering leadership position at Shopify, which is a fully remote company with a 
+
+culture of minimal meetings and a preference for asynchronous communication
+
+. This clearly has an impact on how I work and how I manage information, especially when compared to my previous roles at companies with an office-based culture.
+
+For example, I now no longer need to keep a notepad handy to jot down things as I'm walking around the office (I'm at home), nor do I get to exercise my preference of using wonderful, searchable, archivable email as my primary communication tool (everyone uses Slack instead; you can't win them all).
+
+Although my approach has evolved over the last few years, the fundamentals remain the same:
+
+Management of large organizations can quickly become overwhelming and messy if you don't have some way of managing the information that you need to keep track of.
+
+Your memory does not have a large enough working set to reliably keep track of all the information that you should have close to hand. If you think it is, you're likely unaware of the things that you're forgetting.
+
+No matter how good the tools are that your company provides, having your 
+
+own
+
+ system that you trust and have complete ownership of is essential: it won't disappear one day because the company decided to switch to a different tool.
+
+The system that you use should be simple and easy to use, otherwise you won't use it.
+
+The system should also be flexible enough to adapt to your needs as they change. If one busy day blows your system out of the water and you become ineffective, then it's not a good system in the first place.
+
+This article will be about more than just the software tool that I use, even though it is central to it. Instead, I'll focus on the way using this tool allows me to categorize the way that I work into tight loops of 
+
+gathering, deciding, and executing
+
+. This is a mental model that I've found to be very effective in managing my day-to-day work, and enables me to keep the pace high for myself and my team.
+
+A gather-decide-execute loop.
+
+This gather-decide-execute loop that I run has some similarities to other loops that exist in the world of strategy, such as the 
+
+OODA loop
+
+. Similarly, good technology companies are ones that move through the 
+
+build-measure-learn
+
+ loop faster than their competitors. I'm trying to do the same thing, but with the information that I need to run my organization effectively.
+
+Gathering: the inputs to your system
+
+We'll begin with the always-on process of gathering information. There's a couple of maxims I find useful here:
+
+There's a difference between 
+
+information
+
+ and 
+
+knowledge
+
+. Information is raw data, while knowledge is information that has been processed and 
+
+understood
+
+. I aim to build up a store of knowledge that I can use to make decisions, and this is done through active note-taking.
+
+Gathering information is an active and ongoing process. It's not about letting things come to you, but instead, it's about 
+
+being in the details
+
+ and 
+
+actively seeking out
+
+ the information that you need to do be effective. I pull on threads and I ask questions to learn more about the things that I need to know.
+
+The main change in my approach in recent years is that I am now a heavy user of 
+
+Logseq
+
+ as my primary tool for both note-taking and task management. If you've not used second-brain software like Logseq, 
+
+Obsidian
+
+ or 
+
+Roam Research
+
+ before, it's a bit like having a personal wiki that you can use to store all of your notes and tasks in a way that is easily searchable and linkable.
+
+For example, you can reference pages in your notes like 
+
+[[this]] 
+
+and Logseq will automatically create a link to that page (and create it if it doesn't exist), generating a network of information that you can navigate. Each page shows backlinks, so you can see all the other pages that reference it, and you can also see a graph view of all the pages and how they link together.
+
+If you've not tried one of these tools, give them a go. They're free.
+
+I consider myself to be in gather mode all of the time. My job, like many others, involves being subject to a firehose of information via email, Slack, project management software, and (minimal) meetings. 
+
+The way that I approach this is that I always have my Logseq window open on the right-hand side of my screen (by typing 
+
+last fourth
+
+ in 
+
+Raycast
+
+), and I try to capture anything important that comes my way as soon as I see it. Similar to revising for an exam, the act of summarizing what I'm seeing and writing it down helps me to remember it better, even without searching for it.
+
+I have a few key flows that I use to organize my notes:
+
+Logseq defaults to a daily journal page, which results in a new page being created for each day. I use this for freeform notes that I may never read again, but that I want to capture in the moment. This is more about the habit of note-taking for memorization than it is about creating a useful artifact.
+
+For things that I need to do, the neat thing about Logseq is that you can create 
+
+TODO
+
+ items that render with a checkbox. You can search for all of your 
+
+TODO
+
+ items across all of your notes for an adhoc task list, or even better, you can schedule them to appear later on a specific day (try 
+
+/schedule
+
+ to bring up the date picker, where you can also create repeating tasks).
+
+For more permanent notes, I have a page for my team and sub-teams, where I keep long-lived references to key dashboards, links to key documents like roadmaps, sub-pages for notable projects, and so on. This is the kind of information that I want to be able to find quickly, and that I want to be able to link to from other notes.
+
+I also use hashtags to categorize some of my notes for summarization later. A great use case for this was shown to me by my colleague 
+
+Victor
+
+ who uses a 
+
+#highlight
+
+ tag to generate weekly 
+
+brag docs
+
+ for his manager. You could use tagging for specific notes about particular projects (e.g. 
+
+#widgetupgrade
+
+), or links to articles or papers you may want to browse later without saturating your to-do list (e.g. 
+
+#toread
+
+), or making it easy to send out a weekly update to your team with things you've observed.
+
+Aside from tools, I also have a few habits and behaviors that help me to gather information effectively:
+
+When interacting with others about a new or complex topic, I tend to summarize what I've heard back to them in my own words to make sure that I've understood it correctly. For example, "So what you're saying is that we need to do X, Y, and Z in order to achieve A, B, and C?" Not only does this help me to understand the topic better, but it also can highlight where there are misunderstandings or gaps in what is being communicated. I'll then capture this summary in my notes.
+
+I try to fight against a natural reduction in skepticism over time. When you're new to a topic or a team you're more likely to ask questions and challenge assumptions, but over time you can become more complacent. I've learned that not only does a healthy dose of skepticism help to keep you sharp, but it also helps to keep your team sharp too. If you're always asking questions, then your team will be more likely to do the same. You can even ask these questions of yourself in your notes to keep exercising that muscle.
+
+I heavily use LLMs to expand my knowledge of topics as I read about them, and to act as a managerial rubber duck when I'm trying to work through a problem on my own. For example, when reviewing a project proposal or a design document, describing it in my notes helps me to understand it better, and then those notes can be used to have an LLM help me to refine my understanding further by generating questions or challenges to that approach. For example, GPT-4o is very good at reminding me of potential security concerns with ideas. I can then use this to inspire more critique. And don't worry, Shopify provides us with internal LLMs that are safe to use with our data.
+
+Deciding: gathering becomes actionable
+
+The next step in the main activity loop is deciding what to do with the information that has been gathered. Being an effective manager is not just about having a lot of information, but using it to bring about greater change. Fundamentally, this is where you can add a ton of value.
+
+As I write notes in my gathering phase throughout the day, I try to periodically review them to decide what to do with them. For each part of my notes, I ask myself:
+
+Is this purely a note that I've made to help me understand and remember? If so, I can probably leave it where it is.
+
+Is this information part of a larger project or initiative that I have distinct pages for? If so, I move it to that page.
+
+Is this information incomplete in some way, or do I not actually fully understand it? If so, I need to ask more questions or do more research. I'll tag that note with a 
+
+#question
+
+ tag to remind myself to come back to it later. I also have a 
+
+#research
+
+ tag for things that I need to look up and read in more detail.
+
+Is this information something that I need to act on? If so, I'll consider what needs to be done, and then convert it into a 
+
+TODO
+
+ item with a scheduled due date.
+
+That's all fine and well for formulating my own decisions explicitly about what to do next with my own work, but there is also the ability to make implicit decisions that improve the work of others.
+
+How do you do that?
+
+Well, a skill that I've been practicing is trying not to accept any information that I have entirely on face value, and instead see if I can insert myself as a critical thinker that can find improvements. What I mean by this is that I try to ask myself if there are any assumptions in the information that I've gathered that I can challenge, or if there are any questions that I can ask that might lead to a better outcome.
+
+A good rule of thumb to judge your progress in a system like this is by measuring what proportion of your gathering turns into decisions and actions that you then take. If you act on a lot of information that you're gathering, then you'll find that you are tuned into the right things and that you're adding value. 
+
+If you're not acting on much of what you're gathering, then you're probably not gathering the right things, or you're not being critical enough in your decision-making.
+
+Maybe this is best explained by example.
+
+Let's say that I am reading through a project proposal and making notes while I do so. This proposal is for a new feature that we want to build, which is a new widget that will be displayed on our website. It outlines a technical approach that the team wants to take, and the expected impact that it will have on our users.
+
+There are two ways that I could approach this:
+
+I could treat this as purely a gathering exercise, and just note what this team is going to do and what they expect to happen. I could then move on to the next thing.
+
+I could proactively 
+
+engage
+
+ with the proposal, and see it as an opportunity to further my understanding of the project, be more sure that we are making the right decisions, and therefore add value for myself and the team. I could press on alternative design choices, ask for more detail on how this scales during peak traffic load, or I could go back to first principles in order to question anything that I consider to be an assumption.
+
+The second approach is the one that should be aimed for. It's actually something I do with my direct reports: when reviewing project proposals I list out my thinking process and questions in my notes, and try to challenge assumptions where I can. This almost always generates dialogue that leads to a better project outcome.
+
+Even if you aren't making an explicit decision, using your gathering phase as an opportunity to engage with the information, attempting to raise the bar for quality, brevity, and clarity makes you a more effective manager, and quite frankly, just makes work far more 
+
+fun
+
+.
+
+Implicitly, this increase in engagement will lead to better decisions from those that you are interacting with since you know you are holding them accountable to a higher standard.
+
+Executing: getting things done
+
+The final part of the loop is executing on the decisions that you've made. Effectively this breaks down into two parts:
+
+Executing on the decisions and tasks that you've made for 
+
+yourself
+
+.
+
+Ensuring that everything that you are accountable for via 
+
+others
+
+ is making progress.
+
+The first part is fairly simple. If I have a discrete task that I need to do, then I'll have made a 
+
+TODO
+
+ item for it in my notes, and I'll have scheduled it for a specific day. Then it's just a case of working through my to-do list, which is straightforward and doesn't need much explanation.
+
+The second part is more nuanced and less solvable with todos. As a senior manager, there are tons of conversations, decisions, and actions that are in flight at any one time that I need to be aware of. These can't be captured as discrete Boolean tasks.
+
+What I've been doing to ensure that I don't drop the ball here is utilizing the tagging that we covered in the gathering phase. I have a 
+
+#chase
+
+ tag that I use to flag anything that needs to be kept in my working memory on a given day. 
+
+This means that I can then search Logseq for all of the 
+
+#chase
+
+ items that I have, forming a different kind of to-do list that is more about keeping track of the things that I need to follow up on or monitor, rather than the things that I actually need to 
+
+complete
+
+.
+
+Examples of things that end up on my 
+
+#chase
+
+ list are:
+
+Actions that I've asked others to take, such as finding out information, having conversations, or getting consensus.
+
+Reminders to go and check on data each day to see how something in progressing, such as metrics after a new feature ships, or ongoing incidents.
+
+Escalations that we are waiting on a response for, such as a priority decision for another team, or a decision from a stakeholder.
+
+These are all non-Boolean tasks; effectively it's me periodically refreshing my mental cache. The chase list never really gets to zero, and nor should it. It grows and shrinks fairly organically.
+
+By separating out discrete 
+
+TODO
+
+ items from 
+
+#chase
+
+ items, I can aim for inbox zero on my to-dos but I can also keep a continual eye on the more complex and nuanced things that I need to be aware of.
+
+I hope that this article has given you some insight into how I manage my day-to-day work, and how I use the gather-decide-execute loop to keep on top of things. If you run your day differently, I'd love to hear about it in the comments.
+
+If you're more interested in what a senior management role looks like in technology, then my latest book will be of interest to you. 
+
+Become a Great Engineering Leader
+
+ is available as a DRM-free eBook or in print from your favorite online bookstore.
+
+And if you enjoy my writing every month, then a 
+
+paid subscription via Substack
+
+ is a way of supporting me to keep the caffeine flowing.
+
+Until next time, happy note-taking!
+
+The Engineering Manager is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

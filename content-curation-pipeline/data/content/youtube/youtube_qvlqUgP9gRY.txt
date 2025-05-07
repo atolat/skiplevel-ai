@@ -1,0 +1,434 @@
+Hey everyone, my name is Heidi.
+I recruit Product Managers and I am super
+pumped to be chatting today
+with my friend Handika
+Handoko. I'm going to
+let him introduce himself
+because I want you to hear
+his story today. So, Handika
+tell us about where you work, what
+you do and what you're solving for today.
+Thanks very much Heidi
+for considering me and actually taking
+the time to have a chat with me.
+Like Heidi said, Heidi
+and I go quite way back from a professional
+relationship first and then kind of moving on to
+a more personal relationship as
+a friend now. So my name is, Handika.
+I currently work as a Vice
+President of Software Engineering for
+Broadridge Financial solutions - it's a global
+fintech leader. I work
+for a Canadian business unit where
+we cater to Canadian
+independent brokerage. So
+think of the solution that we're doing
+as a brokerage in a box. So
+if you ever in your lifetime want
+to, hey, maybe it's cool to open up a brokerage
+firm, you come to us and we'll set you up with everything
+that you need from front to back
+end. Well, I'm talking
+in tech tech lingo, but I feel
+like from front office to back office
+a from a brokerage operations perspective.
+So that's kind of what my title
+and what I'm doing and where I'm working at.
+Currently, I'm focused on
+things that is
+what everyone else in the space
+is focusing on. Kind of modernizing our tech
+stack while at the same time trying
+to keep lights on, making sure that
+our clients are able to service
+their clients, their investors to
+reach their life goals. So that's
+kind of what we're trying to do in our day to
+day in our work.
+Really mission critical, you know
+enterprise software.
+One of the reasons
+I was so excited to chat with you today
+is because you have a fascinating
+career where,
+you have been a very successful
+product management leader.
+You were in product for
+the majority of your career and
+then you made the decision
+to pivot into engineering
+and so much of what we do in our product
+practice is working
+with Product Managers also working with
+engineering leaders as well.
+And there's such an interesting relationship
+between these two critical
+functions of a software vendor. I'm
+curious what led you to making
+the decision to move out
+of product and into
+an engineering role?
+So for my case, I think
+that's not a very complicated
+answer Heidi. If
+you look at my my career I did start
+as a Developer, I did
+start as a Programmer. So I've got my roots
+in programming and I've always had the
+thinkering for technology. I've always
+kept myself up to date with advancements
+in technologies like advances
+in Blockchain. I'm trying to dabble
+in crypto space, advancements
+in AI. So, those are just
+fascinating things and I think people
+in the product space, they're most
+likely familiar with that venn diagram where as a product
+person you got that intersection
+between knowing the business, knowing the technology
+and knowing the UX - knowing the customer
+experience. right? So it's all so
+intertwined with each other and
+once you're in the product space or the technology
+space - the
+lines do get blurred at some time.
+And so for me I think I have the advantage
+and the benefit of knowing about
+the space, knowing about the technology, knowing
+about the business. So I'm more
+easily adaptable and when
+the opportunity comes and shows up
+which in life it is
+rare opportunity.
+It came I feel like I could do
+a big contribution
+in the department. I could deliver value in
+that. That's why I made the jump back
+to my roots if you will, into
+technology.
+You sort of hinted there a little bit about
+how your career as a Product Manager
+really helps your career
+now as a Vice President of Engineering.
+Maybe expand on that a little bit more. How do you
+find product management skills
+translate into being a more effective
+Vice President of Engineering?
+Yeah absolutely. I think in the product
+management space you're definitely exposed
+more into the business side of things.
+I like to think of all of
+us in the workspace are really working towards
+solving a big puzzle.
+The more different roles that you've
+been in the space, in the organization,
+the better idea of a puzzle
+that you're trying to solve
+My knowledge in product management
+I think really helped me to look
+at things from a business/ revenue/ client
+experience side of things. Like on the
+technology side of things back
+then, like it was, oh, shiny new
+technology, let's go at it, let's
+give it a try, let's do it. And I think
+we still do that, we still experiment,
+we still innovate that way. But in terms
+of
+making it go-to-market,
+that's when I think,
+the things that you learn from product management,
+product marketing really comes into play.
+Like, do we have a competitive
+edge there? What is the value prop we're trying to deliver?
+What is the problem we're trying to solve?
+I think that being
+in product for so long, that's been ingrained
+in me that that's always the things
+that I ask whenever we try to do things
+and also helps with
+technology right now when I hear from
+my people, hey, there's this new technology
+that we want to try this is
+something cool that we want to play
+with. I can associate that with
+what clients have been saying, what the market's been
+saying, what the business needs. And I could more easily
+tie them back, hey, we want to
+achieve this goal for our clients, for our business
+and this is the technology that we think
+can support that or would be the most
+efficient solution to achieve that. So I think
+that's kind of like how I would say
+it has helped me, it helps me complete the picture,
+it helps me to see the bigger picture
+And I could kind of put every little
+pieces if you will, and make
+the perfect solution.
+Very well said, I I love that.
+It gives you the chance to really see that bigger picture,
+which is so critical when you're, when you're a business
+leader as you are now as a Vice President of Engineering.
+A lot is
+said and talked about regarding the relationship
+and what a healthy relationship might look
+like between a product org and an engineering
+org. I think back to some of
+the searches that we've had, where
+our clients will tell us, hey,
+this has largely been an engineering
+led business and we're
+trying to move
+it closer towards being product-led
+or some other stakeholders might
+joke around and say, oh the
+engineers, it's all about them and they're
+building whatever they want.
+That product is trying to
+move that towards
+what the customer wants and what
+what can be monetized.
+How do you define the
+healthy... a healthy relationship
+between engineering and product? What
+does that look like? How might one
+move closer towards healthy relationships?
+I think you gotta start with respect.
+I think each side needs to respect
+what they bring to the table. I know again,
+like going back to that venn diagram, I think everyone
+in this space be, you're more technology
+centric or more product centric, they
+oftentimes they have similar skill sets,
+similar background. So one
+might think that they know more
+than the other. But then
+we've got our own swim
+lanes to be kind of like...
+how to make this happen.
+So, I think that mutual respect
+is really crucial to
+a healthy relationship.
+A firm, a startup
+like you said, may start from an engineering
+centric kind of position because
+that is what
+helped them cement their position
+in the market. They built something
+that solves the problem and then as
+they grow, they do
+need that product management rigor
+if you will, in terms of trying
+to build a project, building that product
+now, not building a project.
+Trying to build something that address
+a larger market, address
+a segment that actually
+you build it once and you serve
+a lot of people or you solve a lot of problems
+multiple times. That's kind of like
+what product is there
+to do in terms of rigor. So I think
+technology and product again, they
+gotta have that mutual respect. They got
+to understand that, yes, the
+guy that's leading technology
+may come from a product background. So
+they may say things about product, but again
+we've got the dedicated product and likewise,
+the product person may come
+from an engineering background and they may think, oh, this
+one's easy, you just do that. Because
+of that, I think that's where things
+get a little bit unhealthy, where you say that
+I could do whatever you are
+doing more easily. So that's where things
+break down I find. So appreciate
+respect and appreciate what each other
+has to say and kind of marching towards
+the same goal. We are all working towards
+solving problems, delivering value,
+making sure that our customers
+or users have a delightful experience.
+I love how
+you summarized what you just said and
+how you phrased it - tell me if I got
+this right - build it once
+and then solve for many people
+over time.
+Yes, exactly
+Beautiful.
+If you think about
+Vice Presidents of Product
+and that persona
+of individual in a software company,
+what might they not understand
+about the role of
+a VP of Engineering
+and
+perhaps the struggle or
+the challenges that you're facing
+that might benefit them to to have some
+visibility into?
+Yeah. So I was
+thinking about that and I think one of the
+challenges I think
+I face is that, in my
+day to day dealings, I deal
+with all of my engineers
+who have aspirations,
+who wants to make sure
+they're not getting obsolete from a tech
+perspective, like in terms of
+what we use and what they want to learn.
+I have to find
+that delicate balance between making
+sure that they're happy, they're growing,
+they're learning what they want. First is meeting
+the business needs, which typically comes
+from product, that we need to build it this way,
+or we need to build in this technology
+kind of thing that helps answer
+whatever client needs. So sometimes
+those demands comes from. Sometimes
+that becomes a point
+of friction between us and saying
+my set of people here. Yes, I know
+they have this technology
+under their belt.
+They know about this but they want to start
+to learn about new things. They want to start to
+learn about new technology. So, I'd like
+to invite you to maybe take
+a risk and let's try this out.
+Then maybe we embrace a little bit of an agile
+methodology where let's give
+it a try, if it doesn't work, let's fail fast and
+and pivot. So I think that's
+the part that maybe...
+not to say that the leaders
+of product are heartless and they don't care about people.
+They do but they just I think they're closer
+to different aspects of the business and that's where
+their interests are but for me, my
+heart and my interest is always with my people
+and making sure that they're as happy as they can,
+so they can unleash their potential. And
+that's where the friction comes, to
+balance, making sure they
+they get what they need vesus
+what we need to deliver to our clients.
+Beautiful.
+Let's end with some advice.
+Let's think about
+the Product Manager in the market today
+or the the product leader
+who at this
+time in the market, there's so much hype
+around getting into product. It feels like everyone's,
+taking courses and classes and workshops
+and they're writing books and everything is
+about getting into product. Yet,
+there's a lot of folks out there who feel
+the pull
+to more of the engineering
+side for different reasons
+and maybe opportunities are
+opening up for them on the engineering side,
+but they're questioning might that be
+the right move for me? What advice
+would you have for someone who's trying
+to kind of weigh those pros and
+cons and think about whether that could be,
+a great career move for them?
+Yeah, based on
+my history. It's a little bit more
+difficult for me to kind of summarize
+what advice would I give to
+people in that situation because my
+background it was easy for me because I was
+pretty much in both walls most
+of the time. But for people
+that are like right now solely in product and they
+want to think about stepping outside.
+I think
+a good advice would be that
+they look themselves in the mirrors and
+look at what they bring right now. What
+is the asset that they have right now?
+I think it's always good to
+inventorise that and making
+sure that you own that and you know what you
+bring to your table. So that when
+you do want to try to embrace
+other stuff, you know that what
+you could lean on and you know how you could
+compensate for what you don't know yet
+and what you're looking to learn with what
+you're good at. So when you
+join a different team or a different
+organization,
+you know that yeah, you're not great in that
+technology side yet, but you're compensating
+with what you bring in the table
+from your past experience.
+So I think that's one advice and the
+other advice is to start
+joining different groups. Like I know
+you and your firm
+created that or help with the Toronto Product
+Management Association, so that's one organization.
+And I'm sure if there's a product
+person with that sort of thought, there's gonna be
+more than,
+that one product person with that sort of some
+sort of thought. So gather
+much, talk to other people
+that are like minded and
+kind of figure out, how are you
+tackling this problem? How are you
+kind of like trying to discover
+yourself? I think that's kind of part of your
+question, right? And I think that
+the last advice I would give is that like in
+the in the past I was interested in consulting,
+but like for me to go into consulting,
+nobody's gonna hire me...
+So I actually try to find
+pro bono opportunity to
+to try out consulting
+and see whether that is something I would want
+to do and maybe get my
+my foot in the door of consulting firms.
+So
+that's what I did to try
+to expose myself, to try
+to learn and discover myself - is that what I want
+to do? And to know more people.
+So to summarize,
+take a look at your adventure of
+assets, join clubs,
+meet ups and whatever groups
+that you have with like minded people
+or maybe venture up to like a purely
+technological group see like
+do you gel with the people?
+It's the dymanics too, right?
+Like if you gel with the people, you've got chemistry,
+a lot of problems, you can solve that.
+And the last thing, try volunteering.
+I know there's a lot of nonprofit that look
+for people with... maybe they need help building a
+website. I know in what we do,
+technology is different, but depending
+on the spectrum of the product person, right? That might
+be where you start.
+Super advice. Thank you so much.
+Always a pleasure, Handika. Always a pleasure
+chatting with you. Thank you so much for the investment
+of your time
+to share your insights with our community
+and thank you. Thank you again.
+Yeah, feeling is mutual Heidi.
+Always great to chat with you.

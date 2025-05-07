@@ -1,0 +1,68 @@
+QFM011: Engineering Leadership Reading List March 2024
+
+Everything that I found interesting last month about engineering leadership
+
+Quantum Fax Machine
+
+In the Quantum Fax Machine's March edition of Engineering Leadership Reading List we go from the basics of conducting effective meetings in Stop Wasting People's Time to the metaphorical discussion of power dynamics within teams in You're always carrying a cannon.
+
+A theme this month is the critical importance of pacing and transparency in startup environments, as underlined in The Most Important Skill in Startup Engineering Leadership, where the balance between team performance and well-being is key to sustaining growth without compromising on quality. This is complemented by a deep dive into the venture studio ecosystem through a series of articles from Focused Chaos, exploring the dynamics, strategies, and economics of venture studios with an emphasis on vertical specialisation and the ideal founder profile for venture studios.
+
+For some controversy, we head over to Here's Why You Should Hand Over Product Prioritization to Engineering Managers, underscoring a pivotal shift towards leveraging frontline technical expertise for strategic innovation and exploring the degree to which the CTO and CPO roles are merging into one another.
+
+Sketchplanations is a wonderful site that explains a broad range of topics through sketches and AI startups requiring new strategies, looks at the distinct challenges and strategic imperatives for startups in the AI revolution.
+
+We finish up this month with a look at some interesting Gallup workplace statistics for 2022 that emphasise the significance of leadership in addressing employee engagement and well-being in modern work environments.
+
+As always, the Quantum Fax Machine Propellor Hat Key will guide your browsing. Enjoy!
+
+See the Slideshare version of the post below:
+
+Stop Wasting People's Time - Tips for Preparing Great Meetings: This article provides a comprehensive guide on organising effective and efficient meetings, emphasising the importance of clear objectives, questioning the necessity of a meeting, crafting a detailed agenda, defining a concise duration, sharing the agenda in advance, inviting only essential participants, and ensuring follow-up on decisions made.
+
+#EffectiveMeetings #MeetingPreparation #TimeManagement #ProductiveMeetings #TeamCollaboration
+
+You're always carrying a cannon: The article metaphorically discusses how managers always carry a "cannon" of power over their reports, emphasising the importance of being aware of this inherent authority and its impact on relationships and trust within a team. It highlights the crucial role of building trust to mitigate the intimidating presence of this power.
+
+#Management #Leadership #TeamBuilding #TrustInTeams #PowerDynamics
+
+The Most Important Skill in Startup Engineering Leadership This article emphasises that pacing is the most crucial skill for leaders in startup engineering environments, essential for balancing team performance without compromising product quality or employee well-being. It advocates for honesty, transparency, and constant measurement to navigate the challenges and pressures of startup growth successfully.
+
+#StartupLeadership #EngineeringExcellence #TeamPacing #LeadershipSkills #StartupGrowth
+
+Here's a series of articles on the economics and business models of venture studios. The articles explore the dynamics, strategies, and economics behind venture studios, highlighting the importance of choosing the right studio and the trend towards vertical specialisation:
+
+How To Pick the Right Venture Studio
+
+The Many Flavors of Venture Studios
+
+The Future of Venture Studios is Vertical
+
+The Ideal Founder Profile for Venture Studios
+
+Understanding Venture Studio Math There is a lot of activity in the studio space right now, much of which seems to come from studios writing about how to set up a studio. 🤷‍♂️
+
+#VentureStudios #StartupEcosystem #Innovation #BusinessStrategy #Entrepreneurship
+
+Here's Why You Should Hand Over Product Prioritization to Engineering Managers: The article advocates for handing over product prioritisation to engineering managers, emphasising the benefits of utilising their frontline experience and product mindset for more efficient technical execution and team velocity. It highlights how this approach allows product managers to focus on strategic vision, optimises bandwidth dynamically, encourages constructive challenge, and promotes a culture of value alignment, leading to substantial growth and success.
+
+#EngineeringLeadership #ProductManagement #TeamVelocity #StrategicInnovation #TechCulture
+
+Sketchplanations: This site explains a variety of interesting concepts through the medium of simple, easy to read and comprehend sketches. Great for 1-page explanations of otherwise complex or obscure topics.
+
+#SketchExplained #OpticalIllusions #PsychologyInsights #LearningThroughArt #CreativeEducation
+
+AI startups require new strategies: This time it's actually different: This article argues that AI startups face unique challenges not seen in previous tech revolutions, necessitating new strategies to succeed against well-funded incumbents with vast data, talent, and innovation capabilities. Unlike before, incumbents are quickly embracing AI, making traditional startup advantages less effective.
+
+#AIStartups #TechInnovation #DataStrategy #StartupChallenges #DisruptionTheory
+
+Essential Gallup Workplace Statistics To Help You Thrive As A Leader In 2022: This article discusses key Gallup workplace statistics for 2022, highlighting the importance of addressing employee burnout, disengagement, and the need for effective leadership in remote and hybrid work environments. It emphasises regular one-on-one meetings, flexible work arrangements, and fostering employee growth to improve engagement and well-being.
+
+#GallupWorkplace2022 #EmployeeEngagement #Leadership #RemoteWork #WorkplaceWellbeing
+
+Regards,
+M@
+
+[ED: If you'd like to sign up for this content as an email, click here to join the mailing list.]
+
+Originally published on quantumfaxmachine.com.

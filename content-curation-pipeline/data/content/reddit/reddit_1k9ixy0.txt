@@ -1,0 +1,40 @@
+# Career Advice for ML Platform Engineer working at mid sized tech
+
+Graduated MS CS from a top 10 CS school in Dec 2023. Job market was rough for international students, and big tech wasn’t hiring, but I was fortunate enough to get a return offer from my internship at a mid-sized company. I was doing ML research and modelling work in a lab before my job but I’m now working in the ML Platform/MLOps team.
+
+Work involves building big data platforms, data drift monitoring, IAC, optimizing CI/CD pipelines, model deployment, Docker, load balancers, async programming, and building semantic search engines.
+Stack: Python, PySpark, AWS, Databricks, Docker, Pulumi, asyncio.
+
+Fully remote, good WLB, $118k base + $50k~$60k RSUs over 4 years with a bulk of it vested towards the end. Grateful to have something stable in this economy. But the compensation doesn’t increase much in the long run in my company compared to big tech and its always been my dream to work at a big tech like google.
+
+A few questions:
+1. ML work here in my company is mostly calling LLM APIs which I find boring. One of the main reasons why I switched to MLOps. If you are an MLE at a big tech how does your work look like? If I pivot, I’d want to focus on Information Retrieval/RecSys.
+2. I enjoy the engineering side more. Should I stay in ML Platform roles or move toward more traditional MLE roles?
+3. How’s ML Platform Engineering for long-term career growth? 
+4. Should I stay a year more and try for SDE 2 equivalent roles at FAANG/big tech? ( I will have 3  YoE by next march including my internships and work experience before masters). Hearing bad things about Meta/Amazon WLB and layoffs. How is the scene at other big tech companies?
+
+Would appreciate any advice! Thank you!
+
+
+## Comments
+
+### Comment 1 by u/Travaches (3 points)
+
+I’d stay for the bulk of RSUs vesting in the later years, but even that can depend on if you can break into FAANG+. For my case I was at 135k base and paper options then got an offer for 190k base and 180k RSUs, so it was a no brainer to switch. I’d still be grinding leetcode and system design now so when the market improves you’re fully ready for the hop.
+
+### Comment 2 by u/Illustrious-Pound266 (2 points)
+
+A lot of AI work is calling LLM endpoints. It's a fundamental part of the work. Very few companies have the talent and resources to build their own pretrained model. So they use LLMs from providers like OpenAI, like how companies aren't building their own cloud. They just use AWS/GCP/Azure.
+
+
+>I enjoy the engineering side more. Should I stay in ML Platform roles or move toward more traditional MLE roles?
+
+
+Then stay in ML platform roles. Moving more towards traditional MLE means having to model, and your interviews will most likely reflect that. Are you willing to go through the competitive interview circuit that tests you on your modeling skills?
+
+
+>How’s ML Platform Engineering for long-term career growth?
+
+
+It's growing but it's a bit niche field. There are way more data engineering or data scientist jobs. If you don't believe me, go look at the numbers on a job board.
+

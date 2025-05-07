@@ -1,0 +1,31 @@
+The Scale-Up Simulator: Some Challenges to Test Your Mettle
+
+Have you ever wondered how the challenges in #EngineeringLeadership especially in scale-ups would be like? Whether you are a Principal Engineer, Engineering Manager, Director or VP, you will end up facing one or more bigger stakeholders who has influence on your work-life. Your technical expertise & experience coupled with your collaboration skills shines in how you engineer the outcomes.
+
+I have posted links to 10 use-cases below that mimics situations my teams & I had to go through.
+
+Scale Challenge 1: Tackling engineering blind spots when logs don't mirror reality >> https://lnkd.in/emgVq_P2
+
+Scale Challenge 2: Abusive ingress traffic eating your bills, productivity and livelihood >> https://lnkd.in/eU-f3p5G
+
+Scale Challenge 3: The API imperative to turbo-charging stock broking platform in its growth >> https://lnkd.in/ei4sG84b
+
+Scale Challenge 4: Data Formats and Communication Protocols Puzzle >> https://lnkd.in/eNrn3QaG
+
+Scale Challenge 5: Inventory Avalanche >> https://lnkd.in/eShDDkPW
+
+Scale Challenge 6: Automating Sales Funnel Analytics To Unlock Opportunities At Scale >> https://lnkd.in/eyGv36Jy
+
+Scale Challenge 7: Cloud Migration At Scale >> https://lnkd.in/eTpw-xQ9
+
+Scale Challenge 8: The Productivity Paradox To Building A Tech Company >> https://lnkd.in/eikC_Mwf
+
+Scale Challenge 9: The Phantom API >> https://lnkd.in/eKtytyar
+
+Scale Challenge 10: Unshackling the SQL Server DB Bottleneck >> https://lnkd.in/eTR7rYr3
+
+These problem statements are neither vague open-ended questions, nor are they straightforward questions. They are open-questions with bounded context set to test structure and flow of thoughts based on the subject's expertise and experience. This is achieved by reducing the noise & dimensions of various real-world problems while retaining some. These use-cases showcase that often the problem statement is not provided is one piece or with set priority order; and that it is a puzzle in itself.
+
+So if you are an experienced engineering leader, give it a shot to give your brain muscles some exercise. Once you think you have your solved the problem well enough with your approach, do share it with your peer or confidant, to get his take on it. I bet you will experience enlightenment.
+
+We are all different based on our experiences & expertise (both of which matter). May you have your aha moment from this & embrace this method in your hiring too (like I have been doing it for the past decade) to look out for what matters and make hiring a mutually enjoyable experience than a mundane and exhaustive one.

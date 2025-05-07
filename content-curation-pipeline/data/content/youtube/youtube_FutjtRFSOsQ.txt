@@ -1,0 +1,291 @@
+what's up everyone my name is Cody Engel
+I am a staff software engineer and today
+I just want to talk briefly about
+software engineer levels what they mean
+to me and kind of give like some hopeful
+hopefully some tips on how to progress
+throughout the the engineering levels so
+with that let's just go ahead let's get
+started we're going to talk about five
+different levels today depending on what
+company you worked for you may have one
+you may have 37 generally I found you
+can kind of break them down into about
+five though and so that would be a
+junior engineer mid-level engineer
+senior engineer
+Steff software engineer and then
+principal software engineer so let's
+start the first one so a junior engineer
+what are you doing
+junior engineers usually they are right
+out of either college or a boot camp or
+they've been self-taught and they're
+looking for their first real full-time
+opportunity so generally they're coming
+in with some foundational knowledge they
+know you know how to write code so
+whether that be JavaScript Colin Python
+Ruby all of those they they generally
+know at least one if you if you give
+them a like general problem like hey how
+do you reverse an array of integers
+generally they can they can solve that
+problem with their software language of
+choice so that's sort of like where
+they're at and that in terms of for me
+like the the work that I would generally
+be giving them is smaller pieces of work
+it's usually saying hey here's how this
+feature currently works can you go and
+implement this new thing or it may be
+like I'm working on some feature and
+then I'm just asking them hey I just
+need need to work with you on this a
+little bit and have them work on smaller
+tasks where they aren't necessarily as
+critical to the feature but they still
+need to be done
+or it may even be like things like bugs
+so just just being able to identify hey
+here's a problem here's roughly what I
+think is causing the bug can you go and
+fix that so that's generally a junior
+engineer people usually stay in the role
+for I've seen like between like one in
+three years it seems like a fair average
+for what I've seen anyway
+and then when you start moving from a
+junior engineer into a mid-level
+engineer this is where you're starting
+to work on more feature work kind of by
+yourself I'm able to say take a user
+story where it might be a user user
+should be able to type into a form and
+then click Save or something like that
+generally can give a mid-level engineer
+that work and say alright go off and
+build it out with a junior engineer I'm
+I'm usually expecting a good amount of
+questions with a mid-level engineer just
+because you are usually throwing them
+off into the deep end at times
+again expect questions from them as well
+usually a little bit more thought-out
+questions they've tried to solve the
+problem themselves whereas a junior
+engineer may come to you for every
+little thing
+mid-level engineer is going to come to
+you a bit less often and yeah usually
+you can just trust them to get smaller
+pieces of work done by themselves and
+that those smaller pieces of work are
+usually the tangible things like it's
+not a piece of a user story it's
+generally a entire user story that
+they're getting getting done by
+themselves going from mid-level to
+senior engineer this is sort of where
+it's it can take a bit of time so you
+may have someone that will go from
+mid-level to senior in a couple of years
+they may go from mid-level to senior and
+more than that and what I've noticed is
+it's generally kind of how much autonomy
+someone is comfortable with and then
+also how good are they at applying the
+software engineering practices that they
+have been learning in too new
+spaces and so a senior engineer what I'm
+generally expecting out of that is they
+can work on instead of giving them one
+user story I could give them a epic so
+like hey this is a entirely new feature
+that we are going to be building out
+just need need you to work on it and I
+can trust that they're going to be able
+to kind of rationalize well what
+technology should I use what are the
+pros and cons the trade-offs of that
+they should be able to sort of identify
+given the team who might be another good
+person to help help them work on that
+they should be able to understand how to
+mentor people although it's not
+necessarily I won't say it is completely
+required out of a senior engineer what I
+would think of is in that same realm of
+they should be able to make whatever
+team you have that that team should be
+able to work faster and more effectively
+with this with the senior engineer on
+the team and so if the senior engineer
+isn't looking to mentor another area
+that works out really great is just
+being able to identify a common problem
+that we're going to have to solve again
+and again and again and writing some
+piece of software that makes that faster
+and so one example of that might be
+saying like hey you know we have to
+create retrieve update and delete data
+all the time and mid-level or junior
+engineer would be alright whatever get
+get the code done ship it a senior
+engineer will take a step back and say
+okay we should build out something a
+little bit more reusable something with
+like some sort of a pattern there and be
+able to deliver on that now another
+example would be lets say that you are
+doing more front-end work and I'll use
+Android as an example the animation
+system and Android is pretty friendís I
+usually have to do a good amount of
+your own code just to get anything to
+animate and so another thing listen your
+engine you might look at it's like hey
+that's not great we're gonna want to
+have animations they'll make our app
+look nice or users will enjoy it more
+and so they may just build out some
+framework that makes the animations
+easier for someone who may not be as
+inclined to learn all the intricacies of
+animations so senior engineer they are
+helping their team work much faster
+they're more autonomous all of them
+alright so that brings us to Steph
+software engineers so this is where like
+the size of a company I think starts to
+have have some play into it because
+smaller companies generally ones with
+like pride engineering team of like 50
+or less they're probably not gonna have
+stopped Steph software engineers they
+might but what I've noticed is usually
+you need a bit more of a larger
+engineering team to get those and a
+staff software engineer generally what
+they're working on are like entire
+project or like entire apps entire
+product lines so for myself and my
+company I manage currently like two
+technical products or I'm I'm sort of
+the one that's responsible for if
+something breaks or something isn't
+going well like it's kind of me to blame
+and so with that we have a CRM
+application and a real-time chat
+application and then we have a third one
+that is currently in the like ideation
+stage so I'll be working on a third one
+sometime soon and so while my day-to-day
+I'm still like writing code and all of
+that I'm doing other things so I'm
+understanding who-who do I need to talk
+to on the other teams to get work done
+I'm understanding the larger engineering
+problems of the organization so I work
+on our experiences team we're just
+the team apps and with that like I don't
+have to worry about anything non-mobile
+related but in order to understand all
+the other problems going on I get myself
+clued in with like our data science team
+or security team our general web product
+teams just so I know what problems are
+we facing what things might be easier to
+do what things might be harder to do if
+there are questions like hey I need to
+do this specific thing who should I talk
+to I have a good idea of like who you'd
+want to talk to you to get problem
+solved and then likewise like if
+someone's asking questions like I'm
+trying to elevate the rest of the team
+so I'm usually like oh hey this person
+on you know my team they are an expert
+in X Y & Z you should talk with them so
+I'm trying to help elevate the rest of
+my team and to try and build you know
+cross team cohesion and what else
+other things like soft skill stuff so
+I'm working a lot more with like getting
+diversity equity inclusion more with our
+company trying to improve just like the
+general everything of our engineering
+culture so yeah with a staff software
+engineer you're working on much larger
+problems those larger problems aren't
+always going to be there for a smaller
+company so that's why generally you need
+a bit larger of a company to start
+getting into that realm so that was a
+little rambling hopefully I explained
+what staff software engineers do if I
+didn't let me know in the comments below
+I'd be more than happy to kind of share
+my general experiences thus far it's
+still a bit fresh to me so I might have
+more perspective on it than than other
+areas and so just one talk about the
+last one now so principle engineers what
+did they do well principal engineer is
+going to be similar to like a staff
+software engineer they are working on
+larger problems except these problems
+are generally going to be you know
+company-wide
+they're looking at what are we doing
+today that might get a suit tomorrow
+what sorts of things are not going well
+what sorts of things doing at a market
+it's re as profitable as we could be
+are there product lines that we could
+start working on that would make our
+company more relevant in the next five
+years so with a smaller company what I
+generally equate a principal engineer to
+would be a CTO so they are very much
+like still writing code in like that
+small company setting but they're
+working very closely with the other
+leadership roles that that may be there
+they're understanding what product they
+need to build why they need to build it
+they're going off hiring engineers
+getting the right people on board and
+all of them so this is why with
+principal engineers who generally need a
+much larger company to sustain them
+because they are effectively many CTOs
+in their own and their own problem sets
+so not really a whole lot to give in
+terms of that yeah generally like you're
+you're starting to solve less and less
+day-to-day coding problems and more
+larger things and so the way that I
+would quit is really like look at what a
+CTO does at a small company or even like
+say a large company and that's
+effectively what a principal engineer
+would be doing except for a like general
+like just one engineering organization
+so hope this video is helpful if you
+enjoyed it be sure to give it a thumbs
+up if you didn't enjoy it if there was
+stuff that I missed or I didn't go into
+as in-depth as you had hoped just leave
+a comment let me know I'd love to make
+another follow-up video I'm talking
+through the parts that I may have missed
+or left out that you were hoping to see
+otherwise just you know subscribe if you
+want more videos like this hit the
+notification bell if you want to know
+when I upload new videos
+and otherwise thank you so much for
+watching and I'll catch you in the next
+one

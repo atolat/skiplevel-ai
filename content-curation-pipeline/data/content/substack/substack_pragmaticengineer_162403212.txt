@@ -1,0 +1,288 @@
+[This is a paid article - preview only]
+
+This content requires a subscription to read in full.
+Below is the preview content available without a subscription.
+
+---
+
+Today, we are deep diving into the sci-fi-sounding topic of robots that look like human beings. It’s one of the hottest areas in tech, but how are these futuristic-looking devices built, and what does the software look like that powers humanoid robots?
+
+For the second part of our deepdive into the cutting-edge field of robotics, we’re joined once more by 
+
+Sandor Felber
+
+, recently a Robot Learning Researcher at MIT, who also led a team that built a self-driving race car, has interned in robotics at Tesla in California, and was a robotics R&D engineer at the leading Edinburgh Center of Robotics. For an introduction to robotics, check out 
+
+Robotics for software engineers
+
+ with Sandor, including an overview of today’s robotics industry, how projects get done, and more.
+
+Today’s article also includes code examples. We cover:
+
+Why the humanoid form? 
+
+Human-like robots are versatile, can perform hazardous, repetitive tasks, leverage human biomechanics research, and more
+
+Hardware challenges. 
+
+There are plenty of electrical engineering and mechanical challenges, including an underrated but hard-to-solve one: overheating
+
+Software engineering challenges. 
+
+Balance control, state estimation, and real-time control are the biggest ones
+
+Show me the code! Real-time robotics optimization. 
+
+To see what writing software for robots is like, we solve an optimization problem to control a robot. Baseline requirements for writing robotics code include an understanding of math and optimization algorithms
+
+Real-world optimization techniques. 
+
+The importance of initial conditions, Stochastic Gradient Descent (SGD) and smarter gradient descent with momentum-based optimizers
+
+How AI is changing robotic optimization. 
+
+AI that optimizes AI, reinforcement learning (RL), behavior cloning (BC), diffusion models, and evolutionary strategies
+
+This is a guest post. If you’re interested in writing a deepdive for The Pragmatic Engineer – collaborating with Gergely on it – 
+
+check here for more details
+
+.
+
+With that, it’s over to Sandor. 
+
+You can follow Sandor 
+
+on LinkedIn
+
+, and learn more about his work 
+
+on his website
+
+.
+
+1. Why the humanoid form?
+
+Sandor with Tesla’s Optimus prototype, in one of Tesla’s Boston showrooms
+
+Humanoid robots are designed to emulate human form and function, and are one of the mostoptimal form factors for a generalist physical embodiment, offering significant advantages equally for purpose-built spaces for humans and unstructured environments. Key benefits include:
+
+Seamless integration into human environments. 
+
+Humanoid robots can navigate spaces designed for humans like doorways, stairs, and cluttered rooms, without requiring modifications to existing infrastructure. Their human-like dimensions and mobility enable them to operate effectively in homes, offices, and public spaces.
+
+Performing hazardous, repetitive tasks. 
+
+Humanoid robots can complete tasks that are dangerous or monotonous for humans, enhancing safety and efficiency. In industrial settings, humanoid robots can handle hazardous materials and operate in unsafe environments, reducing risks to human workers.
+
+Leveraging human biomechanics research. 
+
+Extensive studies in human movement, particularly rehabilitation robotics, provide insights into efficient, natural gait patterns. This enables the development of humanoid robot control systems capable of replicating human locomotion, improving adaptability, and acceptance in human environments.
+
+Enhanced human-robot interaction. 
+
+Anthropomorphic design fosters intuitive interactions with humans. Their familiar appearance and movement patterns make them suitable for roles in customer service, healthcare, and education, where intuitive, natural human-robot interaction is crucial.
+
+Versatility. 
+
+Humanoid robots' ability to perform a range of tasks from domestic chores to complex industrial operations makes them versatile tools in many sectors. Their design allows them to adapt to different roles without specialized equipment, providing cost-effective solutions for complex tasks.
+
+The humanoid form factor offers significant advantages in integrating robots into human environments, performing hazardous and repetitive tasks, leveraging human biomechanics research, enhancing human-robot interaction, and providing versatility across various applications. These benefits make humanoid robots a promising route to bring automation into daily life.
+
+There may not be a rival to the humanoid shape in the race for the most 
+
+generalizable
+
+ robotic form factor. The article 
+
+Humanoid Robots: Dollars and GPTs
+
+ by roboticist Benjie Holson explains why so many humanoid robot startups are popping up nowadays and evaluates some economic considerations behind them.
+
+Below are some of the most well-known humanoid robots today.
+
+Source: 
+
+Infographics Site
+
+The robots in the image above, in order:
+
+First row (L-R): Electric Atlas (made by Boston Dynamics), Digit (Agility Robotics), Phoenix (Sanctuary AI), Figure-O2 (Figure), Optimus Gen2 (Tesla), Apollo (Apptronik)
+
+Second row (L-R): G1 (Unitree), GR-1 (Fourier Intelligence), MenteeBot (Mentee Robotics), CyberOne (Xiaomi), 4NE-1 (NEURA Robotics) and NEO (1X Technologies).
+
+It’s interesting to see the progress made in recent years: in 2021, some of the most advanced humanoid robots were these:
+
+Source: 
+
+Current Robotics Report, 2021
+
+ by Grzegorz Ficht & Sven Behnke
+
+These robots, in order:
+
+First row: ASIMO (Honda), Hydraulic Atlas and Atlas-Unplugged (Boston Dynamics) Digit (Agility Robotics), HRP-5P (National Institute of Advanced Industrial Science and Technology in Japan), Hydra: (Italian Institute of Technology)
+
+Second row: Kengoro: (University of Tokyo), NimbRo-OP2X (University of Bonn, Germany), TALOS (PAL Robotics), Toro (German Aerospace Center), Valkyrie (NASA Johnson Space Center), WALK-MAN (Italian Institute of Technology and University of Pisa)
+
+2. Hardware challenges
+
+The human form factor presents plenty of challenges for anyone aiming to build a robot with this form factor, which I’ve encountered personally. Stability in humanoid robots isn’t just about software control, it starts with hardware design. Several factors impact a robot’s ability to maintain balance and recover efficiently from disturbances:
+
+Actuators and joint compliance:
+
+ high-performance actuators (the robot’s “muscles”) need to be precise and responsive enough to adjust posture in real time. Stability is directly affected by the bandwidth of the actuators’ control system – how quickly they can react to control inputs. If actuation systems are poorly designed, for example their control system is too slow to react, or simply lack the power to provide a counterbalance to a disturbance, then recovery behavior can be delayed, which makes falls and damage more likely.
+
+Foot design
+
+: this can matter a lot just like with humans. Multi-contact points like toes, heels, and larger surface edges allow for more nuanced balance adjustments.
+
+Some robots use soft (rubberized), or adaptive soles to increase grip and prevent slippage, especially on low-friction surfaces. For example, check out this video – with the audio turned up – of 
+
+the Unitree H1 moving
+
+ while operated by its factory controller. Then compare it with the 
+
+Unitree G1 moving
+
+:
+
+Unitree G1 has a wider foot and an extra actuator in the ankle for smoother movement. Source: Unitree
+
+Weight distribution and center of mass (CoM): 
+
+a lower center of mass makes the robot more stable, while a well-balanced limb mass distribution ensures that extended movements don’t destabilize the system. Some robotic control systems integrate active mass shifting (moving other limbs around, or for certain animaloids, their tail) to dynamically adjust centers of mass, improving their ability to recover from sudden external disturbances, or to help increase payload.
+
+Sensors and feedback systems: 
+
+these are essential for real-time balance adjustments. Inertial measurement units (IMUs) detect tilting and help estimate the correction required to return to a balanced state upon a distrurbance is applied to the system. Force and torque sensors, like those in feet and ankles, provide ground reaction-force data, which enables precise corrections. One technological game of poker currently being played by humanoid robot designers, is how precise actuation systems need to be, since different sensing and sensorless technologies have differing reliability and robustness tradeoffs (this 
+
+presentation by MIT Professor Sangbae Kim
+
+ showcases some key developments in the space).
+
+If running in a lab environment, you can use high-speed cameras and depth sensors, which allow for anticipatory balance corrections and help a robot to adjust before instability becomes an issue. I have used a high-speed camera system and it works quite well, so long as not too many cameras' lines of sight are obstructed, with a minimum of 3-4 cameras retaining direct sight.
+
+Electrical engineering challenges
+
+How you deliver power and store energy impacts the robot’s stability. From an electrical engineering perspective, humanoid robots are similar to the highest performance race cars and spacecraft: size, weight, reliability, and serviceability are strongly competing constraints in every single engineering design decision.
+
+If actuators don’t get enough power when needed, a robot can fail to execute critical maneuvers that restore the stability of the system. For example, an important consideration in the battery design of a humanoid robot is being able to support the peak load of all electrical components at the same time for the heaviest task in a workflow. Below is an overview of an example hardware configuration:
+
+NimbRo-OP Humanoid Robot Platform. Note the batteries in the torso, and actuators in the legs and arms. Source: 
+
+Workshop on Humanoid Soccer Robots
+
+Another example showcasing the similarity of the basic electrical architecture in electrically-actuated humanoids, is MIT’s robot, which shows the electrical specifications and capabilities of an example humanoid actuated by 18 motors:
+
+MIT Humanoid Robot Platform
+
+ and its electrical specifications, 
+
+as presented at Stanford
+
+Capacitor banks or high-discharge batteries provide quick bursts of electrical power for sudden corrections, preventing balance loss. As a fun fact, remote-controlled race cars 
+
+make good use
+
+ of capacitor banks for balance and to deliver extra power:
+
+RC race car with an extra capacitor bank. Humanoid robots can use this power supply technology to tackle short transients in power demand and exceed peak discharge of undersized onboard batteries. Source: 
+
+RC Tech Forums
+
+Mechanical engineering challenges
+
+Mechanical damping and 
+
+shock absorption
+
+ improve a robot’s robustness by mitigating impact forces. Passive spring-damping mechanisms help smooth out steps and recover from sudden force shifts, reducing the need for excessive active control.
+
+Using a passive spring with a robot leg. Source: 
+
+3D-SLIP model, Nature
+
+Some robots, such as 
+
+1X’s Neo
+
+, use bio-inspired tendon-driven systems that mimic human muscle elasticity, leading to more-compliant, inherently safer movements due to decreased inertia.
+
+The 1X Neo robot uses bio-inspired tendon-driven systems. There’s a lot of mechanical engineering under the hood. Source: 
+
+1X
+
+Good hardware minimizes the burden on software. A robot with strong passive stability needs fewer active corrections, making the entire system inherently more efficient and reliable in real-world conditions.
+
+Material fatigue is another challenge. 
+
+Humanoid robots operate under constant mechanical stresses like walking, lifting, balancing, and recovering from falls. Every movement introduces cyclic loading, leading to material fatigue over time. This isn't hypothetical; real-world failures happen. 
+
+Nolan
+
+ recently tested a throwing motion on a quadruped, where the 
+
+arm snapped, mid-throw
+
+.
+
+Quadruped robot throwing a ball in the real world (top) and in IsaacSim (bottom). Source: 
+
+Improbable AI Lab & MIT
+
+Unlike industrial robots with predictable, repetitive movements, mobile robots like quadrupeds experience a far more chaotic range of forces, making durability harder to engineer.
+
+Critical components need to survive millions of cycles without excessive wear. 
+
+Critical components include joints, actuators, and other load-bearing structures. Minor deformations in high-stress areas like knee joints accumulate and degrade performance over time, before outright mechanical failure occurs. Engineers tackle this with high-strength alloys, custom carbon fiber molds, and bio-inspired composites, along with predictive maintenance and stress-optimized designs. The trade-off is that more durable materials can be hard to source and often add weight or cost.
+
+Overheating: a limiting hardware challenge
+
+Heating constraints define humanoid robots’ performance boundaries. The most sophisticated control algorithms are worthless if your humanoid robot thermally throttles, or worse, falls to the ground during critical operations.
+
+ 
+
+The power output and torque of electric motors are thermally limited. This is not some minor engineering detail; it’s one of the biggest constraints any humanoid robot needs to operate within.
+
+For example, a robot performing repeated walking or stair climbing tasks will see motor temperatures rise quickly, often leading to:
+
+Reduced motor efficiency at higher temperatures (heating weakens magnets)
+
+Thermal throttling on the low-level high-bandwidth controller that can unpredictably change the humanoid’s perceived behavior to the high-level controller
+
+Potential system shutdowns if thermal limits are exceeded
+
+Battery packs face similar challenges. The electric vehicle (EV) industry has made significant progress here, but humanoid robots have much tighter space constraints for thermal management systems than electric cars do.
+
+Many robotics control software developers are implementing temperature-aware planning in their control stacks. This means running code that looks something like this at a very fundamental level:
+
+However, redistributing load to cooler actuators can create complex, inconsistent behavior. For example, a robot might gracefully climb stairs when its actuators are cool, but struggle with this task after 20 minutes of running up and down steps.
+
+Predicting heat buildup can be a more sophisticated approach if the thermals are well understood. There is some similarity in this approach to how cloud systems use predictive autoscaling, rather than waiting for servers to become overloaded, then trying to scale up when it’s too late.
+
+Simulating thermal effects is a challenge
+
+. 
+
+Here's what many robotics papers don’t tell you :although there are some physics informed models and tools out there, many simulation environments do virtually nothing to model thermal effects accurately. Instead, these are measured and captured in other parameters, such as power limits. Teams can spend months on perfecting kinematic and dynamic models, while being pretty ignorant about how heat affects real-world performance.
+
+Material choices create further complications. Aluminum components conduct heat well, but composite materials which are increasingly used to reduce weight, often have poor thermal properties, creating hotspots that can be hard to model and predict in simulations.
+
+Meanwhile, the efficiency of a wheel means that humanoid robots without wheels can have elevated cooling requirements compared to wheeled counterparts on clean, flat factory floors, when carrying elevated payloads. Heating is one of the most tricky parts of humanoid robot design, but there are several promising developments:
+
+Novel actuator designs with integrated cooling
+
+Temperature-aware motion planning at the core of control systems
+
+Materials innovation for better passive heat dissipation
+
+However, until there’s a major breakthrough, heat remains a limitation in humanoid robotics, as it also is in many electrical appliances, from CPUs to race cars. 
+
+This
+
+ is the engineering challenge that marketing departments of high-performance engineering teams don't tend to talk as much about, but which mechanical, aerodynamics, and thermal design engineers obsess over.
+
+3. Software challenges
+
+Hardware is the foundation for stability, but without the right software, even the best-designed humanoid robot will struggle to stay upright. Stability in software comes down to how well a system can predict, react to, and recover from disturbances in real time. The biggest challenges related to software are these:

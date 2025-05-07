@@ -9,7 +9,7 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
-def clean_data(clean_pdfs=True, clean_texts=True, clean_cache=True, clean_medium=True):
+def clean_data(clean_pdfs=True, clean_texts=True, clean_cache=True, clean_medium=True, clean_substack=True, clean_youtube=True):
     """
     Clean data directories by removing files
     
@@ -18,12 +18,14 @@ def clean_data(clean_pdfs=True, clean_texts=True, clean_cache=True, clean_medium
         clean_texts: Whether to clean the texts directory
         clean_cache: Whether to clean the cache directory
         clean_medium: Whether to clean the Medium texts directory
+        clean_substack: Whether to clean the Substack texts directory
+        clean_youtube: Whether to clean the YouTube texts directory
     
     Returns:
         dict: Count of files removed from each directory
     """
     base_dir = Path("./data")
-    results = {'pdfs': 0, 'texts': 0, 'cache': 0, 'medium': 0}
+    results = {'pdfs': 0, 'texts': 0, 'cache': 0, 'medium': 0, 'substack': 0, 'youtube': 0}
     
     if clean_pdfs:
         pdf_dir = base_dir / "pdfs"
@@ -58,6 +60,28 @@ def clean_data(clean_pdfs=True, clean_texts=True, clean_cache=True, clean_medium
             results['medium'] = file_count
             logger.info(f"Removed {file_count} Medium files from {medium_dir}")
     
+    # Handle Substack files specifically
+    if clean_substack:
+        substack_dir = base_dir / "texts" / "substack"
+        if substack_dir.exists():
+            file_count = len(list(substack_dir.glob("*")))
+            for file_path in substack_dir.glob("*"):
+                if file_path.is_file():
+                    file_path.unlink()
+            results['substack'] = file_count
+            logger.info(f"Removed {file_count} Substack files from {substack_dir}")
+    
+    # Handle YouTube files specifically
+    if clean_youtube:
+        youtube_dir = base_dir / "texts" / "youtube"
+        if youtube_dir.exists():
+            file_count = len(list(youtube_dir.glob("*")))
+            for file_path in youtube_dir.glob("*"):
+                if file_path.is_file():
+                    file_path.unlink()
+            results['youtube'] = file_count
+            logger.info(f"Removed {file_count} YouTube files from {youtube_dir}")
+    
     if clean_cache:
         cache_dir = base_dir / "cache"
         if cache_dir.exists():
@@ -68,11 +92,26 @@ def clean_data(clean_pdfs=True, clean_texts=True, clean_cache=True, clean_medium
                     file_path.unlink()
                     file_count += 1
             
-            # Also clean Medium discovery cache specifically
-            medium_cache_dir = cache_dir / "medium_discovery"
-            if medium_cache_dir.exists() and medium_cache_dir.is_dir():
-                shutil.rmtree(medium_cache_dir)
-                logger.info(f"Removed Medium discovery cache directory")
+            # Clean specific cache directories
+            directories_to_clean = []
+            
+            # Medium discovery cache
+            if clean_medium:
+                directories_to_clean.append("medium_discovery")
+            
+            # Substack cache
+            if clean_substack:
+                directories_to_clean.append("substack")
+            
+            # YouTube cache
+            if clean_youtube:
+                directories_to_clean.append("youtube")
+            
+            for dir_name in directories_to_clean:
+                specific_cache_dir = cache_dir / dir_name
+                if specific_cache_dir.exists() and specific_cache_dir.is_dir():
+                    shutil.rmtree(specific_cache_dir)
+                    logger.info(f"Removed {dir_name} cache directory")
             
             results['cache'] = file_count
             logger.info(f"Removed {file_count} files from cache directories")

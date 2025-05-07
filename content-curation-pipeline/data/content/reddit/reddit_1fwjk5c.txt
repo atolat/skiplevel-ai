@@ -1,0 +1,386 @@
+# I wrote an AI assisted software engineer in C#. I don't think people are taking the evolution of problem-solving very seriously.
+
+A while ago, I experimented with creating an AI-assisted software engineer similar in concept to Devin AI but focused on extensible agentic actions. Part of the reason it's different is because it's perfectly positioned to write software with traditional business logic and architecture (written in C# and able to produce C# (and other languages), and interact with your computer and search the web, scan emails, etc), and highly extensible.
+
+I'm very proud of the work (even though it's fairly simple behind the scenes, partly by design), but it's a great working starting point for more advanced agentic behavior (naive Chain of Thought, for example), and it can even write its own plugins or adapters.
+
+Some Thoughts
+
+* I see software engineers basically going away, the same way that human computers did (see Hidden Figures). The nature of software development work may shift towards more multidisciplinary roles, combining programming with domain expertise in fields like law, medicine, or scientific research.
+* There could be an increased focus on problem-solving and managing AI systems rather than writing code directly.
+* Productivity expectations may increase significantly, with developers potentially expected to output 20-30x (or pick an arbitrary factor) current productivity and deliver higher quality work.
+
+Potential Future Scenarios
+
+* Software Development could become more multidisciplinary. For example, working for a law firm to help extract and analyze thousands of legal cases.
+* We might need to create software that can analyze genetic code and augment researchers in fields like cancer research.
+* Some developers might become highly technical project managers, leveraging their understanding of complexity and common software pitfalls.
+
+Challenges and Considerations
+
+* The potential need for additional credentials or specialized knowledge to work in emerging fields (e.g., AI in medical research).
+* The possibility that traditional software engineering roles might evolve or decrease in demand.
+* The uncertainty of how these changes will impact our careers and the job market.
+
+So, when you go look for work as an an (AI) Research Accelerator, to accelerate research in Neuroscience, the job won't exist, and breaking in might require a PhD in Neuroscience, or you might need a medical degree to perform medical research. That type of credentialing is a big barrier, so most likely we'll eventually accept micro accreditations from Coursera (because what self-directed Software Developer wants to go through medical school at 30 or 40, or law school at 50 for something they can learn on their own?)
+
+In any case. I'm not sure if I like this uncertainty, and I'm not sure how real this scenario is, but it seems like AI is already having an impact, and while my project isn't Skynet by any means, I don't like giving away an edge (not much since LLMs are expensive for agentic work), but I also feels like a good way to promote my software dev skills.
+
+I'm sure people are still writing boilerplate code for boring business logic, and others are still solving big scalability, deployment, search, and security problems and extreme edge cases, but at some point if you don't leverage these tools, your manager, and your colleagues might treat you like you are using assembly to center a div. You'll need to move on to much bigger problems, which, will quickly be solvable by AI as soon as you teach them how via training (assuming they don't already have a solution).
+
+I don't think I'm being alarmist. I think the no free lunch theorem might apply, and there will always be bigger problems to solve, but I think that the kinds of things we do and how we do them is going to change extremely fast assuming we have enough energy and compute, not just for software developers but for everyone else, and the current software developer market cooling is not just a cyclical event but rather a shift driven by accelerating change.
+
+More Questions
+
+* What do you think? I'm not privy to the changing culture or initiatives of the FAANGs and similar "Big Tech",, but Intuit allegedly released an GenAI OS, Apple is moving very fast toward AI integration, Microsoft has been subsidizing(?) OpenAI in exchange for LLMs as a service and has integrated it into search.
+* What opportunities do you see? Do you think there will enough problems and edge cases to be solved for some time, or is the scalability (and now self-improvement) causing a runaway effect?
+* Are experienced software devs going to have an advantage in the market or will everyone need to fully adapt and do something completely different in the next 2-3 years?
+
+EDIT: Removed some questions that sounded like self-promotion.
+
+EDIT 2: To those of you who upvoted "source: AI generated", aren't you implicitly acknowledging that AI can write text indistinguishable from a human? If so, did you think this was even possible 5 years ago in 2019? Now extrapolate 5 years from now to 2029 but with software engineering.
+
+## Comments
+
+### Comment 1 by u/cleanSlatex001 (31 points)
+
+I have seen humanoid robots in the news since 20 years ago. Why can't anyone produce a robot that can do daily chores like cooking, cleaning home, doing dishes, laundry, clean car, water my plants ? 
+
+Now there could be some solutions with time and cost constraints, but nothing has fully replaced a human yet .
+
+I do ack that custom robots do some tasks better than humans - Boston dynamics, Amazon wearhouse bots etc.
+
+Remember, in my country, counting 100 matchsticks and boxing them into a tiny 'match box' was a full time job. Maybe jobs like 'mouse jiggling', ' real time monitoring " a service may be replaced , but vast majority needs human input.
+
+Similarly I see AI has great potential, but needs human intelligence.
+
+#### Reply 1 by u/[deleted] (1 points)
+
+Good points but just want to say: Robots are a much harder challenge. Three dimensions, safety, small spaces. Listen to the boston dynamics guy on lex fridman.
+
+#### Reply 2 by u/pogogram (1 points)
+
+Simple. Explain how you would explain a recipe to a robot and then have it translate that recipe into a finished dish. Assume you have to explain literally every step. So you can’t say boil 2 cups of water. You have to explain turning on the stove by explaining the height of the knobs. How much they turn and what amount of turn will result in an appropriate heat level. Also explain how to actually turn the knob. Is there a safety mechanism that requires you push it in first before you turn? Does the pilot light work to light the stove if it’s gas based? If it an induction stove that requires the pot to be on it before heat gets transferred?
+
+Notice all those difficult things are around literally boiling water, which is effectively the easiest step. Things like these are why we don’t have robots to do chores. Humans do an incredible amount of complex tasks all the time and we rarely think about the amount of orchestration and spatial reasoning they all require.
+
+#### Reply 3 by u/SemaphoreBingo (2 points)
+
+> Why can't anyone produce a robot that can do daily chores like cooking, cleaning home, doing dishes, laundry, clean car, water my plants ?
+
+I've got a robot that does dishes, it's called a "dishwasher".
+
+#### Reply 4 by u/ipassthebutteromg (-12 points)
+
+"Why can't anyone produce a robot that can do daily chores like cooking, cleaning home, doing dishes, laundry, clean car, water my plants ?"
+
+Have you seen Figure AI? It's close to some of those. That kind of stuff wasn't even doable in a general way a couple of years ago. It doesn't even do these things by being explicitly programmed, but via training.
+
+If it can wash dishes, (and the plants are nearby), it can water your plants using the same type of training.
+
+### Comment 2 by u/lab-gone-wrong (77 points)
+
+source: trust me bro
+
+#### Reply 1 by u/ipassthebutteromg (-36 points)
+
+I guess. I know it's an uncomfortable topic. I might be way off, but I thought it was worth discussing here in a technical way.
+
+### Comment 3 by u/pharonreichter (33 points)
+
+i wonder why arent you in bahamas on your supertacht since you know you can ctrl-c it and have a company full of (AI) engineers writing (any) software for you. instead you post on reddit about the future of the industry or something. 
+
+oh wait. because just like the rest of the AI engineers it’s shit and does not work and will never do with the current tech.
+
+#### Reply 1 by u/ipassthebutteromg (-12 points)
+
+It could also be because I'm talking about what things could be like 2-3 years from now based on current technology. 50x more engineers, 1000 times more compute, and unlimited money could do a lot more in three years than I did when I wrote my prototype in 8 hours.
+
+LLMs will also improve, and my agent will improve for "free". I literally don't have to do anything and my agent will get better over the next 3 years.
+
+### Comment 4 by u/HiphopMeNow (43 points)
+
+source: AI generated
+
+#### Reply 1 by u/ipassthebutteromg (-20 points)
+
+I massaged my original write up. The whole thing is abrigded. It condensed a few things for me and I let it use bullet points for organization. I would consider it AI-reviewed or AI-augmented, since I did most of the work, but since it's getting so much hate, I might as well pretend it's entirely AI generated.
+
+**I guess what's more important is that I did write the software**, it's frail but it does work, and if you plug in Sonnet 4.5 instead of 3.5, (the base LLMs are swappable) it will likely be 10 times better and more accurate. Especially if you consider that commercial LLMs have only been around for about 2 years, and the context window (and some more traditional optimization techniques) will make a big difference into how much of a project and its dependencies it can attend to.
+
+I'm not talking about today, though, I'm talking about 2-3 years from now, although I think people are already starting to feel it.
+
+### Comment 5 by u/TastyToad (25 points)
+
+You'll get a lot of pushback and dissmissive comments. That's expected. The job market in the US is tough, compared to the last decade and covid years (first time in my life I'm happy to be europoor). On top of that we've been constantly bombarded with "your job will be taken over by AI" since spring 2023, almost exclusively by people who know next to nothing about the nature of our profession.
+
+As a litmus test I'd suggest this. How likely it is that you, however smart and ingenious you might be, came up with a solution that none of the big boys, with their nearly infinite resources, did ? And so far we haven't seen anything that would really make us think "I'm going to lose my job" from them.
+
+I was going to address each of your statemets and questions individually but I'm too tired of this topic and gave up halfway. Apologies if what I'm going to say next  sounds harsh or unfair.
+
+ Yours, and every other such post I've seen, is based on a set of flawed assumptions:
+
+* Programmers mostly write new, "boilerplate" (your word) business logic.
+* Most programmers don't know anything about business domain.
+   * Implied assumption hidden in the above. Specifications coming from business are good enough to be turned into code directly, without any conceptual translations or adopting to a different medium (written text -> code).
+* Programmers are just code monkeys that have to type every single line themselves and therefore any form of code generation will improve their productivity by some insane factor.
+* High level abstractions (like LLMs or BPMs and whatnot before them) are enough and can successfully hide all the underlying complexity from users, including nonfunctional requirements.
+
+None of the above is, or has been, true yet every single claim that LLMs will boost our productivity 3, 10 or 30 times requires them all to be true.
+
+Such discussion also completely ignore other factors like:
+
+* If the models can be substantially improved from the current state just by scaling them up and tweaking. There's been some research that suggests there's inherent limit to the accuracy of the results produced and all LLMs converge to the same plateau, regardless of the size. Going beyond the current level may require a new approach entirely.
+* Economy. Building and training those models is prohibitively expensive and the infrastructure buildup required for training datacenters offers a separate set of challenges, especially in the west.
+
+LLMs are great and I've been using them daily in my work and private life for over a year now, but they don't replace me in any way. They just help me move faster in areas where I lack skill or motivation.
+
+#### Reply 1 by u/ipassthebutteromg (-1 points)
+
+I had to split my response in two. This is Part 1.
+
+>How likely it is that you, however smart and ingenious you might be, came up with a solution that none of the big boys, with their nearly infinite resources, did ?
+
+Oh, it's VERY unlikely. There might be a trick here or there that's new, but nothing someone else couldn't come up with. I wrote it in 8 hours! After 8 hours, literally (literally in correct, non-ironic sense), of actual work, it could write, run, and compile code based on a natural language prompt.
+
+The real thing here is that it took 8 hours. Imagine what a team of 200 developers with infinite resources *is* doing!
+
+I'm not saying "hey, your job will be automated". I'm saying that if the current productivity trends continue, it may not matter. But also, how many human computers do you know?
+
+>Programmers mostly write new, "boilerplate" (your word) business logic.
+
+What I meant is that, the type of work that is tedious to me is easily automatable. It's not my belief that Software Engineers only write boilerplate (but, if you are not in a senior engineer position, most likely you are writing data access code that's repetitive using a repository pattern, or writing api controller code). You might be doing more complicated things like auth integration, designing contracts and workflows, or writing microservices. It's not all boring or tedious copy pasting.
+
+>Most programmers don't know anything about business domain.
+
+>Implied assumption hidden in the above. Specifications coming from business are good enough to be turned into code directly, without any conceptual translations or adopting to a different medium (written text -> code).
+
+A lot of people I work with (even senior devs) with aren't willing to even think about the business problem. They throw their arms up in the air and ask for functional requirements and refuse to think for themselves. If the actual functionality isn't in a simple form, they freeze. One developer kept complaining to me about how X, Y, or Z wasn't in the requirements and got frustrated when I created a few API endpoints. No... there was no documented requirement. I inferred the requirement from common sense, thinking about the user experience, and the problem the business was trying to solve. It was frustrating to work with him because he wasn't willing to do any of the work without on-the-nose requirements. He couldn't read between the lines or be creative.
+
+BUT, that's got nothing to do with what I'm looking to convey. In fact, if you read my original post, you'll see that I think that software developers will in fact become more like technical project managers, actually interfacing with the client, because the business requirements from the customer do need interpretation.
+
+However, although AI can't go talk to the client / customer (yet), it's got way better reading comprehension than most software developers I work with. In some very specific topics, it can probably ELI5 topics to you that you don't understand.
+
+So, I'm willing to bet $5,000 that in 3 years, an AI will be able to take slightly vague requirements in written form from a client and interpret them conceptually and ask follow up questions better than any human being and write thorough technical documentation. Neural Networks and feature vectors are so capable of abstraction because they benefit from latent space, where concepts like grammar, and tone, and analogy can be encoded in an emergent way. Then you get concepts like questions and answers, and writing style, humor, cynicism, sarcasm, and somewhere in there is space dedicated to just matching opening and closing brackets or the Golden Gate Bridge. There WILL be latent space for vague customer requirements (in fact, the concept and interpretation "of the human user used no punctuation, but this is what they probably meant") is already there. We don't know where it is (although we can look for it), and we don't know how accurate it is (although we can test it).
+
+I'm not making the assumption that programmers don't know anything about the business domain. and in fact, I'm actually saying that this is an advantage moving forward if the role changes. But interpreting vague requirements is something LLMs can already do. You can give an LLM a very vague prompt and if it's good enough it will potentially guess your intent correctly.
+
+>High level abstractions (like LLMs or BPMs and whatnot before them) are enough and can successfully hide all the underlying complexity from users, including nonfunctional requirements.
+
+This is a good point. LLMs would need to ask follow up questions and not everything is ELI5 friendly.
+
+#### Reply 2 by u/ipassthebutteromg (-4 points)
+
+I had to split my response in two. This is Part 2
+
+>None of the above is, or has been, true yet every single claim that LLMs will boost our productivity 3, 10 or 30 times requires them all to be true.
+
+Completely disagree. My output is 20x what it used to be. I'm not going to tell you that you need to know "prompt engineering" or something buzzwordy like that. The discrepancy here is that maybe you only use LLMs to write boilerplate code for you. I do 20 or 30 other things, like asking for a simpler way to write something I already wrote. A better naming convention. The difference between two candidate architectures that I'm just learning. I could go on and on about how I use LLMs and about 90% of those things I do are not specific to "coding". Some of them are as simple as "What's the difference in syntax between this version and that version"? Or scan this 20000 line log for me. If you are not finding good use cases for LLMs, or if you are using a free tier, that would explain your perspective.
+
+>If the models can be substantially improved from the current state just by scaling them up and tweaking. There's been some research that suggests there's inherent limit to the accuracy of the results produced and all LLMs converge to the same plateau, regardless of the size. Going beyond the current level may require a new approach entirely.
+
+There is no indication that this is the case. In fact, I think CoT showed that you can get similar gains using time instead of compute. So now we can use more parameters or more time. Converging to a plateau is more likely to do with training methodology. We certainly don't have the ultimate LLM architecture (it would seem unlikely anyway), but scalability with compute has been the big surprise so far. If you think otherwise, why would OpenAI waste their money on a new computing center for GPT 5 that is 20x larger if there are indications of a plateau? As a matter of fact, LLMs are getting so much better that you can run Mistral7B (which is thought to be comparable to GPT3.5) on a home computer today.
+
+>Economy. Building and training those models is prohibitively expensive and the infrastructure buildup required for training datacenters offers a separate set of challenges, especially in the west.
+
+It sure is. It may turn out that we are just not going to make progress on GPU efficiency or be able to generate the energy required to run them. Or maybe since our 20 watt brains can do it, we haven't really maxed out on efficiency. (I know this is a more cynical comment, and a weak argument since it could be a long time before we figure out wetware, or something as efficient).
+
+>LLMs are great and I've been using them daily in my work and private life for over a year now, but they don't replace me in any way. They just help me move faster in areas where I lack skill or motivation.
+
+I'm not saying it's going to replace you, but a lot of people do think the productivity gains might impact the balance of supply and demand for software engineers.
+
+### Comment 6 by u/XpanderTN (21 points)
+
+I think that Software Engineering isn't going anywhere, but what that looks like will look differently in the future. AI, as it stand today, CANNOT replace a human engineer. Not even close. It requires guidance, and it does not reason beyond the data set it's provided. 
+
+I think that AI, especially agentic frameworks, will condense the time it takes to perform tasks, but a human will most likely need to be in the loop at some point. How do you handle hallucination in a human free software development life cycle, and how is that tech debt any different (if not worse) than some generated by a person? What mitigation efforts would be there to get out of that rut? Model training is expensive, how is that going to be handled? Model version control? Will every company spend less on developers and more on AI engineers to maintain the models? 
+
+i could go on. 
+
+This is an evolving and fluid space and alot of work is being conducted to answer some of these questions, but i personally do not think this is ready for prime time in the sense that i should be worried for my job.
+
+If anything, i'd say get up to speed on how to use these tools ASAP.
+
+#### Reply 1 by u/ipassthebutteromg (-17 points)
+
+You brought up a lot of good points.
+
+>...How do you handle hallucination in a human free software development life cycle, and how is that tech debt any different (if not worse) than some generated by a person?...
+
+Could be solved with Automated TDD that is part of the generation process (like an adversarial check, and not the unit tests for the solution itself, which is also something to generate).  
+As for tech debt, you declare your intent, and ask if there is any tech debt that needs to be addressed. Or you feed it your organizations best practices and verify that it meets those conditions. This is 100% doable, but expensive. And the fix itself could be fragile - It partly depends on whether your solution spans multiple repositories and dependencies or not. In that case, you'd run a tentative refactor, once again with unit tests to avoid regression issues.
+
+"Model training is expensive, how is that going to be handled?"  
+Refinements are less expensive than the original training, and they are a bit of an art, so you'll probably have an AI Reinforcement Learning Engineer who understands the flaws in the existing code generation.
+
+"Will every company spend less on developers and more on AI engineers to maintain the models?"  
+I think the distinction will be blurred.
+
+### Comment 7 by u/mechkbfan (7 points)
+
+For typical development, it's not going away. 
+
+
+I feel like anyone making those claims is new to development or naive.
+
+
+Things like art where you can have 1% of it being incorrect/off, it doesn't really matter
+
+
+You have 0.1% of your code off and it's a train wreck and I think that's being forgiving
+
+
+
+AI tools will be supporting but fundamentally it's all about the input. AI will never have the same input as a human. And as long as the input is from humans, garbage in, garbage out.
+
+#### Reply 1 by u/ipassthebutteromg (-6 points)
+
+Think about how buggy code already is. I can assure you WAY more than .1% of your code is incorrect and off (Maybe not yours, but the average codebase).
+
+Most code in production today probably doesn't have unit test coverage, and if it does it's probably 10-20%. And I'm pretty sure that it's deployed with the unit tests commented out, ignored, or with bad unit tests, and the ones that are valid, some of those likely don't even pass.
+
+So, your average code base probably has a really good chance of being at least 1% incorrect. I don't know the real number, but since all some of us ever do is put out production fires, I'm guessing the number might be a bit higher.
+
+### Comment 8 by u/rexspook (33 points)
+
+Oh this tired topic again
+
+#### Reply 1 by u/ipassthebutteromg (-13 points)
+
+I really didn't intend to bring it up without a fresh perspective and some technical knowledge. I was hoping for real discussion about this, not a "Singularity"-Reddit overhyped non-technical discussion.
+
+Does this come up here as a technical discussion?
+
+### Comment 9 by u/KnowledgePitiful8197 (3 points)
+
+"written in C# and able to produce C# (and other languages"
+
+
+Does it write assembly, C, etc.. or languages you don't master?
+
+#### Reply 1 by u/ipassthebutteromg (2 points)
+
+Yes.
+
+### Comment 10 by u/HEAVY_HITTTER (3 points)
+
+This entire post reads like an ai response.
+
+### Comment 11 by u/opideron (3 points)
+
+LLMs are code with the same flaws as any other code, the main problem being GIGO. They don't "think", they are not "intelligent". They're just probabilistic linear maps. As such they can be extremely useful for aiding users to solve very well-identified problems, and tutor new users whose knowledge base is limited.
+
+There is apparently a hard limit on how much one can lower LLM error rates, as described by this video: [https://www.youtube.com/watch?v=5eqRuVp65eY](https://www.youtube.com/watch?v=5eqRuVp65eY) - it's logarithmic, so increasing the processing power and data by a factor of 10 only slightly decreases error rates. There is apparently no way to get the error rate to zero, and it becomes exponentially more expensive the closer to zero you get. As the video notes, researchers aren't sure why this is true, but experimenting with multiple LLMs suggests that it's at least mostly true. 
+
+In software development, I believe the most effective application will be creating testing automation: the code is already written and likely works correctly, and AI can read the code and quickly generate tests based on that, with QA engineers refining the AI-generated tests to meet requirements that might not be obvious in the code. This would be a great boon to quality assurance overall.
+
+The dream that executives have of replacing expensive software engineers with AI is unlikely to come true. I spend 10% of my time writing code, and 90% of my time figuring out the problem at hand (how best to write code that is easy to read, easy to understand, and easy to debug, and won't break anything else in the stack). With mature AI, I would expect to spend 1% of my time writing software and 99% of my time solving the problem at hand. In particular, I would expect AI to be able to take my core change in one part of the code (say, adding a parameter to an API call) and then finding all the other places in the code and making the corresponding change in those parts implied by the change, updating method signatures, DTOs and so on.
+
+Real business problems require research, domain knowledge, and an ability to converse with stakeholders who often have difficulty phrasing their requests in technically correct ways. A lot of my job might be described as "I try to be the GOOD genie" and let my employer/client know that implementing their request would break other business processes, or contains internal contradictions. I ask a lot of questions to make sure that I understand the requirements, and then suggest possible changes to the requirements based on a common understand of what problem we're trying to solve.
+
+Doing these kinds of tasks requires *thought*, not merely knowledge of already-known correct answers. LLMs cannot provide that level of analysis. They can only say, "This is how other people did things similar to what you ask," which may or may not be applicable to your problem. That can fill in a lot of work w/r to infrastructure, authentication, load balancing and architecture choices and so on. It's not going to be able to solve your unique problem without a competent software developer to act as an interface, someone who is able to run through all the wrong or impractical answers the LLM provides, and pull out the diamond in the rough.
+
+And one last thing: AI will be able to speed up some steps in business processes, but most would be unchanged. If there is only a single testing environment, for example, testing version 22.53 is still going to block testing version 22.60, no matter how fast AI generates the code. Processes will still require management, and resources (human and otherwise) are going to be constrained by ever-changing business priorities and goals. If the business is of any significant size (i.e., not a startup), there is no super-fast SDLC that allows you to get new products out the door in less than a week, and all the things that slow down the SDLC in a large business will still be there even if AI allows software to be written 30x as fast.
+
+### Comment 12 by u/Jmc_da_boss (13 points)
+
+There is no way working with LLMs and agentic frameworks today made you think this. They are awful at anything remotely useful
+
+#### Reply 1 by u/[deleted] (1 points)
+
+I’m no “AI” or LLM fanboy but you’re simply wrong about the last sentence.
+
+#### Reply 2 by u/ipassthebutteromg (-1 points)
+
+That's right. It takes one to three tries to create a prime number generator in C# with appropriate syntax, but then I tell it to look up an advanced implementation in Wikipedia, and it tends to get it right. A sequential recipe or state graph can basically do something like this:
+
+* Create a basic Angular scaffold template.
+* Create a typescript service layer that connects to Web API
+* Write a C# service layer that generates prime numbers up to N.
+* Create a memoization service over the prime number service.
+* Create an angular page with a form that accepts a max number N and retrieves the result from from the web api, using the typescript service layer.
+
+If any step fails, retry that step up to 3 times then stop and explain what may have gone wrong.
+
+It is frail but using a state graph analogous to chain of thought (a recipe, basically) and a verification system, such as unit tests should make it a bit more robust.
+
+I agree with you, that this isn't the most useful thing to do, but once tokens become cheaper and the LLMs more advanced, You can try over and over (over a minute or two), get some human feedback and move on.
+
+In the meantime, if your toy problem succeeds, (i.e. the recipe or state graph was adequate), you use it as training data for a recipe agent. (Which is basically a naive CoT implementation).
+
+### Comment 13 by u/Electrical-Ask847 (3 points)
+
+yawn. Maybe your can use AI to write a post thats engaging.
+
+#### Reply 1 by u/ipassthebutteromg (-2 points)
+
+"Yawn, you say? Ah yes, I forgot that pondering the existential transformation of our entire profession is such a mundane affair. Perhaps I should have peppered my discourse with more riveting topics, like the latest JavaScript framework that'll be obsolete by lunchtime?
+
+But you're right, clearly I need AI to make this more engaging. Let me just summon my digital Hemingway:
+
+'It was the best of times, it was the worst of times, it was the age of AI wisdom, it was the age of being deliberately obtuse...'
+
+Oops, looks like it's hallucinating literary classics now. Must be all that 'boilerplate' Shakespeare I fed it.
+
+Don't worry though, I'm sure when the AI revolution comes, there'll still be a lucrative market for artisanal, hand-crafted 'if' statements. Your skills will be the coding equivalent of a sundial in a smartwatch world - quaint, occasionally correct, and utterly useless on cloudy days or indoors. But hey, at least you'll always have a job as long as the sun shines and no one needs to know the time after dark, right? That's about as useful as using a telegraph to send emojis - sure, it can be done with enough determination, but good luck sexting in Morse code.
+
+Meanwhile, I'll be over here, the Don Quixote of coding, tilting at windmills with my AI lance. Who needs real-world problems when you can solve imaginary ones at 30x speed? I've become so productive, I'm now efficiently producing solutions to problems that don't exist yet. Take that, future!
+
+But let's face it, my 'groundbreaking' AI agent is probably just a glorified Magic 8-Ball with a CS degree. 'Will I be relevant in 5 years?' *shake shake* 'Reply hazy, try again'.  *shake shake* 'As an AI agent I do not feel comfortable...'. At least it's 20-30x faster at crushing my dreams than a human ever could be.
+
+And hey, if this whole AI thing doesn't pan out, I can always fall back on my other marketable skills. Anyone need a professional panic-monger or a certified futurologist specializing in unemployable fever dreams? No? Well, I hear Luddites Anonymous / Experienced Devs is always accepting new members.
+
+### Comment 14 by u/Dramatic_Pen6240 (1 points)
+
+I think that it will decrease demand for some people but it will increase demand in non tech fields because everyone will want to have ai in their company. So it will be on the same lvl
+
+### Comment 15 by u/engineered_academic (1 points)
+
+Not when AI hallucinations produce code that will incur a multimillion dollar fine. My job isn't going anywhere. All these low code/nocode solutions aren't killing my marketshare. Why would this?
+
+### Comment 16 by u/Awric (0 points)
+
+I agree with some of your points. I think later on (far into the future), AI will be advanced enough to the point where most of us would be technical project managers focused more on what needs to be done rather than how to get it done.
+
+I’m open to the idea of there being a feasible AI software engineer that can replace and outperform me in everything I do today as a senior SWE at a large tech company, but I’m pretty sure there’ll always be a business need to have someone human behind these tools. Although technology is apparently growing faster than we’re adapting to it, I think we’ll eventually adapt to it and there’ll be plenty of demand for engineers who know how to use these super tools effectively to make something competitive.
+
+My way of thinking through discussions around this is: even if we had the technology to get **all** the work for a company finished within minutes, there’s no such thing as a finished product - especially when there’s enough competition. I think it’s on us to adapt, and the best way to do that is to share as much as we can. Release your product!! I’m curious!
+
+#### Reply 1 by u/ipassthebutteromg (2 points)
+
+Thanks for one of the few serious (and kind!) responses! I do mean my post to be taken as very speculative. I don't know when this shift will be noticeable, and I'm not advocating for this kind of shift. I just spent a lot of time thinking about what would happen if LLMs became better and agents did too. A lot of people are worried that AI is coming for their job and I did too. But then I thought about what I would have to do to adapt, and I think these are some ways to do it.
+
+As for my "product", I wrote it in 8 hours and it is very frail (as others rightly noted it would be) in execution. I'm still trying to decide if I want to keep an edge and share it privately until it's more robust, or create a live demo that addresses some shortcomings. I also don't necessarily want to tie this reddit account to the project, but I'm happy to share a stripped down version or the full fledged version which are in public and private repositories respectively via DM.
+
+I think some of the objections are (1) calling it a Software Engineer or the cringy "Thanks Devin!" tagline. (2) Some people think I'm insulting them or advocating for fewer Software Dev jobs. I guess the title is a little bait-y.
+
+In general I'm not saying "Hey wake up!" as much as "if this happens, here's are some possibilities".
+
+### Comment 17 by u/iamnewtopcgaming (-5 points)
+
+I can’t wait until agent prompting comes down in price. I’ve seen the “AI is only good for boiler plate trope” a lot and it always makes me wonder how much they’ve actually tried. 
+
+Cursor auto prompting to find files to include and suggesting change diffs with a good prompt has done so much more than writing boilerplate. I agree that we will get an insane amount done with integrated TDD and automated attempts. 
+
+IMO it’s not “AI will replace engineers” I’m worried about today, it’s AI taking 50% of them, increasing job competition, and then decreasing barriers to enter the field. At the same time, so many industry fields need modernizing with software that it might even out for longer than you might think.
+
+#### Reply 1 by u/ex-nihil (5 points)
+
+> I can’t wait until agent prompting comes down in price    
+
+It's literally being subsidized by VC money right now.
+
+#### Reply 2 by u/ipassthebutteromg (-5 points)
+
+Yes! Thank you! This is what I'm trying to get across. It doesn't matter if we ever get a fully autonomous agent that can write software. LLM subscriptions are already changing productivity dramatically (at least for me), and I use them for way more things than just boiler plate.
+
+### Comment 18 by u/biggamax (-12 points)
+
+> like you are using assembly to center a div
+
+Your very thoughtful and informative write up deserves much more feedback than me simply acknowledging this quote, but I LOVE it so much.
+
+#### Reply 1 by u/ipassthebutteromg (-1 points)
+
+Thanks. Despite running some of the write up through an LLM for feedback, that line was original :D
+

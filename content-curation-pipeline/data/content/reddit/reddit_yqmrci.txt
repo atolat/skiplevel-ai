@@ -1,0 +1,503 @@
+# Winter may be coming, some high level tips and advice on how to navigate an tech downturn
+
+I've been active on this sub for a while now, and the very recent change in atmosphere around here has been quite sobering. I posted [this post](https://www.reddit.com/r/cscareerquestions/comments/uj7hnt/is_anyone_noticing_any_sentiment_changes_in_the/) 6 months ago and the responses back then felt like a different lifetime.
+
+I can only imagine how many students, junior or even experienced engineers are feeling anxious right now dealing with the first industry downturn in their professional career. After thinking for a few days I think I should pen a post that may help some people around here.
+
+Some background about me: I graduated college in the middle of the 2008 recession, but since then I have worked at multiple startups (including one YC and one pre-IPO unicorn), 2 of the FAANG companies, and I helped build a startup that saw a decent exit from acquisition. Until very recently I was in eng leadership position at a medium sized tech company. I'm also an angel investor on the side and from my network connections I tend to hear whispers and rumors a bit earlier than most people (part of the motivation of why I wrote that earlier post).
+
+**Disclaimer**: I will try my best to **not** predict the future in this thread. I want to keep this post as matter-of-fact as possible and I want it to be *descriptive* and if the situation applies, *prescriptive*, but I do not want this post to be *predictive*. I have my thoughts and opinions about the future but I do not want to engage in speculation here.
+
+With all that said, let's start.
+
+**2 major misconceptions I see a lot around here that I'd like to address**:
+
+1.	"If I work for a solidly profitable company with a good business model, the recession won't impact me" -- This is a popular sentiment that usually gets upvoted to the top. There are 2 things wrong with this statement. First is that no companies exist in a vacuum. A company may have a solid business model and good cashflow on its own (eg, Microsoft, Google, Amazon, etc), but there is no way to guarantee all of their paying customers are in the same shoes, let alone their customers' customers, etc. That's the reason we are seeing all the top companies are giving conservative fiscal outlooks at the moment. Secondly even profitable companies look for reasons to trim fat and cut cost during a downturn. This may start with hiring freezes and may lead to actual layoffs. Different companies do this differently. But just know that leadership do respond to investors and shareholder pressures and sometimes have no choice but to show that they are being fiscally conservative. During the boom time many companies hired people they didn't need just so they can tell a *growth story* to investors and Wall Street, but during a down cycle the reverse can also be true. It's silly I know, but it's what it is.
+
+2.	"Engineers aren't going to be impacted": It is true that engineers are harder to replace and are considered strategic assets for many true tech companies. But as far as cost saving goes, these are some of the *most* delicious fat to trim since engineers tend to command a larger compensation than other roles. Due to the narrative, PR and morale damage, tech companies tend to be a bit conservative with cutting engineers at the beginning stage of a recession. But if things don't get better, cutting engineers *will* be an effective ace-in-the-hole cost cutting measure. Think of it as a "nuclear option" for growth tech companies.
+
+There are some more but I will move on for now.
+
+**Some tips**
+
+1.	Do Not Panic: I can't stress this enough. Do not worry about things that's out of your control, like macroeconomics or global events. In times like this, I hate to say it, but the best thing to do is be self-centered and focus on yourself. Take a deep breath and know that most mistakes are made by emotional people. And every single minute you are being emotional is a minute you aren't making things better for yourself.
+
+2.	(Re)Warm Up Your Network: Sometimes it's nice to play by your ego. Recession isn't one of those times. If you can reasonably reach back out to recruiters that you've ghosted in the past, now may be a good time. You don't need to be seriously interested in a job to have them as "what-if" options. Similarly true for coworkers and ex-coworkers. Good professional relationships go beyond individual companies and sometimes a solid referral is the difference between weeks of job searching and starting a new position 2 weeks after being laid off. 
+
+3.	Increase Your Visibility: In some situations I mean that *literally*. Like turning on your webcam once in a while in meetings (and try to use webcam in 1 on 1s especially if your manager/lead does it). I know this is a controversial topic on a sub of introverts and people with social anxieties, but just remember that the people who make decisions during layoff are just that... *people*. They fall for some of the most primitive human flaws, emotions and biases. In the boom time people who are more vocal and visible tend to get rewarded more when compared to people of equal technical skills, and in the bust time they tend to...well keep their jobs better. Be visible to your manager *and* to your coworkers. A few junior engineers telling your manager how amazing of a mentor you've been can go very far in your career, whether it's promotion or layoff. 
+
+4.	Polish Up Interview Skills: Just do enough to make sure you aren't so rusty that you lose confidence. There is no need to spend X hours a day practicing LC unless you think your job security is in imminent risk. It will just unnecessarily stress you out and may even impact your daily job performance, which can lead to unintended consequences.
+
+5.	For Graduating Students: Apply to as many places as you can. Keep your expectation realistic. Whatever the type of company you were shooting for 6 months ago, be mentally prepared to accept an offer from a company 1 or 2 tiers below that. It *sucks* I know, but any job on your resume will still be far more valuable than nothing. Edit: Credit to /u/ZhanMing057's [comment](https://www.reddit.com/r/cscareerquestions/comments/yqmrci/winter_may_be_coming_some_high_level_tips_and/ivpgqtk/), grad school is also an option that should be considered by some people.
+
+6.	Keep a Good Perspective: I am making an exception to the "no prediction" thing here. If this is your first recession, well it won't be the last. But on the other hand the boom time we just saw won't be the last one either. These things come in cycles, but the common denominator across booms and busts are *you*, the person. Focus on learning and growth, and there is always opportunities for those even in the worst of the times. And nothing can take your learning and growth away from you. Focus on things you do have, and know that things are never as bad as they look (I tell people the opposite in good times lol).
+
+7.	Identify risks and priorities *if* worst case scenario happen, and plan accordingly: Credit to /u/it200219 's [comment here](https://www.reddit.com/r/cscareerquestions/comments/yqmrci/winter_may_be_coming_some_high_level_tips_and/ivp991a/). 
+
+**Closing thoughts**
+
+Like I said, I can't predict the future. I *hope* this post is 100% unnecessary in hindsight (and my investment portfolio hopes so too). And if the recession gets bad, you could end up doing all of the above and still get screwed, or (very likely) do *none* of the above and still end up perfectly fine.
+
+Best of luck everyone. I can answer some questions as well.
+
+Edit: One related advice: If your company offers VRIF (Voluntary Reduction in Force), *consider* taking it. Some companies would let people volunteer to get laid off, with the same severance packages. The reason I'm offering this advice is that in a prolonged recession, severance packages get subsequently less generous with latter rounds of layoffs, as the situation becomes more dire. Meta and Stripe's first round came with amazing severance packages. By round 3 (if it gets there), I highly doubt it would remain the same.
+
+## Comments
+
+### Comment 1 by u/SiliconValleyIdiot (184 points)
+
+Thank you, very valuable post and want to echo almost everything you've said.
+
+> For Graduating Students: Apply to as many places as you can. Keep your expectation realistic. Whatever the type of company you were shooting for 6 months ago, be mentally prepared to accept an offer from a company 1 or 2 tiers below that. It sucks I know, but any job on your resume will still be far more valuable than nothing.
+
+I cannot stress this enough. 
+
+I also graduated in the depths of the 2008 recession and had an offer from a big tech company rescinded. Job markets, even in the tech industry are closely tied to the broader economy. When belts tighten and investors look for profitability, the same tech company that promises you that you are a rockstar and that you're like family, will not think twice about letting you go. You could be a top performer in a division that's no longer deemed necessary and you will be cut.
+
+But the good news is, at least when it comes to dev roles, there is always someone else hiring. It may not pay you FAANG+ money, but it will pay the bills and give you experience. I took a job in a small consulting body shop that paid 55k/year in NYC in 2009. Even in 2009, NYC was super expensive. I didn't like the company or the job, especially when compared to the brand value and the offer I had from the big tech company. I took it anyway because I thought being gainfully employed is better than being jobless and being forced to move back in with my parents. I'm glad that I did, because the job market eventually recovered by 2011 ish, and I found a FAANG job by then, thanks in no small part due to the experience I gained in the shitty consulting gig.
+
+When job markets tighten, it is important to focus on being gainfully employed rather than chasing the next big thing. Being prepared and being willing to take jobs that you wouldn't otherwise take will take you far.
+
+> (Re)Warm Up Your Network: Sometimes it's nice to play by your ego. Recession isn't one of those times. If you can reasonably reach back out to recruiters that you've ghosted in the past, now may be a good time. You don't need to be seriously interested in a job to have them as "what-if" options. Similarly true for coworkers and ex-coworkers. Good professional relationships go beyond individual companies and sometimes a solid referral is the difference between weeks of job searching and starting a new position 2 weeks after being laid off.
+
+This one is also another golden nugget. My first FAANG job happened because my immediate manager from a legacy F500 company was hired as a Director at one of the FAANGs and he straight up poached me from there. 
+
+It always pays to maintain good relationships with your former managers, coworkers, and recruiters. Even if I'm not interested in a job a recruiter is messaging me for, I tell them I'm not currently looking to leave, but would like to stay in touch for future opportunities and just add them on LinkedIn.
+
+I got my last job by just messaging one of those recruiters, who then got me to skip the phone screens because I already had another offer. All of these little things add up over time.
+
+#### Reply 1 by u/fried_green_baloney (20 points)
+
+> the depths of the 2008 recession 
+
+Myself and others who'd been through downturns found 2008/2009 to be worse than anything we'd ever seen.
+
+By January or so of 2010, the need for staff got so strong that companies started hiring again.
+
+Other recommendations:
+
+* Be open to contract work even if economically it's not that good a deal.  This is more for people with experience than new grads.
+* For new grads, avoid the "consulting" jobs where you have 20K penalties for leaving unless you are desperate.  By desperate, I don't mean your parents keep asking when you'll get a job.  I mean your children will starve if you don't get work right away - that desperate.
+* Save, save, save.  Being out of work is different when you have enough saved to live for two or three years instead of three months.  Can't always manage that, of course, but the more you can save the better.
+
+#### Reply 2 by u/dominik-braun (31 points)
+
+Nice anecdote. First job/company is being vastly overrated by new grads.
+
+#### Reply 3 by u/RockleyBob (3 points)
+
+>If you can reasonably reach back out to recruiters that you've ghosted in the past, now may be a good time.
+
+I'd like to hear from others on this point.
+
+Do I need to feel bad about not getting back to recruiters who have reached out on LinkedIn? I've often felt like their emails are mostly just wide-net spam not really meant for me in particular. Are they really holding it against me if I don't respond?
+
+#### Reply 4 by u/Weasel_Town (3 points)
+
+I lost my job in the ‘08 recession, along with 5000 of my colleagues. For those who didn’t live through it, it was a bad time and could have been much worse. People were talking about a second Great Depression. Also I was newly pregnant.
+
+I took a six-month temp-to-perm at one of the only companies left that was still hiring. Normally I wouldn’t consider temp-to-perm because of health insurance and general stability. Also it paid half what it “should have” by 2007 standards. But the timing was good vs the pregnancy (the idea being to have a gap between the “temp” and the “perm”), and it was a job. I didn’t know what the company did, nor did I care. Meanwhile, my colleagues wanted to “wait a few months for things to get better”.
+
+That job got me started in the rewarding field of security, where I still work. I’ve switched companies a few times and gotten my pay back up. My colleagues who wanted to wait and see didn’t do as well. They ended up taking crappy lowball jobs after burning through their savings, or washed out of the industry entirely.
+
+### Comment 2 by u/ZhanMing057 (99 points)
+
+I would offer a counterpoint in that if you are a new grad, and you have the financial options (help from family, funded program, some kind of +1 year thing at your school), you should at least look into grad school as an option to delay market entry. 
+
+The effect of recessions is "[sticky](https://siepr.stanford.edu/publications/policy-brief/recession-graduates-long-lasting-effects-unlucky-draw)" in that it disproportionately affects those who enter the labor force during a recession. If you already have a job, it behaves like a temporary shock, and if you enter after the recovery, the persistence effect is weak. But going into the market during the shock makes the temporary shock more permanent. 
+
+The intuition here is really straightforward. If you already have a good job on your resume and got laid off, people will still see the prior title on your resume. But if you go into a less competitive position at the outset because of a recession, the signal you send is not distinguishable from people who wouldn't have been able to land a better job in the first place. 
+
+If you can wait it out, and it's not going to saddle you with a lot of student loans, that is likely better for you in the long run. You may hear a lot of stories of how people went from $50k to $200k TC after the 2020 market crunch, but what you don't hear are the people stuck in the same $50k jobs.
+
+#### Reply 1 by u/cookingboy (14 points)
+
+This is a very valid point. It's definitely something that should be considered if the situation allows and if the person has appetite for more school. I'll add it to my post.
+
+#### Reply 2 by u/hipstahs (3 points)
+
+>sticky
+
+Thanks for the paper. This was a really fascinating read.
+
+#### Reply 3 by u/fried_green_baloney (4 points)
+
+> The effect of recessions is "sticky"
+
+Friend graduated January 1974, just as the first Oil Price Shock hit the economy.  It took him quite a while to get a decent job.
+
+Sometimes if you have a low paying job you can hold out for a big jump on your next job, but it may mean having many employers refusing to give you that 50% salary jump.
+
+#### Reply 4 by u/RawCS (2 points)
+
+Would you be able to give me some insight taking into account my circumstances? 
+
+I have 2+ years as a software engineer at a well known tech company, but I left to finish my M.S. in Statistics faster. I will be graduating in the spring, and am planning to get back into the industry. Should I consider myself a new grad given that I am just finishing a masters degree, or lean on the years of experience that I already have?
+
+Thanks!
+
+#### Reply 5 by u/meister2983 (3 points)
+
+>  If you already have a good job on your resume and got laid off, people will still see the prior title on your resume. But if you go into a less competitive position at the outset because of a recession, the signal you send is not distinguishable from people who wouldn't have been able to land a better job in the first place. 
+
+But you shouldn't look *worse* than someone that merely delayed entry. Employers would be aware of the difficulties entering a market in a given year and adjust appropriately.  Work experience is better than no work experience.
+
+It's possible there's some error, but I find it hard to believe that delaying entry exceeds opportunity cost of not working (and the paper makes no such claim - just that it is unfortunate if you graduate into a recession).  Likewise, the population stuck at $50k a year is not the same as the one getting $200k salaries.
+
+If you are on the fence going to grad school, sure this might push you a little. But if you aren't passionate about grad school, I can't see this as a winning strategy.
+
+#### Reply 6 by u/lcmaier (1 points)
+
+I'm a student set to graduate next December, but I switched to CS as a major late and don't have internships/impressive projects to buoy my resume. If I'm ultimately aiming for a job in ML, would it be worth it to go straight to grad school and take out student loans or try to make it in industry as a SWE for a few years?
+
+#### Reply 7 by u/Immediate-Safe-9421 (1 points)
+
+I'm a masters student. Your comment basically just single-handedly made me decide to do a PhD.
+
+#### Reply 8 by u/[deleted] (1 points)
+
+[deleted]
+
+#### Reply 9 by u/eternally__curious (1 points)
+
+Your comment made me feel a bit better.
+
+I am in the application cycle for doing my masters from mid 2023 and I am worried about what kind of job market will I stumble into especially when I will be looking for internships in around Q1/Q2 2024. 
+
+I do have about 7 years of work experience as a software engineer and the reason I am going for my masters is a change of pace and to be in the same country as my partner which is US. But all these layoffs have made me concerned.
+
+#### Reply 10 by u/timmymayes (1 points)
+
+How do you think this translates to someone looking to enter through a self-taught method? I'm currently employed in a marketing position making 60k in socal. I'm 39 and looking to transition. I have a natural aptitude for programming and tech so I don't worry about my ability to learn and do the work. Working full time and going for my BS (i am degreeless atm) just doesn't feel worth the debt and added time crunch. 
+
+I'm happy to spend a bit more time and do some work on FOSS projects and do have some sites/tools I want to build that should be much more involved than standard projects. 
+
+I guess the crux of my question is this: Do I spend more time working and networking in my freetime before doing a career jump or do I dig right in and just start earning experience?  
+
+Part of me wants to just get that first job jump so that I can spend all day working on code and learning instead of 8-9 hours at my current day job. But I didn't take into account the "starting during a recession effect you've pointed out here. 
+
+Perhaps the fact that i'm going the self taught route I should just  apply like crazy and be less picky to get that first job asap and ignore the "shock" effect since I'll likely need to grind in a different way going the self taught route?
+
+### Comment 3 by u/it200219 (39 points)
+
+Identify most important and critical risk when you loose job. It could be immigration, finance etc  
+
+
+Accept what gets first in line. You can always change your job if it required travel or pays less. You need to consider again whats most important.
+
+#### Reply 1 by u/cookingboy (9 points)
+
+Great advice. Thanks for calling it out, let me add it to my post.
+
+### Comment 4 by u/_d00little (197 points)
+
+Tldr: Work, Workout, Vibe
+
+#### Reply 1 by u/[deleted] (-47 points)
+
+[deleted]
+
+### Comment 5 by u/theorigamiwaffle (16 points)
+
+This post is giving me some sort of relief. I'm self-taught and just started looking for work and it's stressing me out even though I had planned to aim a lot lower than what is typically advised. I also graduated around the time 2008 and it was really hard watching my friends and family suffer a lot. This industry downturn is bringing back a bunch of anxiety from that time.
+
+Just gotta keep my head down, stay focused. Might even need to get a part-time job while I'm job searching.
+
+### Comment 6 by u/[deleted] (15 points)
+
+[deleted]
+
+#### Reply 1 by u/cookingboy (10 points)
+
+Yep that's the thing. The kind of imagination that allow investors to throw millions and even billions at startups is the same kind of imagination that make them go crawl into a bunker at the first sign of a recession. Investors *are* a fickle bunch and honestly, the amount of FOMO and irrationality among even professional VC and angel investors is pretty much comparable to WSB.
+
+>depressed valuations will lead to an increase in M&A's and private equity take-outs. This is when engineers are laid off because they are made "redundant.
+
+100% Agreed. Larger competitors and even PE fund will take advantage of the current market and eat up.
+
+#### Reply 2 by u/[deleted] (3 points)
+
+>Investor sentiment has shifted and you have the Starboards and Thoma Bravos of the world moving in for large positions or take-outs.
+
+tf this mean
+
+### Comment 7 by u/Jonnyskybrockett (29 points)
+
+Yep, it actually starts in 41 days on December 21st, as it does every year. Thanks for the reminder!
+
+#### Reply 1 by u/_d00little (11 points)
+
+The North remembers.
+
+### Comment 8 by u/hipstahs (46 points)
+
+This is a great post! I think some additional helpful advice:
+
+&#x200B;
+
+* Trim expenses and create a budget if you can. Use this time as an opportunity to learn to cook, scale down on unnecessary subscriptions etc... 
+* Find time to volunteer. In stressful times it is important to find community and volunteering is a vey good way to ground yourself. 
+* Reach out to friends, family and former coworkers that have been impacted by layoffs. We're all in this together and its important we support each other in stressful times.
+
+#### Reply 1 by u/HubcapMotors (13 points)
+
+This is solid, practical advice.
+
+As someone who also finished college just in time for the 2008 financial crisis, I can't overemphasize the volunteering, support network stuff. All that can do wonders for your mental health if you're between jobs.
+
+Now is not the time to make any big, hasty purchases.
+
+And it will get better. It just takes time.
+
+### Comment 9 by u/YourFriendBrian (22 points)
+
+The one exception for misconception 1, is the defense industry. Defense spending doesn’t really change, so selling your morals can get you job security for a year or two. Also dead easy to interview for
+
+#### Reply 1 by u/cookingboy (12 points)
+
+Yeah defense industry definitely has its own cycles that’s based on world events and who is in charge politically. 
+
+That is unless the economy is so bad the government runs into significant budget issues due to loss of tax revenue, but I honestly don’t see that happening anytime soon. In this country we’d close up all the schools before building one less aircraft carrier lol.
+
+### Comment 10 by u/voiderest (9 points)
+
+Some points that might be useful to reduce the impact of job loss are as follows. It's not really specific to CS but preparing for the worst reduces my anxiety. With this list I'm not implying that you should worry or anything. I've had these kind of tips in the back of my mind for over a decade.
+
+* Have an emergency fund that can allow you to pay required bills while you look for work. This is a basic personal finance concept that can be relevant to unexpected costs as well.
+
+* Live below your means so you can build savings. Don't keep up with the Jones. Be aware of lifestyle creep and try to manage it.
+
+* Be prepared to cut optional expenses if required. I'll drop some subscriptions and adjust the AC to save some money.
+
+* Figure out how to cook at home with basic shelf stable ingredients you can buy in bulk. Beans and rice can be tasty if you do it right. Spices and fat add a lot to dishes. Veggies would probably be a good idea too.
+
+* Maybe have some cheap hobbies in your back pocket to keep your spirits up. I mean I don't really follow this one well but some of my hobbies could be cheap or paused if I had to.
+
+### Comment 11 by u/VanayananTheReal (7 points)
+
+Good post!
+
+For those already comfortably working, this feels obvious, but I've seen too many people try to crash their lifestyle from 100% to 50% after the layoff and...it's... neither optimal nor fun. 
+
+If you've been in this profession for the last decade, the market has been *very* forgiving of people redlining their finances. We are not in the straight-away anymore. It's time to downshift to 75%. If the worst comes, it'll be a smoother transition, and if it doesn't, your future self won't be too angry at you for the extra $50k liquid you've put at their disposal.
+
+### Comment 12 by u/[deleted] (7 points)
+
+[deleted]
+
+#### Reply 1 by u/xSilverXx (15 points)
+
+I dont know what else to say besides "I definitely 100% would not move in your situation". Moving sucks and its not worth the small increase that you might be kept on just because you are near the state HQ. Thats silly, imo. Especially when your team is mainly remote and your manager isn't pushing it.
+
+#### Reply 2 by u/HubcapMotors (9 points)
+
+Yeah I wouldn't move. I wouldn't want to move to a new area and have to take out a 12 month lease (probably at an inflated rate), put down a bunch of cash out of checking for a deposit, only to get laid off in 3 months or whatever. The risk just isn't worth it.
+
+Use the money you're saving now and build up a savings account to get through any potential layoff.
+
+#### Reply 3 by u/ChefulChefilor (3 points)
+
+No experience in business but I would bet top dollar that you moving closer to corpo HQ would mean jack shit regarding your staying in the company or not. I'd go as far as to say that our corpo overlords already decided which teams/departments are going to get cut, and you're not going to be influencing their decisions with your very costly move to some other locality.
+
+#### Reply 4 by u/Weasel_Town (2 points)
+
+Moving is expensive. Layoffs are a blunt instrument, and usually “random” in any dimensions you can influence. It’s everyone working on X project, or the most expendable 3 people in every department or something. 
+
+If you wanted to move there anyway, or you’re passionate about this company and they care deeply about being in person at HQ, I might have different advice.
+
+### Comment 13 by u/legocraftmation (7 points)
+
+I finally just started a data engineering job on October 31st after graduating in May. I made the mistake of waiting until spring to start applying so to any senior in college should start applying now. Don't wait like I did or it might take you a few extra months to start working. Also I am working for a company a few tiers below the top and that is fine. I never needed to work at a Google or *facebook*
+
+### Comment 14 by u/Baalzeebub (7 points)
+
+I also believe that CS is an incredible field to be in, even in the worst of times.  Technology is expanding exponentially.   The need for CS grads, at least good ones, will likely out pace the supply for many years to come.
+
+### Comment 15 by u/ShinshinRenma (2 points)
+
+I made it in to tech (though not programming) during all this and got lucky to land at a place that's not hitting the wall in the midst of all this, so I've just got my head down and focused on doing what I can to learn and grow so I can make sure when it's time to look again I'll be well-positioned.
+
+Lucky as shit, though.  Damn.
+
+### Comment 16 by u/LiteralHiggs (2 points)
+
+Nice write up. I'd like to add that although most CEOs believe we are heading towards a recession they also widely believe it will be brief and shallow.
+
+### Comment 17 by u/Sweet-Song3334 (2 points)
+
+Do you have any advice that is specific to people already unemployed well before the mass layoffs? How should they in particular deal with the industry downturn? They're always at a disadvantage compared to the employed in job seeking, even in a good market.
+
+### Comment 18 by u/fezbrah (2 points)
+
+2008-2011 - I remember being in school and many recent bachelor degree graduates were enrolled in IT since they couldn't get a job with their business, finance or psychology degree. Other older folks who were laid off were also back in school along with me. I was working help desk at the time part time. Experience, degree, and certs matter. As of right now there's still shortages of tech people in aerospace. government and other industries. Getting your experience matters so don't be nervous or think low of other companies that aren't paying six figures as soon as you graduate. Apply and take the best offer on hand until you gain experience and can leverage that experience to go into something better.
+
+### Comment 19 by u/DynamicHunter (2 points)
+
+Not really a CS-related tip but a finance one: increase your emergency fund (in a high-yield savings account). One should always have 3-6 months of living expenses in cash, NOT stock or other investments, as in a recession you do not want to draw from your 401k while it is down and pay taxes and penalties on top of it. 
+
+If you’re worried about your company doing layoffs, increase it to 8 or 9 months. If you have kids and a mortgage, increase it to 12 months of expenses. 
+
+Also, make a budget. Stick to it. Use Mint or excel sheets or whatever works for you. A budget is like a diet, it’s pointless to say you have one unless you actually follow it month after month. 
+
+And for the love of god don’t buy a car that’s worth more than 50% of your annual income. Ideally it shouldn’t be more than 25%.
+
+### Comment 20 by u/EliteMemeLord (2 points)
+
+Preach for number 2 of the major misconceptions. Yes, tech is growing, and competent technical staff are considered valuable assets. But there isn't some magical property of engineering jobs that means that when a product line get axed, that everyone else gets laid off, but the company will reassign the technical staff because they're just that valuable. If anything, companies love to get those people off the payroll.
+
+While I agree that new grads should be less picky in a competitive market, I highly disagree with other commenters suggesting that your first job doesn't matter. Entry-level salaries are huge for benchmarking lifetime earnings. You should strive to get your "break" as early as possible in a career.
+
+### Comment 21 by u/NonSecretAccount (4 points)
+
+I accepted an offer at amazon after interning there last summer. I'm still waiting for an offer from google (finished my internship there last april)
+
+I know I'm probably going to be fine, but I'm super stressed out that amazon might cancel my offer. Should I be looking for a plan C?
+
+#### Reply 1 by u/ExcitementIcy8383 (18 points)
+
+In times like these you don't have a job until the first paycheck hits your bank account
+
+#### Reply 2 by u/cookingboy (5 points)
+
+When does your Amazon offer start? If it's a way out, then whatever Plan C you land right now may not be dependable either.
+
+### Comment 22 by u/_d00little (4 points)
+
+You know nothing Jon Snow.
+
+### Comment 23 by u/[deleted] (3 points)
+
+Very good post. I really agree with the trying to increase your visibility. Even in good times it’s a good practice. As they say out of sight out of mind. 
+
+That’s one thing I think can be a downside of a lot of remote work less opportunity to be face to face  and have they human politics play.
+
+### Comment 24 by u/Udja272 (2 points)
+
+I wasn’t stressed out before. Idk, maybe it will get worse but the market where I live is still pretty solid for good developers that don’t have too high expectations in terms of salary. Maybe this fear is more of an US thing? (don’t get me wrong not fear in general but maybe the situation is kind of worse overseas? Maybe more competition?)
+
+### Comment 25 by u/fz-09 (2 points)
+
+Also, if you work as an engineer and don't have enough money socked away to keep you afloat should something happen, you should really reevaluate your spending habits.
+
+### Comment 26 by u/[deleted] (2 points)
+
+I'm actually doing alright. Best pay and least work I've done in my life. A few big tech companies did layoffs but it's still only about 10-15 companies in the USA. Sorry for anyone who's willing to suddenly lower all their expectations and take lower salaries because one company just laid off 13% of their staff. I will continue to know my worth.
+
+Out of curiousity OP are you a manager? My ex-manager gave me a whole spiel about the dangers of the economy when I recently quit to take a 20% raise and full WFH at a startup. So far so good, we have runway for the next 2 years, these layoffs don't stress me in the least.
+
+Don't let fear make you sacrifice yourself!
+
+#### Reply 1 by u/cookingboy (1 points)
+
+>	I will continue to know my worth.
+
+Your worth is purely decided by what people are willing to pay for it, nothing more, nothing less. 
+
+>	Out of curiousity OP are you a manager? My ex-manager gave me a whole spiel about the dangers of the economy when I recently quit to take a 20% raise and full WFH at a startup. So far so good, we have runway for the next 2 years, these layoffs don’t stress me in the least.
+
+I have built a startup myself, the calculation they do for “runway” change *very* quickly. And don’t forget, Meta has *infinite* runway due to them being Cashflow positive but they still laid off people.
+
+Your manager meant the best, it’s a more conservative approach. Your approach may very well work out better, but you should know the risks you are taking. 
+
+I hope you continue to do well.
+
+### Comment 27 by u/[deleted] (1 points)
+
+Referring to people as fat, costs, or resources.  Classic leadership.
+
+### Comment 28 by u/nylockian (-8 points)
+
+PEOPLE SHOULD STOP GETTING INTO TECH JUST BECAUSE OF THE MONEY.
+
+#### Reply 1 by u/Whaines (15 points)
+
+PEOPLE SHOULD STOP WORKING FOR MONEY. GO LIVE IN THE WOODS!
+
+### Comment 29 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 30 by u/kalashnikovBaby (1 points)
+
+If you get a job offer, is it recommended to negotiate for a higher salary? A concern is them recinding the offer. Is it wrong to think that the less expensive you are, the less likely they’ll fire you?
+
+#### Reply 1 by u/ShinshinRenma (4 points)
+
+In the job market, if a company has made an offer, they are far more likely to hold firm than to rescind if you try and counter.  
+
+The probability is not 0%, but it is exceptionally low.
+
+#### Reply 2 by u/[deleted] (2 points)
+
+Who knows. It’s a risk you’ll have to take in this environment
+
+### Comment 31 by u/playtrix (1 points)
+
+Tell the truth. Do you work in HR?
+
+#### Reply 1 by u/cookingboy (6 points)
+
+No. HR don’t make decisions like layoff lol.
+
+I was engineering leadership until pretty recently.
+
+### Comment 32 by u/jagmp (1 points)
+
+Hi, what job do you think could be à good option related to IT for people in reconversion right now ? (Just lost my job, no degree, and try to learn programming)
+
+### Comment 33 by u/gerd50501 (1 points)
+
+cut spending. save money. you need stockpiles of cash to get through unemployment. consider lower paying jobs. you can always quit when you get somethig better.
+
+### Comment 34 by u/[deleted] (1 points)
+
+question from a recently graduated student: would you try to negotiate an offer, or just be happy that you got one given everything that is happening?
+
+&#x200B;
+
+edit: some weird but cut half of what I just typed.
+
+#### Reply 1 by u/cookingboy (2 points)
+
+I think it’s always good to negotiate, *if* you have leverage such as a competing offer.
+
+If you don’t, then there is very little reason for them to play ball, recession or not.
+
+### Comment 35 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 36 by u/three18ti (1 points)
+
+The top comment:
+
+> Most of the companies facing layoffs or sharp stock downturns had inflated valuations that should’ve been cut.
+
+Bahahahahahahahahaha.
+
+### Comment 37 by u/[deleted] (1 points)
+
+[removed]
+
+#### Reply 1 by u/AutoModerator (1 points)
+
+Sorry, you do not meet the minimum sitewide comment karma requirement of **10** to post a comment. This is comment karma exclusively, not post or overall karma nor karma on this subreddit alone. Please try again after you have acquired more karma. Please look at the [rules page](https://old.reddit.com/r/cscareerquestions/w/posting_rules) for more information.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cscareerquestions) if you have any questions or concerns.*
+
+### Comment 38 by u/npeiob (1 points)
+
+how did you become an angel investor?
+

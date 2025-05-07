@@ -1,0 +1,330 @@
+# Software Engineer for 6 years currently unemployed.
+
+Hey guys,
+
+I've been scouring this subreddit trying to see if there was anyone else like me or in my current situation.
+
+A few things I want to address before I begin:
+
+\- I understand the job market is pretty rough now, especially for junior developers or new grads. Are there many long-time engineers who are also experiencing the same?
+
+\- I'm seeking advice, and exposing my problem points as well as my skills.
+
+\- inb4 the "6 yRs OfpRoGraMmiNg aNd You sTiLl dont KnoW this? rEd FlAg" comments, I know I'm not perfect, but I'm always willing to work on my flaws, especially when related to my career, as I know so many of us are, so please be nice.
+
+\- I'm mostly venting and hoping that some people have been in similar situations and will tell me it's going to be okay, but I'm also seeking advice. specific questions and tldr; to follow.
+
+&#x200B;
+
+So, the issue:
+
+Like I said, I've been a developer for 6 years now, and full disclosure, my resume doesn't look too good because of my last two jobs. The former I had to quit after one month because my wife had to relocate. I was doing very well in that job and was actually headed toward a promotion. The latter I was fired after 3 months, due to a combination of ADHD and drug shortage, depression, and the adjustment to working from home while having responsibilities of a stay-at-home husband. Since we were both working, and since I worked from home, I had to step it up a bit in terms of chores. Note: I am in no way complaining because my wife does a lot for us both at home and work, and it just took a bit of time for me to get used to some extra responsibilities, namely time management. Too bad it took me till I had to get fired to learn to better manage my time.
+
+Anyway, I've been unemployed for about 6 months now, and I'm a little worried. In that time I've been working on my skills in my specialty (Android development), as well as studying hard for interviews, both in Android and data structures/software design/operating systems, etc. I  by no means been slacking, and have been doing whatever I can to scrounge up whatever income I could get, little as it may be. This was either through tutoring, or Uber, and whatever spare time I had I spent on just studying for interviews and applying like mad.
+
+So, my questions are:
+
+\- How can I salvage my resume? I've been unemployed for 6 months, and unfortunately I don't have many side projects other than tutoring that I can put on. I can at the very least start some github projects and put those on my resume.
+
+\- Is there any kind of spin I can put to make the layoffs seem less offputting? Do I even put my 1-month and 3-month jobs on there? If I don't, then there's 12 months of unemployment on my resume. (My job before then was two years as a Software engineer at a large retail company, and they had laid off all contractors right around the time I was lead to believe I would be hired as a full-time SWE. oh well.)
+
+\- I recognize that I may not have the best skill set, but like I said, I'm working on improving. What other fields should I look into in the realm of SWE and tech in general?  I have a very novice-level proficiency or interest at the following: backend dev w/docker/NodeJs/angular; webdev, but not yet learned react; working with training models, namely dialogflow and tensorflow; and a bit of network security (I have a security+ cert from 6 years ago).
+
+\- Which of the above should I put all my energy into just to kind of expand my horizons? I still consider myself very up-to-date with Android native development, and will dedicate some time to keep up with that if necessary.
+
+\- Is there any hope for me? For any of us? It seems that many of the posts I read here are about Junior devs struggling to get hired, so it's nice when I see a win or two. I'm here to tell you that once you land your first job after countless months of grinding, it gets easier. But now that I'm in a similar boat, I hope I can look back at this period in my life and once again confidently say it gets easier. but in the mean time, can any one else attest to this? Or should I just consider the market as over-saturated and apply to med school or something?
+
+\- Also, I want to stress: which skills, and areas of expertise should I focus on now? AI/machine learning, web dev, or network security? Or should I learn cross-platform tools like flutter or ReactNative?
+
+&#x200B;
+
+Any advice, words of wisdom, support, and general banter or ridicule appreciated.
+
+TLDR; I'm unemployed for 6 months, and though I have 6 years of SWE experience, I still have a LONG way to go and am seeking advice and support, but appreciate all responses. Also, my heart goes out to the new grads also still trying to land a job.
+
+&#x200B;
+
+## Comments
+
+### Comment 1 by u/nooofynooof (187 points)
+
+Its a red flag for sure to have two sequential full time positions listed with such a short duration. It sounds like you had legitimate reasons to have such a short tenure at your last couple positions, but honestly I would probably take at least the one month position off your resume (probably both) and just chalk up the gap to relocating. You're going to have to explain what's been going on the past six months anyway, so I don't think adding a bit more time to that hurts your image. 
+
+Good luck out there OP
+
+#### Reply 1 by u/thatp (37 points)
+
+Thanks for the kind words. You're right. I'll update my resume and just try my best to showcase my skills.
+
+#### Reply 2 by u/MattSwartAU (4 points)
+
+Yep take it off and call it self improvement or self study in the field of Android Development plus relocation. 
+
+Way better than I lost 2 jobs in a row within 12 weeks. That doesn't sound so good.
+
+### Comment 2 by u/[deleted] (256 points)
+
+[deleted]
+
+#### Reply 1 by u/YouWillConcur (13 points)
+
+if you want your stuff and you know you capable, why not?
+
+#### Reply 2 by u/thatp (27 points)
+
+yeah sorry -- it was a contract-to-hire position. I should have said that but I thought it sounded better as "promotion". Anyway, they were already satisfied with my work and hinted at hiring me full-time. My bad for trying to fluff it up lol
+
+#### Reply 3 by u/sacala (-13 points)
+
+This is what you took away from the post? You really are a redditor.
+
+### Comment 3 by u/Case104 (65 points)
+
+I have 8 years of experience and just got an offer after a 5 month lay off. When I got asked about my time off, I answered that I was being picky about my next opportunity, and that I was casually looking while enjoying some quality time with my family. 
+
+This community is full of negativity because it skews junior, and the market is rough for juniors right now. That was not my experience after getting laid off. In reality, just be confident in your answer… and in your abilities. I hear a lot of imposter syndrome in your post. Fix it! There are so many great free resources and paid courses out there to learn React or any other technology that you feel “behind” in. 
+
+It’s not about picking the “right” one to strengthen, your goal is to keep the development gears turning so that when you open up your editor, you don’t look like someone who hasn’t touched code. Do what’s interesting to you. Just be “doing”. 
+
+Are you getting opportunities? How are you sourcing jobs? I didn’t hear anything about interviews in your post, I hear justifications for your previous failures. 
+
+My advice to senior engineers is to treat the search like spear phishing rather than shotgunning. Find jobs that you are a very strong candidate in, and that you want to contribute to. Find the hiring manager for the position, and reach out to them. Know why you’re valuable and have the best interpretation of your story (and time off) ready to go.
+
+#### Reply 1 by u/pinguinblue (12 points)
+
+>My advice to senior engineers is to treat the search like spear phishing rather than shotgunning. Find jobs that you are a very strong candidate in, and that you want to contribute to. Find the hiring manager for the position, and reach out to them. Know why you’re valuable and have the best interpretation of your story (and time off) ready to go.
+
+Honestly this works for juniors as well. This is how I got my job.
+
+#### Reply 2 by u/thatp (6 points)
+
+Ok this is great, especially about the time off. To answer your questions, I’ve been mainly using recruiters and LinkedIn, and never went past the calls with a recruiter, after they submitted my profile. Probably because of my resume, which l I’ll definitely fix.
+
+I also applied to various websites using indeed/monster/etc as a source for the job posts, but haven’t found much success with that.
+
+### Comment 4 by u/AggravatingSoil5925 (23 points)
+
+Drop the position you were fired from. Tell employers the gap in time is related to relocation and being a full time dad but you’re ready to get back into the market. A lot of places won’t even think twice about it.
+
+I’m biased because this is what I do for a living. But make a free AWS account and just attempt to deploy a full stack JavaScript application to it. You can take that as far as you want. Wanna learn docker? Dockerize the app. App needs a database, learn about RDS and the noSQL offerings and all the other options. Wanna learn more about K8s? Host it there and enjoy a nice AWS bill. Or just learn to run an app via S3 buckets and an API gateway backed by Lambdas. There’s lots of opportunities to learn that aren’t very expensive if you’re careful.
+
+### Comment 5 by u/[deleted] (51 points)
+
+[deleted]
+
+#### Reply 1 by u/EPlurbisUnibrow (40 points)
+
+This! I WFH full time (usually around 50 hours) and my girl for some reason seems to think that makes me a housewife! I keep telling her I’m never going to prioritize chores that she wants done during the day over my job that keeps the roof over our heads. Some people need to work from home for a bit to be reminded that it’s still WORKING.
+
+#### Reply 2 by u/DragYouDownToHell (7 points)
+
+I think, in my case anyway, that time I would normally take in office.  Getting up to go get some coffee, shooting the shit with co-workers, I'm instead putting a lot of clothes in the washer.  Instead of taking an hour lunch when I'm in office, I'm grabbing something and eating in 5 minutes, but that gives me some time to walk the dog and do a few dishes.  You can still put in an equivalent day of work, and get a few things done around the house, but yes, I prioritize work.  Some days I never take a lunch break, as I'm trying to get something done for someone in another timezone, but that applies to both in office and wfh.
+
+### Comment 6 by u/[deleted] (60 points)
+
+[deleted]
+
+#### Reply 1 by u/Dipsendorf (29 points)
+
+I know you're not asking for advice but when you get another job please make sure to beef up your emergency savings. Obviously I don't know your story, but two months and having to resort to credit cards isnt good friend. ♥️ Wishing you luck.
+
+#### Reply 2 by u/[deleted] (16 points)
+
+> 20 years in SW eng… 2 months, credit card stretched thin
+
+You really should have an emergency fund of 6 months saved up, plus after 20 years, a decent amount of investments for retirement that you can draw from, if really necessary.
+
+#### Reply 3 by u/thatp (4 points)
+
+Thanks for both! yeah the stress was getting to me a bit, but my wife's been extremely supportive, especially since she's bringing in most of the income now.   
+Okay, so ML it is.
+
+#### Reply 4 by u/Qweniden (2 points)
+
+> I have landed a few interviews but get rejected. It's super demoralizing. I thought I was hot shit.
+
+Sorry to hear.  That has got to be stressful. What kind of feedback are you getting on the rejections?  Are you having to do leetcode interviews?
+
+### Comment 7 by u/HurricaneMach5 (11 points)
+
+Hey there. You're not alone. Nearly 10 years exp in with a large company on my resume for 7 of them (Microsoft), and I'm in the hunt as well. Tried the startup thing to aim for the sun, and when the markets changed, we weren't able to secure funding. Womp Womp.
+
+The good news on my end: recruiters seem to really want to talk to me. Thinking the MS background is carrying a lot of weight.
+
+The bad news: it's not really pushing further than that in most cases. I have contacts back at the old gig, but MS is just beginning to thaw out from a hiring freeze, so it might take time, and even then nothing is promised.
+
+Currently at month 2, and before now, i hadn't gone through a true interview loop since 2014. Worst part is feeling extremely rusty with the leetcode style questions. I'm a backend developer and rather comfortable with a lot of the system design stuff, but if you ask me to implement dijkstra's algorithm on the spot in 45 minutes, I'll shake a good bit.
+
+I also prefer C# and .NET, but my last job has been in Typescript/Node, so I'm trying to "remember" the old idioms I thought would stick around more.
+
+OP, with an Android background, you might be able to snag a couple of freelance projects from a marketplace like Upwork. I am sure you'd be competing with other devs at extremely low rates, so you might not be able to charge what you're worth, BUT it would get more recent projects on your resume. Combine that with the fact that you've been a caregiver, and it could help "forgive" the gap on the resume. It's not ideal, but it'd be something.
+
+Edit: forgot to mention that just because you've been out of the game doesn't mean you should stop coding. Keep up the practice and flex the muscles. Time is the ever-present enemy, but it takes time to get better at anything.
+
+### Comment 8 by u/Feisty-Needleworker8 (27 points)
+
+She’s doesn’t get a stay at home husband if you have to work full time. You need to put your foot down on this and pay for daycare instead so that you can focus on your work while at home. If she doesn’t like it, she can support you as a SHAD.
+
+### Comment 9 by u/markrulesallnow (7 points)
+
+I would absolutely leave off the 1 month and probably 3 month jobs from your resume. There’s no point keeping those on there. They can only hurt you I would think.
+
+### Comment 10 by u/CanIAskDumbQuestions (8 points)
+
+Is every programmer on speed?
+
+#### Reply 1 by u/eJaguar (10 points)
+
+only the good ones
+
+### Comment 11 by u/spry_grandpa (7 points)
+
+I'm in a similar position. 6 yoe and turning in my two weeks on Monday with nothing lined up. Just taking a month or two off to find something else. Seems like most places are looking for seniors and it seems like all that really matters for that is yoe. Try looking for jobs in gov or slow moving industries so the expectations aren't too high.
+
+### Comment 12 by u/Null_Pointer_23 (5 points)
+
+Can't you just say you were freelancing during the gaps? I'm surprised you're having such a difficult time.
+
+Im a Fullstack dev with 4 YOE in London. I sent out about 25 applications and got so many responses it was a bit overwhelming. 
+
+Currently in the final stage interviews of 2 companies, and in the middle stage of another 2. I suspect my job search will last about a month tops.
+
+#### Reply 1 by u/Noooo_ooope (1 points)
+
+I'm also 3 yoe full stack dev that recently got laid off and on the hunt. Do you mind sharing a bit how these interviews went? Like, what did you do, what kind of questions or problems happened, etc. I'm going through a bit of impostor syndrome and scared to not do well
+
+### Comment 13 by u/PhysiologyIsPhun (3 points)
+
+I'd take the 1 month and 3 month roles off your resume. You say you've been working on some Android stuff. I'd look into potentially making your own LLC and saying you've been working on that for the past year. I've seen that suggested a lot around here.
+
+
+Also, you shouldn't feel bad about the search taking you so long. I'm at 6.5 YoE and just a few years ago I was fielding offers from multiple FAANG companies. 2 layoffs later and I'm probably about to take an offer for almost 50% of what I was getting paid 2 years ago. I don't even have an offer in hand and it's been almost 2 months.
+
+And just to frame how bad the market actually is - my last company I worked at laid off literally everyone. We have a slack channel of all the laid off people with around 40-50 tech people (30ish SWEs), and so far, only one guy has a new job. 2 others have accepted verbal offers. Everyone else is basically struggling to get interviews. These were all amazing devs too. Truly one of the smartest and most capable teams I've worked with.
+
+#### Reply 1 by u/dafrankenstein2 (1 points)
+
+How's the company running now? Outsourced?
+
+### Comment 14 by u/Altruistic-Rub3017 (3 points)
+
+You don’t need to be so fatalistic: that’s the depression talking. Accept yourself, your flaws, and your mistakes. Admit you’re in a great position as a dev with 6 years of experience, despite the bumps in the road. And post your resume if you haven’t already at r/engineeringresumes
+
+### Comment 15 by u/papa-hare (2 points)
+
+I'd remove both of the latter roles and say you had to move because your wife had to relocate, and you decided to postpone the job search for a bit because you took over childcare responsibilities after the relocation.
+
+### Comment 16 by u/kater543 (2 points)
+
+I’m not a SWE, but it’s a numbers game. It’s always been a numbers game. You’re gonna have to just keep applying to as many things as possible, try writing wacky cover letters(for fun and for reach workplaces), and remember to keep upskilling, adding stuff to your resume.
+
+### Comment 17 by u/JaneGoodallVS (2 points)
+
+I only know one unemployed dev. 
+
+He said it's harder now than it was in 2015 when he had no experience, but he's still getting interviews. 
+
+Last I heard, he had a third round and was waiting to hear back.
+
+### Comment 18 by u/DevonLochees (2 points)
+
+>AI/machine learning, web dev, or network security?
+
+None of the above - AI is a vaporware fad (there's a lot of potential in the technology itself, but there aren't \*jobs\* there, because it costs a tremendous amount to train and run effective LLMs, at which point a company is hiring specialists, and any intern can build a bad ChatGPT wrapper - 95% of companies hiring for "AI" won't know enough to hire the right skill sets anyways, and the other 5% are looking for top tier talent). Web dev you're competing with the comparatively huge market of people who only know front end. Network security... eh, \*application\* security has a lot of potential, because it's very difficult to get people who can straddle the line of understanding a codebase and identifying issues, pen testing, etc - but network security specifically they usually want people who have a strong networking background.
+
+&#x200B;
+
+If you've got 5+ years of experience in Android development, I'd focus on Android jobs and Java/Kotlin shops (and maybe do some practice with C#/.Net) - there's a huge Java presence in a ton of corporate environments.
+
+&#x200B;
+
+Oh, and I'd probably drop one or both of the short term positions, because a worse look than 3 months of unemployment is a 3 month tenure where you're implying it ended (to us, at least) because you weren't doing your job.
+
+### Comment 19 by u/Turbulent-Week1136 (1 points)
+
+Sounds kind of weird you would be up for a promotion after 1 month on the job, but whatever.
+
+My advice is to keep the two jobs off your resume. Tell them you relocated because of your wife, and you've been either:
+
+1) working on your own app
+2) looking for a job for the last 9 months. In this job environment, there's no shame in being out of work for 9 months, it's really tough.
+
+If you decide to say you were working on your own app, make sure you actually have an app you can pull up and show the interviewers on the spot.
+
+### Comment 20 by u/leeeroyjenkins (1 points)
+
+Just remove the 1 month job. It's not going to help you, it's just going to send a red flag for the wrong reasons.
+
+### Comment 21 by u/Chris_ssj2 (1 points)
+
+Consider making a similar (but shorter) post on r/ExperiencedDevs sub too, plenty of helpful senior folks on there, other than that I don't think I can give you any advice as I am a junior meself :P
+
+Wish you the best for your job search holmes!!
+
+### Comment 22 by u/Duckliffe (1 points)
+
+Do you have any open source experience? Google Summer of Code is opening for applications soon, and it's open to non-students this year (you just have to be new to open source). Could be something to look into. There's a stipend
+
+### Comment 23 by u/Ill-Valuable6211 (1 points)
+
+> "I've been a developer for 6 years now, and full disclosure, my resume doesn't look too good because of my last two jobs."
+
+Let's cut the bullshit, having a spotty work history can be a red flag to employers. Have you considered being upfront about your challenges in cover letters? Acknowledging the issue head-on shows self-awareness and honesty.
+
+> "I've been unemployed for about 6 months now, and I'm a little worried."
+
+Six months isn't the end of the world, but it's a hell of a wake-up call, isn't it? Have you been networking and reaching out to contacts, or just blindly sending out resumes?
+
+> "I recognize that I may not have the best skill set..."
+
+You know your weaknesses – that's good. But what are you fucking doing about it? Are you just dabbling in new areas, or are you seriously committed to learning and mastering something new?
+
+> "I still consider myself very up-to-date with Android native development..."
+
+That's great, but how are you proving it? Are you contributing to open-source projects, building your own apps, or just coasting on past achievements?
+
+> "Is there any hope for me? For any of us?"
+
+Of course, there's hope, but hope doesn't get you a job. Action does. What's your action plan? Are you just waiting for things to change, or are you actively working to make it happen?
+
+> "Which skills, and areas of expertise should I focus on now?"
+
+Fuck, man. Focus on what you're passionate about and where you see a future. Do you love AI/machine learning, or are you just chasing a trend? Your passion will come through in interviews and make you a more compelling candidate. 
+
+Now, what are you going to do differently starting today?
+
+### Comment 24 by u/GuyRedditer (1 points)
+
+Question:
+I don't know much about the tech job situation right now, but I've looked on manh companies and they have so many openings, why do people keep saying "job market js very saturated" right now.
+
+### Comment 25 by u/[deleted] (-2 points)
+
+It's over.
+
+I know SWE with 10+ years experience and a MS in CS making a hard pivot to the trades, healthcare, or enlisting in the military. 
+
+Software is being offshore to India and they have H1B Indians here to attend the meetings and do the in person stuff.
+
+### Comment 26 by u/sergeydgr8 (0 points)
+
+Android developers are highly sought after, so it’s not a lack of skillset. 
+
+What have you been doing to find a job? Have you been applying _like_ it’s your full-time job? Have you networked with recruiters? Can you share the resume you’ve been sending out? In phone screens, what have you been saying? There are a ton of factors that can impact your chances of getting a job.
+
+Also you can just drop the last two short jobs and say you went on a personal sabbatical to help with family. Not far from the truth since you have mentioned you moved and picked up chores at the house.
+
+### Comment 27 by u/[deleted] (0 points)
+
+[deleted]
+
+#### Reply 1 by u/mkfifo (2 points)
+
+If they hire you based on a lie, they can certainly fire you based on that, and in some jurisdictions that could potentially amount to fraud/forgery/tort - you are financially benefiting from that deceit.
+
+You can definitely leave things off, and you should try to cast your situation in the best possible light, but I would really recommend against lying.
+
+### Comment 28 by u/Quirky_Ad3179 (-6 points)
+
+Are you high bro ?
+

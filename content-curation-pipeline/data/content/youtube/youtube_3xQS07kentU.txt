@@ -1,0 +1,1628 @@
+Henry Suryawirawan: DevTernity is the
+top international software development
+conference with an emphasis on coding,
+architecture, and tech leadership skills.
+The lineup for this year is
+truly stellar and features many
+legends in software development.
+Names such as Robert "Uncle Bob" Martin,
+Kent Beck, Scott Hanselman, Venkat
+Subramaniam, Kevlin Henney, Allen Holub,
+Mary Poppendieck, and many other prominent
+names, including some of those who have
+also appeared in this podcast before.
+The conference takes place
+online so you can enjoy it
+from the comfort of your couch.
+We spoke to the DevTernity organizers, and
+I'm happy to share that Tech Lead Journal
+has got the 10% discount code for you.
+Enter the promo code AWSM_TLJ when you
+purchase the ticket on devternity.com.
+Here's the promo code,
+one more time, AWSM_TLJ.
+Depending on the time when
+you purchase the ticket, early
+price is still available.
+See you there!
+Jeff Perry: You are your greatest
+asset in your career and in your life.
+So protect that, grow that, invest in
+that, like you would invest in financial
+investments, but invest in you personally
+in your growth, physically, mentally
+professionally, and all areas of life.
+You'll be glad that you did because
+you're trying to live your best life.
+So you got to invest in
+you to make that happen.
+Henry Suryawirawan: Hey, everyone.
+My name is Henry Suryawirawan.
+And you're listening to the
+Tech Lead Journal podcast.
+The show where I'll be bringing
+you the greatest technical leaders,
+practitioners, and thought leaders in
+the industry to discuss about their
+journey, ideas, and practices that
+we all can learn and apply to build a
+highly performing technical team, and
+to make an impact in your personal work.
+So let's dive into our journal.
+Hello again, my friends and my listeners.
+Welcome to the Tech Lead Journal
+podcast, the show where you can
+learn about technical leadership
+and excellence from my conversations
+with great thought leaders out there.
+And this is the episode number 95.
+Thank you for tuning in and
+listening to this episode.
+If this is your first time listening
+to Tech Lead Journal, make sure to
+subscribe and follow the show on
+your podcast app and social media
+on LinkedIn, Twitter, and Instagram.
+And for those of you who enjoy this
+podcast, and wanting to contribute to
+the creation of the future episodes,
+support me by subscribing as a
+patron at techleadjournal.dev/patron.
+Today, we are covering about
+the engineering career.
+I'm sure many of you are working
+as an engineer or are thinking
+of becoming an engineer.
+Have you ever thought through how you
+can optimize your career as an engineer?
+Or maybe whether engineering
+itself is the right career for you?
+Also what happens to some of us is
+that after becoming an engineer for
+a number of years, we do not feel
+the same enjoyment and fulfillment
+as we started in the beginning.
+And then comes up the question
+of what's next that I should do?
+How can I navigate my career and even
+potentially make career transitions?
+If these are some of the thoughts that
+you have in mind, then I hope today's
+episode will be worth a listen for you.
+My guest for today's
+episode is Jeff Perry.
+Jeff is an engineering coach, the founder
+of More Than Engineering, and the cohost
+of the Engineering Career Coach podcast.
+In this episode, Jeff shared
+the important role of a coach or
+mentor in our engineering career,
+especially when faced with all the
+questions that I mentioned earlier.
+We first discussed Jeff's engineering
+career clarity checklist, and why
+it is truly important to find the
+clarity in our career journey.
+Jeff then shared the role of an
+engineering career coach, how a coach
+can help us navigate our career, and the
+difference between a coach and a mentor.
+Throughout our discussion, we also
+touched on a few other topics such as
+the Great Resignation trend and what
+are some of the things behind it, making
+intentional career transitions taking
+lessons from what Jeff has done in his
+career, transitioning to a leadership
+role, and the power of accountability.
+I enjoyed my conversation with
+Jeff, discussing about the role
+of an engineering career coach or
+mentor, and also the engineering
+career clarity checklist.
+And I liked the way Jeff explained
+that we shouldn't navigate
+our career journey alone.
+There are people and resources
+available out there who can help us
+make better decisions, especially for
+something as important as our career.
+If you also enjoy this episode,
+please share it with your friends
+and colleagues who can also benefit
+from listening to this episode.
+Leave a rating and review on your podcast
+app  and share your comments or feedback
+about this episode on social media.
+It is my ultimate mission to make
+this podcast available to more people.
+And I need your help to support
+me towards fulfilling my mission.
+Before we continue to the conversation,
+let's hear some words from our sponsor.
+Today's episode is proudly sponsored
+by Skills Matter, the global community
+and events platform with more
+than 100k software professionals.
+Here members can organize their
+learning experiences around the
+technology topics they care about most.
+You get on-demand access to their latest
+content, thought leadership insights,
+as well as the exciting schedule of tech
+events running across all time zones.
+So whether DevOps or Data Science
+is your buzz, or you're a fan of
+functional programming or all things
+cloud, you can make real connections
+with people who share your interests.
+Head on over to skillsmatter.com
+to become part of the tech
+community that matters most to you.
+It's free to join and you
+will find it easy to keep up
+with the latest tech trends.
+Are you looking for new cool swag?
+Tech Lead Journal now offers you some
+swags that you can purchase online.
+These swags are printed on-demand
+based on your preference and will be
+delivered safely to you all over the
+world where shipping is available.
+Check out all the cool swags available
+by visiting techleadjournal.dev/shop.
+And don't forget to brag yourself
+once you receive any of those swags.
+Hello, everyone.
+Welcome back to another new episode
+of the Tech Lead Journal podcast.
+Today I have with me a guest who is also
+a host of a podcast, the Engineering
+Career Coach podcast, which has
+been around for more years than me.
+Today my guest is Jeff Perry.
+So he's actually the engineering
+career coach and also leadership coach.
+Jeff actually came from the engineering
+background, not just software engineering,
+also mechanical and also manufacturing.
+So it's really interesting how you
+can combine all these engineering.
+Later, maybe you can discuss about that.
+I'm actually very excited today to
+talk about engineering career and
+coaching and leadership in general.
+So hope to have this great
+conversation with you today, Jeff.
+Jeff Perry: Absolutely.
+I'm excited about this, Henry.
+Thanks for having me.
+Henry Suryawirawan: Normally, I
+would start by asking my guest
+to share his or her story.
+Maybe telling us more about your
+highlights or career turning points.
+Jeff Perry: Yeah.
+So, as you noted, I've kind of
+taken a winding road through
+a lot of different technical
+disciplines and different things.
+It started when I was a kid.
+I'd really gravitated towards
+science and math and things like
+that, like many engineers did.
+Because there was like certainty in a
+lot of the things that I was doing there.
+I always really loved being
+right and having right answers.
+From an early age, I think it
+was ninth grade, I was like, I'm
+going to be a mechanical engineer.
+That's what I was going to do.
+And so, I never wavered from that.
+I went to school, did
+mechanical engineering.
+It was great.
+Then I got into some research during
+my undergraduate degree and it was
+connecting some of the software
+pieces of mechanical design and 3D
+CAD systems and things like this.
+Through that, I got connected
+with an automotive company that
+wanted to do more of that work.
+There was a partner in the
+research that we were doing.
+And so, ended up with a job writing
+code, even though I'd only had
+two software courses in school.
+Most of my stuff was on the
+mechanical and physical hardware side.
+Here I was writing code every day when I'd
+only taken a couple of software courses.
+So I felt kind of like
+a fish out of water.
+But I really tried to look at
+that as an opportunity for me to
+learn a different sort of industry
+and really dived into that.
+So I really enjoyed learning about
+software frameworks, APIs, Agile
+methodologies, and more in that world.
+There's a lot of things that I learned and
+got perspectives of when I was doing that.
+But I also realized that, hey, for
+me personally, writing code all day,
+every day, wasn't what I wanted to do.
+It's not where I found a lot of joy.
+So I actually had an opportunity to
+go to a smaller company and dived
+into my first leadership experience.
+And they wanted me because I'd also done
+some like entrepreneurship side projects.
+I had the mechanical and the software
+aptitude, and I could really bring
+a lot of these disciplines together.
+It really kind of almost became a
+product owner over a technology.
+I tried to grow a new market utilizing
+existing technologies and find a roadmap
+for new technologies for the company
+where they were doing a physical sensor.
+So there were hardware capabilities
+where we're working with electrical
+and mechanical engineers, and we had
+to manufacture these things, plus
+the software side, data acquisition
+systems and things like this in
+the cloud or on-prem depending on
+how we were doing that at the time.
+And so it was a lot of different
+things going on there trying
+to bring all this together.
+So I did that for a while.
+Then I shifted again towards operations
+and this was more process-oriented using
+technology to simplify enhance operations.
+Make sure we're collecting the right data.
+Really take that continuous
+improvement methodology and
+approach and different initiatives.
+So those are kind of the big
+shifts in the corporate world.
+And obviously, we can talk
+more about what I do now.
+Eventually got to a career plateau where
+I knew that what I was doing wasn't a
+perfect fit for me or the company anymore.
+And so had some tough conversations
+and even got to a point where I said,
+"Hey if we can find an adjustment
+that really is a fit for me, I'd
+be happy to explore that with you.
+But if things stay the way they are,
+then it's probably best for me to leave."
+Like I recognize that where
+I was not really giving my
+best work for the company.
+It also wasn't great for me, and
+so had those tough conversations.
+We explored some things.
+Nothing really felt like a great fit.
+But I was okay if it was
+time to go and actually was.
+Then it was like, okay, what's next?
+I didn't actually have
+anything lined up for me.
+I wouldn't always
+recommend that for people.
+But it's what I needed to do.
+So I spent a lot of time getting
+clarity on what I really wanted.
+In the end, kind of brought together
+this entrepreneurship bug that I had.
+Wanting to stay close to technology
+and engineering, but also over the
+course of time, recognize that helping
+people grow and developing people was
+something that was really important to me.
+I had opportunity to do that,
+and I found that's where I really
+lit up and found joy in my work.
+So that was kind of where I
+found my own kind of genius zone.
+Put it all together and
+doing what I'm doing now as a
+leadership and career coach.
+So that's maybe long and
+short of the story for me.
+Henry Suryawirawan: Hearing
+your story, I can see so many
+transitions in your career.
+One of the topics that we'll be talking
+about is about career transitions.
+But I think before we went there, one of
+the things that I also see in your career
+is that there are many facets, right?
+You started from, maybe, doing
+engineering, mechanical, software and keep
+on continuously improving and exploring.
+It's not just fitting into one
+particular role, but actually
+moving into multiple facets and
+seeing where you can grow further.
+Although eventually it met a plateau.
+But I think, now you are an
+entrepreneur and you started this
+company called "More Than Engineering".
+So tell us more what is
+More Than Engineering does?
+Jeff Perry: Yeah.
+So More Than Engineering is the name
+I put for what I do as a leadership
+and career coach, specifically for
+engineers and technology professionals.
+And the "More Than" piece is this idea
+of okay, engineering might be this
+professional identity that you might have
+as an engineer technology professional.
+But I want to look at the whole person.
+Look at who are you?
+What are you trying to become beyond
+just building your technical skills,
+which is absolutely important?
+But what about in leadership,
+personal development?
+What do you want to do in your community?
+Or other ways you want to give and
+support, like who do you want to become?
+This is really trying to take this
+larger holistic approach to personal
+development, but coming from a, "Hey,
+I've got this broad range of experience
+in the engineering and technology world.
+But I've also now developed a very
+wide tool belt of things that we
+can do to look at where you're at
+and where do you want to get to?
+How do we make that happen?
+A lot of that is around
+career development.
+People trying to say, "Hey, I'm not
+really happy with where I'm at right now.
+How do I do that?"
+Or I'm trying to grow in my leadership
+approach, building a new team,
+trying to grow these certain skills.
+How do we do that in a sustainable
+way instead of just prescribing
+behaviors, things to do?
+Okay.
+Try this.
+Try this.
+Trying to look at how do
+we make this actually a
+transformational experience for you.
+And so that's really the essence
+of what we're trying to do.
+Henry Suryawirawan: One of the
+things when I went to your website,
+you have this career checklist.
+You call it engineering careers checklist.
+It's very interesting to me because I
+didn't have that checklist,  nor that
+I thought about having a checklist
+before I went into engineering.
+So tell us more, why do you
+have this career checklist?
+And what's the purpose?
+How does it help someone to decide whether
+engineering is the career for them?
+Jeff Perry: Yeah.
+So I call it the engineering
+career clarity checklist.
+What this is really designed for is those
+people who are at those points, who are
+saying, "You know, I wonder if there's
+more to what my career could look like
+rather than just showing up, getting
+a paycheck and going home and watching
+Netflix" Or staying home and watching
+Netflix if you're working from home.
+Because engineers and
+technology professionals have
+a huge amount of versatility.
+I mean, I'm an example of that, of
+like all the different areas I've done.
+But I've talked to so many engineers
+who have done so many different things
+across different technology disciplines,
+across different roles they've played.
+They can stay.
+They can go deeper in tech.
+They can stay broad.
+They can work across products.
+They can work across projects,
+large programs, leading large
+teams, whatever that turns into.
+But there are plenty of people who are
+like, I know something needs to change,
+but I don't know what that actually is.
+How do I find the alignment in that?
+So that I'm actually really enjoying.
+Cause I know what I want is to actually
+wake up and feel excited about work,
+where right now I'm feeling like I'm being
+drained and not excited about that at all.
+So the career clarity idea is
+like, okay, how do we find that?
+Two analogies I use is ways of thinking
+either clarity like a north star, like
+the things that you really want to get to
+that kind of keeps you aligned with where
+you're going, or maybe another way to
+look at it as a set of filters of things
+like  what's really important to you?
+So as opportunities or things come
+your way, how do you run those through
+your filters and see if they meet
+criteria that are right for you?
+If so, let's continue to explore.
+If not, then don't waste any
+more time on there because you've
+already identified those things
+that are most important to you.
+So there's a number of
+different tools within that.
+It's a checklist of activities and
+exercises you can use to really do some
+introspective work and identify that
+north star, those set of filter, that
+you need to use so that you can get
+the clarity with where you want to go.
+Henry Suryawirawan: So some of the
+things that you advocate in the
+checklist is finding the "why".
+Maybe many of us get to work to get
+paycheck and go on with our lives.
+I'm not sure whether all engineers
+really have a clear goal in
+mind before they start a career.
+So tell us more about why do
+we need to find the "why"?
+And what are some of the "whys"
+that engineering should think
+about by becoming an engineer?
+Jeff Perry: Yeah.
+And this could be becoming an engineer
+or a certain type of engineer or engaging
+like in a certain industry or something
+that's actually important to you.
+This comes from a tool that I used
+when I was in manufacturing, where a
+lot of times there was a problem on
+the manufacturing line or something.
+We need to dive into the root cause of it.
+We use a tool that is pretty common
+called "The Five Whys" to dive into
+root cause analysis and saying, "Okay.
+You initially look at what the problem
+is that you think is the problem."
+And then you keep asking, why is that?
+Why is that?
+You keep going deeper and deeper.
+We use the same tool of these five whys.
+You can go more than five and say,
+okay, what's the goal you have?
+Something you want to get to.
+But then what we're trying to
+do is unlock what's the deeper
+level of intrinsic motivation.
+What's really the driver for you?
+That's pushing you to
+want to make this goal.
+And I've had people have all sorts of
+different answers to this in the end from,
+"Hey, I really want to find something
+that's exciting for me in my career
+because I watched my parents both hate
+their careers through their lives, and
+I grew up with that and I hated that.
+And I don't want that to be how I
+end up for the rest of my career, and
+so I want to find this alignment."
+That's one type of answer.
+Another person said, "You know what?
+I want to find my happy
+place in  my career.
+I don't know what that is, but
+I'm trying to figure that out."
+Another person could be really passionate
+about sustainable energy and things like
+that, and so, they were making the move
+from medical devices over to green energy
+and buildings and things like that.
+Because they recognize that's an industry
+that was very important to them that
+they wanted to be actively involved in.
+Other people who want to work on certain
+types of products or things like this.
+Or rather, people want to get involved
+in scale, or it's really about their
+opportunities for personal growth
+and different opportunities that
+are going to help them do that cause
+they don't want to feel stagnant.
+So it can be all sorts of things.
+But the question is like, what is it for
+you that really drives you to want to get
+up and go and do things in your career?
+And so identifying that deeper
+level "why" can be really powerful.
+Henry Suryawirawan: There are so many
+things that you mentioned just now
+that people look for in their jobs.
+So I think the key here is
+to find intrinsic motivation.
+How to align that with your career?
+It's not just some job that you
+need to do to get paycheck, but
+to get that fulfillment as well.
+Another thing that you mentioned
+in the checklist is that we
+need to find "our genius zone".
+Tell us more what is this genius
+zone and how do we use that?
+Jeff Perry: Yeah.
+So put simply, the genius zone
+is where you do your best work.
+Okay.
+A couple of different ways to look
+at this, and also recognize that
+your genius zone can evolve too.
+As you go through different experiences.
+If you would've asked me
+five years ago about me.
+"Hey, can I do leadership and career
+coaching for engineers like that?"
+That wouldn't have been that because it
+took me a few years of getting experience
+of doing training and kind of internal
+coaching and development inside of the
+company that I was at for a while, and
+kind of unlocking that piece of me.
+And then also having more experience
+on the technical side to have the
+broader range of things that allowed
+me to feel like, "Hey, I had the
+confidence that I could do this
+and I could put that together."
+So that's one way to look at it
+as like these combinations of
+things that you're really good at.
+So you may be good at one particular
+type of software application or
+product development or leadership.
+You can look at those as separate
+things, but when you combine them, the
+combination of them create something
+that's quite unique and different.
+Because you have certain insights
+into financial institutions if
+you're in fintech or something like
+that, or other types of industries.
+And so it's industry,
+it's passion, it's skills.
+When you combine them, do you have a
+unique value that you can bring where
+you can really deliver exceptional work?
+Where you can do your best work?
+So that's one way to look at genius zone.
+Another way is to look at it like,
+okay, when do you feel like you kind
+of get in the zone,  or in a state of
+flow, if people are familiar with this?
+The idea of flow comes from a researcher
+by the name of Mihaly Csikszentmihaly.
+I think he passed away a few months ago.
+He's been quoted extensively
+on his research in flow.
+And it's like this combination
+of challenge and the skills
+that you bring to the table.
+You can kind of get into this flow state.
+But what is that for you?
+It's almost that time or those experiences
+or those things you work on, you hardly
+feel time passing, but you're just
+really in that zone, because you're
+excited about things and what is it that
+you're doing that unlocks that for you?
+Can we find ways to do more of that?
+Cause that's something that you've got
+some natural inclinations, but also
+some skills that you've developed that
+really allow you to do some amazing
+work when you're in that space.
+How can we do more of that?
+So you can really deliver your best value.
+So we can identify that.
+Then maybe we can find a role or
+an opportunity that can align and
+give you more opportunities to
+do your best work in that way.
+Henry Suryawirawan: So I find that
+these two questions are really,
+really important, especially as
+you go along in your career, right?
+Maybe 5-10 years.
+It's not like in the beginning.
+I think these two questions can
+help people who feel stuck or feel
+de-motivated or didn't get the sense
+of fulfillment, also people who
+want to explore new areas of growth.
+It could be new role, new career,
+new industry, and all that.
+You seem to have lots of experience
+at doing career transitions.
+Part of this exercise, I believe, that
+people will make career transitions,
+and jump into different areas, which
+they may have not explored before, but
+this is something that they are good at.
+So, tell us more, how can we make this
+more intentional career transition?
+Maybe after you do this exercise,
+how do we navigate that?
+Jeff Perry: Yeah.
+So that's a perfect question.
+And you said the right word that's
+really important to me is like
+being intentional about this.
+Okay.
+Because I talked to so many people
+and they're like, "Hey, I know I
+want to make a move or something."
+But usually initially, or often
+initially what they're motivated
+by, I don't like what I'm doing.
+And so they're just trying to move
+away from where they're at right
+now, cause they know what they're
+doing right now isn't great.
+But what we want to do is not
+just find a new opportunity or
+job or situation, but the right
+opportunity and situation for them.
+It's about being proactive,
+not reactive, like saying I
+want to identify what I want.
+What's important to me?
+And then I want to go through
+a strategic process to go find
+it and make that a reality.
+So it's about moving towards what you
+want to do and become, rather than moving
+away from something you don't want.
+And that's just a much more powerful way
+of going about any change that you're
+trying to make in your life is thinking
+about a positively framed approach to
+how do you move towards what's important,
+what you want rather than moving
+away from something that you don't.
+So I've designed a whole approach and
+program to this called the Engineering
+Career Accelerator, that's really designed
+to help engineers move through this
+intentional career transition and get
+into the right opportunity and situation.
+It's been my pleasure to help a lot
+of people and I get the opportunity
+to kind of have that front-row seat
+to working with people through this
+process and helping them grow to get
+where they want, but also, again, we try
+and design this in a way that trying to
+be a transformational experience where
+they're not just successful in landing
+the opportunity, but they see that
+there're benefits and changes they've
+made that are going to help them as they
+continue forward throughout their career.
+And that's really what
+it's designed to do.
+Henry Suryawirawan: So, again,
+you emphasize the keyword
+intentional or deliberate here.
+It really struck me when you said
+that many people want to make
+career transitions because they
+just think they don't want to
+do whatever they're doing now.
+It's more about moving away or
+running away from their situation.
+But towards where?
+Maybe they are not sure about.
+So this is something that
+probably is critical, right?
+When I hear about great resignation or
+maybe during pandemic, people are not
+fulfilled or suffering with their career.
+So maybe this is also partly why
+that many people are resigning.
+I don't know whether in your coaching or
+maybe in your training session, you have
+this study case about great resignation.
+Is there some kind of things that you want
+to give insights whether people are making
+the right transitions during this time?
+Or actually still the
+same kind of problem?
+Jeff Perry: Yeah, so, I mean, we've gone
+the whole gamut throughout the pandemic
+and the great resignation experience.
+From, hey, there're layoffs upon
+layoffs across the world because the
+pandemic to now we're in a place where
+unemployment is really low, and it's
+really hard for companies to find people.
+They're trying to grow like crazy.
+And maybe there are some long tail
+effects of that, of some people
+who left the workforce for a longer
+period of time and are coming back.
+I think we're still trying to sift
+through some of the data around that.
+But there was some significant
+data around, like 2021.
+So we were already through kind
+of the first year of the pandemic.
+In the US, there was the highest
+quit rate that we've had in decades.
+That was significant.
+I think it was just a lot of people
+going through that process and kind
+of stepping back and trying to figure
+out okay, what do I really want?
+So some of that people actually
+have that time to be introspective
+because they couldn't leave their
+homes for one reason or another.
+Or some people got forced into looking for
+something else cause they got laid off.
+And others, especially in particular in
+the software space, found that because
+they were more primed for the remote work
+opportunities and there were a greater
+need to want to do more automation
+and software pieces, there were a lot
+of opportunities in front of them.
+There's been a lot of wage expansion
+and compression and things like that.
+People are like, "Hey, I can get a
+significant raise if I make a move.
+Well, I'm going to do that."
+So sometimes they're chasing the money.
+Sometimes they actually did some of
+that intentional work to try and figure
+out what's really right for them.
+In the conversations that I had, and
+I've talked to hundreds of people
+one-on-one is that I find that those
+who are driven by fear through the
+process are often the ones that
+kind of lost out on opportunities.
+It didn't really make progress.
+But those who are driven by opportunity
+and what's possible and look for, how
+can I make the most of the situation?
+Those are the ones who found the
+opportunities and were able to
+continue to grow and progress
+instead of taking a break and staying
+stagnant, or maybe losing ground
+during the last couple of years.
+Henry Suryawirawan: So,
+currently you are a coach.
+At least in my part of the world, it's
+not common to have an engineering coach,
+engineering career coach, particularly.
+So tell us more, why should
+engineer think about having a coach?
+And how does it differ
+between mentors and coach?
+Because these two terms are always
+used sometimes interchangeably.
+But maybe you can give us clarity.
+Why an engineer should
+look for career coach?
+Jeff Perry: Yeah.
+So I mean, engineers are notorious
+for being problem solvers, right?
+And figuring things out.
+That's one of the things
+that engineers do best.
+There aren't all that many of us who
+are coaches, specifically for engineers,
+but there are a few and because I'm in
+the industry, I know a number of them.
+But think about this.
+I'm just a huge proponent and believer
+that when we're trying to make changes
+in our lives, we shouldn't change
+alone, and try and do that alone.
+We need people in our life to support
+us and help us through that process.
+What a mentor or a coach can do is
+really provide that outside perspective.
+Maybe see things in you and work the
+problems you're going through and
+the opportunities that are in front
+of you that you might not be able to
+see because we all have blind spots,
+whether we like to believe it or not.
+We do.
+And so, we need that help.
+Mentors and coaches can also help
+expand your network and give you access
+to insights and people that you might
+not otherwise be able to connect to.
+And also, just a big opportunity
+to give you frameworks, activities,
+maybe a community to be involved in.
+One of the most powerful things is the
+power of accountability you can have.
+That you are invested in yourself and
+have someone who is invested in you.
+Trying to help you move through
+this process because you have maybe
+regular meetings and situations and
+things you're trying to report on.
+Then, you got this extra motivation.
+I've got something I've got to deliver.
+So there's a lot of
+benefits, a lot of that.
+When we think about the difference
+between a mentor and a coach.
+Maybe the separations, a mentor
+is often kind of someone who
+would volunteer to help you, maybe
+it's someone in your workplace.
+Often, workplaces will have mentoring
+programs and things that you can get
+connected to, or you can just find
+someone you want to connect to ask
+questions on a semi-regular basis.
+Or maybe someone in another community
+setting that you can connect with.
+But they just kind of help
+and we connect with them.
+It's often informal.
+It can be formal.
+It kind of depends on how
+you set that relationship up.
+But a coach is often paid,
+something that you would invest in.
+They're also uniquely invested
+then in your success because
+they win when you win.
+It's how they're set up.
+So it's often a third-party
+person outside the perspective of
+where you're at in your company.
+And so, they don't have any other
+agenda to keep you in your company
+or get you out or whatever, other
+than you being successful and
+what's most important to you.
+That investment in you through
+that process can be really,
+again, transformational.
+Coaches also bring, often,
+a more intentional framework
+and are more proactive in your
+experience rather than a mentor is.
+They'll often show up and like, "Okay.
+What questions do you have for me?"
+And they can be fabulous and wonderful.
+But a coach is more like really
+bringing something from the experience.
+More often than a mentor would.
+Henry Suryawirawan: So you mentioned
+a technique, which I find really
+interesting and also powerful.
+This power of accountability.
+Again, I'm not sure, but I can just
+look from my personal experience.
+Sometimes I don't do this
+accountability for my career.
+So things could be just thinking
+in our head or just consulting
+with our family members.
+But the accountability, I think, is a
+very unique angle that people can explore.
+Tell us more about how can we find
+accountability partners or maybe
+some kind of accountability framework
+for us to navigate our career?
+How does this work?
+And maybe you can give us examples.
+How can this accountability help someone
+to navigate and make career transitions?
+Jeff Perry: Yeah.
+So, you can use accountability
+in any area of your life.
+To put some data to it, I think the
+Association for Standards and Training
+Development (ASTD) did a study on the
+power of accountability from someone who's
+got a goal that they want to accomplish.
+You just have the idea of a goal.
+It's about a 10% chance
+that you're going to do it.
+If you like write it down,
+it increases like 25%.
+If you tell someone,
+it gets up to like 50%.
+But if you get to the point where you
+have someone who you're accountable to,
+that you have a specific date set up
+to be accountable and deliver to them
+on a specific day, it's like 95% of the
+time you're going to deliver on them.
+So we go from 10% of, I have an idea
+of something I want to do, to I'm
+accountable to someone I've got a
+specific date tied to that deliverable.
+So from 10% to 95%, you're
+going to frame that.
+So that's just from a
+pure data perspective.
+That shows some real power in
+the power of accountability.
+You can find people in your life.
+I mean, these can be partners, spouses,
+friends, mentors, and personal community
+and your family or other things.
+Just, again, like this idea of
+not making changes alone brings
+a little bit accountability.
+You're even sharing with someone
+that you're trying to do this
+rather than holding onto yourself.
+Yeah.
+It feels a little vulnerable, but that
+can actually sometimes light a fire
+in you to actually take some action.
+But then taking that next level to maybe
+invest in yourself, get some specific
+help and a coach or something that could
+be next level because they're going
+to be helping you in different way.
+Anyway, this accountability area or
+principle can just be so powerful to
+say, "Hey, I want to do something, but
+instead of just thinking about it, I'm
+actually going to do something about this.
+Share this with other
+people and ask for help."
+You'd be surprised how many
+people are actually willing to
+help and support you through that
+process in many different ways.
+You can get some people who are willing
+to do little check-ins and things like
+that with you, if that's what you want.
+Cause sometimes, especially if
+you've got a full-time job and
+other responsibilities, now you're
+trying to do something else, it'd
+be hard to put in that time and that
+effort because we're tired and got
+a lot of other things on our plate.
+But when we have other people supporting
+us and holding us accountable or we feel
+accountable to, and then that can keep
+the fire going and keep us rolling there.
+Henry Suryawirawan: So some
+people also find gamification
+as part of accountability.
+So maybe you use tools to do habit streak.
+And also some people put some
+more stakes, like put money.
+So yeah, if I didn't do X,
+I'll put some money for you.
+So I think that kind of like also
+works as a accountability technique.
+Jeff Perry: I've got a friend
+who's wanting to write a book.
+And so if he doesn't get that book
+manuscript submitted by a certain time
+this year, then he owes me 500 bucks.
+That's going to light a fire for him.
+So it's just a funny way.
+That works for him.
+That negative pressure doesn't
+work for everyone, but that's
+something that's really pushing him.
+I rail him on that whenever
+we talk almost every week.
+So whatever works for you.
+That's what we're trying to find.
+Henry Suryawirawan: So one of the major
+transition for engineers is to actually
+navigate between individual contributor
+and to leadership or management.
+In your career, you also mentioned
+that you have navigated that process
+as part of your career coaching, or
+I think your training in general,
+is also a leadership aspect.
+So tell us more, how can someone
+have this mindset transition between
+an individual contributor to more
+leadership or management role?
+Jeff Perry: Yeah, this is a
+critical transition for a lot of
+people, if it's the right thing for
+them, and if it's the right time.
+So we need to recognize the
+shift that's taking place here.
+As an individual contributor, your
+best value and your expectations
+completely surrounding around that the
+technology progress that you deliver.
+Whether that's, you know, the code
+that you're writing, the product
+that you're working on and thing
+that you're developing or designing.
+Whatever that looks like.
+It's about what are you
+delivering in that way?
+When you make that shift to
+leadership and management, that's
+not where your focus is anymore.
+As in you delivering the technology.
+It's you enabling your team to do that.
+And that's a shift, and it's really
+hard for many people to let go of the
+direct ownership of this is the code
+that I wrote and I own and I know it.
+A lot of times you're kind of
+having to give up your baby you
+were working on it for a long time.
+Especially if you're like staying on the
+same team and then becoming the leader.
+That's really difficult.
+Or even if you're shifting things,
+you just have to completely
+let that go and hand that off.
+But that impulse to, "I don't
+know exactly so I'm going to go in
+and solve that problem for them."
+That's not enabling them both to
+make the best decision in the moment,
+but also to enable them to grow.
+And that doesn't mean that you shouldn't
+bring in your technology insights.
+It just means that you need to step away.
+Recognize that your shift from
+you're not going to be writing
+code or diving into the details of
+everything on the technology side.
+And there are so many challenges
+to people letting go of this
+idea and really delegating.
+"Hey, if I don't do this,
+it's not going to be done."
+Or fear of quality going down.
+Or if I don't do this, it'll take longer.
+Then I need to train people.
+There's all sorts of things.
+But that's really what the shift is about
+and really taking the personal approach
+to how can I enable them, but also help
+them grow to become the people and the
+professionals that they want to become.
+And how do I align their goals
+with the company's needs and
+work across these various things?
+And so there's  a deeper
+level of understanding.
+People really need to understand
+processes and understand higher-level
+areas of how different pieces
+of technologies fit together and
+eventually deliver to whatever the
+final product or services in that way.
+And so, it's a big shift.
+Because usually as individual contributor,
+you're being delivered your tasks and
+maybe you have influence there as you're
+planning and things like that, what
+that looks like and moving through.
+But then suddenly, as a leader,
+you're identifying those and
+managing across multiple people and
+working across functions usually.
+It's a big shift, but it's an
+important one for people to get right.
+So, again, it's a change.
+Make sure you have at least some mentors
+to help you through that process, so
+you don't have to squander too much.
+Cause there are a lot of lessons
+learned and there's going
+to be a lot of frustrations.
+There's imposter syndrome.
+There's fear and uncertainty there.
+You want to make sure you have
+some help as you move through that.
+Henry Suryawirawan: You mentioned that
+it's very critical to have mentors.
+So when I look back to my career,
+when I made this transition,
+I didn't have mentor per se.
+So it's more like winging it, maybe.
+Maybe reading books or consuming
+whatever resources that you could find.
+But I think having that
+mentor could really help
+accelerate that process, right?
+So that you are not stuck in the
+loop of fear or imposter syndrome,
+like you mentioned, or maybe
+sometimes you're just clueless.
+What should I do?
+Because you're dealing with a totally
+different kind of a challenge altogether.
+And letting go is one part
+that, I think, many people who
+will transition from individual
+contributor to manager suffers a lot.
+So maybe is there any specific technique?
+How can we embrace this letting go?
+How can individual contributor start
+shifting their mind towards more
+enabling, growing people, improving
+process and things like that?
+Jeff Perry: Yeah, it's a great question.
+So, this is the foundation of a lot
+of the shifts that I try and coach
+people through, is identifying like,
+okay, that's not just a prescription
+of techniques that we want to give
+you, like, okay, take these actions.
+But for you, you need to first
+identify what are the mindsets or
+beliefs that you're hanging on to.
+It's almost like an anchor
+that's kind of weighing you down.
+We need to identify that first from
+the belief or mindset side of things,
+and then we can move through processes.
+There's a really great process
+that I love from a book.
+It's called "Immunity to Change", by
+a couple of Harvard psychologists,
+and I love the framework in
+here because it's a process that
+engineers can really understand.
+Hey, we're identifying a change.
+We move through essentially experiments
+and tests to identify, okay.
+Here's the level of belief
+that is driving my behavior.
+Well, I need to identify and move
+through some experiments and collect
+data to challenge these beliefs.
+If I can move through that process,
+then suddenly the power that belief
+and mindset have on me starts to
+diminish because the experiences I'm
+having are telling me that what I
+thought was true, isn't actually true.
+It diminishes that and suddenly
+we're shifting the mindset that
+driving a new set of behaviors
+that we're trying to have.
+Because the end goal, the behavior
+shift, it's pretty easy to outline what
+that looks like, in terms of delegate,
+trust, don't micromanage, all that sort
+of stuff, not that hard to identify.
+But how I, as an individual,
+move through that process.
+That's going to be different
+because it may be different things
+that I'm struggling with to let go
+than you would, or someone else.
+It's really identifying that
+deeper level mindset and
+belief that is holding us back.
+There's this process.
+You can go to the book or certainly
+reach out to me and we can talk more
+about what that would look like to
+really move through that process.
+It's amazing when people would do that.
+Like, I had an engineering
+leader that I worked with.
+He was kind of notorious for just
+kind of taking it all on his own.
+Really struggled with, if I don't
+do it, it's not going to be done
+because he was really closely
+connected to customer projects
+and things with what he was doing.
+And so, we worked together on this and
+identified how to run some experiments
+and things, enhance some things off.
+And he's like, you know what?
+We started this new project, and I
+started it off with someone on my
+team to really take ownership of that.
+Three months ago, I wouldn't
+have ever been able to do that.
+I wouldn't have been able to trust that
+and I wouldn't have had that set up.
+So it was amazing and they're
+doing a great job with it.
+So a huge shift and it's freeing up
+his time to work on the more strategic
+areas that are important to him.
+And so that's just one example there when
+we can make that shift from his beliefs.
+He's not tied down by that as much.
+Now we're moving on to other things
+that we're working on together.
+Henry Suryawirawan: That
+sounds really powerful.
+So first identifying
+your mindset and belief.
+Old mindset and beliefs that you
+probably are not productive in that
+sense, if you stay on that zone.
+So I think as in any kind of change,
+either it's habit, it's a personal
+development, identifying mindset
+first, I think, is the key for many
+kinds of transformative experience.
+So I think partly by becoming a more
+effective leader, it's also about changing
+your mindset and beliefs from IC mode to
+a more management and leadership role.
+If there are some kind of attributes
+that leaders should have, maybe if
+you can give some tips for people
+here who just made that transition, or
+who are still clueless and don't have
+mentors, what will be that attributes?
+What do they need to look at?
+And maybe just practical tips for them.
+Jeff Perry: Yeah.
+So from an attribute, one of the
+things that's really important to me
+and something that I've been working
+on the last few years, since I got
+into this coaching and training role.
+So the idea of seeing people as people.
+That sounds really simple,
+but it's extremely powerful.
+I first learned it from a group that
+did some training called the Arbinger
+Institute, and they talked about a
+mindset idea called the outward mindset.
+It's this idea of we can see people
+as people, whereas the opposite of
+that they called inward, self-focus
+where you see people as objects.
+Maybe to use them as vehicles, or maybe
+they're obstacles in your way and so
+you just need to get them out of the
+way, or maybe they're just irrelevant.
+You don't care about them.
+But it's this idea of like really
+seeking to understand what people need.
+What's important to other people?
+What they're trying to
+accomplish their objectives?
+What their challenges are that
+they're being faced with when
+you can truly understand people?
+When you're thinking about from
+a leadership perspective, both
+on your team also with the peers
+that you're working with and also
+thinking maybe up in terms of what
+do your leaders really need from you?
+And really seeking to ask questions
+to understand how do you deliver
+the greatest impact to these people?
+And seeking to not just be held
+accountable to that, but seeking to
+be proactively accountable for you
+in actively checking in with them.
+Hey, how am I actually
+doing and delivering?
+Am I helping you in the
+ways that you need that?
+And always seeking for that
+growth opportunity and feedback.
+Then suddenly, everyone around you becomes
+kind of a mentor, and that opportunity
+to give you insights and feedback that
+you might not otherwise be able to know.
+Because sometimes we're so afraid, as new
+leaders, and experienced leaders even,
+of what are people thinking about me?
+And we're so afraid of our image.
+We can let go of that, and say, "Hey, I
+want to understand that because then I can
+actually deliver better and put myself out
+there and be a better professional, better
+person for them that they need me to be."
+Then we can make those changes.
+So from a fundamental principle
+standpoint, this idea of seeing people
+as people and seeking to understand
+what they need from you will allow
+you to be the best that you can.
+So stay humble and teachable
+and open to those ideas.
+Instead of, again, you don't
+want to be driven by fear.
+You want to be driven by how can
+I continue to improve and grow
+and see those gaps that you might
+have in where you're at now, as
+opportunities rather than knocks on you.
+We all have things that we can work on.
+Well, that's an opportunity to
+grow and develop in a new way.
+So get excited about that.
+Henry Suryawirawan: So I
+like the way you frame it.
+See people as people, and
+also try to understand them.
+So I think some people also refer
+this to probably like servant leaders.
+Your job is there to serve people.
+It's not to give orders.
+It's not to give a high-level
+goals, directions, or maybe
+chasing people for tasks.
+So I think the key here
+is about serving people.
+By understanding them, hopefully they can
+grow and also be more productive and also
+create a great team and a high spirit.
+I think that's the message here.
+So, part of your day-to-day
+is also hosting podcast.
+Tell us more about your podcast.
+What is it about?
+And where people can find it and
+why they should check it out?
+Jeff Perry: Yeah.
+So the podcast is called the
+Engineering Career Coach podcast.
+And this is a podcast that I
+am the primary host right now.
+It's in partnership with a group called
+the Engineering Management Institute
+that I've been able to partner with.
+The podcast itself has been
+around since, I think, 2013.
+But I've been the host for
+the last couple of years.
+Put out a couple episodes a month,
+typically, across all sorts of different
+things in terms of engineering, career
+opportunities and success from, Hey, how
+do you deal with things as an introvert?
+We talk about mindset principles.
+We talk about leadership.
+We talk about changes in engineering and
+technical education and things like this.
+There's all sorts of different
+things we get to bring in experienced
+guests on to provide insights.
+But it truly meant to be general
+across engineering disciplines,
+not specific to a few.
+Although there's a lot of people
+and things in the software world
+that people can get insights on.
+We try and make things as
+applicable as we possibly can
+across engineering disciplines.
+Because everyone has goals and
+things that they're trying to do
+and accomplish in their careers.
+And so, we want to give people
+that resource to help and progress.
+That's what it's all about.
+So you can find that on any
+podcast platform pretty much,
+and also YouTube videos as well.
+Henry Suryawirawan: So I look
+at the number of episodes.
+There are plenty of resources.
+So if people really want to look at the
+career coach angle, there are plenty of
+episodes that probably you can look at.
+Sometimes when you navigate in a
+certain situation, when you don't
+have mentors, it's really hard.
+So looking at those previous episodes,
+I think probably can help you as well.
+Not to mention that podcasts, or
+maybe YouTube, now have become
+one of the mentors in life.
+If you don't know about something, search
+on podcasts, YouTube or books, and then
+you try to self-serve yourself by having
+these kinds of electronic mentors.
+So Jeff, it's been a pleasant
+conversation with you about career
+coach, leadership, career transitions.
+But we need to wrap up.
+Before I let you go, normally I have
+one last question that I always ask for
+all my guests, which is this question
+about three technical leadership wisdom.
+Maybe you can give us some advice
+from your experience, from your
+journey, what will be your three
+technical leadership wisdom, Jeff?
+Jeff Perry: Yeah.
+So the first one that I would share
+is to be proactive, not reactive.
+We've talked about this in terms of
+being intentional and deliberate in your
+career, but just like, identify what
+you want to do and go make that happen.
+Recognize that, Hey, there's going to
+be some twists and turns along the way.
+You can see every step as another
+prototype and an opportunity
+like data and things like this.
+It's just another iteration.
+So don't get too discouraged if you're not
+exactly where you want to be right now.
+But how can you take ownership
+and be proactive with where you
+want to continue to go and how
+you want to continue to grow?
+Number two is tap into and
+become aware of your mindsets.
+Not just the actions you want to
+take, but who you want to become.
+Like it really starts there.
+When we talked about some of the ways,
+you can actually go about running
+experiments or tests to identify
+those mindsets might be holding you
+back and move through that process.
+But, again, the principle is
+that mindsets drive behavior.
+Our behavior drives our results.
+And so, if we just prescribe behaviors,
+we're not going to make sustainable
+changes to get the results we want.
+We need to change our mindset, which then
+drives our behaviors, which then drives
+our new results that we're looking for.
+We're really trying to
+improve and grow our lives.
+And then number three is, I'd
+say, get help and support.
+Get mentors and coaches like those
+digital things, resources like podcasts
+that we have and books and articles.
+Fabulous, absolutely engage and find
+the things that are great for you.
+But also invest in yourself.
+Get this relationship base that
+can really get personalized.
+You are your greatest asset in
+your career and in your life.
+So protect that, grow that, invest in
+that, like you would invest in financial
+investments, but invest in you personally
+in your growth, physically, mentally
+professionally, and all areas of life.
+You'll be glad that you did because
+you're trying to live your best life.
+So you got to invest in
+you to make that happen.
+A lot of times, coaches, mentors
+and other things can help you
+accelerate that process and make
+even more progress than you need to.
+So be proactive, tap into those mindsets
+and invest in yourself and get some help.
+Henry Suryawirawan: I
+really love the last one.
+You mentioned about we as
+our own greatest asset.
+So sometimes we neglect our career.
+Although we spend more of our
+life doing our career, right?
+Your hours as well.
+But sometimes we don't
+invest too much in it.
+We just go with the motion and make
+decisions, maybe sometimes thought
+about it, but maybe not enough.
+So the key here is try to invest in
+ourselves, find mentors and support.
+So thank you so much, Jeff,
+for all those wisdoms.
+For people who would like to connect
+with you, continue this conversation,
+any place where they can reach out?
+Jeff Perry: Yeah, a few
+places you can find me.
+I'm pretty active on LinkedIn.
+You can find me, follow
+or connect with me there.
+Just search Jeff Perry.
+You should be able to find me there.
+Primary website is
+MoreThan-Engineering.com.
+Or you can find some free
+training, especially for those
+looking for career transitions,
+EngineeringCareerAccelerator.com.
+Especially also, we were talking about
+the career clarity checklist earlier.
+People can get that at
+EngineeringCareerAccelerator.com/career-clarity.
+So people can get that as
+a free resource for them.
+Those are a few places I'd send them.
+A lot of stuff to go check out,
+but I've got a ton of resources.
+If you reach out to me personally, I
+can point you in the right direction.
+Henry Suryawirawan: Thank you
+so much for your sharing today.
+So I hope that this gives some
+people clarity as well in terms
+of navigating their career.
+It was a pleasure, Jeff.
+Thank you so much.
+Jeff Perry: Yeah.
+Thank you so much, Henry.
+Looking forward to connecting some more.
+Thanks.
+Henry Suryawirawan: Thank you
+for listening to this episode and
+for staying right until the end.
+If you highly enjoyed it, I would
+appreciate if you share it with
+your friends and colleagues who
+you think would also benefit
+from listening to this episode.
+And if you're new to the podcast,
+make sure to subscribe and leave me
+your valuable review and feedback.
+It helps me a lot in order
+to grow this podcast better.
+You can also find the full show notes
+of this conversation on the episode
+page at techleadjournal.dev website,
+including the full transcript, interesting
+quotes and links to the resources
+mentioned from the conversation.
+And lastly, make sure to subscribe
+to the show's mailing lists
+on techleadjournal.dev to get
+notified for any future episodes.
+Stay tuned for the next
+Tech Lead Journal episode.
+And until then, goodbye.

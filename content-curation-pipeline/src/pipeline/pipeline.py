@@ -1,275 +1,544 @@
 """
-Pipeline module for content curation and evaluation.
+Content curation pipeline implementation.
 """
+
 import logging
 import time
-from datetime import datetime
-from typing import Dict, List, Any, Optional
+import os
+import concurrent.futures
+from pathlib import Path
+from typing import Dict, List, Any, Optional, Union
 
-# Setup logger
-logger = logging.getLogger("pipeline")
+from .interfaces import ContentItem, ContentSource, ContentProcessor
+from .sources.substack import SubstackSource, SubstackProcessor
+from .sources.medium import MediumSource, MediumProcessor
+from .sources.youtube import YouTubeSource, YouTubeProcessor
+from .sources.papers import TechnicalPapersSource, PapersProcessor
+from .sources.reddit import RedditSource, RedditProcessor
+from .visualizers.markdown import MarkdownTableVisualizer
+from .config import load_config, get_default_config, ConfigSchema
+from .modules.content_evaluation import evaluate_content, calculate_query_metrics
+from .modules.web_evaluation import batch_evaluate_urls, evaluate_urls_with_browsing
 
-# Import modules
-from .modules import content_curation, content_extraction, content_evaluation, web_evaluation
-from .modules.content_cache import content_cache
-from .modules.resource_discovery import discover_resources
-from .modules.resource_processor import process_resources, get_resource_text
-from .modules import medium_api
+logger = logging.getLogger(__name__)
 
-def run_content_pipeline(query: str, evaluation_method: str = "standard", use_cache: bool = True, 
-                         include_books: bool = True) -> Dict:
-    """
-    Run the full pipeline from query to evaluation.
+class ContentPipeline:
+    """Main content curation pipeline."""
     
-    Args:
-        query: The search query
-        evaluation_method: The method to use for evaluating content ("standard" or "openai_browsing")
-        use_cache: Whether to use the caching system to skip already processed URLs
-        include_books: Whether to include curated books and papers
-    
-    Returns:
-        Dictionary with pipeline results
-    """
-    start_time = time.time()
-    
-    # Step 1: Curate URLs from various sources
-    logger.info(f"Starting URL curation for query: {query}")
-    urls_from_tavily = content_curation.curate_urls(query)
-    logger.info(f"Found {len(urls_from_tavily)} URLs from Tavily")
-    
-    urls_from_reddit = content_curation.curate_urls_from_reddit(query)
-    logger.info(f"Found {len(urls_from_reddit)} URLs from Reddit")
-    
-    # Step 2: Discover high-quality books and resources if enabled
-    urls_from_discovery = []
-    if include_books:
-        logger.info(f"Starting resource discovery for query: {query}")
-        discovered_resources = discover_resources(query)
-        # Process the discovered resources to extract content
-        processed_resources = process_resources(discovered_resources)
+    def __init__(self, config_path: Optional[Union[str, Path]] = None, data_dir: Optional[Path] = None):
+        """
+        Initialize the pipeline.
         
-        # Format them as URL dictionaries for the pipeline
-        for resource in processed_resources:
-            if "is_processed" in resource and resource.get("is_processed", False):
-                urls_from_discovery.append({
-                    "url": resource.get("url", ""),
-                    "title": resource.get("title", ""),
-                    "source": resource.get("source", "discovered"),
-                    "meta": {
-                        **resource.get("meta", {}),
-                        "resource_content": resource.get("text", ""),
-                        "is_discovered_resource": True,
-                        "content_type": resource.get("content_type", "unknown"),
+        Args:
+            config_path: Path to configuration file (optional)
+            data_dir: Base directory for data storage (overrides config)
+        """
+        # Load configuration
+        if config_path:
+            self.config = load_config(config_path)
+        else:
+            self.config = get_default_config()
+        
+        # Override data_dir if provided
+        self.data_dir = data_dir or Path(self.config.data_dir)
+        
+        # Set up directory structure
+        self.cache_dir = self.data_dir / "cache"
+        self.content_dir = self.data_dir / "content"
+        self.exports_dir = self.data_dir / "output" if "output" in str(self.data_dir) else self.data_dir / "exports"
+        self.stats_dir = self.data_dir / "stats"
+        
+        for directory in [self.cache_dir, self.content_dir, self.exports_dir, self.stats_dir]:
+            directory.mkdir(parents=True, exist_ok=True)
+        
+        # Initialize sources based on configuration
+        self.sources: Dict[str, ContentSource] = {}
+        self._initialize_sources()
+        
+        # Initialize processors based on configuration
+        self.processors: Dict[str, ContentProcessor] = {}
+        self._initialize_processors()
+        
+        # Initialize visualizer
+        self.visualizer = MarkdownTableVisualizer(self.data_dir)
+    
+    def _initialize_sources(self):
+        """Initialize content sources based on configuration."""
+        for source_id, source_config in self.config.sources.items():
+            if not source_config.enabled:
+                logger.info(f"Skipping disabled source: {source_id}")
+                continue
+                
+            try:
+                source_type = source_config.type
+                source_cache_dir = self.cache_dir / source_id
+                source_output_dir = self.content_dir / source_id
+                
+                # Ensure directories exist
+                source_cache_dir.mkdir(parents=True, exist_ok=True)
+                source_output_dir.mkdir(parents=True, exist_ok=True)
+                
+                # Create appropriate source
+                if source_type == "substack":
+                    # Extract curated newsletters from config
+                    newsletters = source_config.source_params.get("curated_newsletters", [])
+                    
+                    self.sources[source_id] = SubstackSource(
+                        cache_dir=source_cache_dir,
+                        output_dir=source_output_dir
+                    )
+                    # Update newsletters from config if provided
+                    if newsletters:
+                        self.sources[source_id].curated_newsletters = newsletters
+                        
+                elif source_type == "medium":
+                    # Extract tags from config
+                    tags = source_config.source_params.get("tags", [])
+                    
+                    self.sources[source_id] = MediumSource(
+                        cache_dir=source_cache_dir,
+                        output_dir=source_output_dir
+                    )
+                    # Update tags from config if provided
+                    if tags:
+                        self.sources[source_id].topics = tags
+                        
+                elif source_type == "youtube":
+                    self.sources[source_id] = YouTubeSource(
+                        cache_dir=source_cache_dir,
+                        output_dir=source_output_dir
+                    )
+                    
+                elif source_type == "papers":
+                    self.sources[source_id] = TechnicalPapersSource(
+                        cache_dir=source_cache_dir,
+                        output_dir=source_output_dir
+                    )
+                    
+                elif source_type == "reddit":
+                    # Extract recommended subreddits from config
+                    subreddits = source_config.source_params.get("recommended_subreddits", [])
+                    
+                    self.sources[source_id] = RedditSource(
+                        cache_dir=source_cache_dir,
+                        output_dir=source_output_dir
+                    )
+                    # Update subreddits from config if provided
+                    if subreddits:
+                        self.sources[source_id].recommended_subreddits = subreddits
+                    
+                else:
+                    logger.warning(f"Unknown source type: {source_type}")
+                    continue
+                    
+                logger.info(f"Initialized source: {source_id} ({source_type})")
+                    
+            except Exception as e:
+                logger.error(f"Error initializing source {source_id}: {str(e)}")
+    
+    def _initialize_processors(self):
+        """Initialize content processors based on configuration."""
+        for processor_id, processor_config in self.config.processors.items():
+            if not processor_config.enabled:
+                logger.info(f"Skipping disabled processor: {processor_id}")
+                continue
+                
+            try:
+                processor_type = processor_config.type
+                processor_output_dir = self.content_dir / processor_id
+                
+                # Ensure directory exists
+                processor_output_dir.mkdir(parents=True, exist_ok=True)
+                
+                # Create appropriate processor
+                if processor_type == "substack":
+                    self.processors[processor_id] = SubstackProcessor(
+                        output_dir=processor_output_dir
+                    )
+                elif processor_type == "medium":
+                    self.processors[processor_id] = MediumProcessor(
+                        output_dir=processor_output_dir
+                    )
+                elif processor_type == "youtube":
+                    self.processors[processor_id] = YouTubeProcessor(
+                        output_dir=processor_output_dir
+                    )
+                elif processor_type == "papers":
+                    self.processors[processor_id] = PapersProcessor(
+                        output_dir=processor_output_dir
+                    )
+                elif processor_type == "reddit":
+                    self.processors[processor_id] = RedditProcessor(
+                        output_dir=processor_output_dir
+                    )
+                else:
+                    logger.warning(f"Unknown processor type: {processor_type}")
+                    continue
+                    
+                logger.info(f"Initialized processor: {processor_id} ({processor_type})")
+                    
+            except Exception as e:
+                logger.error(f"Error initializing processor {processor_id}: {str(e)}")
+    
+    def discover_content(self, query: Optional[str] = None, limit_per_source: Optional[int] = None) -> List[ContentItem]:
+        """
+        Discover content from all sources.
+        
+        Args:
+            query: Search query (overrides config queries)
+            limit_per_source: Maximum items per source (overrides config limits)
+        
+        Returns:
+            List of discovered content items
+        """
+        discovered_items = []
+        
+        for source_id, source in self.sources.items():
+            try:
+                source_config = self.config.sources[source_id]
+                
+                # Use provided query or get from config
+                if query:
+                    queries = [query]
+                else:
+                    queries = source_config.seed_queries
+                
+                # Use provided limit or get from config
+                source_limit = limit_per_source or source_config.limit
+                
+                # Process each query
+                source_items = []
+                for q in queries:
+                    logger.info(f"Discovering content from {source_id} with query: {q}")
+                    items = source.discover(q, source_limit)
+                    source_items.extend(items)
+                    logger.info(f"Found {len(items)} items from {source_id} for query: {q}")
+                
+                # Process custom URLs
+                if source_config.custom_urls:
+                    logger.info(f"Processing {len(source_config.custom_urls)} custom URLs for {source_id}")
+                    for url in source_config.custom_urls:
+                        try:
+                            if source.is_source_url(url):
+                                item = source.process_url(url)
+                                if item:
+                                    source_items.append(item)
+                        except Exception as e:
+                            logger.error(f"Error processing custom URL {url}: {str(e)}")
+                
+                # Add to discovered items
+                discovered_items.extend(source_items)
+                logger.info(f"Total items from {source_id}: {len(source_items)}")
+                
+            except Exception as e:
+                logger.error(f"Error discovering content from {source_id}: {str(e)}")
+        
+        return discovered_items
+    
+    def discover_content_parallel(self, query: Optional[str] = None, limit_per_source: Optional[int] = None) -> List[ContentItem]:
+        """
+        Discover content from all sources in parallel.
+        
+        Args:
+            query: Search query (overrides config queries)
+            limit_per_source: Maximum items per source (overrides config limits)
+        
+        Returns:
+            List of discovered content items
+        """
+        all_items = []
+        source_configs = {source_id: self.config.sources[source_id] for source_id in self.sources}
+        
+        # Function to process a single source
+        def process_source(source_data):
+            source_id, source = source_data
+            source_items = []
+            try:
+                source_config = source_configs[source_id]
+                
+                # Use provided query or get from config
+                queries = [query] if query else source_config.seed_queries
+                source_limit = limit_per_source or source_config.limit
+                
+                # Process each query
+                for q in queries:
+                    logger.info(f"Discovering content from {source_id} with query: {q}")
+                    items = source.discover(q, source_limit)
+                    source_items.extend(items)
+                    logger.info(f"Found {len(items)} items from {source_id} for query: {q}")
+                
+                # Process custom URLs
+                if source_config.custom_urls:
+                    logger.info(f"Processing {len(source_config.custom_urls)} custom URLs for {source_id}")
+                    for url in source_config.custom_urls:
+                        try:
+                            if source.is_source_url(url):
+                                item = source.process_url(url)
+                                if item:
+                                    source_items.append(item)
+                        except Exception as e:
+                            logger.error(f"Error processing custom URL {url}: {str(e)}")
+                
+                logger.info(f"Total items from {source_id}: {len(source_items)}")
+                return source_items
+                
+            except Exception as e:
+                logger.error(f"Error discovering content from {source_id}: {str(e)}")
+                return []
+        
+        # Use ThreadPoolExecutor to process sources in parallel
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = [executor.submit(process_source, (source_id, source)) 
+                      for source_id, source in self.sources.items()]
+            
+            for future in concurrent.futures.as_completed(futures):
+                try:
+                    items = future.result()
+                    all_items.extend(items)
+                except Exception as e:
+                    logger.error(f"Error in parallel processing: {str(e)}")
+        
+        return all_items
+    
+    def process_content(self, items: List[ContentItem]) -> Dict[str, Any]:
+        """
+        Process discovered content items.
+        
+        Args:
+            items: List of content items to process
+            
+        Returns:
+            Processing statistics
+        """
+        stats = {
+            "processed_items": 0,
+            "failed_items": 0,
+            "source_stats": {}
+        }
+        
+        # Initialize source stats
+        for source_id in self.sources.keys():
+            stats["source_stats"][source_id] = {
+                "processed_count": 0,
+                "error_count": 0,
+                "total_words": 0,
+                "average_words": 0
+            }
+        
+        # Process each item
+        for item in items:
+            try:
+                source_type = item.metadata.source_type
+                
+                # Get appropriate processor
+                processor = None
+                if source_type == "substack" and "substack" in self.processors:
+                    processor = self.processors["substack"]
+                elif source_type == "medium" and "medium" in self.processors:
+                    processor = self.processors["medium"]
+                elif source_type == "youtube" and "youtube" in self.processors:
+                    processor = self.processors["youtube"]
+                elif source_type == "technical_paper" and "papers" in self.processors:
+                    processor = self.processors["papers"]
+                
+                # Process item if processor exists
+                processed_data = {}
+                if processor:
+                    processed_data = processor.process(item)
+                else:
+                    # Default processing
+                    processed_data = {
+                        "id": item.id,
+                        "title": item.title,
+                        "url": item.url
                     }
+                
+                # Update source-specific stats
+                source_stats = stats["source_stats"].get(source_type, {
+                    "processed_count": 0,
+                    "error_count": 0,
+                    "total_words": 0,
+                    "average_words": 0
                 })
                 
-        logger.info(f"Found {len(urls_from_discovery)} curated resources")
-    
-    # Combine all URL sources
-    all_urls = urls_from_tavily + urls_from_reddit + urls_from_discovery
-    logger.info(f"Total URLs found: {len(all_urls)}")
-    
-    # Step 3: Apply cache and filter out already processed URLs if enabled
-    if use_cache:
-        # Filter URLs to exclude ones already in the cache
-        filtered_urls = []
-        cached_results = []
-        
-        for url_data in all_urls:
-            url = url_data["url"]
-            if content_cache.has_url(url):
-                # Get cached metadata which might include evaluation results
-                metadata = content_cache.get_url_metadata(url)
-                if metadata and "evaluation" in metadata:
-                    logger.info(f"Using cached evaluation for {url}")
-                    cached_results.append(metadata["evaluation"])
-                else:
-                    logger.info(f"URL {url} in cache but no evaluation found")
-            else:
-                filtered_urls.append(url_data)
-        
-        logger.info(f"After cache filtering: {len(filtered_urls)} URLs to process, {len(cached_results)} from cache")
-        all_urls = filtered_urls
-    else:
-        logger.info("Cache system disabled, processing all URLs")
-        cached_results = []
-    
-    # Step 4: Evaluate content (using parallel processing for web-based methods)
-    new_results = []
-    
-    if not all_urls:
-        logger.warning("No new URLs found to evaluate")
-    elif evaluation_method == "standard":
-        # Standard approach: extract and evaluate content sequentially
-        for url_data in all_urls:
-            url = url_data["url"]
-            try:
-                # Check if this is a discovered resource with content already available
-                if url_data.get("meta", {}).get("is_discovered_resource", False):
-                    # Use the content from the resource discovery process
-                    logger.info(f"Using pre-extracted content for discovered resource: {url}")
-                    resource_content = url_data.get("meta", {}).get("resource_content", "")
-                    if not resource_content and "resource" in url_data.get("meta", {}):
-                        # Get the text content using the helper function
-                        resource = url_data.get("meta", {}).get("resource", {})
-                        resource_content = get_resource_text(resource)
-                        
-                    if resource_content:
-                        # Discovered resources are pre-vetted, so give them a high baseline score
-                        source_quality = url_data.get("meta", {}).get("source_quality", 7)
-                        evaluation = {
-                            "url": url,
-                            "title": url_data.get("title", ""),
-                            "source": url_data.get("source", "discovered"),
-                            "overall_score": source_quality,  # Pre-vetted resources get a high score
-                            "content_type": url_data.get("meta", {}).get("content_type", "unknown"),
-                            "is_discovered_resource": True,
-                            "summary": url_data.get("meta", {}).get("summary", ""),
-                            "evaluation_method": "direct"
-                        }
-                        new_results.append(evaluation)
-                        
-                        # Cache the URL with its metadata including evaluation
-                        if use_cache:
-                            content_cache.add_url(url, {"evaluation": evaluation, "source": url_data.get("source", "web")})
-                    else:
-                        logger.warning(f"No content available for discovered resource: {url}")
-                else:
-                    # Regular web content extraction and evaluation
-                    content = content_extraction.scrape_url_content(url)
-                    if content and not content.get("error"):
-                        # Check content cache before evaluation
-                        content_text = content.get("text", "")
-                        cached_content_result = content_cache.get_content_result(content_text) if use_cache else None
-                        
-                        if cached_content_result:
-                            logger.info(f"Using cached content evaluation for {url}")
-                            evaluation = cached_content_result
-                        else:
-                            evaluation = content_evaluation.evaluate_content(content["text"], url)
-                            # Cache the evaluation result
-                            if use_cache and content_text:
-                                content_cache.add_content(content_text, evaluation)
-                        
-                        # Add to results
-                        new_results.append(evaluation)
-                        
-                        # Cache the URL with its metadata including evaluation
-                        if use_cache:
-                            content_cache.add_url(url, {"evaluation": evaluation, "source": url_data.get("source", "web")})
-                    else:
-                        logger.warning(f"Failed to extract content from {url}")
+                source_stats["processed_count"] += 1
+                
+                # Update word count
+                word_count = 0
+                if isinstance(processed_data, dict) and "word_count" in processed_data:
+                    word_count = processed_data["word_count"]
+                elif hasattr(processed_data, "word_count"):
+                    word_count = processed_data.word_count
+                elif item.description:
+                    word_count = len(item.description.split())
+                
+                source_stats["total_words"] += word_count
+                if source_stats["processed_count"] > 0:
+                    source_stats["average_words"] = source_stats["total_words"] / source_stats["processed_count"]
+                
+                # Update source stats
+                stats["source_stats"][source_type] = source_stats
+                stats["processed_items"] += 1
+                
             except Exception as e:
-                logger.error(f"Error processing {url}: {str(e)}")
-    else:
-        # Check if we have any discovered resources to bypass web evaluation
-        direct_resources = []
-        web_resources = []
+                logger.error(f"Error processing item {item.id}: {str(e)}")
+                stats["failed_items"] += 1
+                if source_type in stats["source_stats"]:
+                    stats["source_stats"][source_type]["error_count"] += 1
         
-        for url_data in all_urls:
-            if url_data.get("meta", {}).get("is_discovered_resource", False):
-                direct_resources.append(url_data)
-            else:
-                web_resources.append(url_data)
+        return stats
+    
+    def _read_text_file(self, file_path: str) -> str:
+        """
+        Read text from a file, trying multiple encodings if necessary.
         
-        # Process discovered resources directly
-        for resource in direct_resources:
+        Args:
+            file_path: Path to the text file
+            
+        Returns:
+            File contents as string, or empty string on error
+        """
+        encodings = ['utf-8', 'latin-1', 'cp1252', 'ascii']
+        
+        for encoding in encodings:
             try:
-                url = resource["url"]
-                
-                # Skip invalid Medium URLs (profiles or publications)
-                if "medium.com" in url and not medium_api.is_valid_article_url(url):
-                    logger.warning(f"Skipping invalid Medium URL during direct evaluation: {url}")
-                    continue
-                
-                logger.info(f"Direct evaluation of discovered resource: {url}")
-                
-                # Get content from the resource or its related text file
-                content_text = resource.get("meta", {}).get("resource_content", "")
-                if not content_text and "resource" in resource.get("meta", {}):
-                    # Get the text content using the helper function
-                    resource_obj = resource.get("meta", {}).get("resource", {})
-                    content_text = get_resource_text(resource_obj)
-                    
-                if content_text:
-                    # Discovered resources are pre-vetted, so give them a high baseline score
-                    source_quality = resource.get("meta", {}).get("source_quality", 7)
-                    evaluation = {
-                        "url": url,
-                        "title": resource.get("title", ""),
-                        "source": resource.get("source", "discovered"),
-                        "overall_score": source_quality,  # Pre-vetted resources get a high score
-                        "content_type": resource.get("meta", {}).get("content_type", "unknown"),
-                        "is_discovered_resource": True,
-                        "summary": resource.get("meta", {}).get("summary", ""),
-                        "evaluation_method": "direct"
-                    }
-                    new_results.append(evaluation)
-                    
-                    # Cache the URL with its metadata including evaluation
-                    if use_cache:
-                        content_cache.add_url(url, {"evaluation": evaluation, "source": resource.get("source", "web")})
-                else:
-                    logger.warning(f"No content available for discovered resource: {url}")
+                with open(file_path, 'r', encoding=encoding) as f:
+                    return f.read()
+            except UnicodeDecodeError:
+                continue
             except Exception as e:
-                logger.error(f"Error processing discovered resource {resource.get('url')}: {str(e)}")
+                logger.error(f"Error reading file {file_path}: {str(e)}")
+                return ""
         
-        # Use parallel processing for regular web resources
-        if web_resources:
-            logger.info(f"Using parallel processing with {evaluation_method} for {len(web_resources)} URLs")
-            web_results = web_evaluation.batch_evaluate_urls(web_resources, query, evaluation_method)
+        # If none of the encodings worked, try binary mode
+        try:
+            with open(file_path, 'rb') as f:
+                return str(f.read())
+        except Exception as e:
+            logger.error(f"Error reading binary file {file_path}: {str(e)}")
+            return ""
+
+    def evaluate_content(self, items: List[ContentItem]) -> List[Dict]:
+        """
+        Evaluate content quality.
+        
+        Args:
+            items: List of content items to evaluate
             
-            # Cache the evaluation results
-            if use_cache:
-                for result in web_results:
-                    url = result.get("url", "")
-                    if url:
-                        content_cache.add_url(url, {"evaluation": result, "source": result.get("source", "web")})
+        Returns:
+            List of evaluation results
+        """
+        if not self.config.evaluation.enabled:
+            logger.info("Content evaluation disabled in config")
+            return []
             
-            new_results.extend(web_results)
+        try:
+            # Prepare items for evaluation
+            eval_items = []
+            for item in items:
+                # Get text content from file if available
+                text_content = ""
+                if item.text_path and os.path.exists(item.text_path):
+                    text_content = self._read_text_file(item.text_path)
+                    if not text_content:
+                        text_content = item.description
+                else:
+                    text_content = item.description
+                
+                eval_items.append({
+                    "url": item.url,
+                    "title": item.title,
+                    "text": text_content[:25000],  # Limit to avoid token limits
+                    "source": item.metadata.source_type
+                })
+            
+            # Choose evaluation method based on config
+            if self.config.evaluation.method == "web":
+                # Use web evaluation
+                urls_to_evaluate = [{"url": item["url"], "meta": {"title": item["title"]}} for item in eval_items]
+                results = batch_evaluate_urls(urls_to_evaluate, method="openai_browsing")
+            elif self.config.evaluation.method == "hybrid":
+                # Try web evaluation first, then fall back to standard for any failures
+                urls_to_evaluate = [{"url": item["url"], "meta": {"title": item["title"]}} for item in eval_items]
+                web_results = batch_evaluate_urls(urls_to_evaluate, method="openai_browsing")
+                
+                # Identify failed evaluations
+                failed_indices = []
+                for i, result in enumerate(web_results):
+                    if "error" in result:
+                        failed_indices.append(i)
+                
+                # Process failed items with standard evaluation
+                if failed_indices:
+                    failed_items = [eval_items[i] for i in failed_indices]
+                    standard_results = evaluate_content(failed_items)
+                    
+                    # Replace failed web results with standard results
+                    for i, result in zip(failed_indices, standard_results):
+                        web_results[i] = result
+                
+                results = web_results
+            else:
+                # Use standard evaluation
+                results = evaluate_content(eval_items)
+            
+            logger.info(f"Evaluated {len(results)} content items")
+            return results
+            
+        except Exception as e:
+            logger.error(f"Error during content evaluation: {str(e)}")
+            return []
     
-    # Combine new results with cached results
-    results = new_results + cached_results
-    
-    # Step 5: Filter and rank results
-    logger.info(f"Filtering and ranking {len(results)} results")
-    
-    # Calculate average score for normalization
-    if results:
-        avg_score = sum(result.get("overall_score", 0) for result in results) / len(results)
-    else:
-        avg_score = 0
-    
-    # Filter for high-quality results (score > 4 or top 25% if all scores are low)
-    if results:
-        scores = [result.get("overall_score", 0) for result in results]
-        threshold = max(4.0, sorted(scores)[max(0, len(scores) - len(scores) // 4 - 1)])
-        high_quality = [r for r in results if r.get("overall_score", 0) >= threshold]
-    else:
-        high_quality = []
-    
-    # Quality ratio calculation
-    quality_ratio = len(high_quality) / len(results) * 100 if results else 0
-    
-    # Step 6: Prepare final output
-    pipeline_results = {
-        "query": query,
-        "evaluation_method": evaluation_method,
-        "total_urls": len(all_urls) + len(cached_results),
-        "evaluated_urls": len(results),
-        "new_urls_processed": len(new_results),
-        "cached_urls_used": len(cached_results),
-        "discovered_resources": len(urls_from_discovery),
-        "high_quality_count": len(high_quality),
-        "quality_ratio": quality_ratio,
-        "average_score": avg_score,
-        "results": sorted(results, key=lambda x: x.get("overall_score", 0), reverse=True),
-        "timestamp": datetime.now().isoformat(),
-        "runtime_seconds": time.time() - start_time
-    }
-    
-    logger.info(f"Pipeline complete. Evaluated {len(results)} URLs with average score: {avg_score:.2f}")
-    logger.info(f"Found {len(high_quality)}/{len(results)} high-quality results ({quality_ratio:.2f}%)")
-    logger.info(f"Pipeline completed in {time.time() - start_time:.1f} seconds")
-    
-    return pipeline_results 
+    def run(self, query: Optional[str] = None, limit_per_source: Optional[int] = None, parallel: bool = False) -> Dict[str, Any]:
+        """
+        Run the complete pipeline.
+        
+        Args:
+            query: Search query (optional, overrides config queries)
+            limit_per_source: Maximum items per source (optional, overrides config limits)
+            parallel: Whether to use parallel processing for content discovery
+            
+        Returns:
+            Pipeline results and statistics
+        """
+        start_time = time.time()
+        results = {
+            "query": query or "config-based-queries",
+            "timestamp": time.time(),
+            "items": [],
+            "stats": {},
+            "evaluations": []
+        }
+        
+        try:
+            # Discover content (parallel or sequential)
+            if parallel:
+                items = self.discover_content_parallel(query, limit_per_source)
+            else:
+                items = self.discover_content(query, limit_per_source)
+                
+            results["items"] = items
+            
+            # Process content
+            processing_stats = self.process_content(items)
+            results["stats"] = processing_stats
+            
+            # Evaluate content if enabled
+            if self.config.evaluation.enabled:
+                evaluations = self.evaluate_content(items)
+                results["evaluations"] = evaluations
+            
+            # Generate visualization
+            if items:
+                viz_path = self.visualizer.save_table(items)
+                results["visualization_path"] = str(viz_path)
+            
+            # Add runtime stats
+            results["runtime_seconds"] = time.time() - start_time
+            
+            return results
+                
+        except Exception as e:
+            logger.error(f"Pipeline error: {str(e)}")
+            results["error"] = str(e)
+            return results 

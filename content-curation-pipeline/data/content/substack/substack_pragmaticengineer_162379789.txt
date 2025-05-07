@@ -1,0 +1,335 @@
+Stream the Latest Episode
+
+Listen and watch now on 
+
+YouTube
+
+,  
+
+Spotify
+
+ and 
+
+Apple
+
+.
+
+ See the episode transcript at the top of this page, and timestamps for the episode at the bottom.
+
+Brought to You By
+
+WorkOS
+
+ — The modern identity platform for B2B SaaS.
+
+The Software Engineer’s Guidebook
+
+: Written by me (Gergely) – now out in audio form as well.
+
+—
+
+In This Episode
+
+How do you get product and engineering to truly operate as one team? Today, I’m joined by 
+
+Ebi Atawodi
+
+, Director of Product Management at 
+
+YouTube Studio
+
+, and a former product leader at 
+
+Netflix
+
+ and 
+
+Uber
+
+.
+
+Ebi was the first PM I partnered with after stepping into engineering management at Uber, and we both learned a lot together. We share lessons from our time at Uber and discuss how strong product-engineering partnerships drive better outcomes, grow teams, foster cultures of ownership, and unlock agency, innovation, and trust.
+
+In this episode, we cover:
+
+Why you need to earn a new team's trust before trying to drive change
+
+How practices like the "business scorecard" and “State of the Union” updates helped communicate business goals and impact to teams at Uber
+
+How understanding business impact leads to more ideas and collaboration
+
+A case for getting to know your team as people, not just employees
+
+Why junior employees should have a conversation with a recruiter every six months
+
+Ebi’s approach to solving small problems with the bet that they’ll unlock larger, more impactful solutions
+
+Why investing time in trust and connection isn't at odds with efficiency
+
+The qualities of the best engineers—and why they’re the same traits that make people successful in any role
+
+The three-pronged definition of product: business impact, feasibility, and customer experience
+
+Why you should treat your career as a project
+
+And more!
+
+Takeaways
+
+This episode is different to most podcasts in how both Ebi and myself share our learnings on how we went from a rocky engineering/product relationship to a very productive one.
+
+My biggest learnings:
+
+Product-minded engineers get more things done: so become one 
+
+— and if you are a PM or EM, help your engineers become one! One of the biggest gifts from Ebi, myself, and our engineering team was helping all of us become product-minded engineers. Ebi exposed us to how Product worked, made decisions, allocated headcount, and pitched new initiatives to be funded by the business. 
+
+I wrote more on 
+
+how to become a product-minded engineer
+
+.
+
+Work like a startup — even inside a large company.
+
+ Our organizational unit inside Uber kept growing in business impact and headcount year after year, because we worked like a startup. Teams had clear 
+
+business
+
+ goals that translated to things like revenue increase, cost decrease, incremental new Riders, net new first Riders, and other metrics that the business (Uber) cared about. Within Ebi’s product organization, we prioritized the most impactful projects across teams, and teams (engineering and product teams) helped ship the most important ones, even if they were technically not part of one team’s roadmap. We worked with the assumption that we must help the business reach its goals, and if we don’t, our charter (and team) would potentially have no reason to exist. 
+
+Working this way is challenging when you have the resources of a large organization, but doing so helps your company — plus, it helps every engineer build a “product-minded engineer” muscle that can be very helpful if you later found a startup, or become a founding engineer at one. 
+
+We covered more on this topic in 
+
+Thriving as a founding engineer: lessons from the trenches
+
+.
+
+Get to know the person behind the EM/PM/engineer/colleague. 
+
+At work, roles are somewhat artificial. What is not artificial is the person behind the role. It made a massive difference when I got to know the “real Ebi” behind “Ebi, the product manager” — and the other way around, about “Gergely, the engineering manager.” It’s a lot easier to trust a partner when you know more about them than “just” their role at work.
+
+Focus on doing great work as an engineer — first and foremost. 
+
+As tempting as it is to “game the system” of performance reviews or promotions: both Ebi and I agree that you absolutely can game whatever system your company has in place to fast-track that next promotion, or try to get better performance reviews. But the people who do this, others around them notice — especially engineers! What speeds them up in the short term often slows them down in the long term. This is because more senior positions often need strong referrals: and someone who was visibly focused on their own advancement only can struggle to get these.
+
+Do standout work, help others when you can, and be kind to others around you, and years later, other standout colleagues could well tap your shoulder, wanting to recruit you to the companies they are currently at. 
+
+This is how Ebi often got recruited for increasingly senior roles.
+
+The Pragmatic Engineer deepdives relevant for this episode
+
+The product-minded software engineer
+
+Working with Product Managers as an Engineering Manager or Engineer
+
+Working with Product Managers: advice from PMs
+
+What is Growth Engineering?
+
+Thriving as a founding engineer: lessons from the trenches
+
+Timestamps
+
+(
+
+00:00
+
+) Intro
+
+(
+
+02:19
+
+) The product review where Gergely first met Ebi
+
+(
+
+05:45
+
+) Ebi’s learning about earning trust before being direct
+
+(
+
+08:01
+
+) The value of tying everything to business impact
+
+(
+
+11:53
+
+) What meetings looked like at Uber before Ebi joined
+
+(
+
+12:35
+
+) How Ebi’s influence created more of a start-up environment
+
+(
+
+15:12
+
+) An overview of “State of the Union”
+
+(
+
+18:06
+
+) How Ebi helped the cash team secure headcount
+
+(
+
+24:10
+
+) How a dinner out helped Ebi and Gergely work better together
+
+(
+
+28:11
+
+) Why good leaders help their employees reach their full potential
+
+(
+
+30:24
+
+) Product-minded engineers and the value of trust
+
+(
+
+33:04
+
+) Ebi’s approach to passion in work: loving the problem, the work, and the people
+
+(
+
+36:00
+
+) How Gergely and Ebi secretly bootstrapped a project then asked for headcount
+
+(
+
+36:55
+
+) How a real problem led to a novel solution that also led to a policy change
+
+(
+
+40:30
+
+) Ebi’s approach to solving problems and tying them to a bigger value unlock
+
+(
+
+43:58
+
+) How Ebi developed her playbooks for vision setting, fundraising, and more
+
+(
+
+45:59
+
+) Why Gergely prioritized meeting people on his trips to San Francisco
+
+(
+
+46:50
+
+) A case for making in-person interactions more about connection
+
+(
+
+50:44
+
+) The genius-jerk archetype vs. brilliant people who struggle with social skills
+
+(
+
+52:48
+
+) The traits of the best engineers—and why they apply to other roles, too
+
+(
+
+1:03:27
+
+) Why product leaders need to love the product and the business
+
+(
+
+1:06:54
+
+) The value of a good PM
+
+(
+
+1:08:05
+
+) Sponsorship vs. mentorship and treating your career like a project
+
+(
+
+1:11:50
+
+) A case for playing the long game
+
+References
+
+Where to find Ebi Atawodi:
+
+X: 
+
+https://x.com/ebiatawodi
+
+• LinkedIn: 
+
+https://www.linkedin.com/in/ebiatawodi/
+
+Mentions during the episode:
+
+Uber's Crazy YOLO App Rewrite, From the Front Seat: 
+
+https://blog.pragmaticengineer.com/uber-app-rewrite-yolo/
+
+What is Growth Engineering?: 
+
+https://newsletter.pragmaticengineer.com/p/what-is-growth-engineering
+
+Steve Jobs's Rock Tumbler Metaphor on Startup Idea: 
+
+https://www.linkedin.com/pulse/steve-jobss-rock-tumbler-metaphor-startup-idea-kim-khorn-long-
+
+The Product-Minded Software Engineer: 
+
+https://blog.pragmaticengineer.com/the-product-minded-engineer/
+
+Stripe: 
+
+Inside Stripe’s Engineering culture
+
+Flexport: 
+
+https://www.flexport.com/
+
+Databricks: 
+
+https://www.databricks.com/
+
+A Bell Hooks quote about love: 
+
+https://www.goodreads.com/quotes/7550731-the-will-to-extend-one-s-self-for-the-purpose-of
+
+Inside Linear's Engineering Culture: 
+
+https://newsletter.pragmaticengineer.com/p/linear
+
+—
+
+Production and marketing by 
+
+Pen Name
+
+. 

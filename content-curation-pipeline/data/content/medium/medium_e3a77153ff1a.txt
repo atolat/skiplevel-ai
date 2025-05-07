@@ -1,0 +1,69 @@
+🚩7 Red Flags During A Software Engineering Job Interview
+
+Watch out for these red flags during job interviews to avoid getting stuck in a mess
+
+1. Theoretical questions that aren't relevant to the role
+
+If the interviewer asks you a theoretical question that isn't relevant to the role, such as the Fibonacci sequence, it suggests the company prioritizes theoretical knowledge over practical skills.
+
+Hi! I'm a software engineer with many years of experience. I've participated in hundreds of interviews and conducted even more to hire software engineers for the companies I've worked with. This has given me deep insight into the early warning signs candidates should watch out for.
+
+Most likely, you'll end up working with people who lack practical experience or focus on aspects that don't contribute to delivering high-quality results. Big red flag 🚩 - this is a good moment to consider ending the interview and saving your time.
+
+If you still want the job but don't remember the algorithm, you can respond like this:
+
+*"During my 10-year career as a software engineer, I have consistently delivered high-quality, performant code. While I learned concepts like the Fibonacci sequence and similar algorithms during my formal education and successfully passed algorithmic tests, I haven't needed to use them in my professional work since.
+
+If understanding the Fibonacci sequence is crucial for this position, I'm happy to refresh my knowledge. However, I'm confident that my extensive experience and proven coding expertise more than compensate for this gap in theoretical knowledge.
+
+2. Failing to Explain Why Their Approach Is Better
+
+The interviewer asks you a question or requests you to write some code. You complete it, and then they ask why you didn't use a different approach.
+
+At this moment, you should explain your reasoning - perhaps you've used this approach before, and it has worked well for you. However, expressing openness to learning about other approaches and their benefits is key.
+
+🚩 Big red flag: If the interviewer doesn't share what approach they prefer or explain why it's better, this signals a toxic culture. It suggests an environment where knowledge isn't shared, but instead, kept to oneself - where people are shamed for not knowing the "right" answer rather than encouraged to learn. If you sense this, it's a clear sign to end the interview immediately.
+
+3. The Interviewer Seems to Be in a Rush and Uninterested
+
+Sometimes, you get the feeling that the interviewer isn't really engaged in the conversation. The interview feels stiff, you can't properly showcase your skills, and the interviewer seems uninterested, barely acknowledging what you say. The whole process feels overly formal and disconnected.
+
+🚩 Extremely big red flag. It means exactly what it feels like - the role is either already filled, canceled, or just a formality due to corporate policies. The interview is happening just because it has to, even though it serves no real purpose.
+
+Considering that such a meeting can drain an hour of your time and sap your motivation, it's better to recognize the lack of engagement early and walk away. "No vibe? Bye."
+
+4. You Feel Ashamed, Intimidated, Angry, or Sad
+
+If a coding interview makes you feel ashamed, intimidated, angry, or sad, take it as a warning sign.
+
+🚩 Big red flag. The emotions you're feeling now are the same ones you'll experience while working there. It's not you, it's them. A healthy work environment should encourage learning and collaboration, not make you feel small or inadequate.
+
+Toxic isn't your vibe - trust me. The best move? End the interview immediately.
+
+5. The Interviewer Doesn't Want to Share Information
+
+Of course, in multi-tiered interviews, not everyone knows everything. However, at each stage, there's a reasonable amount of information you should receive - such as details about the role, your potential teammates, and what a typical day looks like in this position.
+
+If the interviewer explains when you'll get more details and why not now, that's fine. But if you sense they're deliberately withholding basic information for no clear reason, 🚩 huge red flag - as red as a baboon's lower back.
+
+It's likely some kind of scam or dysfunctional setup, and trust me, you don't want to spend the next 8 hours of your life finding out what kind. Walk away.
+
+6. The Interview Process Takes More Than 2 Hours in Total
+
+Interviewing takes time, but if a company is willing to spend more than 2 hours on a single candidate, it likely means they have too much free time. Now, imagine how much time they're spending on all candidates - time that could be used to actually get work done.
+
+🚩 Big red flag. This suggests the company doesn't really need more people; they might just be practicing their interviewing process.
+
+If they want to drag out the process discussing things already in your CV, it's a waste of time. Use those hours for real interviews that actually lead to a job. Move on.
+
+7. They Ask You to Run Random Code on Your Machine
+
+That's a new scam making its way into job interviews. Scammers pose as recruiters, conduct an interview, and then ask you to download a repository or app and run it locally.
+
+🚩 Big red flag. The goal is to bypass your usual security awareness - making you feel comfortable enough to execute their malicious code. This can lead to data theft, financial loss, or even system compromise.
+
+Optimistically, 99% of the time, interviews are legitimate, and most companies act professionally. But for that 1%, you now know what to watch out for.
+
+Stay sharp, stay safe - and happy job hunting!
+
+Subscribe, clap, comment, and share for more insights on navigating your coding career!

@@ -1,0 +1,122 @@
+from the ashes of my career burnout a single
+question arose within me how does one raise
+like a phoenix to join the top one person of
+software engineers driven by that spark I kept
+searching until I found a Reddit post that
+was really interesting and finally answered
+my question i read through every suggestion and
+comment on that thread and here is what I learned
+so the first comment that took my eye was this one
+forget work life balance only perfection matters
+to be honest at first I thought why should I burn
+out myself to make someone else richer but more
+I thought about it it it rang more true and the
+thing is to crack to the top one person you need
+to sacrifice you cannot go to your job at 9 and
+leave at 5 and when you are at home or through
+weekend don't touch your laptop and expect to go
+among the one person because there is definitely
+someone who is um grinding through dinner coding
+past midnight and spending weekends learning a
+new tool and that guy is the one that is going
+to leave you behind i know it sound harsh but
+believe me guys it's the plain truth to join the
+top one person you need to step out your comfort
+zone you need to work hard and let the hard work
+carry you forward another comment that also cuts
+straight to the chase is this one if you lack
+ambition you are just a puppet at first it it
+feels like the guy is insulting but the more you
+think about it more you see the truth hard work
+without a goal is just busy work you need a fire
+inside you you need a clear burning aim you can't
+ignore without that drive even the best routines
+lose their spark and everything falls apart
+so let's go to the other brilliant comments 95%
+hard work 5% talent um there is a cold reality
+no amount of coffee will turn a potato into a
+ferrari if your brain is stuck in reverse you
+will never outrun someone born with that spark if
+you are not smart then it's like showing up to a
+drag race with a tricycle then you will eat dust
+every time to be in top one person you need that
+genetic you need to be smart maybe you are talking
+about top 10 top 25 top 20 person then hardboard
+would be enough but believe me guys if you want
+to be among top one person then you need to be
+talented but let's pause for a moment if you are
+still watching this video and still you haven't
+hit the like button please do that because that
+is the thing that keeps the fire inside me turn
+so if you do that I would be really really happy
+and you are doing something really really good for
+me we want to create a good community here we
+want to grow we want to grow together so let's
+let's keep it running guys the other comment
+that also um caught through my eyes is this guy
+who is talking about luck um I really believe in
+luck i have a friend who is a DevOps vizard but
+he's always stuck in interviews because he cannot
+explain himself and I know another guy named Chad
+and this chart crushed the production a couple
+of times but he has a six figure salary because
+his cousin is the CTO of the company i mean these
+things are the reality of life yeah you need luck
+definitely you need luck without luck you cannot
+uh get through the top person or work into the
+to the best companies i also love this one who
+is talking about consistency don't plateau once
+you've learned enough to get paid i've seen many
+many brilliant engineers sticking to their comfort
+zone while the real elite always keep pushing they
+seek tougher problems they learn new languages and
+familiar architectures and bonus tip never be the
+smartest person in the room i mean if you're in
+a team and you are the smartest guy there then
+you have a problem you won't learn there try to
+surround yourself with people who are smarter
+than you and who can challenge you on a daily
+basis so I also love this one some people claim
+that the top devs are lone wolf nerds robots who
+live in cold caves or you know people like you
+cannot communicate with them but I I see this as
+a joke to be honest i believe if there is a guy
+you cannot talk with then that guy cannot crack
+to the top one person you know nobody wants to
+per program with a brick ball soft skill aren't
+optional guys soft skills are very very important
+you need to learn to translate your genius into
+plain English you need to build relationship you
+need to sell your ideas otherwise you will just
+be the smartest mute person in the room and you
+would never go through the top one person i also
+like this comment it has some cool points you
+need to embrace change and he is also talking
+about Uncle Bob's clean code like the the the
+book that says the method should be under 20
+lines which is stupid in my opinion the book that
+says you should never uh repeat yourself i mean
+but but that one is also not very true sometimes
+um repeating yourself is better than creating a
+lot of abstraction inheritance and different stuff
+and make your code more and more complicated just
+to just because you don't want to repeat yourself
+i mean code is a living thing it's like a monster
+that you need to tweak it you need to smash it
+you need to rewrite it every day and and you
+know any rule that shows up and it slows down
+you through that process you need to break it
+because you need to be open to change your code
+you should not look at your code like a piece of
+art that that that is in the I mean you should be
+always open to learn something new and change your
+code and if you want opportunity to to uh learn
+more just dive into open source projects there
+are a lot of real bugs and people there give you
+brutal feedback and you can have some real growth
+there there are some projects some crazy project
+like Apache Kapka you can contribute in them and
+you can learn a lot really top one person
+developers are working there and you can go
+among them you know there is no filter you can go
+among them you can uh choose uh choose the issue

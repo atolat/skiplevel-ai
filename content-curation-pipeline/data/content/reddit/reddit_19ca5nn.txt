@@ -1,0 +1,101 @@
+# Newly appointed tech lead seeking guidance on leadership and team dynamics
+
+Hello r/experiencedevs!
+
+I’ve recently been promoted to the role of tech lead at my digital agency, overseeing custom branding websites and e-commerce projects. I’ve been in the software development industry for 7 years, with just under a year at my current agency as a senior dev.
+
+This promotion is part of a larger reorganization and growth plan by our new manager of operations. I wanted a “staff engineer “ job for a while, and I am happy that I got it now. Interestingly, this transition has placed me in a position where my former leads are now senior members of my team. While I got generally good vibes from the rest of the team; I’m noticing some resistance from one of those ex leads — which is kind of expected i suppose.
+
+While I feel fairly confident in taking on the new role, and I already have a myriad of ideas and preparations in planned: I’m reaching out to this sub for insights! Also I just finished reading Staff Engineer, which gave me some awesome new insights.
+
+My team now consists of me, two senior level devs, two medior level devs, a junior and an intern.
+
+Transitioning to tech lead: How have you practiced the shift from a developer role to a leadership position, especially in a fast-growing organization?
+
+Managing former leads: Any advice on how to handle resistance and build a strong working relationship with team members who used to be in leadership roles?
+
+Any general learnings or experience or advice for leading a team in the tech industry, particularly in the areas of branding and e-commerce?
+
+## Comments
+
+### Comment 1 by u/m98789 (29 points)
+
+Don’t overthink. Just follow:
+
+1. Appear confident in front of your team, even if you aren’t
+2. Let the mechanics of a process guide you:
+- Divvy up the work
+- Assign owners
+- Clearly set goals & expectations 
+- Set deadlines 
+- Check in regularly at 1:1’s
+
+3. Protect your team from the bad ideas and craziness of upper management
+
+#### Reply 1 by u/steeeeeef (2 points)
+
+Thanks! What is an example situation where you had go protect your team from upper management?
+
+### Comment 2 by u/MayaBalatinac (6 points)
+
+I am not a developer, but I work as a career consultant and I've worked with multiple engineers transitioning to lead or staff-level roles.
+
+I don't know you and I'm sorry if I'm telling you things you already know. So, here are some general things to know.
+
+Fast-growing organisations generally have a problem with placing too many hats on an engineer's head, especially once you advance to a lead role. You should be aware of it. It can be too much and it usually doesn't talk much about you and how good you are but about the organisation and how maturely it deals with growth. Ask for clear priorities from the management (everything can not be a priority) and clear goals for your team. Communicate clearly with your team and check their expectations. You seem to have been promoted because of your knowledge, leading with knowledge and solutions, providing clear reasons why and instructions for how. Set goals and results transparently for your team and yourself. When you see resistance or doubtfulness, face them openly and clearly. Listening actively and validating other people's emotions are a big part of leading a team and will take you far.
+
+Actively listen - everybody says it but a few seem to know what it means - take notes while people are talking, don' take anything for granted, and ask to clarify everything that doesn't sound specific enough (signal words are some, somehow, any contradictories, especially when someone says OK, nut it doesn't sound like OK). 
+
+Validate emotions - this can take training, but the general rule is that everybody has a right to feel whoever they want to feel. All emotions are OK, some are just unpleasant. It's how you deal with the unpleasant ones that shape your relationship with the team. Even when they are not right, they have a right to be hurt, respect that. Leave the problematic conversation for periods when they cool down. 
+
+How to provide feedback - specific work results, not what they say and how they say it. Be timely, as soon as you see a problem - react. specify what is good, and what is bad.  Sugarcoating can lead to misunderstandings and repeated mistakes. Negative feedback is unpleasant but needed and in the long run, if you give work-related feedback, providing a way and possibility for a person to learn, practice and improve, it will be respected by the team. 
+
+Delegate, split the work, assign owners and give them clear outcomes and deadlines. Regularly check with your team what problems they have and de-block them.
+
+I don't want to get into the talk about how to handle conflicting needs between management and your team, just don't sacrifice your personal or professional integrity. 
+
+Good luck!
+
+#### Reply 1 by u/steeeeeef (1 points)
+
+Thanks for your extensive answer!
+
+### Comment 3 by u/themezzilla (2 points)
+
+Couple things I practice as I also moved from IC to tech lead:
+
+- listen to your engineers and promote their good ideas
+- give them credit for their work publicly
+- don't try and be the smartest on your team, even if you are 
+- "influence upward" to communicate your needs/ideas/concerns to your manager. Keep your team on the map and top of mind this way
+- like others said, be positive and confident even if you don't feel like it
+
+#### Reply 1 by u/steeeeeef (1 points)
+
+Thanks!
+
+### Comment 4 by u/WhiskyStandard (3 points)
+
+“The First 90 Days” has some relevant advice on how to come into a new team or team a team you used to be an IC on. In your situation I’d say it’s crucial to establish expectations on both sides. Also, look for some opportunities for quick wins that will improve the team’s quality of life.
+
+#### Reply 1 by u/steeeeeef (2 points)
+
+Thanks for your suggestion. By Michael Watkins?
+
+### Comment 5 by u/Jealous-Balance-8708 (2 points)
+
+As a "tech" lead in the purest sense you shouldn't have to deal with people management apart from "tech" mentoring and building "tech" bridges. You should be provided with an Engineering Manager for anything that is not tech and related ops. But all this is too idealistic.  At the risk of turning this comment into a rant, I'll say this:
+
+
+It's high time for people like me who don't want to deal with people management rise up and fix this "Tech Lead"  dilution.  Say "NO" to ambiguous job responsibilities and draw your boundaries. I know the time is not right for being selective but still think about it.
+
+#### Reply 1 by u/steeeeeef (1 points)
+
+I actually enjoy people management, but yes as long as it is in the context of tech.
+
+### Comment 6 by u/Altruistic-Pop7078 (1 points)
+
+Hi. Congratulations! I am in your industry and just completed an online leadership training for new leaders. I think it would be very helpful. I clipped you an 80% off coupon but only good for a few more days!  Good luck sir!
+
+https://www.udemy.com/course/servantleader/?couponCode=03969B986663F195D1C4
+
