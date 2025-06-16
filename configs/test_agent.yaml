@@ -1,0 +1,4 @@
+agent_id: "test_agent"
+name: "Test Agent"
+description: "A simple test agent"
+temperature: 0.5 
