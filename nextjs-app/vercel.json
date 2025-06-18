@@ -1,12 +1,5 @@
 {
   "functions": {
-    "api/emreq.py": {
-      "runtime": "python3.9"
-    }
-  },
-  "build": {
-    "env": {
-      "PYTHONPATH": "./"
-    }
+    "api/emreq.py": {}
   }
 } 
