@@ -26,26 +26,34 @@ export default function Home() {
   const { user, profile, loading: authLoading, signOut } = useAuth()
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [showProfileModal, setShowProfileModal] = useState(false)
+  const [mounted, setMounted] = useState(false)
   
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     api: '/api/chat'
   })
 
+  // Prevent hydration issues by only rendering after mount
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   // Debug logging
   useEffect(() => {
-    console.log('Messages updated:', messages)
-    console.log('Is loading:', isLoading)
-    console.log('User:', user)
-    console.log('Profile:', profile)
-  }, [messages, isLoading, user, profile])
+    if (mounted) {
+      console.log('Messages updated:', messages)
+      console.log('Is loading:', isLoading)
+      console.log('User:', user)
+      console.log('Profile:', profile)
+    }
+  }, [messages, isLoading, user, profile, mounted])
 
   // Show profile setup for new users
   useEffect(() => {
-    if (user && !profile?.profile_completed && !authLoading) {
+    if (mounted && user && !profile?.profile_completed && !authLoading) {
       // Don't auto-open - let users access via avatar
       // setShowProfileModal(true)
     }
-  }, [user, profile, authLoading])
+  }, [user, profile, authLoading, mounted])
 
   const handleAuthClick = () => {
     if (user) {
@@ -59,7 +67,8 @@ export default function Home() {
     setShowProfileModal(true)
   }
 
-  if (authLoading) {
+  // Show loading state until component is mounted and auth is loaded
+  if (!mounted || authLoading) {
     return (
       <div className="h-full flex items-center justify-center">
         <div className="text-green-400 font-mono">Loading...</div>
@@ -198,18 +207,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Auth Modal */}
-      <AuthModal 
-        isOpen={showAuthModal} 
-        onClose={() => setShowAuthModal(false)} 
-      />
-
-      {/* Profile Modal */}
-      <ProfileModal 
-        isOpen={showProfileModal} 
-        onClose={() => setShowProfileModal(false)}
-        isNewProfile={!profile?.profile_completed}
-      />
+      {/* Modals - only render when mounted */}
+      {mounted && (
+        <>
+          <AuthModal 
+            isOpen={showAuthModal} 
+            onClose={() => setShowAuthModal(false)} 
+          />
+          <ProfileModal 
+            isOpen={showProfileModal} 
+            onClose={() => setShowProfileModal(false)} 
+          />
+        </>
+      )}
     </div>
   )
 }

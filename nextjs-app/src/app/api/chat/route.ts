@@ -7,6 +7,9 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 );
 
+// Railway backend URL
+const RAILWAY_API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://web-development-c0b4.up.railway.app';
+
 export async function POST(request: NextRequest) {
   try {
     // Get cookies
@@ -32,7 +35,7 @@ export async function POST(request: NextRequest) {
     const { data: profile, error: profileError } = await supabase
       .from('employee_profiles')
       .select('*')
-      .eq('user_id', user.id)
+      .eq('id', user.id)
       .single();
 
     if (profileError) {
@@ -47,43 +50,26 @@ export async function POST(request: NextRequest) {
     // Extract the latest message
     const latestMessage = messages[messages.length - 1]?.content || '';
 
-    // Construct the URL for the Python function
-    const protocol = request.headers.get('x-forwarded-proto') || 'https';
-    const host = request.headers.get('host');
-    const pythonFunctionUrl = `${protocol}://${host}/api/emreq`;
+    console.log('Calling Railway backend:', `${RAILWAY_API_URL}/api/chat`);
+    console.log('Message:', latestMessage);
+    console.log('User:', user.email);
+    console.log('Profile:', profile.name);
 
-    // Prepare headers for the Python function call
-    const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
-    };
-
-    // Debug: Check if bypass secret is available
-    const bypassSecret = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
-    console.log('Bypass secret available:', !!bypassSecret);
-    console.log('Bypass secret length:', bypassSecret?.length || 0);
-    
-    // Add bypass header with the generated secret
-    if (bypassSecret) {
-      headers['x-vercel-protection-bypass'] = bypassSecret;
-      console.log('Added bypass header');
-    } else {
-      console.log('No bypass secret found in environment');
-    }
-
-    console.log('Request headers:', Object.keys(headers));
-    console.log('Calling URL:', pythonFunctionUrl);
-
-    // Call the Python function with the correct payload structure
-    const response = await fetch(pythonFunctionUrl, {
+    // Call the Railway backend
+    const response = await fetch(`${RAILWAY_API_URL}/api/chat`, {
       method: 'POST',
-      headers,
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify({
-        message: latestMessage,  // Single message string as expected by Python function
+        message: latestMessage,
+        user_id: user.id,
+        agent_name: 'engineering_manager_emreq',
         user_context: {
           email: user.email,
           profile: {
             name: profile.name,
-            title: profile.role,  // Map role to title as expected by Python
+            title: profile.role,
             role: profile.role,
             experience_level: profile.experience_level,
             specialization: profile.specialization,
@@ -99,42 +85,34 @@ export async function POST(request: NextRequest) {
       }),
     });
 
-    console.log('Python function response status:', response.status);
+    console.log('Railway backend response status:', response.status);
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('Python function error:', errorText);
-      throw new Error(`Python function returned ${response.status}: ${response.statusText}`);
+      console.error('Railway backend error:', errorText);
+      throw new Error(`Railway backend returned ${response.status}: ${response.statusText}`);
     }
 
-    // Create a streaming response that converts the raw text to Data Stream Protocol
+    // Get the response from Railway backend
+    const railwayResponse = await response.json();
+    console.log('Railway response:', railwayResponse);
+
+    // Convert the response to Data Stream Protocol format for useChat
     const stream = new ReadableStream({
-      async start(controller) {
-        const reader = response.body!.getReader();
-        const decoder = new TextDecoder();
-        
+      start(controller) {
         try {
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            
-            const chunk = decoder.decode(value);
-            if (chunk.trim()) {
-              // Convert to Data Stream Protocol format
-              const dataStreamChunk = `0:${JSON.stringify(chunk)}\n`;
-              controller.enqueue(new TextEncoder().encode(dataStreamChunk));
-            }
-          }
+          // Send the response as a single chunk
+          const dataStreamChunk = `0:${JSON.stringify(railwayResponse.response)}\n`;
+          controller.enqueue(new TextEncoder().encode(dataStreamChunk));
           
           // Send completion message
           const finishChunk = `d:{"finishReason":"stop","usage":{"promptTokens":10,"completionTokens":20}}\n`;
           controller.enqueue(new TextEncoder().encode(finishChunk));
           
+          controller.close();
         } catch (error) {
           console.error('Stream error:', error);
           controller.error(error);
-        } finally {
-          controller.close();
         }
       }
     });
@@ -155,5 +133,5 @@ export async function POST(request: NextRequest) {
 }
 
 export async function GET() {
-  return new Response('Chat API is running - Standard Vercel AI SDK streaming!', { status: 200 })
+  return new Response('Chat API is running - Connected to Railway backend!', { status: 200 })
 } 

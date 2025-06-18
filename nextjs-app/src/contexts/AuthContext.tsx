@@ -18,6 +18,19 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
+// Helper function to safely set cookies only on client side
+const setCookie = (name: string, value: string, maxAge: number) => {
+  if (typeof window !== 'undefined') {
+    document.cookie = `${name}=${value}; path=/; max-age=${maxAge}; SameSite=Lax`
+  }
+}
+
+const clearCookie = (name: string) => {
+  if (typeof window !== 'undefined') {
+    document.cookie = `${name}=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT`
+  }
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [profile, setProfile] = useState<Profile | null>(null)
@@ -59,9 +72,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       
       // Set cookies for API route access
       if (session?.access_token) {
-        document.cookie = `sb-access-token=${session.access_token}; path=/; max-age=3600; SameSite=Lax`
+        setCookie('sb-access-token', session.access_token, 3600)
         if (session.refresh_token) {
-          document.cookie = `sb-refresh-token=${session.refresh_token}; path=/; max-age=86400; SameSite=Lax`
+          setCookie('sb-refresh-token', session.refresh_token, 86400)
         }
         console.log('Set initial auth cookies for API access')
       }
@@ -84,15 +97,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       
       // Set cookies for API route access
       if (session?.access_token) {
-        document.cookie = `sb-access-token=${session.access_token}; path=/; max-age=3600; SameSite=Lax`
+        setCookie('sb-access-token', session.access_token, 3600)
         if (session.refresh_token) {
-          document.cookie = `sb-refresh-token=${session.refresh_token}; path=/; max-age=86400; SameSite=Lax`
+          setCookie('sb-refresh-token', session.refresh_token, 86400)
         }
         console.log('Set auth cookies for API access')
       } else {
         // Clear cookies on sign out
-        document.cookie = 'sb-access-token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT'
-        document.cookie = 'sb-refresh-token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT'
+        clearCookie('sb-access-token')
+        clearCookie('sb-refresh-token')
         console.log('Cleared auth cookies')
       }
       

@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-screen bg-gray-900 text-gray-100">
+      <body className="antialiased min-h-screen bg-gray-900 text-gray-100" suppressHydrationWarning={true}>
         <AuthProvider>
           <div className="min-h-screen flex flex-col">
             {/* Terminal-style header */}

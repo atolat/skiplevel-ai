@@ -1,10 +1,8 @@
 // API configuration for different environments
 
 export const API_CONFIG = {
-  // Use Railway backend URL in production, localhost in development
-  baseURL: process.env.NODE_ENV === 'production' 
-    ? process.env.NEXT_PUBLIC_API_URL || 'https://your-service.railway.app'
-    : 'http://localhost:8001',
+  // Use Railway backend URL for both development and production
+  baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://web-development-c0b4.up.railway.app',
     
   endpoints: {
     health: '/health',
