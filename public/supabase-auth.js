@@ -27,6 +27,15 @@
 
     async function checkAuthState() {
         console.log('Checking auth state...');
+        
+        // Check if we should skip authentication (for demo/public access)
+        const skipAuth = new URLSearchParams(window.location.search).get('skip_auth') === 'true';
+        if (skipAuth) {
+            console.log('Skipping authentication, showing chat interface directly');
+            showChatInterface(null);
+            return;
+        }
+        
         const { data: { session } } = await supabase.auth.getSession();
         console.log('Current session:', session);
         
@@ -69,8 +78,9 @@
                 showProfileSetup(session.user);
             }
         } else {
-            console.log('User not logged in, showing login UI');
-            showLoginUI();
+            console.log('User not logged in');
+            // Instead of forcing login, show chat interface with option to login
+            showChatInterface(null);
         }
     }
 
@@ -87,7 +97,11 @@
         loginContainer.innerHTML = `
             <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #f8fafc;">
                 <div style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 400px;">
-                    <h1 style="text-align: center; margin-bottom: 1rem;">Welcome to Emreq</h1>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h1 style="margin: 0;">Welcome to Emreq</h1>
+                        <button id="back-to-chat" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #666;">×</button>
+                    </div>
+                    <p style="text-align: center; color: #666; margin-bottom: 1.5rem; font-size: 0.9rem;">Sign in for personalized AI management experience</p>
                     
                     <div id="login-form">
                         <input type="email" id="email" placeholder="Email" style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 4px;">
@@ -104,6 +118,10 @@
                     </div>
                     
                     <div id="auth-message" style="margin-top: 1rem; text-align: center;"></div>
+                    
+                    <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #eee; text-align: center;">
+                        <button id="continue-anonymous" style="color: #666; background: none; border: none; cursor: pointer; text-decoration: underline; font-size: 0.875rem;">Continue without signing in</button>
+                    </div>
                 </div>
             </div>
         `;
@@ -111,6 +129,10 @@
 
         // Add event listeners
         setupAuthListeners();
+        
+        // Add back to chat functionality
+        document.getElementById('back-to-chat').onclick = () => showChatInterface(null);
+        document.getElementById('continue-anonymous').onclick = () => showChatInterface(null);
     }
 
     function showProfileSetup(user) {
@@ -473,42 +495,44 @@
             profileContainer.remove();
         }
 
-        // Store Supabase session for Chainlit to access
-        supabase.auth.getSession().then(({ data: { session }, error }) => {
-            if (session) {
-                // Store session data securely
-                const sessionData = {
-                    access_token: session.access_token,
-                    user_id: session.user.id,
-                    user_email: session.user.email,
-                    expires_at: session.expires_at
-                };
-                
-                localStorage.setItem('supabase_session', JSON.stringify(sessionData));
-                console.log('Stored Supabase session for Chainlit access');
-                console.log('Session data:', sessionData);
-                
-                // Immediately try to pass to Chainlit
-                setTimeout(() => {
-                    console.log('Attempting to pass session to Chainlit...');
-                    if (setChainlitSession(sessionData)) {
-                        console.log('✅ Successfully set session in Chainlit');
-                    } else {
-                        console.log('❌ Failed to set session in Chainlit, will retry...');
-                        waitForChainlitAndSetSession();
-                    }
-                }, 1000);
-                
-                // Notify Chainlit about the authenticated user
-                if (window.chainlit && window.chainlit.socket) {
-                    window.chainlit.socket.emit('auth_update', {
+        // Store Supabase session for Chainlit to access (only if user exists)
+        if (user) {
+            supabase.auth.getSession().then(({ data: { session }, error }) => {
+                if (session) {
+                    // Store session data securely
+                    const sessionData = {
+                        access_token: session.access_token,
                         user_id: session.user.id,
                         user_email: session.user.email,
-                        access_token: session.access_token
-                    });
+                        expires_at: session.expires_at
+                    };
+                    
+                    localStorage.setItem('supabase_session', JSON.stringify(sessionData));
+                    console.log('Stored Supabase session for Chainlit access');
+                    console.log('Session data:', sessionData);
+                    
+                    // Immediately try to pass to Chainlit
+                    setTimeout(() => {
+                        console.log('Attempting to pass session to Chainlit...');
+                        if (setChainlitSession(sessionData)) {
+                            console.log('✅ Successfully set session in Chainlit');
+                        } else {
+                            console.log('❌ Failed to set session in Chainlit, will retry...');
+                            waitForChainlitAndSetSession();
+                        }
+                    }, 1000);
+                    
+                    // Notify Chainlit about the authenticated user
+                    if (window.chainlit && window.chainlit.socket) {
+                        window.chainlit.socket.emit('auth_update', {
+                            user_id: session.user.id,
+                            user_email: session.user.email,
+                            access_token: session.access_token
+                        });
+                    }
                 }
-            }
-        });
+            });
+        }
 
         // Show chat interface
         const chatContainer = document.querySelector('#root');
@@ -516,10 +540,16 @@
             chatContainer.style.display = 'block';
         }
 
-        // Add edit profile button to the chat interface
-        addEditProfileButton(user);
-        
-        console.log('Chat interface shown for user:', user.email);
+        // Add appropriate button based on user status
+        if (user) {
+            // Add edit profile button for logged in users
+            addEditProfileButton(user);
+            console.log('Chat interface shown for user:', user.email);
+        } else {
+            // Add login button for anonymous users
+            addLoginButton();
+            console.log('Chat interface shown for anonymous user');
+        }
     }
 
     function addEditProfileButton(user) {
@@ -558,6 +588,50 @@
         editButton.onclick = () => showEditProfileModal(user);
 
         document.body.appendChild(editButton);
+    }
+
+    function addLoginButton() {
+        // Remove existing buttons if they exist
+        const existingButton = document.getElementById('edit-profile-btn');
+        if (existingButton) {
+            existingButton.remove();
+        }
+        const existingLoginButton = document.getElementById('login-btn-header');
+        if (existingLoginButton) {
+            existingLoginButton.remove();
+        }
+
+        // Create login button for anonymous users
+        const loginButton = document.createElement('button');
+        loginButton.id = 'login-btn-header';
+        loginButton.innerHTML = '🔐 Sign In for Personalization';
+        loginButton.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        `;
+
+        // Hover effect
+        loginButton.onmouseover = () => loginButton.style.background = '#059669';
+        loginButton.onmouseout = () => loginButton.style.background = '#10b981';
+
+        // Click handler - show login UI
+        loginButton.onclick = () => {
+            showLoginUI();
+        };
+
+        document.body.appendChild(loginButton);
     }
 
     async function showEditProfileModal(user) {
