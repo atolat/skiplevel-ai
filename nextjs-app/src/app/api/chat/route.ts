@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
       'Content-Type': 'application/json',
     };
 
-    // Add bypass header if available
+    // Add bypass header with the generated secret
     if (process.env.VERCEL_AUTOMATION_BYPASS_SECRET) {
       headers['x-vercel-protection-bypass'] = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
     }
