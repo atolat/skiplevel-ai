@@ -63,7 +63,9 @@ export async function POST(req: Request) {
   }
   
   // Call Vercel Python function directly
-  const apiUrl = '/api/emreq'  // Local Vercel function
+  const protocol = req.headers.get('x-forwarded-proto') || 'http'
+  const host = req.headers.get('host') || 'localhost:3000'
+  const apiUrl = `${protocol}://${host}/api/emreq`
   
   console.log('Calling Vercel Python function at:', apiUrl)
   console.log('Request payload:', JSON.stringify({
