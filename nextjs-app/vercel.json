@@ -1,14 +1,1 @@
-{
-  "name": "emreq-frontend",
-  "version": 2,
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs",
-  "installCommand": "npm install",
-  "env": {
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase-url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase-anon-key", 
-    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key",
-    "NEXT_PUBLIC_API_URL": "@railway-api-url"
-  }
-} 
+{} 
