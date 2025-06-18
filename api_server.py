@@ -67,7 +67,8 @@ app = FastAPI(title="Agent Factory API", version="1.0.0", lifespan=lifespan)
 allowed_origins = [
     "http://localhost:3000", 
     "http://127.0.0.1:3000",
-    "https://skiplevel-ai.vercel.app",  # Add Vercel production domain
+    "https://skiplevel-ai.vercel.app",  # Production domain
+    "https://skiplevel-bihtbw3ju-arpans-projects-21a46514.vercel.app",  # Current preview deployment
 ]
 
 # Add production origins if available
@@ -85,7 +86,7 @@ if railway_url:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
+    allow_origins=allowed_origins + ["*"],  # Allow all origins for now to test
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

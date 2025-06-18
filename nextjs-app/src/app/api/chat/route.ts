@@ -62,48 +62,42 @@ export async function POST(req: Request) {
     console.log('Profile data keys:', Object.keys(userContext.profile))
   }
   
-  // Call FastAPI backend
-  const apiUrl = process.env.NODE_ENV === 'production'
-    ? process.env.NEXT_PUBLIC_API_URL || 'https://your-service.railway.app'
-    : 'http://localhost:8001'
+  // Call Vercel Python function directly
+  const apiUrl = '/api/emreq'  // Local Vercel function
   
-  console.log('Calling backend at:', `${apiUrl}/api/chat/stream`)
+  console.log('Calling Vercel Python function at:', apiUrl)
   console.log('Request payload:', JSON.stringify({
     message: messages[messages.length - 1].content,
-    user_id: userContext?.user_id || 'anonymous',
-    agent_name: 'engineering_manager_emreq',
     user_context: userContext ? 'present' : 'null'
   }, null, 2))
   
   let response
   try {
-    response = await fetch(`${apiUrl}/api/chat/stream`, {
+    response = await fetch(apiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         message: messages[messages.length - 1].content,
-        user_id: userContext?.user_id || 'anonymous',
-        agent_name: 'engineering_manager_emreq',
         user_context: userContext
       })
     })
     
-    console.log('FastAPI response status:', response.status)
-    console.log('FastAPI response headers:', Object.fromEntries(response.headers.entries()))
+    console.log('Python function response status:', response.status)
+    console.log('Python function response headers:', Object.fromEntries(response.headers.entries()))
     
     if (!response.ok) {
       const errorText = await response.text()
-      console.error('FastAPI error response:', errorText)
+      console.error('Python function error response:', errorText)
       return new Response(`Backend error: ${errorText}`, { status: response.status })
     }
     
     if (!response.body) {
-      console.error('No response body from FastAPI')
+      console.error('No response body from Python function')
       return new Response('No response from agent', { status: 500 })
     }
   } catch (error) {
-    console.error('Error calling FastAPI backend:', error)
-    return new Response(`Failed to connect to backend: ${error}`, { status: 500 })
+    console.error('Error calling Python function:', error)
+    return new Response(`Failed to connect to Python function: ${error}`, { status: 500 })
   }
 
   // Create a readable stream that converts FastAPI chunks to Data Stream Protocol
