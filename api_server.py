@@ -64,7 +64,11 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="Agent Factory API", version="1.0.0", lifespan=lifespan)
 
 # Enable CORS for Next.js app
-allowed_origins = ["http://localhost:3000", "http://127.0.0.1:3000"]
+allowed_origins = [
+    "http://localhost:3000", 
+    "http://127.0.0.1:3000",
+    "https://skiplevel-ai.vercel.app",  # Add Vercel production domain
+]
 
 # Add production origins if available
 frontend_url = os.environ.get("FRONTEND_URL")
