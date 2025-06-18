@@ -1,7 +1,7 @@
 'use client'
 
-import { useChat } from 'ai/react'
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useDirectChat } from '@/lib/useDirectChat'
 import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
 import ProfileModal from '@/components/ProfileModal'
@@ -28,9 +28,7 @@ export default function Home() {
   const [showProfileModal, setShowProfileModal] = useState(false)
   const [mounted, setMounted] = useState(false)
   
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
-    api: '/api/chat'
-  })
+  const { messages, input, handleInputChange, handleSubmit, isLoading } = useDirectChat()
 
   // Prevent hydration issues by only rendering after mount
   useEffect(() => {

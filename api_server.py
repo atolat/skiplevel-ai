@@ -68,7 +68,7 @@ allowed_origins = [
     "http://localhost:3000", 
     "http://127.0.0.1:3000",
     "https://skiplevel-ai.vercel.app",  # Production domain
-    "https://skiplevel-bihtbw3ju-arpans-projects-21a46514.vercel.app",  # Current preview deployment
+    "https://skiplevel-6qds3ok8p-arpans-projects-21a46514.vercel.app",  # Current preview deployment
 ]
 
 # Add production origins if available
