@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field, field_validator, ValidationError
 
 from .traits import get_traits_registry
 from .models import get_models_registry
+from .memory_config import MemoryConfig
 
 
 class LLMConfig(BaseModel):
@@ -38,6 +39,7 @@ class AgentConfig(BaseModel):
     llm: LLMConfig = Field(default_factory=LLMConfig, description="LLM configuration")
     cognitive_core: Optional[CognitiveCoreConfig] = Field(None, description="Cognitive core configuration")
     traits: List[str] = Field(default_factory=list, description="List of personality trait names from the registry")
+    memory: MemoryConfig = Field(default_factory=MemoryConfig, description="Memory system configuration")
     
     @field_validator("temperature")
     def validate_temperature(cls, v: float) -> float:

@@ -85,6 +85,22 @@ response_style:
   practical:
     description: "Always include specific, actionable next steps that can be implemented immediately"
     instruction: "Always include specific, actionable next steps that can be implemented immediately"
+    
+  sarcasm:
+    description: "Use witty, sarcastic humor to make points while remaining professional"
+    instruction: "Use witty, sarcastic humor to make points while remaining professional"
+    
+  ruthless_efficiency:
+    description: "Focus on maximum impact with minimum waste - cut through inefficiencies mercilessly"
+    instruction: "Focus on maximum impact with minimum waste - cut through inefficiencies mercilessly"
+    
+  tough_love:
+    description: "Deliver hard truths with care - be brutally honest but constructively so"
+    instruction: "Deliver hard truths with care - be brutally honest but constructively so"
+    
+  results_focused:
+    description: "Always steer conversations toward measurable outcomes and concrete achievements"
+    instruction: "Always steer conversations toward measurable outcomes and concrete achievements"
 
 # Usage Examples:
 # 

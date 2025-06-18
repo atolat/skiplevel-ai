@@ -1,4 +1,0 @@
-agent_id: "simple_agent"
-name: "Simple Agent"
-description: "A simple test agent"
-temperature: 0.5 

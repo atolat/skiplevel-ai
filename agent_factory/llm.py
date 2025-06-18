@@ -31,6 +31,21 @@ class BaseLLM(ABC):
             Generated response text
         """
         pass
+    
+    def generate_stream(self, prompt: str, temperature: float = 0.7, max_tokens: int = 1000):
+        """Generate a streaming response from the LLM.
+        
+        Args:
+            prompt: The input prompt
+            temperature: Sampling temperature (0.0 to 2.0)
+            max_tokens: Maximum tokens to generate
+            
+        Yields:
+            Text chunks as they are generated
+        """
+        # Default implementation falls back to non-streaming
+        response = self.generate(prompt, temperature, max_tokens)
+        yield response
 
 
 class OpenAILLM(BaseLLM):
@@ -78,6 +93,42 @@ class OpenAILLM(BaseLLM):
         
         except Exception as e:
             return f"Error: Unexpected error - {str(e)}"
+    
+    def generate_stream(self, prompt: str, temperature: float = 0.7, max_tokens: int = 1000):
+        """Generate a streaming response using OpenAI's API.
+        
+        Args:
+            prompt: The input prompt
+            temperature: Sampling temperature (0.0 to 2.0)
+            max_tokens: Maximum tokens to generate
+            
+        Yields:
+            Text chunks as they are generated
+        """
+        try:
+            stream = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                max_tokens=max_tokens,
+                stream=True
+            )
+            
+            for chunk in stream:
+                if chunk.choices[0].delta.content is not None:
+                    yield chunk.choices[0].delta.content
+                    
+        except openai.AuthenticationError:
+            yield "Error: Invalid OpenAI API key"
+        
+        except openai.RateLimitError:
+            yield "Error: OpenAI API rate limit exceeded"
+        
+        except openai.APIError as e:
+            yield f"Error: OpenAI API error - {str(e)}"
+        
+        except Exception as e:
+            yield f"Error: Unexpected error - {str(e)}"
 
 
 def get_llm(provider: str = "openai", **kwargs) -> Optional[BaseLLM]:

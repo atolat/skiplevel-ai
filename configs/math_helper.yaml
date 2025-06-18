@@ -1,6 +1,0 @@
-agent_id: "math_helper_v1"
-name: "Alex - Math Helper"
-description: "A helpful assistant that can perform calculations and explain math concepts"
-temperature: 0.3
-tools:
-  - calculator 

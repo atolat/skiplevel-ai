@@ -15,6 +15,14 @@ from rich.text import Text
 from rich.rule import Rule
 from rich.columns import Columns
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # python-dotenv not available, skip loading
+    pass
+
 from .config import load_config, validate_model_availability
 from .agent import create_agent
 from .traits import get_traits_registry
@@ -23,7 +31,7 @@ from .models import get_models_registry
 # Initialize CLI app and console
 app = typer.Typer(
     name="agent-factory",
-    help="🏭 Agent Factory - Build and manage configurable AI agents",
+    help="🏭 Agent Factory - Build and manage configurable AI agents with Emreq",
     rich_markup_mode="rich"
 )
 console = Console()
@@ -141,13 +149,13 @@ def list_agents():
     models_registry = get_models_registry()
     
     # Create table for agent list
-    agents_table = Table(show_header=True, header_style="bold magenta")
-    agents_table.add_column("Agent ID", style="cyan", width=20)
-    agents_table.add_column("Name", style="green", width=25)
-    agents_table.add_column("Model", style="blue", width=15)
-    agents_table.add_column("Status", style="yellow", width=12)
-    agents_table.add_column("Traits", style="magenta", width=15)
-    agents_table.add_column("Tools", style="red", width=15)
+    agents_table = Table(show_header=True, header_style="bold magenta", box=None, show_lines=True)
+    agents_table.add_column("Agent ID", style="cyan", width=18, no_wrap=True)
+    agents_table.add_column("Name", style="green", width=12, no_wrap=True)
+    agents_table.add_column("Model", style="blue", width=12, no_wrap=True)
+    agents_table.add_column("Status", style="yellow", width=12, no_wrap=True)
+    agents_table.add_column("Traits", style="magenta", width=12, no_wrap=True)
+    agents_table.add_column("Tools", style="red", width=12, no_wrap=True)
     
     loaded_count = 0
     error_count = 0
@@ -255,9 +263,10 @@ def demo():
 @app.command()
 def chat(
     agent_name: str = typer.Argument(..., help="Agent ID or config filename to chat with"),
-    verbose: bool = typer.Option(False, "--verbose", "-v", help="Show detailed agent information")
+    verbose: bool = typer.Option(False, "--verbose", "-v", help="Show detailed agent information"),
+    no_stream: bool = typer.Option(False, "--no-stream", help="Disable streaming responses")
 ):
-    """💬 Start an interactive chat session with a specific agent."""
+    """💬 Start an interactive chat session with a specific agent. Responses stream in real-time by default."""
     
     # Load agent configuration
     result = load_agent_config(agent_name)
@@ -298,7 +307,11 @@ def chat(
     
     # Start chat session
     console.print(f"\n[bold green]💬 Chatting with {config.name}[/bold green]")
-    console.print("[dim]Type 'quit' or 'exit' to end the conversation[/dim]\n")
+    if no_stream:
+        console.print("[dim]Type 'quit' or 'exit' to end the conversation[/dim]\n")
+    else:
+        console.print("[dim]Type 'quit' or 'exit' to end the conversation[/dim]")
+        console.print("[dim]🚀 Streaming enabled - responses appear in real-time[/dim]\n")
     
     try:
         while True:
@@ -309,15 +322,25 @@ def chat(
                 break
             
             try:
-                response = agent.chat(user_input)
-                
-                # Format response
-                response_text = Text()
-                response_text.append(f"{config.name}: ", style="bold magenta")
-                response_text.append(response)
-                
-                console.print(response_text)
-                console.print()  # Add spacing
+                if no_stream:
+                    # Use traditional non-streaming chat
+                    response = agent.chat(user_input)
+                    
+                    # Format response
+                    response_text = Text()
+                    response_text.append(f"{config.name}: ", style="bold magenta")
+                    response_text.append(response)
+                    
+                    console.print(response_text)
+                    console.print()  # Add spacing
+                else:
+                    # Use streaming chat for real-time responses
+                    console.print(f"[bold magenta]{config.name}:[/bold magenta] ", end="")
+                    
+                    for chunk in agent.chat_stream(user_input):
+                        console.print(chunk, end="")
+                    
+                    console.print("\n")  # Add spacing after streaming
                 
             except Exception as e:
                 console.print(f"[red]Error: {e}[/red]")
@@ -627,6 +650,47 @@ def models():
     total_unavailable = sum(len(models) for models in missing_keys.values())
     
     console.print(f"\n[dim]Summary: {total_available} available, {total_unavailable} unavailable[/dim]")
+
+
+@app.command()
+def web(
+    host: str = typer.Option("0.0.0.0", "--host", "-h", help="Host to bind the server to"),
+    port: int = typer.Option(8000, "--port", "-p", help="Port to bind the server to"),
+    reload: bool = typer.Option(False, "--reload", "-r", help="Enable auto-reload for development")
+):
+    """🚀 Launch the Emreq web interface powered by Chainlit."""
+    import subprocess
+    
+    # Display startup info
+    console.print("\n")
+    console.print(Panel.fit(
+        f"[bold green]🚀 Starting Emreq Chainlit Interface[/bold green]\n\n"
+        f"Server will be available at: [cyan]http://{host}:{port}[/cyan]\n"
+        f"Auto-reload: [yellow]{'Enabled' if reload else 'Disabled'}[/yellow]",
+        title="Emreq - AI Engineering Manager",
+        border_style="green"
+    ))
+    
+    try:
+        # Start Chainlit server
+        cmd = [
+            sys.executable, "-m", "chainlit", "run", "app.py",
+            "--host", host,
+            "--port", str(port)
+        ]
+        
+        if reload:
+            cmd.append("--watch")
+        
+        console.print(f"[green]Starting server on {host}:{port}...[/green]")
+        subprocess.run(cmd, check=True)
+        
+    except subprocess.CalledProcessError as e:
+        console.print(f"[red]Error starting Chainlit server: {e}[/red]")
+        raise typer.Exit(1)
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Shutting down server...[/yellow]")
+        raise typer.Exit(0)
 
 
 def main():

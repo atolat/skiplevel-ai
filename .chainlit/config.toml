@@ -1,0 +1,108 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = false
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+# Authorized origins
+allow_origins = ["*"]
+
+# Follow symlink for asset mount (see https://github.com/Chainlit/chainlit/issues/317)
+# follow_symlink = false
+
+[features]
+# Show the prompt playground
+prompt_playground = false
+
+# Process and display HTML in messages. This can be a security risk (see https://stackoverflow.com/questions/19603097/why-is-it-dangerous-to-render-user-generated-html-or-javascript)
+unsafe_allow_html = false
+
+# Process and display mathematical expressions. This can clash with "$" characters in messages.
+latex = false
+
+# Automatically tag threads when a user takes an action (upvote, downvote, etc.) or leaves a comment.
+auto_tag_thread = true
+
+# Literal display of markdown characters instead of formatting
+show_readme_as_raw = false
+
+[UI]
+# Name of the app and chatbot.
+name = "Emreq - AI Engineering Manager"
+
+# Show the readme while the thread is empty.
+show_readme_as_raw = false
+
+# Description of the app and chatbot. This is used for HTML tags.
+description = "Ruthless AI Engineering Manager that cuts through the BS and gets things done."
+
+# Large size content are by default collapsed for a cleaner ui
+default_collapse_content = true
+
+# The default value for the expand messages settings.
+default_expand_messages = false
+
+# Hide the chain of thought details from the user in the UI.
+hide_cot = false
+
+# Link to your github repo. This will add a github button in the UI's header.
+# github = ""
+
+# Specify a CSS file that can be used to customize the user interface.
+# The CSS file can be served from the public directory or via an external link.
+custom_css = "/public/style.css"
+
+# Specify a Javascript file that can be used to customize the user interface.
+# The Javascript file can be served from the public directory.
+custom_js = "/public/supabase-auth.js"
+
+# Specify a custom font url.
+custom_font = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap"
+
+# Specify a custom build directory for the frontend.
+# This can be used to customize the frontend code.
+# Be careful: If this is a relative path, it should not start with a slash.
+# custom_build = "./public/build"
+
+# Override default MUI light theme. (Check theme.ts)
+[UI.theme]
+default_theme = "dark"
+layout = "wide"
+font_family = "JetBrains Mono, Fira Code, Consolas, Monaco, monospace"
+
+[UI.theme.light]
+background = "#f8fafc"
+paper = "#ffffff"
+
+[UI.theme.light.primary]
+main = "#2563eb"
+dark = "#1d4ed8"
+light = "#3b82f6"
+
+[UI.theme.light.text]
+primary = "#0f172a"
+secondary = "#64748b"
+
+# Override default MUI dark theme. (Check theme.ts)
+[UI.theme.dark]
+background = "#0f172a"
+paper = "#1e293b"
+
+[UI.theme.dark.primary]
+main = "#60a5fa"
+dark = "#3b82f6"
+light = "#93c5fd"
+
+[UI.theme.dark.text]
+primary = "#f1f5f9"
+secondary = "#cbd5e1"
+
+[meta]
+generated_by = "1.0.200" 

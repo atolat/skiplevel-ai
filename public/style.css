@@ -1,0 +1,65 @@
+/* Terminal-Style Enhancements for Emreq */
+
+/* Ensure monospace font consistency */
+* {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace !important;
+}
+
+/* Terminal-style input with better contrast */
+.MuiInputBase-root {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Code blocks with terminal styling */
+pre, code {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Subtle terminal cursor effect for typing */
+.chainlit-input:focus {
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.3) !important;
+}
+
+/* Clean button styling */
+.MuiButton-root {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Message content with better spacing */
+.MuiTypography-body1 {
+  font-family: 'JetBrains Mono', monospace !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Headers with terminal style */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Terminal-style scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(96, 165, 250, 0.6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(96, 165, 250, 0.8);
+} 
