@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { chatWithRailwayBackend } from './api'
+import { chatWithRailwayBackend, UserContext } from './api'
 import { useAuth } from '@/contexts/AuthContext'
 
 export interface Message {
@@ -48,7 +48,7 @@ export function useDirectChat(): UseDirectChatReturn {
 
     try {
       // Prepare user context
-      const userContext = {
+      const userContext: UserContext = {
         user_id: user?.id || 'anonymous',
         email: user?.email || 'anonymous@example.com',
         profile: profile ? {

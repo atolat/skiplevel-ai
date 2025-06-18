@@ -1,5 +1,24 @@
 // API configuration for different environments
 
+export interface UserContext {
+  user_id: string
+  email: string
+  profile?: {
+    name?: string
+    title?: string
+    role?: string
+    experience_level?: string | null
+    specialization?: string
+    years_of_experience?: number | null
+    technical_skills?: string[] | null
+    current_challenges?: string[] | null
+    career_goals?: string[] | null
+    communication_style?: string | null
+    preferred_feedback_style?: string | null
+    profile_completed?: boolean
+  } | null
+}
+
 export const API_CONFIG = {
   // Use Railway backend URL for both development and production
   baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://web-development-c0b4.up.railway.app',
@@ -30,7 +49,7 @@ export const checkApiHealth = async (): Promise<boolean> => {
 // Direct Railway backend chat function
 export const chatWithRailwayBackend = async (
   message: string,
-  userContext: any
+  userContext: UserContext
 ): Promise<string> => {
   try {
     console.log('Calling Railway backend directly:', getApiUrl('chat'))
