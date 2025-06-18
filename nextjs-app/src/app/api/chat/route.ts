@@ -44,6 +44,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { messages } = body;
 
+    // Extract the latest message
+    const latestMessage = messages[messages.length - 1]?.content || '';
+
     // Construct the URL for the Python function
     const protocol = request.headers.get('x-forwarded-proto') || 'https';
     const host = request.headers.get('host');
@@ -70,23 +73,28 @@ export async function POST(request: NextRequest) {
     console.log('Request headers:', Object.keys(headers));
     console.log('Calling URL:', pythonFunctionUrl);
 
-    // Call the Python function
+    // Call the Python function with the correct payload structure
     const response = await fetch(pythonFunctionUrl, {
       method: 'POST',
       headers,
       body: JSON.stringify({
-        messages,
+        message: latestMessage,  // Single message string as expected by Python function
         user_context: {
-          name: profile.name,
-          role: profile.role,
-          experience_level: profile.experience_level,
-          specialization: profile.specialization,
-          years_of_experience: profile.years_of_experience,
-          technical_skills: profile.technical_skills,
-          current_challenges: profile.current_challenges,
-          career_goals: profile.career_goals,
-          communication_style: profile.communication_style,
-          preferred_feedback_style: profile.preferred_feedback_style,
+          email: user.email,
+          profile: {
+            name: profile.name,
+            title: profile.role,  // Map role to title as expected by Python
+            role: profile.role,
+            experience_level: profile.experience_level,
+            specialization: profile.specialization,
+            years_of_experience: profile.years_of_experience,
+            technical_skills: profile.technical_skills,
+            current_challenges: profile.current_challenges,
+            career_goals: profile.career_goals,
+            communication_style: profile.communication_style,
+            preferred_feedback_style: profile.preferred_feedback_style,
+            profile_completed: true
+          }
         }
       }),
     });
@@ -99,11 +107,44 @@ export async function POST(request: NextRequest) {
       throw new Error(`Python function returned ${response.status}: ${response.statusText}`);
     }
 
-    // Return the streaming response
-    return new Response(response.body, {
+    // Create a streaming response that converts the raw text to Data Stream Protocol
+    const stream = new ReadableStream({
+      async start(controller) {
+        const reader = response.body!.getReader();
+        const decoder = new TextDecoder();
+        
+        try {
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            
+            const chunk = decoder.decode(value);
+            if (chunk.trim()) {
+              // Convert to Data Stream Protocol format
+              const dataStreamChunk = `0:${JSON.stringify(chunk)}\n`;
+              controller.enqueue(new TextEncoder().encode(dataStreamChunk));
+            }
+          }
+          
+          // Send completion message
+          const finishChunk = `d:{"finishReason":"stop","usage":{"promptTokens":10,"completionTokens":20}}\n`;
+          controller.enqueue(new TextEncoder().encode(finishChunk));
+          
+        } catch (error) {
+          console.error('Stream error:', error);
+          controller.error(error);
+        } finally {
+          controller.close();
+        }
+      }
+    });
+
+    return new Response(stream, {
       headers: {
         'Content-Type': 'text/plain; charset=utf-8',
-        'Transfer-Encoding': 'chunked',
+        'x-vercel-ai-data-stream': 'v1',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
       },
     });
 
