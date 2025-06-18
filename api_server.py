@@ -115,11 +115,23 @@ async def root():
 @app.get("/health")
 async def health():
     """Detailed health check"""
+    # Quick health check - just return basic status
+    return {
+        "status": "healthy",
+        "port": os.environ.get("PORT", "8001"),
+        "environment": "production" if os.environ.get("RAILWAY_ENVIRONMENT") else "development"
+    }
+
+@app.get("/health/detailed")
+async def health_detailed():
+    """Detailed health check with agent status"""
     return {
         "status": "healthy",
         "agent_factory_available": BaseAgent is not None,
         "emreq_agent_loaded": emreq_agent is not None,
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "port": os.environ.get("PORT", "8001"),
+        "environment": "production" if os.environ.get("RAILWAY_ENVIRONMENT") else "development"
     }
 
 @app.post("/api/chat", response_model=ChatResponse)
