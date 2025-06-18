@@ -66,23 +66,44 @@ export async function POST(req: Request) {
   const apiUrl = process.env.NODE_ENV === 'production'
     ? process.env.NEXT_PUBLIC_API_URL || 'https://your-service.railway.app'
     : 'http://localhost:8001'
-    
-  const response = await fetch(`${apiUrl}/api/chat/stream`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      message: messages[messages.length - 1].content,
-      user_id: userContext?.user_id || 'anonymous',
-      agent_name: 'engineering_manager_emreq',
-      user_context: userContext
+  
+  console.log('Calling backend at:', `${apiUrl}/api/chat/stream`)
+  console.log('Request payload:', JSON.stringify({
+    message: messages[messages.length - 1].content,
+    user_id: userContext?.user_id || 'anonymous',
+    agent_name: 'engineering_manager_emreq',
+    user_context: userContext ? 'present' : 'null'
+  }, null, 2))
+  
+  let response
+  try {
+    response = await fetch(`${apiUrl}/api/chat/stream`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: messages[messages.length - 1].content,
+        user_id: userContext?.user_id || 'anonymous',
+        agent_name: 'engineering_manager_emreq',
+        user_context: userContext
+      })
     })
-  })
-  
-  console.log('FastAPI response status:', response.status)
-  
-  if (!response.body) {
-    console.error('No response body from FastAPI')
-    return new Response('No response from agent', { status: 500 })
+    
+    console.log('FastAPI response status:', response.status)
+    console.log('FastAPI response headers:', Object.fromEntries(response.headers.entries()))
+    
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.error('FastAPI error response:', errorText)
+      return new Response(`Backend error: ${errorText}`, { status: response.status })
+    }
+    
+    if (!response.body) {
+      console.error('No response body from FastAPI')
+      return new Response('No response from agent', { status: 500 })
+    }
+  } catch (error) {
+    console.error('Error calling FastAPI backend:', error)
+    return new Response(`Failed to connect to backend: ${error}`, { status: 500 })
   }
 
   // Create a readable stream that converts FastAPI chunks to Data Stream Protocol
