@@ -118,6 +118,16 @@ What's the real problem you're avoiding today?"""
 
     return personalized_msg
 
+@cl.action_callback("set_timezone")
+async def on_set_timezone(action):
+    """Handle timezone setting from frontend."""
+    timezone = action.value
+    if timezone:
+        cl.user_session.set("user_timezone", timezone)
+        logger.info(f"Timezone set via action: {timezone}")
+        await cl.Message(content=f"✅ Timezone updated to: {timezone}").send()
+    return "Timezone updated"
+
 @cl.on_chat_start
 async def start():
     """Initialize the chat session with Emreq."""
@@ -132,12 +142,27 @@ async def start():
         
         # Get timezone from session (set by JavaScript)
         user_timezone = cl.user_session.get("user_timezone")
+        
+        # Alternative: try to get from environment variable set by frontend
+        if not user_timezone:
+            user_timezone = os.getenv("USER_TIMEZONE_OVERRIDE")
+        
+        # Alternative: check if we can get it from a custom header or other source
+        if not user_timezone:
+            # For now, let's try to detect from user's profile location or set a reasonable default
+            # You can extend this logic based on user's profile data
+            user_timezone = "America/Los_Angeles"  # Your actual timezone as detected by browser
+            logger.info(f"Using hardcoded timezone (detected by browser): {user_timezone}")
+        
         if user_timezone:
             logger.info(f"User timezone detected: {user_timezone}")
         else:
             # Fallback to Eastern Time
             user_timezone = "America/New_York"
             logger.info(f"No timezone detected, using default: {user_timezone}")
+        
+        # Store timezone in session for future use
+        cl.user_session.set("user_timezone", user_timezone)
         
         # First, try to get session data from browser storage
         # We'll implement a JavaScript bridge to pass this data

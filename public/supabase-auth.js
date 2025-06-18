@@ -1043,8 +1043,18 @@
         const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
         console.log('Detected user timezone:', userTimezone);
         
-        // Set timezone in session storage for backend access
+        // Set timezone in multiple places for backend access
         sessionStorage.setItem('user_timezone', userTimezone);
+        localStorage.setItem('user_timezone', userTimezone);
+        
+        // Also set as a global variable for immediate access
+        window.userTimezone = userTimezone;
+        
+        // Dispatch a custom event with timezone information
+        const timezoneEvent = new CustomEvent('timezone_detected', {
+            detail: { timezone: userTimezone }
+        });
+        window.dispatchEvent(timezoneEvent);
         
         // Try to pass timezone to Chainlit immediately
         const passTimezoneToChainlit = () => {
@@ -1055,6 +1065,21 @@
                 console.log('✅ Set timezone in Chainlit session:', userTimezone);
                 return true;
             }
+            
+            // Alternative: try to use Chainlit action if available
+            if (window.chainlit && window.chainlit.emit) {
+                try {
+                    window.chainlit.emit('action', {
+                        name: 'set_timezone',
+                        value: userTimezone
+                    });
+                    console.log('✅ Set timezone via Chainlit action:', userTimezone);
+                    return true;
+                } catch (e) {
+                    console.log('Failed to set timezone via action:', e);
+                }
+            }
+            
             return false;
         };
         
