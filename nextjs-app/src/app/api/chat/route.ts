@@ -54,10 +54,21 @@ export async function POST(request: NextRequest) {
       'Content-Type': 'application/json',
     };
 
+    // Debug: Check if bypass secret is available
+    const bypassSecret = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
+    console.log('Bypass secret available:', !!bypassSecret);
+    console.log('Bypass secret length:', bypassSecret?.length || 0);
+    
     // Add bypass header with the generated secret
-    if (process.env.VERCEL_AUTOMATION_BYPASS_SECRET) {
-      headers['x-vercel-protection-bypass'] = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
+    if (bypassSecret) {
+      headers['x-vercel-protection-bypass'] = bypassSecret;
+      console.log('Added bypass header');
+    } else {
+      console.log('No bypass secret found in environment');
     }
+
+    console.log('Request headers:', Object.keys(headers));
+    console.log('Calling URL:', pythonFunctionUrl);
 
     // Call the Python function
     const response = await fetch(pythonFunctionUrl, {
@@ -80,7 +91,11 @@ export async function POST(request: NextRequest) {
       }),
     });
 
+    console.log('Python function response status:', response.status);
+
     if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Python function error:', errorText);
       throw new Error(`Python function returned ${response.status}: ${response.statusText}`);
     }
 
