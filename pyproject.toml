@@ -48,6 +48,7 @@ dependencies = [
     "requests>=2.31.0",
     "supabase>=2.0.0",
     "chainlit>=1.0.0",
+    "pytz>=2023.3",
 ]
 
 [project.optional-dependencies]

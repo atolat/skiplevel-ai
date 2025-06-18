@@ -11,6 +11,7 @@ from email import encoders
 from typing import Dict, Any, Optional
 import json
 import re
+import pytz
 
 # Load environment variables from .env file
 try:
@@ -351,6 +352,10 @@ I'll take care of the rest as your AI manager! 🤖"""
             location = data.get('location', 'Conference Room / Video Call')
             description = data.get('description', 'One-on-one check-in meeting')
             
+            # Get user timezone preference (default to Eastern Time)
+            user_timezone = data.get('timezone', self.default_timezone)
+            tz = pytz.timezone(user_timezone)
+            
             # Handle specific date if provided
             if data.get('date'):
                 try:
@@ -363,6 +368,8 @@ I'll take care of the rest as your AI manager! 🤖"""
                         for fmt in date_formats:
                             try:
                                 meeting_date = datetime.strptime(date_str, fmt)
+                                # Make it timezone-aware
+                                meeting_date = tz.localize(meeting_date.replace(hour=0, minute=0, second=0, microsecond=0))
                                 break
                             except ValueError:
                                 continue
@@ -375,7 +382,7 @@ I'll take care of the rest as your AI manager! 🤖"""
                     return f"❌ Error parsing date: {str(e)}"
             else:
                 # Calculate next occurrence of the specified day
-                meeting_date = self._get_next_weekday(day)
+                meeting_date = self._get_next_weekday(day, user_timezone)
                 if not meeting_date:
                     return f"❌ Invalid day: {day}. Use day names like 'Monday', 'Tuesday', etc."
             
@@ -384,11 +391,22 @@ I'll take care of the rest as your AI manager! 🤖"""
             if not start_time:
                 return f"❌ Invalid time format: {time_str}. Use format like '2:00 PM' or '14:00'"
             
-            # Combine date and time
-            meeting_start = datetime.combine(
-                meeting_date.date(),
-                start_time.time()
-            )
+            # Combine date and time with timezone awareness
+            if hasattr(meeting_date, 'tzinfo') and meeting_date.tzinfo:
+                # meeting_date is already timezone-aware
+                meeting_start = meeting_date.replace(
+                    hour=start_time.hour,
+                    minute=start_time.minute,
+                    second=0,
+                    microsecond=0
+                )
+            else:
+                # meeting_date is naive, make it timezone-aware
+                meeting_start = tz.localize(datetime.combine(
+                    meeting_date.date(),
+                    start_time.time()
+                ))
+            
             meeting_end = meeting_start + timedelta(minutes=duration)
             
             # Create meeting details
@@ -538,11 +556,12 @@ I'll take care of the rest as your AI manager! 🤖"""
         
         return None
     
-    def _get_next_weekday(self, day_name: str) -> Optional[datetime]:
-        """Get the next occurrence of a specific weekday.
+    def _get_next_weekday(self, day_name: str, timezone_name: str = None) -> Optional[datetime]:
+        """Get the next occurrence of a specific weekday in the specified timezone.
         
         Args:
             day_name: Name of the day (e.g., "Monday")
+            timezone_name: Timezone name (e.g., "America/New_York")
             
         Returns:
             datetime object for the next occurrence of that day
@@ -556,7 +575,9 @@ I'll take care of the rest as your AI manager! 🤖"""
         if target_day is None:
             return None
         
-        today = datetime.now()
+        # Use timezone-aware datetime
+        tz = pytz.timezone(timezone_name or self.default_timezone)
+        today = datetime.now(tz)
         days_ahead = target_day - today.weekday()
         
         if days_ahead <= 0:  # Target day already happened this week
