@@ -358,15 +358,28 @@ class BaseAgent:
         # Load available tools
         self.available_tools = {}
         tool_names = getattr(config, 'tools', [])
+        user_timezone = user_profile.get("timezone") if user_profile else None
+        
         for tool_name in tool_names:
             tool = get_tool(tool_name)
             if tool:
+                # Check if tool supports timezone parameter
+                if hasattr(tool, '__init__') and 'user_timezone' in tool.__init__.__code__.co_varnames:
+                    # Create new instance with timezone if available
+                    if user_timezone:
+                        tool_class = tool.__class__
+                        tool = tool_class(user_timezone=user_timezone)
+                
                 # If tool supports LLM injection and we have an LLM, pass it
                 if hasattr(tool, '__init__') and 'llm' in tool.__init__.__code__.co_varnames:
                     # Create new instance with LLM if available
                     if self.llm:
                         tool_class = tool.__class__
-                        tool = tool_class(llm=self.llm)
+                        # Check if tool also supports timezone
+                        if user_timezone and 'user_timezone' in tool.__init__.__code__.co_varnames:
+                            tool = tool_class(llm=self.llm, user_timezone=user_timezone)
+                        else:
+                            tool = tool_class(llm=self.llm)
                 
                 self.available_tools[tool_name] = tool
             else:
@@ -391,7 +404,11 @@ class BaseAgent:
                     tool = self.available_tools[tool_name]
                     if hasattr(tool, '__init__') and 'llm' in tool.__init__.__code__.co_varnames:
                         tool_class = tool.__class__
-                        self.available_tools[tool_name] = tool_class(llm=self.llm)
+                        # Check if tool also supports timezone
+                        if user_timezone and 'user_timezone' in tool.__init__.__code__.co_varnames:
+                            self.available_tools[tool_name] = tool_class(llm=self.llm, user_timezone=user_timezone)
+                        else:
+                            self.available_tools[tool_name] = tool_class(llm=self.llm)
     
     def _inject_profile_data(self, user_profile: Dict[str, Any]) -> None:
         """Inject user profile data into the memory manager.

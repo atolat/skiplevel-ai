@@ -938,6 +938,10 @@
         console.log('setChainlitSession called with:', sessionData);
         console.log('window.chainlit exists:', !!window.chainlit);
         
+        // Detect user's timezone
+        const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        console.log('Detected user timezone:', userTimezone);
+        
         // Try to set session data in Chainlit's user session
         if (window.chainlit && window.chainlit.setUserSession) {
             console.log('Chainlit setUserSession method exists, calling it...');
@@ -946,9 +950,10 @@
                     access_token: sessionData.access_token,
                     user_id: sessionData.user_id,
                     user_email: sessionData.user_email
-                }
+                },
+                user_timezone: userTimezone
             });
-            console.log('✅ Set Chainlit session data');
+            console.log('✅ Set Chainlit session data with timezone:', userTimezone);
             return true;
         } else {
             console.log('❌ Chainlit setUserSession not available');
@@ -976,12 +981,16 @@
                         return true;
                     }
                     
+                    // Detect user's timezone
+                    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                    
                     // Fallback: dispatch custom event
                     const event = new CustomEvent('supabase_session_ready', {
                         detail: {
                             user_id: session.user_id,
                             user_email: session.user_email,
-                            access_token: session.access_token
+                            access_token: session.access_token,
+                            user_timezone: userTimezone
                         }
                     });
                     window.dispatchEvent(event);
@@ -1029,6 +1038,41 @@
     // Check for existing session when page loads
     document.addEventListener('DOMContentLoaded', function() {
         console.log('Page loaded, checking for existing session...');
+        
+        // Always detect and pass timezone to Chainlit
+        const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        console.log('Detected user timezone:', userTimezone);
+        
+        // Set timezone in session storage for backend access
+        sessionStorage.setItem('user_timezone', userTimezone);
+        
+        // Try to pass timezone to Chainlit immediately
+        const passTimezoneToChainlit = () => {
+            if (window.chainlit && window.chainlit.setUserSession) {
+                window.chainlit.setUserSession({
+                    user_timezone: userTimezone
+                });
+                console.log('✅ Set timezone in Chainlit session:', userTimezone);
+                return true;
+            }
+            return false;
+        };
+        
+        // Try immediately, then retry with delays
+        if (!passTimezoneToChainlit()) {
+            let attempts = 0;
+            const maxAttempts = 50;
+            
+            const retryTimezone = () => {
+                attempts++;
+                if (passTimezoneToChainlit() || attempts >= maxAttempts) {
+                    return;
+                }
+                setTimeout(retryTimezone, 100);
+            };
+            
+            setTimeout(retryTimezone, 100);
+        }
         
         // Wait for Chainlit to be ready, then set session
         waitForChainlitAndSetSession();

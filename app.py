@@ -128,6 +128,16 @@ async def start():
         user_profile = None
         user_id = None
         user_email = None
+        user_timezone = None
+        
+        # Get timezone from session (set by JavaScript)
+        user_timezone = cl.user_session.get("user_timezone")
+        if user_timezone:
+            logger.info(f"User timezone detected: {user_timezone}")
+        else:
+            # Fallback to Eastern Time
+            user_timezone = "America/New_York"
+            logger.info(f"No timezone detected, using default: {user_timezone}")
         
         # First, try to get session data from browser storage
         # We'll implement a JavaScript bridge to pass this data
@@ -184,15 +194,19 @@ async def start():
                 
                 if raw_profile:
                     user_profile = profile_client.format_profile_for_agent(raw_profile)
-                    logger.info(f"Loaded profile for user: {user_profile.get('name', 'Unknown')} ({user_email})")
+                    # Add timezone to user profile
+                    user_profile["timezone"] = user_timezone
+                    logger.info(f"Loaded profile for user: {user_profile.get('name', 'Unknown')} ({user_email}) in {user_timezone}")
                 else:
                     logger.info(f"No profile found for user: {user_email}")
             except Exception as e:
                 logger.warning(f"Could not load user profile: {e}")
         else:
             logger.info("No authenticated user found - using default experience")
+            # Even for anonymous users, create a basic profile with timezone
+            user_profile = {"timezone": user_timezone}
         
-        # Load Emreq agent with user profile
+        # Load Emreq agent with user profile (including timezone)
         emreq_agent = get_emreq_agent(user_profile=user_profile)
         if not emreq_agent:
             await cl.Message(content="Error: Failed to initialize Emreq").send()

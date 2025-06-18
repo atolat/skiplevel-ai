@@ -53,8 +53,12 @@ Or natural language: "Schedule a 1:1 with employee@company.com on June 20, 2025"
 
 The AI agent automatically acts as the manager - only employee email is needed."""
     
-    def __init__(self):
-        """Initialize the scheduler with SMTP configuration."""
+    def __init__(self, user_timezone: str = None):
+        """Initialize the scheduler with SMTP configuration and user timezone.
+        
+        Args:
+            user_timezone: User's timezone (e.g., 'America/Los_Angeles', 'Europe/London')
+        """
         super().__init__()
         
         # SMTP Configuration from environment variables
@@ -65,8 +69,8 @@ The AI agent automatically acts as the manager - only employee email is needed."
         self.sender_email = os.getenv("SENDER_EMAIL", self.smtp_username)
         self.sender_name = os.getenv("SENDER_NAME", "Meeting Scheduler")
         
-        # Default timezone
-        self.default_timezone = os.getenv("DEFAULT_TIMEZONE", "America/New_York")
+        # Default timezone - use user's timezone if provided, otherwise fall back to environment or NY
+        self.default_timezone = user_timezone or os.getenv("DEFAULT_TIMEZONE", "America/New_York")
     
     def create_ics_file(self, meeting_details: Dict[str, Any]) -> str:
         """Generate RFC-compliant ICS file content.
