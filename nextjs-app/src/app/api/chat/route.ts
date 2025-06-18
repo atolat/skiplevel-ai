@@ -1,153 +1,101 @@
-import { supabase } from '@/lib/supabase'
-import { cookies } from 'next/headers'
+import { NextRequest } from 'next/server';
+import { createClient } from '@supabase/supabase-js';
+import { cookies } from 'next/headers';
 
-export async function POST(req: Request) {
-  const { messages } = await req.json()
-  
-  console.log('API route called with message:', messages[messages.length - 1].content)
-  
-  // Get auth from cookies
-  let userContext = null
-  
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.SUPABASE_SERVICE_ROLE_KEY!
+);
+
+export async function POST(request: NextRequest) {
   try {
-    const cookieStore = await cookies()
-    const accessToken = cookieStore.get('sb-access-token')?.value
-    const refreshToken = cookieStore.get('sb-refresh-token')?.value
-    
-    console.log('Access token exists:', !!accessToken)
-    console.log('Refresh token exists:', !!refreshToken)
-    
-    if (accessToken) {
-      // Set the session for this request
-      await supabase.auth.setSession({
-        access_token: accessToken,
-        refresh_token: refreshToken || ''
-      })
-      
-      // Get the user
-      const { data: { user }, error } = await supabase.auth.getUser()
-      
-      console.log('User validation result:', !!user, 'Error:', !!error)
-      
-      if (user && !error) {
-        // Get user profile with authenticated session
-        const { data: profile, error: profileError } = await supabase
-          .from('employee_profiles')
-          .select('*')
-          .eq('id', user.id)
-          .single()
-          
-        console.log('Profile query result:', !!profile, 'Profile error:', !!profileError)
-        if (profileError) {
-          console.error('Profile error details:', profileError)
-        }
-        
-        userContext = {
-          user_id: user.id,
-          email: user.email,
-          profile: profile
-        }
-        
-        console.log('Authenticated user:', user.email, 'Profile:', profile?.name)
-        console.log('Profile completed?', profile?.profile_completed)
-        console.log('Full profile data:', JSON.stringify(profile, null, 2))
-      }
+    // Get cookies
+    const cookieStore = await cookies();
+    const accessToken = cookieStore.get('sb-access-token')?.value;
+    const refreshToken = cookieStore.get('sb-refresh-token')?.value;
+
+    if (!accessToken || !refreshToken) {
+      return new Response('Authentication required', { status: 401 });
     }
-  } catch (error) {
-    console.error('Error getting auth from cookies:', error)
-  }
-  
-  console.log('Final user context being sent:', userContext ? 'Present' : 'None')
-  if (userContext?.profile) {
-    console.log('Profile data keys:', Object.keys(userContext.profile))
-  }
-  
-  // Call Vercel Python function directly
-  const protocol = req.headers.get('x-forwarded-proto') || 'http'
-  const host = req.headers.get('host') || 'localhost:3000'
-  const apiUrl = `${protocol}://${host}/api/emreq`
-  
-  console.log('Calling Vercel Python function at:', apiUrl)
-  console.log('Request payload:', JSON.stringify({
-    message: messages[messages.length - 1].content,
-    user_context: userContext ? 'present' : 'null'
-  }, null, 2))
-  
-  let response
-  try {
-    response = await fetch(apiUrl, {
+
+    // Set session in Supabase client
+    const { data: { user }, error: authError } = await supabase.auth.setSession({
+      access_token: accessToken,
+      refresh_token: refreshToken
+    });
+
+    if (authError || !user) {
+      return new Response('Invalid session', { status: 401 });
+    }
+
+    // Get user profile
+    const { data: profile, error: profileError } = await supabase
+      .from('employee_profiles')
+      .select('*')
+      .eq('user_id', user.id)
+      .single();
+
+    if (profileError) {
+      console.error('Profile fetch error:', profileError);
+      return new Response('Profile not found', { status: 404 });
+    }
+
+    // Get request body
+    const body = await request.json();
+    const { messages } = body;
+
+    // Construct the URL for the Python function
+    const protocol = request.headers.get('x-forwarded-proto') || 'https';
+    const host = request.headers.get('host');
+    const pythonFunctionUrl = `${protocol}://${host}/api/emreq`;
+
+    // Prepare headers for the Python function call
+    const headers: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+
+    // Add bypass header if available
+    if (process.env.VERCEL_AUTOMATION_BYPASS_SECRET) {
+      headers['x-vercel-protection-bypass'] = process.env.VERCEL_AUTOMATION_BYPASS_SECRET;
+    }
+
+    // Call the Python function
+    const response = await fetch(pythonFunctionUrl, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify({
-        message: messages[messages.length - 1].content,
-        user_context: userContext
-      })
-    })
-    
-    console.log('Python function response status:', response.status)
-    console.log('Python function response headers:', Object.fromEntries(response.headers.entries()))
-    
-    if (!response.ok) {
-      const errorText = await response.text()
-      console.error('Python function error response:', errorText)
-      return new Response(`Backend error: ${errorText}`, { status: response.status })
-    }
-    
-    if (!response.body) {
-      console.error('No response body from Python function')
-      return new Response('No response from agent', { status: 500 })
-    }
-  } catch (error) {
-    console.error('Error calling Python function:', error)
-    return new Response(`Failed to connect to Python function: ${error}`, { status: 500 })
-  }
-
-  // Create a readable stream that converts FastAPI chunks to Data Stream Protocol
-  const stream = new ReadableStream({
-    async start(controller) {
-      const reader = response.body!.getReader()
-      const decoder = new TextDecoder()
-      
-      try {
-        while (true) {
-          const { done, value } = await reader.read()
-          if (done) break
-          
-          const chunk = decoder.decode(value)
-          console.log('Processing chunk:', chunk)
-          
-          // Send the chunk as-is in Data Stream Protocol format
-          // Don't re-split - FastAPI is already sending perfect word chunks
-          if (chunk.trim()) {
-            const dataStreamChunk = `0:${JSON.stringify(chunk)}\n`
-            controller.enqueue(new TextEncoder().encode(dataStreamChunk))
-            console.log('Sending data stream chunk:', dataStreamChunk.trim())
-          }
+        messages,
+        user_context: {
+          name: profile.name,
+          role: profile.role,
+          experience_level: profile.experience_level,
+          specialization: profile.specialization,
+          years_of_experience: profile.years_of_experience,
+          technical_skills: profile.technical_skills,
+          current_challenges: profile.current_challenges,
+          career_goals: profile.career_goals,
+          communication_style: profile.communication_style,
+          preferred_feedback_style: profile.preferred_feedback_style,
         }
-        
-        // Send finish message part (required by protocol)
-        const finishChunk = `d:{"finishReason":"stop","usage":{"promptTokens":10,"completionTokens":20}}\n`
-        controller.enqueue(new TextEncoder().encode(finishChunk))
-        console.log('Sending finish chunk:', finishChunk.trim())
-        
-      } catch (error) {
-        console.error('Stream error:', error)
-        controller.error(error)
-      } finally {
-        controller.close()
-      }
-    }
-  })
+      }),
+    });
 
-  // Return with proper Data Stream Protocol headers
-  return new Response(stream, {
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      'x-vercel-ai-data-stream': 'v1',
-      'Cache-Control': 'no-cache',
-      'Connection': 'keep-alive',
-    },
-  })
+    if (!response.ok) {
+      throw new Error(`Python function returned ${response.status}: ${response.statusText}`);
+    }
+
+    // Return the streaming response
+    return new Response(response.body, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Transfer-Encoding': 'chunked',
+      },
+    });
+
+  } catch (error) {
+    console.error('Chat API error:', error);
+    return new Response('Internal server error', { status: 500 });
+  }
 }
 
 export async function GET() {
