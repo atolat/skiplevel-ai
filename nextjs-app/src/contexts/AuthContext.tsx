@@ -9,10 +9,10 @@ interface AuthContextType {
   profile: Profile | null
   session: Session | null
   loading: boolean
-  signIn: (email: string, password: string) => Promise<{ error: any }>
-  signUp: (email: string, password: string) => Promise<{ error: any }>
-  signOut: () => Promise<{ error: any }>
-  updateProfile: (profileData: Partial<Profile>) => Promise<{ error: any }>
+  signIn: (email: string, password: string) => Promise<{ error: Error | null }>
+  signUp: (email: string, password: string) => Promise<{ error: Error | null }>
+  signOut: () => Promise<{ error: Error | null }>
+  updateProfile: (profileData: Partial<Profile>) => Promise<{ error: Error | null }>
   refreshProfile: () => Promise<void>
 }
 

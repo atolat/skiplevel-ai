@@ -94,7 +94,7 @@ export default function ProfileModal({ isOpen, onClose, isNewProfile = false }: 
       } else {
         onClose()
       }
-    } catch (err) {
+    } catch {
       setError('An unexpected error occurred')
     } finally {
       setLoading(false)

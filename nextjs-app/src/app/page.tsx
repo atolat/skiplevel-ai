@@ -6,7 +6,7 @@ import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
 import ProfileModal from '@/components/ProfileModal'
 import UserAvatar from '@/components/UserAvatar'
-import { supabase } from '@/lib/supabase'
+// import { supabase } from '@/lib/supabase' // Removed unused import
 
 // Typing indicator component
 function TypingIndicator() {
