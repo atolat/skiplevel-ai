@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { useAuth } from '@/contexts/AuthContext'
+import ConversationSummaryModal from './ConversationSummaryModal'
 
 interface ConversationSession {
   id: string
@@ -23,6 +24,8 @@ export default function ConversationHistory({ isOpen, onClose, onConversationSel
   const [sessions, setSessions] = useState<ConversationSession[]>([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [selectedConversation, setSelectedConversation] = useState<ConversationSession | null>(null)
+  const [summaryModalOpen, setSummaryModalOpen] = useState(false)
 
   const fetchConversationHistory = useCallback(async () => {
     if (!user) return
@@ -54,9 +57,9 @@ export default function ConversationHistory({ isOpen, onClose, onConversationSel
       onConversationSelect(session.id)
       onClose()
     } else {
-      // For completed conversations, just show a message for now
-      // TODO: Implement conversation transcript viewer
-      alert(`Conversation "${session.title}" - ${session.status}\nSummary: ${session.summary}`)
+      // For completed conversations, show rich summary modal
+      setSelectedConversation(session)
+      setSummaryModalOpen(true)
     }
   }
 
@@ -213,6 +216,18 @@ export default function ConversationHistory({ isOpen, onClose, onConversationSel
           </div>
         </div>
       </div>
+
+      {/* Rich Summary Modal */}
+      {selectedConversation && (
+        <ConversationSummaryModal
+          isOpen={summaryModalOpen}
+          onClose={() => {
+            setSummaryModalOpen(false)
+            setSelectedConversation(null)
+          }}
+          conversation={selectedConversation}
+        />
+      )}
     </div>
   )
 } 

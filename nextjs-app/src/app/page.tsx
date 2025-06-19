@@ -9,6 +9,7 @@ import UserAvatar from '@/components/UserAvatar'
 import ToolIndicator from '@/components/ToolIndicator'
 import ConversationHistory from '@/components/ConversationHistory'
 import ConversationControls from '@/components/ConversationControls'
+import MarkdownRenderer from '@/components/MarkdownRenderer'
 // import { supabase } from '@/lib/supabase' // Removed unused import
 
 // Typing indicator component
@@ -212,8 +213,8 @@ export default function Home() {
                   </div>
                 ) : (
                   <div className="pl-4">
-                    <div className="text-blue-400 font-mono whitespace-pre-line">
-                      {message.content}
+                    <div className="bg-gray-900/30 border border-gray-700/50 rounded-lg p-4 mb-2">
+                      <MarkdownRenderer content={message.content} />
                     </div>
                     <ToolIndicator 
                       tools_used={message.tools_used} 
