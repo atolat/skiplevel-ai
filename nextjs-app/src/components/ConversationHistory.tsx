@@ -15,9 +15,10 @@ interface ConversationSession {
 interface ConversationHistoryProps {
   isOpen: boolean
   onClose: () => void
+  onConversationSelect?: (conversationId: string) => void
 }
 
-export default function ConversationHistory({ isOpen, onClose }: ConversationHistoryProps) {
+export default function ConversationHistory({ isOpen, onClose, onConversationSelect }: ConversationHistoryProps) {
   const { user } = useAuth()
   const [sessions, setSessions] = useState<ConversationSession[]>([])
   const [loading, setLoading] = useState(false)
@@ -46,6 +47,18 @@ export default function ConversationHistory({ isOpen, onClose }: ConversationHis
       setLoading(false)
     }
   }, [user])
+
+  const handleConversationClick = (session: ConversationSession) => {
+    if (session.status === 'active' && onConversationSelect) {
+      // For active conversations, allow resuming
+      onConversationSelect(session.id)
+      onClose()
+    } else {
+      // For completed conversations, just show a message for now
+      // TODO: Implement conversation transcript viewer
+      alert(`Conversation "${session.title}" - ${session.status}\nSummary: ${session.summary}`)
+    }
+  }
 
   useEffect(() => {
     if (isOpen && user) {
@@ -142,11 +155,15 @@ export default function ConversationHistory({ isOpen, onClose }: ConversationHis
                 </div>
                 
                 {sessions.map((session, index) => (
-                  <div key={session.id} className="border border-gray-600 rounded-lg p-4 bg-gray-900">
+                  <div 
+                    key={session.id} 
+                    className="border border-gray-600 rounded-lg p-4 bg-gray-900 hover:bg-gray-800 cursor-pointer transition-colors"
+                    onClick={() => handleConversationClick(session)}
+                  >
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
                         <span className="text-green-400 font-mono">#{index + 1}</span>
-                        <span className="text-gray-300 font-mono text-sm">
+                        <span className="text-gray-300 font-mono text-sm hover:text-white">
                           {session.title}
                         </span>
                         <span className={`px-2 py-1 rounded text-xs font-mono ${

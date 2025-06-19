@@ -88,6 +88,13 @@ export default function Home() {
     setShowHistoryModal(true)
   }
 
+  const handleConversationSelect = (conversationId: string) => {
+    // Resume the selected conversation
+    // This will be passed to the chat hook to continue with this conversation ID
+    console.log('Resuming conversation:', conversationId)
+    // TODO: Implement conversation resuming in useDirectChat
+  }
+
   const handleConversationEnded = () => {
     // Start a new conversation when the current one ends
     startNewConversation()
@@ -261,6 +268,7 @@ export default function Home() {
           <ConversationHistory
             isOpen={showHistoryModal}
             onClose={() => setShowHistoryModal(false)}
+            onConversationSelect={handleConversationSelect}
           />
         </>
       )}

@@ -260,9 +260,9 @@ class SimpleLangGraphAgent:
             return True
         
         try:
-            # Generate summary if not provided
+            # Generate AI summary if not provided
             if summary is None:
-                summary = "Conversation completed successfully."
+                summary = self._generate_conversation_summary()
             
             success = self.conversation_manager.complete_session(summary)
             if success:
@@ -271,6 +271,38 @@ class SimpleLangGraphAgent:
         except Exception as e:
             print(f"❌ Failed to end conversation: {e}")
             return False
+
+    def _generate_conversation_summary(self) -> str:
+        """Generate an AI-powered summary of the conversation."""
+        try:
+            # Get conversation messages from LangGraph memory
+            thread_config = {"configurable": {"thread_id": self.current_session_id or self.thread_id}}
+            
+            # Create a summary prompt
+            summary_prompt = """Please provide a concise summary of this conversation. Focus on:
+- Key topics discussed
+- Important decisions or conclusions reached
+- Action items or next steps mentioned
+- Main questions asked and answered
+
+Keep the summary to 2-3 sentences and make it useful for quick reference."""
+
+            # Invoke the LLM to generate summary
+            result = self.graph.invoke(
+                {"messages": [HumanMessage(content=summary_prompt)]},
+                config=thread_config
+            )
+            
+            if result and "messages" in result and result["messages"]:
+                last_message = result["messages"][-1]
+                if isinstance(last_message, AIMessage):
+                    return last_message.content
+            
+            return "Conversation completed - discussed engineering topics and provided guidance."
+            
+        except Exception as e:
+            print(f"⚠️ Failed to generate AI summary: {e}")
+            return "Conversation completed successfully."
     
     def chat(self, message: str) -> str:
         """Chat with the agent."""
