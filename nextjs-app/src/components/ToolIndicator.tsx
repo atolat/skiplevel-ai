@@ -1,12 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 interface ToolIndicatorProps {
   tools_used?: string[]
   tool_execution_info?: Array<{
     name: string
-    args: Record<string, any>
+    args: Record<string, unknown>
     id: string
   }>
 }

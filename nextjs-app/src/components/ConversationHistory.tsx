@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useAuth } from '@/contexts/AuthContext'
 
 interface ConversationSession {
@@ -23,13 +23,7 @@ export default function ConversationHistory({ isOpen, onClose }: ConversationHis
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  useEffect(() => {
-    if (isOpen && user) {
-      fetchConversationHistory()
-    }
-  }, [isOpen, user])
-
-  const fetchConversationHistory = async () => {
+  const fetchConversationHistory = useCallback(async () => {
     if (!user) return
 
     setLoading(true)
@@ -51,7 +45,13 @@ export default function ConversationHistory({ isOpen, onClose }: ConversationHis
     } finally {
       setLoading(false)
     }
-  }
+  }, [user])
+
+  useEffect(() => {
+    if (isOpen && user) {
+      fetchConversationHistory()
+    }
+  }, [isOpen, user, fetchConversationHistory])
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString)
@@ -185,7 +185,7 @@ export default function ConversationHistory({ isOpen, onClose }: ConversationHis
         <div className="border-t border-gray-700 p-4">
           <div className="flex justify-between items-center">
             <div className="text-gray-400 font-mono text-sm">
-              💡 Tip: Use "End Conversation" to save your current chat to history
+              💡 Tip: Use &quot;End Conversation&quot; to save your current chat to history
             </div>
             <button
               onClick={onClose}

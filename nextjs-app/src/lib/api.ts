@@ -54,7 +54,7 @@ export interface ChatApiResponse {
   tools_used?: string[]
   tool_execution_info?: Array<{
     name: string
-    args: Record<string, any>
+    args: Record<string, unknown>
     id: string
   }>
 }

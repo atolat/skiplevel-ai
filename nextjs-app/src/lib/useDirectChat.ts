@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { chatWithRailwayBackend, UserContext, ChatApiResponse } from './api'
+import { chatWithRailwayBackend, UserContext } from './api'
 import { useAuth } from '@/contexts/AuthContext'
 
 export interface Message {
@@ -10,7 +10,7 @@ export interface Message {
   tools_used?: string[]
   tool_execution_info?: Array<{
     name: string
-    args: Record<string, any>
+    args: Record<string, unknown>
     id: string
   }>
 }
@@ -110,7 +110,7 @@ export function useDirectChat(): UseDirectChatReturn {
     } finally {
       setIsLoading(false)
     }
-  }, [input, isLoading, user, profile])
+  }, [input, isLoading, user, profile, conversationId])
 
   const startNewConversation = useCallback(() => {
     setMessages([])
