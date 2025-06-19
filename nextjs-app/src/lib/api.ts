@@ -46,11 +46,25 @@ export const checkApiHealth = async (): Promise<boolean> => {
   }
 }
 
+export interface ChatApiResponse {
+  response: string
+  agent_name: string
+  timestamp: string
+  conversation_id?: string
+  tools_used?: string[]
+  tool_execution_info?: Array<{
+    name: string
+    args: Record<string, any>
+    id: string
+  }>
+}
+
 // Direct Railway backend chat function
 export const chatWithRailwayBackend = async (
   message: string,
-  userContext: UserContext
-): Promise<string> => {
+  userContext: UserContext,
+  conversationId?: string
+): Promise<ChatApiResponse> => {
   try {
     console.log('Calling Railway backend directly:', getApiUrl('chat'))
     console.log('Message:', message)
@@ -64,6 +78,7 @@ export const chatWithRailwayBackend = async (
       body: JSON.stringify({
         message: message,
         user_id: userContext?.user_id || 'anonymous',
+        conversation_id: conversationId,
         agent_name: 'engineering_manager_emreq',
         user_context: userContext
       }),
@@ -80,7 +95,7 @@ export const chatWithRailwayBackend = async (
     const railwayResponse = await response.json()
     console.log('Railway response:', railwayResponse)
     
-    return railwayResponse.response
+    return railwayResponse
   } catch (error) {
     console.error('Error calling Railway backend:', error)
     throw error

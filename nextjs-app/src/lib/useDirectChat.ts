@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { chatWithRailwayBackend, UserContext } from './api'
+import { chatWithRailwayBackend, UserContext, ChatApiResponse } from './api'
 import { useAuth } from '@/contexts/AuthContext'
 
 export interface Message {
@@ -7,6 +7,12 @@ export interface Message {
   role: 'user' | 'assistant'
   content: string
   createdAt?: Date
+  tools_used?: string[]
+  tool_execution_info?: Array<{
+    name: string
+    args: Record<string, any>
+    id: string
+  }>
 }
 
 export interface UseDirectChatReturn {
@@ -16,6 +22,8 @@ export interface UseDirectChatReturn {
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void
   isLoading: boolean
   error: string | null
+  conversationId: string | null
+  startNewConversation: () => void
 }
 
 export function useDirectChat(): UseDirectChatReturn {
@@ -23,6 +31,7 @@ export function useDirectChat(): UseDirectChatReturn {
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [conversationId, setConversationId] = useState<string | null>(null)
   const { user, profile } = useAuth()
 
   const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -67,15 +76,22 @@ export function useDirectChat(): UseDirectChatReturn {
         } : null
       }
 
-      // Call Railway backend directly
-      const response = await chatWithRailwayBackend(userMessage.content, userContext)
+      // Call Railway backend directly with conversation ID
+      const apiResponse = await chatWithRailwayBackend(userMessage.content, userContext, conversationId || undefined)
+      
+      // If this is the first message, we might get a new conversation ID back
+      if (!conversationId && apiResponse.conversation_id) {
+        setConversationId(apiResponse.conversation_id)
+      }
 
       // Add assistant response
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: response,
-        createdAt: new Date()
+        content: apiResponse.response,
+        createdAt: new Date(),
+        tools_used: apiResponse.tools_used,
+        tool_execution_info: apiResponse.tool_execution_info
       }
 
       setMessages(prev => [...prev, assistantMessage])
@@ -96,12 +112,20 @@ export function useDirectChat(): UseDirectChatReturn {
     }
   }, [input, isLoading, user, profile])
 
+  const startNewConversation = useCallback(() => {
+    setMessages([])
+    setConversationId(null)
+    setError(null)
+  }, [])
+
   return {
     messages,
     input,
     handleInputChange,
     handleSubmit,
     isLoading,
-    error
+    error,
+    conversationId,
+    startNewConversation
   }
 } 

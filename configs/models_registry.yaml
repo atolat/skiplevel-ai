@@ -23,6 +23,13 @@ openai_models:
     api_key_env: "OPENAI_API_KEY"
     capabilities: ["chat", "reasoning", "code", "analysis", "vision"]
     cost_tier: "medium"
+    
+  gpt-4o-mini:
+    provider: "openai"
+    description: "OpenAI GPT-4o Mini - Fast and efficient for most tasks with tool calling"
+    api_key_env: "OPENAI_API_KEY"
+    capabilities: ["chat", "reasoning", "code", "tools"]
+    cost_tier: "low"
 
 anthropic_models:
   claude-3-sonnet:

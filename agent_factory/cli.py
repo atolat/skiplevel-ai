@@ -80,6 +80,11 @@ def load_config_without_validation(config_path: str):
         llm_data = config_data.get('llm', {})
         llm = LLMConfig(**llm_data)
         
+        # Create memory config if present
+        from .memory_config import MemoryConfig
+        memory_data = config_data.get('memory', {})
+        memory = MemoryConfig(**memory_data) if memory_data else MemoryConfig()
+        
         # Create agent config without API key validation
         config = AgentConfig(
             agent_id=config_data['agent_id'],
@@ -90,7 +95,8 @@ def load_config_without_validation(config_path: str):
             tools=config_data.get('tools', []),
             llm=llm,
             cognitive_core=cognitive_core,
-            traits=config_data.get('traits', [])
+            traits=config_data.get('traits', []),
+            memory=memory
         )
         
         return config

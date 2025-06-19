@@ -6,17 +6,35 @@ import { useAuth } from '@/contexts/AuthContext'
 import AuthModal from '@/components/AuthModal'
 import ProfileModal from '@/components/ProfileModal'
 import UserAvatar from '@/components/UserAvatar'
+import ToolIndicator from '@/components/ToolIndicator'
+import ConversationHistory from '@/components/ConversationHistory'
+import ConversationControls from '@/components/ConversationControls'
 // import { supabase } from '@/lib/supabase' // Removed unused import
 
 // Typing indicator component
 function TypingIndicator() {
   return (
-    <div className="flex items-center space-x-1 text-blue-400 font-mono pl-4">
-      <span>Emreq is thinking</span>
-      <div className="flex space-x-1">
-        <div className="w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-        <div className="w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-        <div className="w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+    <div className="pl-4">
+      <div className="flex items-center space-x-1 text-blue-400 font-mono">
+        <span>Emreq is thinking</span>
+        <div className="flex space-x-1">
+          <div className="w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
+          <div className="w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
+          <div className="w-1 h-1 bg-blue-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
+        </div>
+      </div>
+      
+      {/* Tool execution indicator */}
+      <div className="mt-2 flex items-center space-x-2 text-xs text-gray-400 font-mono">
+        <div className="flex items-center space-x-1">
+          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <span>Tools may be executing...</span>
+        </div>
+        <div className="flex space-x-1">
+          <span className="animate-pulse">🔧</span>
+          <span className="animate-pulse" style={{ animationDelay: '200ms' }}>🧮</span>
+          <span className="animate-pulse" style={{ animationDelay: '400ms' }}>🔍</span>
+        </div>
       </div>
     </div>
   )
@@ -26,9 +44,10 @@ export default function Home() {
   const { user, profile, loading: authLoading, signOut } = useAuth()
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [showProfileModal, setShowProfileModal] = useState(false)
+  const [showHistoryModal, setShowHistoryModal] = useState(false)
   const [mounted, setMounted] = useState(false)
   
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useDirectChat()
+  const { messages, input, handleInputChange, handleSubmit, isLoading, conversationId, startNewConversation } = useDirectChat()
 
   // Prevent hydration issues by only rendering after mount
   useEffect(() => {
@@ -65,6 +84,16 @@ export default function Home() {
     setShowProfileModal(true)
   }
 
+  const handleShowHistory = () => {
+    setShowHistoryModal(true)
+  }
+
+  const handleConversationEnded = () => {
+    // Start a new conversation when the current one ends
+    startNewConversation()
+    console.log('Conversation ended - started new conversation')
+  }
+
   // Show loading state until component is mounted and auth is loaded
   if (!mounted || authLoading) {
     return (
@@ -86,7 +115,14 @@ export default function Home() {
           <div className="text-sm font-mono font-medium text-gray-200">
             Emreq AI Engineering Manager
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-4">
+            {user && (
+              <ConversationControls 
+                onHistoryClick={handleShowHistory}
+                onConversationEnded={handleConversationEnded}
+                conversationId={conversationId}
+              />
+            )}
             {user ? (
               <UserAvatar onEditProfile={handleEditProfile} />
             ) : (
@@ -168,8 +204,14 @@ export default function Home() {
                     <div className="text-gray-200 font-mono">{message.content}</div>
                   </div>
                 ) : (
-                  <div className="text-blue-400 font-mono whitespace-pre-line pl-4">
-                    {message.content}
+                  <div className="pl-4">
+                    <div className="text-blue-400 font-mono whitespace-pre-line">
+                      {message.content}
+                    </div>
+                    <ToolIndicator 
+                      tools_used={message.tools_used} 
+                      tool_execution_info={message.tool_execution_info} 
+                    />
                   </div>
                 )}
               </div>
@@ -215,6 +257,10 @@ export default function Home() {
           <ProfileModal 
             isOpen={showProfileModal} 
             onClose={() => setShowProfileModal(false)} 
+          />
+          <ConversationHistory
+            isOpen={showHistoryModal}
+            onClose={() => setShowHistoryModal(false)}
           />
         </>
       )}

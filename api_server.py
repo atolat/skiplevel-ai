@@ -13,22 +13,81 @@ import asyncio
 import uvicorn
 import os
 import sys
-from typing import Optional
+import time
+from typing import Optional, List
 
 # Add the current directory to Python path to import agent_factory
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 try:
-    from agent_factory.agent import BaseAgent
-    from agent_factory.config import load_config  # Use load_config instead of AgentConfig.from_yaml
+    from agent_factory.agent import SimpleLangGraphAgent
+    from agent_factory.config import load_config
+    from agent_factory.tools import get_tool, web_search_tool
+    from agent_factory.llm import get_llm
 except ImportError as e:
     print(f"Warning: Could not import agent_factory: {e}")
     print("Make sure you're running this from the skip-level-ai directory")
-    BaseAgent = None
+    SimpleLangGraphAgent = None
     load_config = None
+    get_tool = None
+    web_search_tool = None
+    get_llm = None
 
 # Global agent instance
 emreq_agent = None
+
+# Conversation-specific agent cache - one agent per conversation
+conversation_agents = {}
+
+def get_conversation_agent(conversation_id: str, user_id: str, user_profile: Optional[dict] = None):
+    """Get or create a conversation-specific agent instance.
+    
+    This implements the recommended LangGraph pattern of one agent per conversation.
+    Each conversation gets its own thread_id and agent instance for proper memory isolation.
+    """
+    if conversation_id not in conversation_agents:
+        # Create new agent for this conversation
+        config_path = "configs/engineering_manager_emreq.yaml"
+        config = load_config(config_path)
+        
+        # Create agent with conversation-specific thread_id
+        conversation_agent = SimpleLangGraphAgent(config, user_profile)
+        
+        # Set the thread_id to the conversation_id for LangGraph memory
+        conversation_agent.thread_id = conversation_id
+        
+        # Start conversation session
+        conversation_agent.start_conversation(user_id, "Chat with Emreq")
+        
+        # Cache the agent
+        conversation_agents[conversation_id] = conversation_agent
+        print(f"✅ Created new agent for conversation: {conversation_id} (user: {user_id})")
+    else:
+        # Update user profile if provided
+        if user_profile and hasattr(conversation_agents[conversation_id], 'user_profile'):
+            conversation_agents[conversation_id].user_profile = user_profile
+    
+    return conversation_agents[conversation_id]
+
+def clear_conversation_agent(conversation_id: str):
+    """Clear cached agent for a conversation when it ends."""
+    if conversation_id in conversation_agents:
+        del conversation_agents[conversation_id]
+        print(f"🗑️ Cleared agent cache for conversation: {conversation_id}")
+
+def get_user_agent(user_id: str, user_profile: Optional[dict] = None):
+    """Legacy function - now redirects to conversation-based approach.
+    
+    For backward compatibility, we create a default conversation per user.
+    """
+    # Use user_id as conversation_id for legacy support
+    default_conversation_id = f"user-{user_id}-default"
+    return get_conversation_agent(default_conversation_id, user_id, user_profile)
+
+def clear_user_agent(user_id: str):
+    """Legacy function - clear default conversation for user."""
+    default_conversation_id = f"user-{user_id}-default"
+    clear_conversation_agent(default_conversation_id)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -37,16 +96,16 @@ async def lifespan(app: FastAPI):
     
     print("🔄 Initializing Emreq agent...")
     
-    if BaseAgent is None or load_config is None:
+    if SimpleLangGraphAgent is None or load_config is None:
         print("⚠️  agent_factory not available, API will return mock responses")
     else:
         try:
             # Load the Emreq agent configuration using the correct function
             config_path = "configs/engineering_manager_emreq.yaml"
             if os.path.exists(config_path):
-                config = load_config(config_path)  # Use load_config function
+                config = load_config(config_path)
                 if config:
-                    emreq_agent = BaseAgent(config)
+                    emreq_agent = SimpleLangGraphAgent(config)
                     print(f"✅ Loaded Emreq agent from {config_path}")
                 else:
                     print(f"❌ Failed to load config from {config_path}")
@@ -95,6 +154,7 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     message: str
     user_id: str = "default"
+    conversation_id: Optional[str] = None  # New: conversation ID for proper memory isolation
     agent_name: str = "engineering_manager_emreq"
     user_context: Optional[dict] = None
 
@@ -102,6 +162,21 @@ class ChatResponse(BaseModel):
     response: str
     agent_name: str
     timestamp: str
+    conversation_id: Optional[str] = None
+    tools_used: Optional[List[str]] = None
+    tool_execution_info: Optional[List[dict]] = None
+
+class ToolRequest(BaseModel):
+    input: str
+    user_context: Optional[dict] = None
+
+class ToolResponse(BaseModel):
+    tool_name: str
+    result: str
+    success: bool
+    timestamp: str
+    execution_time_ms: int
+    error: Optional[str] = None
 
 @app.get("/")
 async def root():
@@ -127,7 +202,7 @@ async def health_detailed():
     """Detailed health check with agent status"""
     return {
         "status": "healthy",
-        "agent_factory_available": BaseAgent is not None,
+        "agent_factory_available": SimpleLangGraphAgent is not None,
         "emreq_agent_loaded": emreq_agent is not None,
         "version": "1.0.0",
         "port": os.environ.get("PORT", "8001"),
@@ -147,25 +222,48 @@ async def chat(request: ChatRequest):
         )
     
     try:
-        # Inject user profile data into the agent if available
+        # Get user-specific profile if available
+        user_profile = None
         if request.user_context and request.user_context.get('profile'):
             profile = request.user_context['profile']
             if profile.get('profile_completed'):
-                print(f"Injecting profile data for user: {profile.get('name', 'Unknown')}")
-                # Use the agent's built-in profile injection method
-                emreq_agent._inject_profile_data(profile)
-                
-                # Also store the profile for context generation
-                emreq_agent.user_profile = profile
-                print(f"Profile injected successfully. Name: {profile.get('name')}, Role: {profile.get('title')}")
+                user_profile = profile
+                print(f"Using profile for user: {profile.get('name', 'Unknown')}")
         
-        # Use the real agent to process the message
-        response = emreq_agent.chat(request.message)  # This should be sync, not async
+        # Determine conversation ID - create new one if not provided
+        conversation_id = request.conversation_id
+        if not conversation_id:
+            # Generate a new conversation ID
+            import uuid
+            conversation_id = str(uuid.uuid4())
+            print(f"🆕 Starting new conversation: {conversation_id}")
+        
+        # Get or create conversation-specific agent (implements LangGraph best practices)
+        conversation_agent = get_conversation_agent(conversation_id, request.user_id, user_profile)
+        
+        # Use the conversation-specific agent to process the message
+        response = conversation_agent.chat(request.message)
+        
+        # Get tool usage information
+        tools_used = []
+        tool_execution_info = []
+        if hasattr(conversation_agent, 'get_last_tool_usage'):
+            tool_usage = conversation_agent.get_last_tool_usage()
+            for tool_info in tool_usage:
+                tools_used.append(tool_info.get("name", "unknown"))
+                tool_execution_info.append({
+                    "name": tool_info.get("name", "unknown"),
+                    "args": tool_info.get("args", {}),
+                    "id": tool_info.get("id", "")
+                })
         
         return ChatResponse(
             response=response,
             agent_name=request.agent_name,
-            timestamp="2024-06-18T10:00:00Z"
+            timestamp="2024-06-18T10:00:00Z",
+            conversation_id=conversation_id,
+            tools_used=tools_used if tools_used else None,
+            tool_execution_info=tool_execution_info if tool_execution_info else None
         )
         
     except Exception as e:
@@ -199,28 +297,35 @@ async def chat_stream(request: ChatRequest):
                 yield response
                 return
             
-            # Inject user profile data into the agent if available
+            # Get user-specific profile if available
+            user_profile = None
             if request.user_context and request.user_context.get('profile'):
                 profile = request.user_context['profile']
                 if profile.get('profile_completed'):
-                    print(f"Injecting profile data for user: {profile.get('name', 'Unknown')}")
-                    # Use the agent's built-in profile injection method
-                    emreq_agent._inject_profile_data(profile)
-                    
-                    # Also store the profile for context generation
-                    emreq_agent.user_profile = profile
-                    print(f"Profile injected successfully. Name: {profile.get('name')}, Role: {profile.get('title')}")
+                    user_profile = profile
+                    print(f"Using profile for user: {profile.get('name', 'Unknown')}")
+            
+            # Determine conversation ID - create new one if not provided
+            conversation_id = request.conversation_id
+            if not conversation_id:
+                # Generate a new conversation ID
+                import uuid
+                conversation_id = str(uuid.uuid4())
+                print(f"🆕 Starting new conversation: {conversation_id}")
+            
+            # Get or create conversation-specific agent (implements LangGraph best practices)
+            conversation_agent = get_conversation_agent(conversation_id, request.user_id, user_profile)
             
             # If agent supports streaming
-            if hasattr(emreq_agent, 'chat_stream'):
+            if hasattr(conversation_agent, 'chat_stream'):
                 print("Using agent chat_stream method")
-                for chunk in emreq_agent.chat_stream(request.message):
+                for chunk in conversation_agent.chat_stream(request.message):
                     print(f"Yielding chunk: {chunk[:50]}...")
                     yield chunk
             else:
                 # Fallback: simulate streaming by yielding full response
                 print("Using fallback word-by-word streaming")
-                response = emreq_agent.chat(request.message)
+                response = conversation_agent.chat(request.message)
                 print(f"Full response length: {len(response)} chars")
                 
                 # Split into words and yield gradually for better UX
@@ -244,6 +349,198 @@ async def list_agents():
         "available_agents": ["engineering_manager_emreq"],
         "loaded_agents": ["engineering_manager_emreq"] if emreq_agent else []
     }
+
+@app.get("/api/conversations/history")
+async def get_conversation_history(user_id: str, limit: int = 5):
+    """Get conversation history for a user"""
+    if emreq_agent is None:
+        raise HTTPException(status_code=503, detail="Agent not available")
+    
+    try:
+        # Create a temporary agent instance to access conversation manager
+        config_path = "configs/engineering_manager_emreq.yaml"
+        config = load_config(config_path)
+        temp_agent = SimpleLangGraphAgent(config)
+        
+        # Check if the agent has a conversation manager
+        if hasattr(temp_agent, 'conversation_manager') and temp_agent.conversation_manager:
+            sessions = temp_agent.conversation_manager.get_recent_sessions(user_id, limit)
+            
+            # Convert to dict for JSON response
+            session_data = []
+            for session in sessions:
+                session_data.append({
+                    "id": session.id,
+                    "title": session.title,
+                    "summary": session.summary,
+                    "summary_format": "markdown" if session.summary and session.summary.startswith("# ") else "text",
+                    "status": session.status,
+                    "message_count": session.message_count,
+                    "created_at": session.created_at.isoformat() if session.created_at else None,
+                    "completed_at": session.completed_at.isoformat() if session.completed_at else None
+                })
+            
+            return {"sessions": session_data}
+        else:
+            # Fallback for SimpleLangGraphAgent without conversation manager
+            return {"sessions": [], "message": "Conversation history not available with current agent"}
+        
+    except Exception as e:
+        print(f"Error fetching conversation history: {e}")
+        raise HTTPException(status_code=500, detail=f"Error fetching history: {str(e)}")
+
+@app.post("/api/conversations/complete")
+async def complete_conversation(user_id: str, conversation_id: Optional[str] = None, summary: Optional[str] = None):
+    """Complete a conversation session"""
+    if emreq_agent is None:
+        raise HTTPException(status_code=503, detail="Agent not available")
+    
+    try:
+        # If no conversation_id provided, use legacy user-based approach
+        if not conversation_id:
+            conversation_id = f"user-{user_id}-default"
+        
+        # Get the conversation's agent if it exists
+        if conversation_id in conversation_agents:
+            conversation_agent = conversation_agents[conversation_id]
+            success = conversation_agent.end_conversation(summary)
+            
+            # Clear the conversation's agent cache
+            clear_conversation_agent(conversation_id)
+            
+            if success:
+                return {"message": "Conversation completed successfully", "conversation_id": conversation_id}
+            else:
+                return {"message": "No active conversation to complete"}
+        else:
+            return {"message": f"No active conversation found: {conversation_id}"}
+            
+    except Exception as e:
+        print(f"Error completing conversation: {e}")
+        raise HTTPException(status_code=500, detail=f"Error completing conversation: {str(e)}")
+
+# ========== TOOLS API ENDPOINTS ==========
+
+@app.get("/api/tools")
+async def list_tools():
+    """List all available tools with their descriptions"""
+    if get_tool is None:
+        raise HTTPException(status_code=503, detail="Tools not available")
+    
+    available_tools = []
+    tool_names = ["web_search", "datetime", "calculator", "file_reader", "one_on_one_scheduler"]
+    
+    for tool_name in tool_names:
+        tool = get_tool(tool_name)
+        if tool:
+            available_tools.append({
+                "name": tool.name,
+                "description": tool.description
+            })
+    
+    return {
+        "tools": available_tools,
+        "count": len(available_tools)
+    }
+
+@app.post("/api/tools/{tool_name}", response_model=ToolResponse)
+async def execute_tool(tool_name: str, request: ToolRequest):
+    """Execute a specific tool with input data"""
+    if get_tool is None:
+        raise HTTPException(status_code=503, detail="Tools not available")
+    
+    start_time = time.time()
+    
+    try:
+        # Get the tool instance
+        tool = get_tool(tool_name)
+        if not tool:
+            return ToolResponse(
+                tool_name=tool_name,
+                result="",
+                success=False,
+                timestamp="2024-06-18T10:00:00Z",
+                execution_time_ms=0,
+                error=f"Tool '{tool_name}' not found"
+            )
+        
+        # Special handling for web_search tool (needs LLM)
+        if tool_name == "web_search" and web_search_tool:
+            # Use the web_search_tool directly
+            tool = web_search_tool
+        
+        # Execute the tool using LangChain invoke method
+        if hasattr(tool, 'invoke'):
+            # New LangChain tool format
+            if tool_name == "web_search":
+                result = tool.invoke({"query": request.input})
+            elif tool_name == "one_on_one_scheduler":
+                result = tool.invoke({"request": request.input})
+            elif tool_name in ["datetime", "calculator", "file_reader"]:
+                # These tools have different parameter names, check the tool's args_schema
+                if hasattr(tool, 'args_schema') and tool.args_schema:
+                    field_names = list(tool.args_schema.model_fields.keys())
+                    if field_names:
+                        param_name = field_names[0]  # Use first parameter
+                        result = tool.invoke({param_name: request.input})
+                    else:
+                        result = tool.invoke({"input": request.input})
+                else:
+                    result = tool.invoke({"input": request.input})
+            else:
+                result = tool.invoke({"input": request.input})
+        elif hasattr(tool, 'execute'):
+            # Legacy tool format
+            result = tool.execute(request.input)
+        else:
+            result = f"Tool {tool_name} does not have a supported execution method"
+        
+        # Calculate execution time
+        execution_time_ms = int((time.time() - start_time) * 1000)
+        
+        return ToolResponse(
+            tool_name=tool_name,
+            result=result,
+            success=True,
+            timestamp="2024-06-18T10:00:00Z",
+            execution_time_ms=execution_time_ms
+        )
+        
+    except Exception as e:
+        execution_time_ms = int((time.time() - start_time) * 1000)
+        return ToolResponse(
+            tool_name=tool_name,
+            result="",
+            success=False,
+            timestamp="2024-06-18T10:00:00Z",
+            execution_time_ms=execution_time_ms,
+            error=str(e)
+        )
+
+@app.post("/api/tools/web_search", response_model=ToolResponse)
+async def web_search(request: ToolRequest):
+    """Web search with AI synthesis - convenient endpoint"""
+    return await execute_tool("web_search", request)
+
+@app.post("/api/tools/datetime", response_model=ToolResponse)
+async def get_datetime(request: ToolRequest):
+    """Get current date/time information - convenient endpoint"""
+    return await execute_tool("datetime", request)
+
+@app.post("/api/tools/calculator", response_model=ToolResponse)
+async def calculate(request: ToolRequest):
+    """Perform mathematical calculations - convenient endpoint"""
+    return await execute_tool("calculator", request)
+
+@app.post("/api/tools/file_reader", response_model=ToolResponse)
+async def read_file(request: ToolRequest):
+    """Read and analyze files - convenient endpoint"""
+    return await execute_tool("file_reader", request)
+
+@app.post("/api/tools/one_on_one_scheduler", response_model=ToolResponse)
+async def schedule_meeting(request: ToolRequest):
+    """Schedule 1:1 meetings - convenient endpoint"""
+    return await execute_tool("one_on_one_scheduler", request)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8001))
