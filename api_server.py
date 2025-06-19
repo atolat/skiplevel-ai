@@ -14,6 +14,7 @@ import uvicorn
 import os
 import sys
 import time
+from datetime import datetime, timedelta
 from typing import Optional, List
 
 # Add the current directory to Python path to import agent_factory
@@ -88,6 +89,62 @@ def clear_user_agent(user_id: str):
     """Legacy function - clear default conversation for user."""
     default_conversation_id = f"user-{user_id}-default"
     clear_conversation_agent(default_conversation_id)
+
+def cleanup_stale_conversations(temp_agent, user_id: str, sessions: list) -> list:
+    """Clean up stale conversations that claim to be active but aren't resumable.
+    
+    Args:
+        temp_agent: Agent instance with conversation manager
+        user_id: User ID
+        sessions: List of conversation sessions
+        
+    Returns:
+        List of sessions with corrected status
+    """
+    corrected_sessions = []
+    stale_conversation_ids = []
+    
+    for session in sessions:
+        actual_status = session.status
+        
+        # If the session claims to be "active", verify it's actually resumable
+        if session.status == "active":
+            # Check if there's actually a running agent for this conversation
+            is_truly_active = session.id in conversation_agents
+            
+            # Also check if the conversation was created more than 24 hours ago without completion
+            if session.created_at:
+                time_since_creation = datetime.now(session.created_at.tzinfo) - session.created_at
+                is_stale = time_since_creation > timedelta(hours=24)
+                
+                # If not truly active OR stale, mark for cleanup
+                if not is_truly_active or is_stale:
+                    actual_status = "completed"
+                    stale_conversation_ids.append(session.id)
+        
+        # Create corrected session
+        corrected_session = session
+        corrected_session.status = actual_status
+        corrected_sessions.append(corrected_session)
+    
+    # Optional: Update stale conversations in database (uncomment if desired)
+    if stale_conversation_ids and hasattr(temp_agent, 'conversation_manager'):
+        try:
+            for conv_id in stale_conversation_ids:
+                # Update status in database
+                update_data = {
+                    "status": "completed",
+                    "completed_at": datetime.now().isoformat(),
+                    "updated_at": datetime.now().isoformat(),
+                    "summary": "Conversation auto-completed due to inactivity."
+                }
+                temp_agent.conversation_manager.client.table("conversation_sessions").update(update_data).eq("id", conv_id).execute()
+            
+            print(f"🧹 Auto-completed {len(stale_conversation_ids)} stale conversations for user {user_id}")
+        except Exception as e:
+            print(f"⚠️ Warning: Could not update stale conversations in database: {e}")
+    
+    return corrected_sessions
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -366,15 +423,18 @@ async def get_conversation_history(user_id: str, limit: int = 5):
         if hasattr(temp_agent, 'conversation_manager') and temp_agent.conversation_manager:
             sessions = temp_agent.conversation_manager.get_recent_sessions(user_id, limit)
             
+            # Clean up stale conversations and correct their status
+            corrected_sessions = cleanup_stale_conversations(temp_agent, user_id, sessions)
+            
             # Convert to dict for JSON response
             session_data = []
-            for session in sessions:
+            for session in corrected_sessions:
                 session_data.append({
                     "id": session.id,
                     "title": session.title,
                     "summary": session.summary,
                     "summary_format": "markdown" if session.summary and session.summary.startswith("# ") else "text",
-                    "status": session.status,
+                    "status": session.status,  # Now using the corrected status
                     "message_count": session.message_count,
                     "created_at": session.created_at.isoformat() if session.created_at else None,
                     "completed_at": session.completed_at.isoformat() if session.completed_at else None
